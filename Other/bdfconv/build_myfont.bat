@@ -1,0 +1,1 @@
+bdfconv.exe -v -b 0 -f 1 -M ../myfont.map -n u8g2_font_myfont -o u8g2_font_myfont.c ../bdf/wenquanyi_9pt.bdf

@@ -1,0 +1,3 @@
+D:/Projects/astra/cmake-build-debug/CMakeFiles/astra.elf.dir
+D:/Projects/astra/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Projects/astra/cmake-build-debug/CMakeFiles/rebuild_cache.dir
