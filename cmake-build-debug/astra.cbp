@@ -259,6 +259,12 @@
 		<Unit filename="D:/Projects/astra/Core/Src/astra_driver.h">
 			<Option target="astra.elf"/>
 		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra_printer.cpp">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra_printer.h">
+			<Option target="astra.elf"/>
+		</Unit>
 		<Unit filename="D:/Projects/astra/Core/Src/dma.c">
 			<Option target="astra.elf"/>
 		</Unit>

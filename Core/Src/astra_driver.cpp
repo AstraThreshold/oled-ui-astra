@@ -96,15 +96,15 @@ void ScreenIC::screenICInit() {
   screenSetPosition(0, 0);
 }
 
-void Printer::canvasUpdate(){
+void ScreenPrinter::canvasUpdate(){
   u8g2_SendBuffer(canvasBuffer);
 }
 
-void Printer::canvasClear(){
+void ScreenPrinter::canvasClear(){
   u8g2_ClearBuffer(canvasBuffer);
 }
 
-uint8_t Printer::byteCallBack(u8x8_t *u8x8, uint8_t msg, uint8_t argInt, void *argPtr) {
+uint8_t ScreenPrinter::byteCallBack(u8x8_t *u8x8, uint8_t msg, uint8_t argInt, void *argPtr) {
   switch (msg) {
     case U8X8_MSG_BYTE_SEND: /*通过SPI发送argInt个字节数据*/
       HAL_SPI_Transmit_DMA(&hspi2, (uint8_t *) argPtr, argInt);
@@ -130,7 +130,7 @@ uint8_t Printer::byteCallBack(u8x8_t *u8x8, uint8_t msg, uint8_t argInt, void *a
   return 1;
 }
 
-uint8_t Printer::gpioAndDelayCallBack(u8x8_t *u8x8, uint8_t msg, uint8_t argInt, void *argPtr) {
+uint8_t ScreenPrinter::gpioAndDelayCallBack(u8x8_t *u8x8, uint8_t msg, uint8_t argInt, void *argPtr) {
   switch (msg) {
     case U8X8_MSG_GPIO_AND_DELAY_INIT: /*delay和GPIO的初始化，在main中已经初始化完成了*/
       break;
@@ -147,7 +147,7 @@ uint8_t Printer::gpioAndDelayCallBack(u8x8_t *u8x8, uint8_t msg, uint8_t argInt,
   return 1;
 }
 
-void Printer::graphicsLibInit() {
+void ScreenPrinter::graphicsLibInit() {
   u8g2_Setup_ssd1306_128x64_noname_f(canvasBuffer, U8G2_R0, byteCallBack, gpioAndDelayCallBack);
   u8g2_InitDisplay(canvasBuffer);
   u8g2_SetPowerSave(canvasBuffer, 0);   //open screen
@@ -159,67 +159,67 @@ void Printer::graphicsLibInit() {
   canvasClear();
 }
 
-void Printer::setDrawType(uint8_t _type) {
+void ScreenPrinter::setDrawType(uint8_t _type) {
   u8g2_SetDrawColor(canvasBuffer, _type);
 }
 
-void Printer::drawPixel(uint8_t _x, uint8_t _y) {
+void ScreenPrinter::drawPixel(uint8_t _x, uint8_t _y) {
   u8g2_DrawPixel(canvasBuffer, _x, _y);
 }
 
-void Printer::drawEnglish(uint8_t _x, uint8_t _y, const std::string &_text) {
+void ScreenPrinter::drawEnglish(uint8_t _x, uint8_t _y, const std::string &_text) {
   auto *str = _text.c_str();
   u8g2_DrawStr(canvasBuffer, _x, _y, str);
 }
 
-void Printer::drawChinese(uint8_t _x, uint8_t _y, const std::string &_text) {
+void ScreenPrinter::drawChinese(uint8_t _x, uint8_t _y, const std::string &_text) {
   auto *str = _text.c_str();
   u8g2_DrawUTF8(canvasBuffer, _x, _y, str);
 }
 
-void Printer::drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) {
+void ScreenPrinter::drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) {
   for (int index = _x; index <= _x + _l; index += 1) {
     if (index % 8 == 0 | (index - 1) % 8 == 0 | (index - 2) % 8 == 0) continue;
     u8g2_DrawPixel(canvasBuffer, index, (int16_t) _y);  //绘制一条由像素点组成的虚线
   }
 }
 
-void Printer::drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) {
+void ScreenPrinter::drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) {
   for (int index = _y; index <= _y + _h; index += 1) {
     if (index % 8 == 0 | (index - 1) % 8 == 0 | (index - 2) % 8 == 0) continue;
     u8g2_DrawPixel(canvasBuffer, (int16_t) _x, index);  //绘制一条由像素点组成的虚线
   }
 }
 
-void Printer::drawVLine(uint8_t _x, uint8_t _y, uint8_t _l) {
+void ScreenPrinter::drawVLine(uint8_t _x, uint8_t _y, uint8_t _l) {
   u8g2_DrawVLine(canvasBuffer, _x, _y, _l);
 }
 
-void Printer::drawHLine(uint8_t _x, uint8_t _y, uint8_t _h) {
+void ScreenPrinter::drawHLine(uint8_t _x, uint8_t _y, uint8_t _h) {
   u8g2_DrawHLine(canvasBuffer, _x, _y, _h);
 }
 
-void Printer::drawBMP(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, const uint8_t *_bitMap) {
+void ScreenPrinter::drawBMP(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, const uint8_t *_bitMap) {
   u8g2_DrawXBMP(canvasBuffer, _x, _y, _w, _h, _bitMap);
 }
 
-void Printer::drawBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) {
+void ScreenPrinter::drawBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) {
   u8g2_DrawBox(canvasBuffer, _x, _y, _w, _h);
 }
 
-void Printer::drawRBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {
+void ScreenPrinter::drawRBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {
   u8g2_DrawRBox(canvasBuffer, _x, _y, _w, _h, _r);
 }
 
-void Printer::drawFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) {
+void ScreenPrinter::drawFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) {
   u8g2_DrawFrame(canvasBuffer, _x, _y, _w, _h);
 }
 
-void Printer::drawRFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {
+void ScreenPrinter::drawRFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {
   u8g2_DrawRFrame(canvasBuffer, _x, _y, _w, _h, _r);
 }
 
-Printer::Printer(u8g2_t *_canvasBuffer) {
+ScreenPrinter::ScreenPrinter(u8g2_t *_canvasBuffer) {
   this->canvasBuffer = _canvasBuffer;
 }
 

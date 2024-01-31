@@ -2163,12 +2163,6 @@ Discarded input sections
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
  .ARM.exidx.text._ZN5astra4Page8findPageEPS0_PKS0_
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .text._ZN5astra4Page9addWidgetEPS0_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEhRh
-                0x00000000        0x2 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .ARM.extab.text._ZN5astra4Page9addWidgetEPS0_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEhRh
-                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .ARM.exidx.text._ZN5astra4Page9addWidgetEPS0_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEhRh
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
  .text._ZN5astra11UIScheduler4initEv
                 0x00000000        0x2 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
  .ARM.extab.text._ZN5astra11UIScheduler4initEv
@@ -2553,36 +2547,36 @@ Discarded input sections
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
  .ARM.exidx.text._ZNSt6vectorIS_IhSaIhEESaIS1_EE13_M_assign_auxIPKS1_EEvT_S7_St20forward_iterator_tag
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .text._ZN5astra4PageC2Eh
-                0x00000000       0xaa CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .ARM.extab.text._ZN5astra4PageC2Eh
+ .text._ZN5astra4PageC2EMNS_11PagePrinterEFvvE
+                0x00000000       0xbe CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
+ .ARM.extab.text._ZN5astra4PageC2EMNS_11PagePrinterEFvvE
                 0x00000000       0x16 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .ARM.exidx.text._ZN5astra4PageC2Eh
+ .ARM.exidx.text._ZN5astra4PageC2EMNS_11PagePrinterEFvvE
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .text._ZN5astra4PageC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPS0_h
-                0x00000000       0xce CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .ARM.extab.text._ZN5astra4PageC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPS0_h
-                0x00000000       0x16 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .ARM.exidx.text._ZN5astra4PageC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPS0_h
+ .text._ZN5astra4PageC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPS0_MNS_11PagePrinterEFvvE
+                0x00000000       0xf8 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
+ .ARM.extab.text._ZN5astra4PageC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPS0_MNS_11PagePrinterEFvvE
+                0x00000000       0x17 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
+ .ARM.exidx.text._ZN5astra4PageC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPS0_MNS_11PagePrinterEFvvE
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .text._ZN5astra4PageC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIhSaIhEEPS0_h
-                0x00000000       0xdc CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .ARM.extab.text._ZN5astra4PageC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIhSaIhEEPS0_h
-                0x00000000       0x16 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .ARM.exidx.text._ZN5astra4PageC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIhSaIhEEPS0_h
+ .text._ZN5astra4PageC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIhSaIhEEPS0_MNS_11PagePrinterEFvvE
+                0x00000000       0xfc CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
+ .ARM.extab.text._ZN5astra4PageC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIhSaIhEEPS0_MNS_11PagePrinterEFvvE
+                0x00000000       0x17 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
+ .ARM.exidx.text._ZN5astra4PageC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIhSaIhEEPS0_MNS_11PagePrinterEFvvE
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .debug_info    0x00000000    0x1b125 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .debug_abbrev  0x00000000      0xce7 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
+ .debug_info    0x00000000    0x1b148 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
+ .debug_abbrev  0x00000000      0xd14 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
  .debug_loclists
-                0x00000000     0x5097 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
+                0x00000000     0x505b CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
  .debug_aranges
-                0x00000000      0x238 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
+                0x00000000      0x230 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
  .debug_rnglists
-                0x00000000      0x322 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .debug_line    0x00000000     0x2b5f CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .debug_str     0x00000000    0x18b4c CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
+                0x00000000      0x31c CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
+ .debug_line    0x00000000     0x2bc4 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
+ .debug_str     0x00000000    0x18bac CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
  .comment       0x00000000       0x46 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
- .debug_frame   0x00000000      0x78c CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
+ .debug_frame   0x00000000      0x788 CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
  .ARM.attributes
                 0x00000000       0x2d CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
  .group         0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
@@ -2607,113 +2601,113 @@ Discarded input sections
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
  .ARM.exidx.text._ZN5astra10KeyScanner7keyTestEv
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer20gpioAndDelayCallBackEP11u8x8_structhhPv
+ .text._ZN5astra13ScreenPrinter20gpioAndDelayCallBackEP11u8x8_structhhPv
                 0x00000000       0x24 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer20gpioAndDelayCallBackEP11u8x8_structhhPv
+ .ARM.extab.text._ZN5astra13ScreenPrinter20gpioAndDelayCallBackEP11u8x8_structhhPv
                 0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer20gpioAndDelayCallBackEP11u8x8_structhhPv
+ .ARM.exidx.text._ZN5astra13ScreenPrinter20gpioAndDelayCallBackEP11u8x8_structhhPv
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer12canvasUpdateEv
+ .text._ZN5astra13ScreenPrinter12canvasUpdateEv
                 0x00000000        0xa CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer12canvasUpdateEv
+ .ARM.extab.text._ZN5astra13ScreenPrinter12canvasUpdateEv
                 0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer12canvasUpdateEv
+ .ARM.exidx.text._ZN5astra13ScreenPrinter12canvasUpdateEv
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer11canvasClearEv
+ .text._ZN5astra13ScreenPrinter11canvasClearEv
                 0x00000000        0xa CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer11canvasClearEv
+ .ARM.extab.text._ZN5astra13ScreenPrinter11canvasClearEv
                 0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer11canvasClearEv
+ .ARM.exidx.text._ZN5astra13ScreenPrinter11canvasClearEv
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer12byteCallBackEP11u8x8_structhhPv
+ .text._ZN5astra13ScreenPrinter12byteCallBackEP11u8x8_structhhPv
                 0x00000000       0x8c CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer12byteCallBackEP11u8x8_structhhPv
+ .ARM.extab.text._ZN5astra13ScreenPrinter12byteCallBackEP11u8x8_structhhPv
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer12byteCallBackEP11u8x8_structhhPv
+ .ARM.exidx.text._ZN5astra13ScreenPrinter12byteCallBackEP11u8x8_structhhPv
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer15graphicsLibInitEv
+ .text._ZN5astra13ScreenPrinter15graphicsLibInitEv
                 0x00000000       0x50 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer15graphicsLibInitEv
+ .ARM.extab.text._ZN5astra13ScreenPrinter15graphicsLibInitEv
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer15graphicsLibInitEv
+ .ARM.exidx.text._ZN5astra13ScreenPrinter15graphicsLibInitEv
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer11setDrawTypeEh
+ .text._ZN5astra13ScreenPrinter11setDrawTypeEh
                 0x00000000        0xa CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer11setDrawTypeEh
+ .ARM.extab.text._ZN5astra13ScreenPrinter11setDrawTypeEh
                 0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer11setDrawTypeEh
+ .ARM.exidx.text._ZN5astra13ScreenPrinter11setDrawTypeEh
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer9drawPixelEhh
+ .text._ZN5astra13ScreenPrinter9drawPixelEhh
                 0x00000000        0xa CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer9drawPixelEhh
+ .ARM.extab.text._ZN5astra13ScreenPrinter9drawPixelEhh
                 0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer9drawPixelEhh
+ .ARM.exidx.text._ZN5astra13ScreenPrinter9drawPixelEhh
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer15drawVDottedLineEhhh
+ .text._ZN5astra13ScreenPrinter15drawVDottedLineEhhh
                 0x00000000       0x56 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer15drawVDottedLineEhhh
+ .ARM.extab.text._ZN5astra13ScreenPrinter15drawVDottedLineEhhh
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer15drawVDottedLineEhhh
+ .ARM.exidx.text._ZN5astra13ScreenPrinter15drawVDottedLineEhhh
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer15drawHDottedLineEhhh
+ .text._ZN5astra13ScreenPrinter15drawHDottedLineEhhh
                 0x00000000       0x56 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer15drawHDottedLineEhhh
+ .ARM.extab.text._ZN5astra13ScreenPrinter15drawHDottedLineEhhh
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer15drawHDottedLineEhhh
+ .ARM.exidx.text._ZN5astra13ScreenPrinter15drawHDottedLineEhhh
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer11drawEnglishEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+ .text._ZN5astra13ScreenPrinter11drawEnglishEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
                 0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer11drawEnglishEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+ .ARM.extab.text._ZN5astra13ScreenPrinter11drawEnglishEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
                 0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer11drawEnglishEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+ .ARM.exidx.text._ZN5astra13ScreenPrinter11drawEnglishEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer11drawChineseEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+ .text._ZN5astra13ScreenPrinter11drawChineseEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
                 0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer11drawChineseEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+ .ARM.extab.text._ZN5astra13ScreenPrinter11drawChineseEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
                 0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer11drawChineseEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+ .ARM.exidx.text._ZN5astra13ScreenPrinter11drawChineseEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer9drawVLineEhhh
+ .text._ZN5astra13ScreenPrinter9drawVLineEhhh
                 0x00000000        0xa CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer9drawVLineEhhh
+ .ARM.extab.text._ZN5astra13ScreenPrinter9drawVLineEhhh
                 0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer9drawVLineEhhh
+ .ARM.exidx.text._ZN5astra13ScreenPrinter9drawVLineEhhh
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer9drawHLineEhhh
+ .text._ZN5astra13ScreenPrinter9drawHLineEhhh
                 0x00000000        0xa CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer9drawHLineEhhh
+ .ARM.extab.text._ZN5astra13ScreenPrinter9drawHLineEhhh
                 0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer9drawHLineEhhh
+ .ARM.exidx.text._ZN5astra13ScreenPrinter9drawHLineEhhh
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer7drawBMPEhhhhPKh
+ .text._ZN5astra13ScreenPrinter7drawBMPEhhhhPKh
                 0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer7drawBMPEhhhhPKh
+ .ARM.extab.text._ZN5astra13ScreenPrinter7drawBMPEhhhhPKh
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer7drawBMPEhhhhPKh
+ .ARM.exidx.text._ZN5astra13ScreenPrinter7drawBMPEhhhhPKh
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer7drawBoxEhhhh
+ .text._ZN5astra13ScreenPrinter7drawBoxEhhhh
                 0x00000000       0x14 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer7drawBoxEhhhh
+ .ARM.extab.text._ZN5astra13ScreenPrinter7drawBoxEhhhh
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer7drawBoxEhhhh
+ .ARM.exidx.text._ZN5astra13ScreenPrinter7drawBoxEhhhh
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer8drawRBoxEhhhhh
+ .text._ZN5astra13ScreenPrinter8drawRBoxEhhhhh
                 0x00000000       0x1a CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer8drawRBoxEhhhhh
+ .ARM.extab.text._ZN5astra13ScreenPrinter8drawRBoxEhhhhh
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer8drawRBoxEhhhhh
+ .ARM.exidx.text._ZN5astra13ScreenPrinter8drawRBoxEhhhhh
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer9drawFrameEhhhh
+ .text._ZN5astra13ScreenPrinter9drawFrameEhhhh
                 0x00000000       0x14 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer9drawFrameEhhhh
+ .ARM.extab.text._ZN5astra13ScreenPrinter9drawFrameEhhhh
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer9drawFrameEhhhh
+ .ARM.exidx.text._ZN5astra13ScreenPrinter9drawFrameEhhhh
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7Printer10drawRFrameEhhhhh
+ .text._ZN5astra13ScreenPrinter10drawRFrameEhhhhh
                 0x00000000       0x1a CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7Printer10drawRFrameEhhhhh
+ .ARM.extab.text._ZN5astra13ScreenPrinter10drawRFrameEhhhhh
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7Printer10drawRFrameEhhhhh
+ .ARM.exidx.text._ZN5astra13ScreenPrinter10drawRFrameEhhhhh
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
  .text._ZN5astra8ScreenIC26screenICWriteByteNoCommandEh
                 0x00000000       0x20 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
@@ -2757,11 +2751,11 @@ Discarded input sections
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
  .ARM.exidx.text._ZN5astra8ScreenIC12screenICInitEv
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .text._ZN5astra7PrinterC2EP11u8g2_struct
+ .text._ZN5astra13ScreenPrinterC2EP11u8g2_struct
                 0x00000000       0x14 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.extab.text._ZN5astra7PrinterC2EP11u8g2_struct
+ .ARM.extab.text._ZN5astra13ScreenPrinterC2EP11u8g2_struct
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .ARM.exidx.text._ZN5astra7PrinterC2EP11u8g2_struct
+ .ARM.exidx.text._ZN5astra13ScreenPrinterC2EP11u8g2_struct
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
  .rodata._ZTSN6driver10IcDriver_iE
                 0x00000000       0x16 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
@@ -2779,9 +2773,9 @@ Discarded input sections
                 0x00000000       0x12 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
  .rodata._ZTIN5astra8ScreenICE
                 0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .rodata._ZTSN5astra7PrinterE
-                0x00000000       0x11 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .rodata._ZTIN5astra7PrinterE
+ .rodata._ZTSN5astra13ScreenPrinterE
+                0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
+ .rodata._ZTIN5astra13ScreenPrinterE
                 0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
  .rodata._ZTSN5astra10KeyScannerE
                 0x00000000       0x15 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
@@ -2791,7 +2785,7 @@ Discarded input sections
                 0x00000000       0x48 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
  .rodata._ZTVN5astra8ScreenICE
                 0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .rodata._ZTVN5astra7PrinterE
+ .rodata._ZTVN5astra13ScreenPrinterE
                 0x00000000       0x48 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
  .rodata._ZTVN5astra10KeyScannerE
                 0x00000000       0x10 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
@@ -2808,11 +2802,56 @@ Discarded input sections
  .debug_rnglists
                 0x00000000       0xb8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
  .debug_line    0x00000000     0x10c8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
- .debug_str     0x00000000     0xdc8e CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
+ .debug_str     0x00000000     0xdd34 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
  .comment       0x00000000       0x46 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
  .debug_frame   0x00000000      0x2f8 CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
  .ARM.attributes
                 0x00000000       0x2d CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
+ .text          0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .data          0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .bss           0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .text._ZN5astra11PagePrinter4listEv
+                0x00000000        0x2 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .ARM.extab.text._ZN5astra11PagePrinter4listEv
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .ARM.exidx.text._ZN5astra11PagePrinter4listEv
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .text._ZN5astra11PagePrinter4tileEv
+                0x00000000        0x2 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .ARM.extab.text._ZN5astra11PagePrinter4tileEv
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .ARM.exidx.text._ZN5astra11PagePrinter4tileEv
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .text._ZN5astra13WidgetPrinter7sideBarEv
+                0x00000000        0x2 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .ARM.extab.text._ZN5astra13WidgetPrinter7sideBarEv
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .ARM.exidx.text._ZN5astra13WidgetPrinter7sideBarEv
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .text._ZN5astra13WidgetPrinter6windowEv
+                0x00000000        0x2 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .ARM.extab.text._ZN5astra13WidgetPrinter6windowEv
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .ARM.exidx.text._ZN5astra13WidgetPrinter6windowEv
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .text._ZN5astra13WidgetPrinter8checkBoxEv
+                0x00000000        0x2 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .ARM.extab.text._ZN5astra13WidgetPrinter8checkBoxEv
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .ARM.exidx.text._ZN5astra13WidgetPrinter8checkBoxEv
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .debug_info    0x00000000      0x183 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .debug_abbrev  0x00000000       0xe9 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .debug_aranges
+                0x00000000       0x40 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .debug_rnglists
+                0x00000000       0x2b CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .debug_line    0x00000000       0xc7 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .debug_str     0x00000000      0x1fb CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .comment       0x00000000       0x46 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .debug_frame   0x00000000       0x60 CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+ .ARM.attributes
+                0x00000000       0x2d CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
  .data          0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
  .bss           0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
@@ -9033,6 +9072,7 @@ LOAD CMakeFiles/astra.elf.dir/3rdParty/u8g2/u8x8_u16toa.c.obj
 LOAD CMakeFiles/astra.elf.dir/3rdParty/u8g2/u8x8_u8toa.c.obj
 LOAD CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
 LOAD CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
+LOAD CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
 LOAD CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
 LOAD CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
 LOAD CMakeFiles/astra.elf.dir/Core/Src/main.c.obj

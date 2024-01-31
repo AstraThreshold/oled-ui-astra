@@ -134,4 +134,5 @@ CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj: \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\sys\errno.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\charconv.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\basic_string.tcc \
- D:\Projects\astra\Core\Inc/spi.h D:\Projects\astra\Core\Inc/main.h
+ D:\Projects\astra\Core\Inc/spi.h D:\Projects\astra\Core\Inc/main.h \
+ D:\Projects\astra\Core\Src\astra_printer.h

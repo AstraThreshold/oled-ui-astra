@@ -83,6 +83,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj.d"
   "CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj"
   "CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj.d"
+  "CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj"
+  "CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj.d"
   "CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj"
   "CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj.d"
   "CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj"

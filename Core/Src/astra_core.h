@@ -8,14 +8,23 @@
 #include "astra_driver.h"
 #include "cstdint"
 #include "string"
+#include "astra_printer.h"
+#include <vector>
 
 namespace astra {
 /**
  * @brief 页面类 以树型数据结构来管理各页面
  */
-class Page {
+class Page : PagePrinter {
 private:
   Page *parentPage;                 //指向父节点 根节点无父节点 此指针为空
+
+  /**绘图域**/
+  PagePrinter* printer;
+  typedef void (PagePrinter::*pageType)();  //指向PagePrinter类中的无形参void型函数的指针类型
+  pageType selfType;
+  //void (PagePrinter::*selfType)();
+  /**绘图域**/
 
   /**数据域**/
   uint8_t num;
@@ -26,7 +35,6 @@ private:
 
   /**识别域**/
   std::vector<void*> childPage;     //包含指向子节点的指针的容器
-  uint8_t type;                     //存储节点的类型
   bool isMainMenu;
   /**识别域**/
 
@@ -35,17 +43,15 @@ public:
   //driver类是此类的父类
   Page* findPage(Page* _rootPage, const Page* _lookingFor);
 
-  explicit Page(uint8_t _type);   //建立首页 即根节点
+  explicit Page(pageType _type);   //建立首页 即根节点
 
-  Page(const std::string& _title, Page *_parentPage, uint8_t _selfType);    //列表页
-  Page(const std::string& _title, const std::vector<uint8_t>& _pic, Page *_parentPage, uint8_t _selfType);  //磁贴页
-
-  void addWidget(Page *_page, const std::string& _text, uint8_t _widgetType, uint8_t &_value);
-
+  Page(const std::string& _title, Page *_parentPage, pageType _type);    //列表页
+  Page(const std::string& _title, const std::vector<uint8_t>& _pic, Page *_parentPage, pageType _type);  //磁贴页
 };
 
-class Widget {
-
+class Widget : WidgetPrinter {
+public:
+  typedef void (WidgetPrinter::*pageType)();
 };
 
 /**

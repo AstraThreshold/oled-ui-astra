@@ -624,6 +624,7 @@ CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj: D:/Projects/astra/Core/Src
   D:/Projects/astra/Core/Inc/stm32f1xx_hal_conf.h \
   D:/Projects/astra/Core/Src/astra_core.h \
   D:/Projects/astra/Core/Src/astra_driver.h \
+  D:/Projects/astra/Core/Src/astra_printer.h \
   D:/Projects/astra/Core/Src/driver_i.h \
   D:/Projects/astra/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
   D:/Projects/astra/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
@@ -883,6 +884,9 @@ CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj: D:/Projects/astra/Core/S
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdarg.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h
+
+CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj: D:/Projects/astra/Core/Src/astra_printer.cpp \
+  D:/Projects/astra/Core/Src/astra_printer.h
 
 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj: D:/Projects/astra/Core/Src/dma.c \
   D:/Projects/astra/Core/Inc/dma.h \
@@ -1797,6 +1801,8 @@ D:/Projects/astra/3rdParty/u8g2/u8log.c:
 
 D:/Projects/astra/3rdParty/u8g2/u8g2_hvline.c:
 
+D:/Projects/astra/Core/Src/astra_printer.cpp:
+
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/char_traits.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/assert.h:
@@ -1844,6 +1850,8 @@ D:/Projects/astra/Core/Inc/stm32f1xx_hal_conf.h:
 D:/Projects/astra/Core/Src/astra_core.h:
 
 D:/Projects/astra/Core/Src/astra_driver.h:
+
+D:/Projects/astra/Core/Src/astra_printer.h:
 
 D:/Projects/astra/Core/Src/driver_i.h:
 

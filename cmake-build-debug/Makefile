@@ -1136,6 +1136,30 @@ Core/Src/astra_driver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.s
 .PHONY : Core/Src/astra_driver.cpp.s
 
+Core/Src/astra_printer.obj: Core/Src/astra_printer.cpp.obj
+.PHONY : Core/Src/astra_printer.obj
+
+# target to build an object file
+Core/Src/astra_printer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+.PHONY : Core/Src/astra_printer.cpp.obj
+
+Core/Src/astra_printer.i: Core/Src/astra_printer.cpp.i
+.PHONY : Core/Src/astra_printer.i
+
+# target to preprocess a source file
+Core/Src/astra_printer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.i
+.PHONY : Core/Src/astra_printer.cpp.i
+
+Core/Src/astra_printer.s: Core/Src/astra_printer.cpp.s
+.PHONY : Core/Src/astra_printer.s
+
+# target to generate assembly for a file
+Core/Src/astra_printer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.s
+.PHONY : Core/Src/astra_printer.cpp.s
+
 Core/Src/dma.obj: Core/Src/dma.c.obj
 .PHONY : Core/Src/dma.obj
 
@@ -1831,6 +1855,9 @@ help:
 	@echo ... Core/Src/astra_driver.obj
 	@echo ... Core/Src/astra_driver.i
 	@echo ... Core/Src/astra_driver.s
+	@echo ... Core/Src/astra_printer.obj
+	@echo ... Core/Src/astra_printer.i
+	@echo ... Core/Src/astra_printer.s
 	@echo ... Core/Src/dma.obj
 	@echo ... Core/Src/dma.i
 	@echo ... Core/Src/dma.s

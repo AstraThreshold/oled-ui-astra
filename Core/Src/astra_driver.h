@@ -23,7 +23,7 @@ public:
   void screenICInit() override;
 };
 
-class Printer : driver::GraphicsLib_i {
+class ScreenPrinter : driver::GraphicsLib_i {
 public:
   u8g2_t *canvasBuffer;
   void canvasUpdate() override;
@@ -47,8 +47,8 @@ public:
   void drawFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) override;
   void drawRFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) override;
 
-  explicit Printer(u8g2_t *_canvasBuffer);
-  ~Printer();
+  explicit ScreenPrinter(u8g2_t *_canvasBuffer);
+  ~ScreenPrinter();
 };
 
 class KeyScanner : driver::KeyDriver_i {

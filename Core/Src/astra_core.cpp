@@ -51,7 +51,9 @@ Page* Page::findPage(Page* _rootPage, const Page* _lookingFor) {  //NOLINT
 /**
  * @brief init a new root node(main menu).
  */
-Page::Page(uint8_t _type) {
+Page::Page(pageType _type) {
+  printer = new PagePrinter;
+  this->selfType = _type;
 
   this->parentPage = nullptr;
 
@@ -61,7 +63,6 @@ Page::Page(uint8_t _type) {
   this->text = {};
 
   this->childPage = {};
-  this->type = _type;
   this->isMainMenu = true;
 }
 
@@ -72,8 +73,11 @@ Page::Page(uint8_t _type) {
  * @param _parentPage the parent(previous) page of new page.
  * @note the title will show in the _parentPage.
  */
-Page::Page(const std::string& _title, Page *_parentPage, uint8_t _selfType) {
-  if (_parentPage->type == 2) {
+Page::Page(const std::string& _title, Page *_parentPage, pageType _type) {
+  if (_parentPage->selfType == &PagePrinter::list) {
+    printer = new PagePrinter;
+    this->selfType = _type;
+
     this->parentPage = _parentPage;
     _parentPage->childPage.push_back(this);   //connect each other.
 
@@ -85,7 +89,6 @@ Page::Page(const std::string& _title, Page *_parentPage, uint8_t _selfType) {
     this->text = {};
 
     this->childPage = {};
-    this->type = _selfType;
     this->isMainMenu = false;
   }
 }
@@ -97,8 +100,11 @@ Page::Page(const std::string& _title, Page *_parentPage, uint8_t _selfType) {
  * @param _pic
  * @param _parentPage the parent(previous) page of new page.
  */
-Page::Page(const std::string& _title, const std::vector<uint8_t>& _pic, Page *_parentPage, uint8_t _selfType) {
-  if (_parentPage->type == 1) {
+Page::Page(const std::string& _title, const std::vector<uint8_t>& _pic, Page *_parentPage, pageType _type) {
+  if (_parentPage->selfType == &PagePrinter::tile) {
+    printer = new PagePrinter;
+    this->selfType = _type;
+
     this->parentPage = _parentPage;
     _parentPage->childPage.push_back(this);   //connect each other.
 
@@ -111,7 +117,6 @@ Page::Page(const std::string& _title, const std::vector<uint8_t>& _pic, Page *_p
     this->text = {};
 
     this->childPage = {};
-    this->type = _selfType;
     this->isMainMenu = false;
   }
 }
@@ -125,9 +130,9 @@ Page::Page(const std::string& _title, const std::vector<uint8_t>& _pic, Page *_p
  * @param _widgetType 1: check box | 2: window | 3: side bar
  * @param _value the value widget will change.
  */
-void Page::addWidget(Page *_page, const std::string& _text, uint8_t _widgetType, uint8_t &_value) {
-  //_page->
-}
+//Widget Widget::widget() {
+//  //_page->
+//}
 
 
 /**
