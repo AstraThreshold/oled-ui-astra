@@ -49,31 +49,71 @@ Page* Page::findPage(Page* _rootPage, const Page* _lookingFor) {  //NOLINT
 }
 
 /**
- * @brief init a new page and connect it to its parent page.
- *
- * @param _text the text of new page.
- * @param _parentPage the parent(previous) page of new page.
+ * @brief init a new root node(main menu).
  */
-Page::Page(std::vector<std::string> _text, Page *_parentPage) {
-  //this->rootPage = nullptr;
-  this->childPage = {};
-  this->parentPage = _parentPage;
-  _parentPage->childPage.push_back(this);   //connect this page to its parent page
+Page::Page(uint8_t _type) {
 
-  this->text = std::move(_text);
-  this->select = 0;
-  this->num = text.size();
-}
-
-Page::Page(std::vector<std::string> _text, std::vector<std::vector<uint8_t>> _pic) {
-  //this->rootPage = this;
-  this->childPage = {};
   this->parentPage = nullptr;
 
-  this->text = std::move(_text);
+  this->num = 0;
   this->select = 0;
-  this->pic = std::move(_pic);
-  this->num = text.size();
+  this->pic = {};
+  this->text = {};
+
+  this->childPage = {};
+  this->type = _type;
+  this->isMainMenu = true;
+}
+
+/**
+ * @brief init a new list page and connect it to parent page.
+ *
+ * @param _title the title of itself.
+ * @param _parentPage the parent(previous) page of new page.
+ * @note the title will show in the _parentPage.
+ */
+Page::Page(const std::string& _title, Page *_parentPage, uint8_t _selfType) {
+  if (_parentPage->type == 2) {
+    this->parentPage = _parentPage;
+    _parentPage->childPage.push_back(this);   //connect each other.
+
+    _parentPage->text.push_back(_title);
+
+    this->num = 0;
+    this->select = 0;
+    this->pic = {};
+    this->text = {};
+
+    this->childPage = {};
+    this->type = _selfType;
+    this->isMainMenu = false;
+  }
+}
+
+/**
+ * @brief init a new tile page and connect it to parent page.
+ *
+ * @param _title
+ * @param _pic
+ * @param _parentPage the parent(previous) page of new page.
+ */
+Page::Page(const std::string& _title, const std::vector<uint8_t>& _pic, Page *_parentPage, uint8_t _selfType) {
+  if (_parentPage->type == 1) {
+    this->parentPage = _parentPage;
+    _parentPage->childPage.push_back(this);   //connect each other.
+
+    _parentPage->text.push_back(_title);
+    _parentPage->pic.push_back(_pic);
+
+    this->num = 0;
+    this->select = 0;
+    this->pic = {};
+    this->text = {};
+
+    this->childPage = {};
+    this->type = _selfType;
+    this->isMainMenu = false;
+  }
 }
 
 /**

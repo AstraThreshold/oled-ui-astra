@@ -262,10 +262,7 @@
 		<Unit filename="D:/Projects/astra/Core/Src/dma.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/driver.cpp">
-			<Option target="astra.elf"/>
-		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/driver.h">
+		<Unit filename="D:/Projects/astra/Core/Src/driver_i.h">
 			<Option target="astra.elf"/>
 		</Unit>
 		<Unit filename="D:/Projects/astra/Core/Src/gpio.c">

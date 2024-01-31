@@ -13,32 +13,32 @@ namespace astra {
 /**
  * @brief 页面类 以树型数据结构来管理各页面
  */
-class Page : Printer {
+class Page {
 private:
-
-  //std::string id;                 //位置序号 格式: 深度+当前深度从左至右的次序
-  std::vector<void*> childPage;     //包含指向子节点的指针的容器
-  std::vector<uint8_t> childType;   //存储子节点的类型 与childPage数组一一对应
   Page *parentPage;                 //指向父节点 根节点无父节点 此指针为空
-  //Page *currentPage;              //指向当前节点（this指针）
-  //Page *rootPage;                 //首页 即根节点的地址
 
+  /**数据域**/
   uint8_t num;
-
   uint8_t select;
-
   std::vector<std::vector<uint8_t>> pic;  //图片内容
   std::vector<std::string> text;    //文本内容
-  //todo 此处需要修改结构 详见work-log
+  /**数据域**/
+
+  /**识别域**/
+  std::vector<void*> childPage;     //包含指向子节点的指针的容器
+  uint8_t type;                     //存储节点的类型
+  bool isMainMenu;
+  /**识别域**/
 
 public:
   //构造函数可以有很多种 相当于多态
   //driver类是此类的父类
   Page* findPage(Page* _rootPage, const Page* _lookingFor);
 
-  Page(std::vector<std::string> _text, Page *_parentPage);
+  explicit Page(uint8_t _type);   //建立首页 即根节点
 
-  Page(std::vector<std::string> _text, std::vector<std::vector<uint8_t>> _pic);  //首页
+  Page(const std::string& _title, Page *_parentPage, uint8_t _selfType);    //列表页
+  Page(const std::string& _title, const std::vector<uint8_t>& _pic, Page *_parentPage, uint8_t _selfType);  //磁贴页
 
   void addWidget(Page *_page, const std::string& _text, uint8_t _widgetType, uint8_t &_value);
 
@@ -54,15 +54,16 @@ class Widget {
  * @brief **ui的index是树模式 从后面添加 从前面显示**
  * 主菜单是根结点
  */
-class UIScheduler : public Page {
+class UIScheduler {
 private:
   Page* pageDisplay = nullptr;    //page displaying right now
 
-  uint8_t pageInit;
-  uint8_t uiState;
-  uint8_t fadeFlag;
+  uint8_t pageInit{};
+  uint8_t uiState{};
+  uint8_t fadeFlag{};
 
 public:
+
   void init();
 
   void astraKernelStart(Page *_root);

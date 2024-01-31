@@ -93,7 +93,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj.d"
   "D:/Projects/astra/Core/Src/astra_core.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj.d"
   "D:/Projects/astra/Core/Src/astra_driver.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj.d"
-  "D:/Projects/astra/Core/Src/driver.cpp" "CMakeFiles/astra.elf.dir/Core/Src/driver.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/driver.cpp.obj.d"
   "D:/Projects/astra/Core/Src/system.cpp" "CMakeFiles/astra.elf.dir/Core/Src/system.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/system.cpp.obj.d"
   )
 

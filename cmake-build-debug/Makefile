@@ -1160,30 +1160,6 @@ Core/Src/dma.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/dma.c.s
 .PHONY : Core/Src/dma.c.s
 
-Core/Src/driver.obj: Core/Src/driver.cpp.obj
-.PHONY : Core/Src/driver.obj
-
-# target to build an object file
-Core/Src/driver.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/driver.cpp.obj
-.PHONY : Core/Src/driver.cpp.obj
-
-Core/Src/driver.i: Core/Src/driver.cpp.i
-.PHONY : Core/Src/driver.i
-
-# target to preprocess a source file
-Core/Src/driver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/driver.cpp.i
-.PHONY : Core/Src/driver.cpp.i
-
-Core/Src/driver.s: Core/Src/driver.cpp.s
-.PHONY : Core/Src/driver.s
-
-# target to generate assembly for a file
-Core/Src/driver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/driver.cpp.s
-.PHONY : Core/Src/driver.cpp.s
-
 Core/Src/gpio.obj: Core/Src/gpio.c.obj
 .PHONY : Core/Src/gpio.obj
 
@@ -1858,9 +1834,6 @@ help:
 	@echo ... Core/Src/dma.obj
 	@echo ... Core/Src/dma.i
 	@echo ... Core/Src/dma.s
-	@echo ... Core/Src/driver.obj
-	@echo ... Core/Src/driver.i
-	@echo ... Core/Src/driver.s
 	@echo ... Core/Src/gpio.obj
 	@echo ... Core/Src/gpio.i
 	@echo ... Core/Src/gpio.s
