@@ -91,10 +91,15 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj.d"
   "D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj.d"
   "D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj.d"
-  "D:/Projects/astra/Core/Src/astra_core.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj.d"
-  "D:/Projects/astra/Core/Src/astra_driver.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj.d"
-  "D:/Projects/astra/Core/Src/astra_printer.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj.d"
-  "D:/Projects/astra/Core/Src/system.cpp" "CMakeFiles/astra.elf.dir/Core/Src/system.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/system.cpp.obj.d"
+  "D:/Projects/astra/Core/Src/astra/app/astra_app.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj.d"
+  "D:/Projects/astra/Core/Src/astra/ui/launcher.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj.d"
+  "D:/Projects/astra/Core/Src/astra/ui/page.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.obj.d"
+  "D:/Projects/astra/Core/Src/astra/ui/render/render.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.obj.d"
+  "D:/Projects/astra/Core/Src/astra/ui/widget.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.obj.d"
+  "D:/Projects/astra/Core/Src/graph_lib/graph_lib.cpp" "CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.obj.d"
+  "D:/Projects/astra/Core/Src/hal/key/key.cpp" "CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.obj.d"
+  "D:/Projects/astra/Core/Src/hal/oled/oled.cpp" "CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.obj.d"
+  "D:/Projects/astra/Core/Src/system/system.cpp" "CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f1xx_hal_flash_ex.c
   * @author  MCD Application Team
-  * @brief   Extended FLASH HAL module driver.
+  * @brief   Extended FLASH HAL module hardware.
   *    
   *          This file provides firmware functions to manage the following 
   *          functionalities of the FLASH peripheral:
@@ -15,9 +15,9 @@
                ##### Flash peripheral extended features  #####
   ==============================================================================
            
-                      ##### How to use this driver #####
+                      ##### How to use this hardware #####
   ==============================================================================
-  [..] This driver provides functions to configure and program the FLASH memory 
+  [..] This hardware provides functions to configure and program the FLASH memory
        of all STM32F1xxx devices. It includes
        
         (++) Set/Reset the write protection
@@ -62,7 +62,7 @@ extern FLASH_ProcessTypeDef pFlash;
   */
   
 /** @defgroup FLASHEx FLASHEx
-  * @brief FLASH HAL Extension module driver
+  * @brief FLASH HAL Extension module hardware
   * @{
   */
 

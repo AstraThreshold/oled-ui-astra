@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f1xx_hal_spi.c
   * @author  MCD Application Team
-  * @brief   SPI HAL module driver.
+  * @brief   SPI HAL module hardware.
   *          This file provides firmware functions to manage the following
   *          functionalities of the Serial Peripheral Interface (SPI) peripheral:
   *           + Initialization and de-initialization functions
@@ -22,10 +22,10 @@
   ******************************************************************************
   @verbatim
   ==============================================================================
-                        ##### How to use this driver #####
+                        ##### How to use this hardware #####
   ==============================================================================
     [..]
-      The SPI HAL driver can be used as follows:
+      The SPI HAL hardware can be used as follows:
 
       (#) Declare a SPI_HandleTypeDef handle structure, for example:
           SPI_HandleTypeDef  hspi;
@@ -71,7 +71,7 @@
        Callback registration:
 
       (#) The compilation flag USE_HAL_SPI_REGISTER_CALLBACKS when set to 1U
-          allows the user to configure dynamically the driver callbacks.
+          allows the user to configure dynamically the hardware callbacks.
           Use Functions HAL_SPI_RegisterCallback() to register an interrupt callback.
 
           Function HAL_SPI_RegisterCallback() allows to register following callbacks:
@@ -204,7 +204,7 @@
   */
 
 /** @defgroup SPI SPI
-  * @brief SPI HAL module driver
+  * @brief SPI HAL module hardware
   * @{
   */
 #ifdef HAL_SPI_MODULE_ENABLED

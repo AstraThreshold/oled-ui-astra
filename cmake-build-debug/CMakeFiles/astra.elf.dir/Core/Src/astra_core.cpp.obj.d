@@ -58,36 +58,6 @@ CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj: \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\_newlib_version.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\sys\_intsup.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\sys\_stdint.h \
- D:\Projects\astra\Core\Src\driver_i.h \
- d:\projects\astra\3rdparty\u8g2\u8g2.h \
- d:\projects\astra\3rdparty\u8g2\u8x8.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\lib\gcc\arm-none-eabi\12.2.1\include\stdarg.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\lib\gcc\arm-none-eabi\12.2.1\include\stddef.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\lib\gcc\arm-none-eabi\12.2.1\include-fixed\limits.h \
- D:\Projects\astra\Core\Inc/main.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal.h \
- D:\Projects\astra\Core\Inc/stm32f1xx_hal_conf.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_rcc.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_def.h \
- D:\Projects\astra\Drivers\CMSIS\Device\ST\STM32F1xx\Include/stm32f1xx.h \
- D:\Projects\astra\Drivers\CMSIS\Device\ST\STM32F1xx\Include/stm32f103xb.h \
- D:\Projects\astra\Drivers\CMSIS\Include/core_cm3.h \
- D:\Projects\astra\Drivers\CMSIS\Include/cmsis_version.h \
- D:\Projects\astra\Drivers\CMSIS\Include/cmsis_compiler.h \
- D:\Projects\astra\Drivers\CMSIS\Include/cmsis_gcc.h \
- D:\Projects\astra\Drivers\CMSIS\Device\ST\STM32F1xx\Include/system_stm32f1xx.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/Legacy/stm32_hal_legacy.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_rcc_ex.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_gpio.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_gpio_ex.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_exti.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_dma.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_dma_ex.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_cortex.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_flash.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_flash_ex.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pwr.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_spi.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\string \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stringfwd.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\char_traits.h \
@@ -99,10 +69,12 @@ CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj: \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\sys\config.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\machine\ieeefp.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\sys\reent.h \
+ d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\lib\gcc\arm-none-eabi\12.2.1\include\stddef.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\sys\_types.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\machine\_types.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\sys\lock.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\sys\cdefs.h \
+ d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\lib\gcc\arm-none-eabi\12.2.1\include\stdarg.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\sys\_locale.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\localefwd.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\arm-none-eabi\thumb\v7-m\nofp\bits\c++locale.h \
@@ -134,5 +106,10 @@ CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj: \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\sys\errno.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\charconv.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\basic_string.tcc \
- D:\Projects\astra\Core\Inc/spi.h D:\Projects\astra\Core\Inc/main.h \
- D:\Projects\astra\Core\Src\astra_printer.h
+ D:\Projects\astra\Core\Src\astra_printer.h \
+ D:\Projects\astra\Core\Src\graph_lib/graph_lib.h \
+ D:\Projects\astra\Core\Src\graph_lib/graph_lib_i.h \
+ d:\projects\astra\3rdparty\u8g2\u8g2.h \
+ d:\projects\astra\3rdparty\u8g2\u8x8.h \
+ d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\lib\gcc\arm-none-eabi\12.2.1\include-fixed\limits.h \
+ D:\Projects\astra\Core\Src\system.h

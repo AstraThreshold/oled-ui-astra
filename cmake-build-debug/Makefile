@@ -1088,77 +1088,125 @@ astra.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/3rdParty/u8g2/u8x8_u8toa.c.s
 .PHONY : 3rdParty/u8g2/u8x8_u8toa.c.s
 
-Core/Src/astra_core.obj: Core/Src/astra_core.cpp.obj
-.PHONY : Core/Src/astra_core.obj
+Core/Src/astra/app/astra_app.obj: Core/Src/astra/app/astra_app.cpp.obj
+.PHONY : Core/Src/astra/app/astra_app.obj
 
 # target to build an object file
-Core/Src/astra_core.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
-.PHONY : Core/Src/astra_core.cpp.obj
+Core/Src/astra/app/astra_app.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj
+.PHONY : Core/Src/astra/app/astra_app.cpp.obj
 
-Core/Src/astra_core.i: Core/Src/astra_core.cpp.i
-.PHONY : Core/Src/astra_core.i
+Core/Src/astra/app/astra_app.i: Core/Src/astra/app/astra_app.cpp.i
+.PHONY : Core/Src/astra/app/astra_app.i
 
 # target to preprocess a source file
-Core/Src/astra_core.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.i
-.PHONY : Core/Src/astra_core.cpp.i
+Core/Src/astra/app/astra_app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.i
+.PHONY : Core/Src/astra/app/astra_app.cpp.i
 
-Core/Src/astra_core.s: Core/Src/astra_core.cpp.s
-.PHONY : Core/Src/astra_core.s
+Core/Src/astra/app/astra_app.s: Core/Src/astra/app/astra_app.cpp.s
+.PHONY : Core/Src/astra/app/astra_app.s
 
 # target to generate assembly for a file
-Core/Src/astra_core.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.s
-.PHONY : Core/Src/astra_core.cpp.s
+Core/Src/astra/app/astra_app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.s
+.PHONY : Core/Src/astra/app/astra_app.cpp.s
 
-Core/Src/astra_driver.obj: Core/Src/astra_driver.cpp.obj
-.PHONY : Core/Src/astra_driver.obj
+Core/Src/astra/ui/launcher.obj: Core/Src/astra/ui/launcher.cpp.obj
+.PHONY : Core/Src/astra/ui/launcher.obj
 
 # target to build an object file
-Core/Src/astra_driver.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
-.PHONY : Core/Src/astra_driver.cpp.obj
+Core/Src/astra/ui/launcher.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+.PHONY : Core/Src/astra/ui/launcher.cpp.obj
 
-Core/Src/astra_driver.i: Core/Src/astra_driver.cpp.i
-.PHONY : Core/Src/astra_driver.i
+Core/Src/astra/ui/launcher.i: Core/Src/astra/ui/launcher.cpp.i
+.PHONY : Core/Src/astra/ui/launcher.i
 
 # target to preprocess a source file
-Core/Src/astra_driver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.i
-.PHONY : Core/Src/astra_driver.cpp.i
+Core/Src/astra/ui/launcher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.i
+.PHONY : Core/Src/astra/ui/launcher.cpp.i
 
-Core/Src/astra_driver.s: Core/Src/astra_driver.cpp.s
-.PHONY : Core/Src/astra_driver.s
+Core/Src/astra/ui/launcher.s: Core/Src/astra/ui/launcher.cpp.s
+.PHONY : Core/Src/astra/ui/launcher.s
 
 # target to generate assembly for a file
-Core/Src/astra_driver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.s
-.PHONY : Core/Src/astra_driver.cpp.s
+Core/Src/astra/ui/launcher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.s
+.PHONY : Core/Src/astra/ui/launcher.cpp.s
 
-Core/Src/astra_printer.obj: Core/Src/astra_printer.cpp.obj
-.PHONY : Core/Src/astra_printer.obj
+Core/Src/astra/ui/page.obj: Core/Src/astra/ui/page.cpp.obj
+.PHONY : Core/Src/astra/ui/page.obj
 
 # target to build an object file
-Core/Src/astra_printer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
-.PHONY : Core/Src/astra_printer.cpp.obj
+Core/Src/astra/ui/page.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.obj
+.PHONY : Core/Src/astra/ui/page.cpp.obj
 
-Core/Src/astra_printer.i: Core/Src/astra_printer.cpp.i
-.PHONY : Core/Src/astra_printer.i
+Core/Src/astra/ui/page.i: Core/Src/astra/ui/page.cpp.i
+.PHONY : Core/Src/astra/ui/page.i
 
 # target to preprocess a source file
-Core/Src/astra_printer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.i
-.PHONY : Core/Src/astra_printer.cpp.i
+Core/Src/astra/ui/page.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.i
+.PHONY : Core/Src/astra/ui/page.cpp.i
 
-Core/Src/astra_printer.s: Core/Src/astra_printer.cpp.s
-.PHONY : Core/Src/astra_printer.s
+Core/Src/astra/ui/page.s: Core/Src/astra/ui/page.cpp.s
+.PHONY : Core/Src/astra/ui/page.s
 
 # target to generate assembly for a file
-Core/Src/astra_printer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.s
-.PHONY : Core/Src/astra_printer.cpp.s
+Core/Src/astra/ui/page.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.s
+.PHONY : Core/Src/astra/ui/page.cpp.s
+
+Core/Src/astra/ui/render/render.obj: Core/Src/astra/ui/render/render.cpp.obj
+.PHONY : Core/Src/astra/ui/render/render.obj
+
+# target to build an object file
+Core/Src/astra/ui/render/render.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.obj
+.PHONY : Core/Src/astra/ui/render/render.cpp.obj
+
+Core/Src/astra/ui/render/render.i: Core/Src/astra/ui/render/render.cpp.i
+.PHONY : Core/Src/astra/ui/render/render.i
+
+# target to preprocess a source file
+Core/Src/astra/ui/render/render.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.i
+.PHONY : Core/Src/astra/ui/render/render.cpp.i
+
+Core/Src/astra/ui/render/render.s: Core/Src/astra/ui/render/render.cpp.s
+.PHONY : Core/Src/astra/ui/render/render.s
+
+# target to generate assembly for a file
+Core/Src/astra/ui/render/render.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.s
+.PHONY : Core/Src/astra/ui/render/render.cpp.s
+
+Core/Src/astra/ui/widget.obj: Core/Src/astra/ui/widget.cpp.obj
+.PHONY : Core/Src/astra/ui/widget.obj
+
+# target to build an object file
+Core/Src/astra/ui/widget.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.obj
+.PHONY : Core/Src/astra/ui/widget.cpp.obj
+
+Core/Src/astra/ui/widget.i: Core/Src/astra/ui/widget.cpp.i
+.PHONY : Core/Src/astra/ui/widget.i
+
+# target to preprocess a source file
+Core/Src/astra/ui/widget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.i
+.PHONY : Core/Src/astra/ui/widget.cpp.i
+
+Core/Src/astra/ui/widget.s: Core/Src/astra/ui/widget.cpp.s
+.PHONY : Core/Src/astra/ui/widget.s
+
+# target to generate assembly for a file
+Core/Src/astra/ui/widget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.s
+.PHONY : Core/Src/astra/ui/widget.cpp.s
 
 Core/Src/dma.obj: Core/Src/dma.c.obj
 .PHONY : Core/Src/dma.obj
@@ -1207,6 +1255,78 @@ Core/Src/gpio.s: Core/Src/gpio.c.s
 Core/Src/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/gpio.c.s
 .PHONY : Core/Src/gpio.c.s
+
+Core/Src/graph_lib/graph_lib.obj: Core/Src/graph_lib/graph_lib.cpp.obj
+.PHONY : Core/Src/graph_lib/graph_lib.obj
+
+# target to build an object file
+Core/Src/graph_lib/graph_lib.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.obj
+.PHONY : Core/Src/graph_lib/graph_lib.cpp.obj
+
+Core/Src/graph_lib/graph_lib.i: Core/Src/graph_lib/graph_lib.cpp.i
+.PHONY : Core/Src/graph_lib/graph_lib.i
+
+# target to preprocess a source file
+Core/Src/graph_lib/graph_lib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.i
+.PHONY : Core/Src/graph_lib/graph_lib.cpp.i
+
+Core/Src/graph_lib/graph_lib.s: Core/Src/graph_lib/graph_lib.cpp.s
+.PHONY : Core/Src/graph_lib/graph_lib.s
+
+# target to generate assembly for a file
+Core/Src/graph_lib/graph_lib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.s
+.PHONY : Core/Src/graph_lib/graph_lib.cpp.s
+
+Core/Src/hal/key/key.obj: Core/Src/hal/key/key.cpp.obj
+.PHONY : Core/Src/hal/key/key.obj
+
+# target to build an object file
+Core/Src/hal/key/key.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.obj
+.PHONY : Core/Src/hal/key/key.cpp.obj
+
+Core/Src/hal/key/key.i: Core/Src/hal/key/key.cpp.i
+.PHONY : Core/Src/hal/key/key.i
+
+# target to preprocess a source file
+Core/Src/hal/key/key.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.i
+.PHONY : Core/Src/hal/key/key.cpp.i
+
+Core/Src/hal/key/key.s: Core/Src/hal/key/key.cpp.s
+.PHONY : Core/Src/hal/key/key.s
+
+# target to generate assembly for a file
+Core/Src/hal/key/key.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.s
+.PHONY : Core/Src/hal/key/key.cpp.s
+
+Core/Src/hal/oled/oled.obj: Core/Src/hal/oled/oled.cpp.obj
+.PHONY : Core/Src/hal/oled/oled.obj
+
+# target to build an object file
+Core/Src/hal/oled/oled.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.obj
+.PHONY : Core/Src/hal/oled/oled.cpp.obj
+
+Core/Src/hal/oled/oled.i: Core/Src/hal/oled/oled.cpp.i
+.PHONY : Core/Src/hal/oled/oled.i
+
+# target to preprocess a source file
+Core/Src/hal/oled/oled.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.i
+.PHONY : Core/Src/hal/oled/oled.cpp.i
+
+Core/Src/hal/oled/oled.s: Core/Src/hal/oled/oled.cpp.s
+.PHONY : Core/Src/hal/oled/oled.s
+
+# target to generate assembly for a file
+Core/Src/hal/oled/oled.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.s
+.PHONY : Core/Src/hal/oled/oled.cpp.s
 
 Core/Src/main.obj: Core/Src/main.c.obj
 .PHONY : Core/Src/main.obj
@@ -1328,29 +1448,29 @@ Core/Src/syscalls.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.s
 .PHONY : Core/Src/syscalls.c.s
 
-Core/Src/system.obj: Core/Src/system.cpp.obj
-.PHONY : Core/Src/system.obj
+Core/Src/system/system.obj: Core/Src/system/system.cpp.obj
+.PHONY : Core/Src/system/system.obj
 
 # target to build an object file
-Core/Src/system.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/system.cpp.obj
-.PHONY : Core/Src/system.cpp.obj
+Core/Src/system/system.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.obj
+.PHONY : Core/Src/system/system.cpp.obj
 
-Core/Src/system.i: Core/Src/system.cpp.i
-.PHONY : Core/Src/system.i
+Core/Src/system/system.i: Core/Src/system/system.cpp.i
+.PHONY : Core/Src/system/system.i
 
 # target to preprocess a source file
-Core/Src/system.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/system.cpp.i
-.PHONY : Core/Src/system.cpp.i
+Core/Src/system/system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.i
+.PHONY : Core/Src/system/system.cpp.i
 
-Core/Src/system.s: Core/Src/system.cpp.s
-.PHONY : Core/Src/system.s
+Core/Src/system/system.s: Core/Src/system/system.cpp.s
+.PHONY : Core/Src/system/system.s
 
 # target to generate assembly for a file
-Core/Src/system.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/system.cpp.s
-.PHONY : Core/Src/system.cpp.s
+Core/Src/system/system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.s
+.PHONY : Core/Src/system/system.cpp.s
 
 Core/Src/system_stm32f1xx.obj: Core/Src/system_stm32f1xx.c.obj
 .PHONY : Core/Src/system_stm32f1xx.obj
@@ -1849,21 +1969,36 @@ help:
 	@echo ... 3rdParty/u8g2/u8x8_u8toa.obj
 	@echo ... 3rdParty/u8g2/u8x8_u8toa.i
 	@echo ... 3rdParty/u8g2/u8x8_u8toa.s
-	@echo ... Core/Src/astra_core.obj
-	@echo ... Core/Src/astra_core.i
-	@echo ... Core/Src/astra_core.s
-	@echo ... Core/Src/astra_driver.obj
-	@echo ... Core/Src/astra_driver.i
-	@echo ... Core/Src/astra_driver.s
-	@echo ... Core/Src/astra_printer.obj
-	@echo ... Core/Src/astra_printer.i
-	@echo ... Core/Src/astra_printer.s
+	@echo ... Core/Src/astra/app/astra_app.obj
+	@echo ... Core/Src/astra/app/astra_app.i
+	@echo ... Core/Src/astra/app/astra_app.s
+	@echo ... Core/Src/astra/ui/launcher.obj
+	@echo ... Core/Src/astra/ui/launcher.i
+	@echo ... Core/Src/astra/ui/launcher.s
+	@echo ... Core/Src/astra/ui/page.obj
+	@echo ... Core/Src/astra/ui/page.i
+	@echo ... Core/Src/astra/ui/page.s
+	@echo ... Core/Src/astra/ui/render/render.obj
+	@echo ... Core/Src/astra/ui/render/render.i
+	@echo ... Core/Src/astra/ui/render/render.s
+	@echo ... Core/Src/astra/ui/widget.obj
+	@echo ... Core/Src/astra/ui/widget.i
+	@echo ... Core/Src/astra/ui/widget.s
 	@echo ... Core/Src/dma.obj
 	@echo ... Core/Src/dma.i
 	@echo ... Core/Src/dma.s
 	@echo ... Core/Src/gpio.obj
 	@echo ... Core/Src/gpio.i
 	@echo ... Core/Src/gpio.s
+	@echo ... Core/Src/graph_lib/graph_lib.obj
+	@echo ... Core/Src/graph_lib/graph_lib.i
+	@echo ... Core/Src/graph_lib/graph_lib.s
+	@echo ... Core/Src/hal/key/key.obj
+	@echo ... Core/Src/hal/key/key.i
+	@echo ... Core/Src/hal/key/key.s
+	@echo ... Core/Src/hal/oled/oled.obj
+	@echo ... Core/Src/hal/oled/oled.i
+	@echo ... Core/Src/hal/oled/oled.s
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s
@@ -1879,9 +2014,9 @@ help:
 	@echo ... Core/Src/syscalls.obj
 	@echo ... Core/Src/syscalls.i
 	@echo ... Core/Src/syscalls.s
-	@echo ... Core/Src/system.obj
-	@echo ... Core/Src/system.i
-	@echo ... Core/Src/system.s
+	@echo ... Core/Src/system/system.obj
+	@echo ... Core/Src/system/system.i
+	@echo ... Core/Src/system/system.s
 	@echo ... Core/Src/system_stm32f1xx.obj
 	@echo ... Core/Src/system_stm32f1xx.i
 	@echo ... Core/Src/system_stm32f1xx.s

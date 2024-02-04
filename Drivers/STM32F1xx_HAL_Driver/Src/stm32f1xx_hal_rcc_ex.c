@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f1xx_hal_rcc_ex.c
   * @author  MCD Application Team
-  * @brief   Extended RCC HAL module driver.
+  * @brief   Extended RCC HAL module hardware.
   *          This file provides firmware functions to manage the following
   *          functionalities RCC extension peripheral:
   *           + Extended Peripheral Control functions
@@ -29,7 +29,7 @@
 #ifdef HAL_RCC_MODULE_ENABLED
 
 /** @defgroup RCCEx RCCEx
-  * @brief RCC Extension HAL module driver.
+  * @brief RCC Extension HAL module hardware.
   * @{
   */
 

@@ -172,7 +172,7 @@ extern "C" {
 #define COMP_INVERTINGINPUT_DAC2        COMP_INPUT_MINUS_DAC1_CH2
 #define COMP_INVERTINGINPUT_IO1         COMP_INPUT_MINUS_IO1
 #if defined(STM32L0)
-/* Issue fixed on STM32L0 COMP driver: only 2 dedicated IO (IO1 and IO2),     */
+/* Issue fixed on STM32L0 COMP hardware: only 2 dedicated IO (IO1 and IO2),     */
 /* IO2 was wrongly assigned to IO shared with DAC and IO3 was corresponding   */
 /* to the second dedicated IO (only for COMP2).                               */
 #define COMP_INVERTINGINPUT_IO2         COMP_INPUT_MINUS_DAC1_CH2

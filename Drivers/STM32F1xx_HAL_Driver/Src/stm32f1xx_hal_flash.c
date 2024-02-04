@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f1xx_hal_flash.c
   * @author  MCD Application Team
-  * @brief   FLASH HAL module driver.
+  * @brief   FLASH HAL module hardware.
   *          This file provides firmware functions to manage the following 
   *          functionalities of the internal FLASH memory:
   *           + Program operations functions
@@ -28,10 +28,10 @@
       (+) Option Bytes programming
 
 
-                     ##### How to use this driver #####
+                     ##### How to use this hardware #####
   ==============================================================================
   [..]                             
-      This driver provides functions and macros to configure and program the FLASH 
+      This hardware provides functions and macros to configure and program the FLASH
       memory of all STM32F1xx devices.
     
       (#) FLASH Memory I/O Programming functions: this group includes all needed
@@ -57,7 +57,7 @@
         (++) Wait for last FLASH operation according to its status
         (++) Get error flag status
 
-  [..] In addition to these function, this driver includes a set of macros allowing
+  [..] In addition to these function, this hardware includes a set of macros allowing
        to handle the following operations:
       
       (+) Set/Get the latency
@@ -89,7 +89,7 @@
 #ifdef HAL_FLASH_MODULE_ENABLED
 
 /** @defgroup FLASH FLASH
-  * @brief FLASH HAL module driver
+  * @brief FLASH HAL module hardware
   * @{
   */
 

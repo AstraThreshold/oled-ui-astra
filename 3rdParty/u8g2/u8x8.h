@@ -45,7 +45,7 @@
     U8X8_MSG_DISPLAY_SET_CONTRAST
     U8X8_MSG_DISPLAY_DRAW_TILE
 
-  A display driver may decided to breakdown these messages to a lower level interface or
+  A display hardware may decided to breakdown these messages to a lower level interface or
   implement this functionality directly.
   
 

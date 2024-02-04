@@ -2,28 +2,27 @@
 // Created by Fir on 2024/1/21.
 //
 
+#pragma once
 #ifndef ASTRA_ASTRA__H
 #define ASTRA_ASTRA__H
 
-#include "astra_driver.h"
 #include "cstdint"
 #include "string"
-#include "astra_printer.h"
 #include <vector>
+#include "render/render.h"
+#include "functional"
 
 namespace astra {
 /**
  * @brief 页面类 以树型数据结构来管理各页面
  */
-class Page : PagePrinter {
-private:
+class Page {
+public:
   Page *parentPage;                 //指向父节点 根节点无父节点 此指针为空
 
   /**绘图域**/
-  PagePrinter* printer;
-  typedef void (PagePrinter::*pageType)();  //指向PagePrinter类中的无形参void型函数的指针类型
+  typedef std::function<void()> pageType;
   pageType selfType;
-  //void (PagePrinter::*selfType)();
   /**绘图域**/
 
   /**数据域**/
@@ -38,43 +37,32 @@ private:
   bool isMainMenu;
   /**识别域**/
 
-public:
-  //构造函数可以有很多种 相当于多态
-  //driver类是此类的父类
   Page* findPage(Page* _rootPage, const Page* _lookingFor);
 
   explicit Page(pageType _type);   //建立首页 即根节点
-
   Page(const std::string& _title, Page *_parentPage, pageType _type);    //列表页
   Page(const std::string& _title, const std::vector<uint8_t>& _pic, Page *_parentPage, pageType _type);  //磁贴页
-};
 
-class Widget : WidgetPrinter {
-public:
-  typedef void (WidgetPrinter::*pageType)();
-};
+  //判断两个std::function是否相等
+  template <typename R, typename... Args>
+  bool isSame(std::function<R(Args...)> const& _f1, std::function<R(Args...)> const& _f2)
+  {
+    // 检查两个std::function是否都有目标
+    if(!_f1 || !_f2)
+      return false;
 
-/**
- * @brief UI调度器 决定该显示哪个 显示来自哪里的
- * @brief page创建完毕后负责梳理出来指向架构
- * @brief **ui的index是树模式 从后面添加 从前面显示**
- * 主菜单是根结点
- */
-class UIScheduler {
-private:
-  Page* pageDisplay = nullptr;    //page displaying right now
+    // 检查两个std::function的目标类型是否相同
+    if(_f1.target_type() != _f2.target_type())
+      return false;
 
-  uint8_t pageInit{};
-  uint8_t uiState{};
-  uint8_t fadeFlag{};
-
-public:
-
-  void init();
-
-  void astraKernelStart(Page *_root);
-
+    // 获取并比较两个std::function的目标
+    typedef R(funcType)(Args...);
+    funcType* _p1 = _f1.template target<funcType>();
+    funcType* _p2 = _f2.template target<funcType>();
+    if (_p1 == nullptr || _p2 == nullptr)
+      return false; // 一个或者两个std::function没有目标
+    return _p1 == _p2;
+  }
 };
 }
-
 #endif //ASTRA_ASTRA__H

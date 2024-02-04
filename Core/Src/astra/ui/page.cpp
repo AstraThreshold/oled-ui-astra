@@ -11,11 +11,7 @@
 //驱动层 - 界面层（包括各种列表 磁铁 复选框 侧边栏 弹窗等） - 处理层（各种坐标的变换等）
 
 //传进去的有三个东西 第一个是文字（要显示的东西） 第二个是类别（普通列表 跳转列表 复选框） 第三个是特征向量（指向复选框和弹窗对应的参数 要跳转的地方等）
-
-#include "vector"
-#include "astra_core.h"
-
-#include "string"
+#include "page.h"
 
 /**
  *     ·  ·     ·   ·
@@ -52,8 +48,7 @@ Page* Page::findPage(Page* _rootPage, const Page* _lookingFor) {  //NOLINT
  * @brief init a new root node(main menu).
  */
 Page::Page(pageType _type) {
-  printer = new PagePrinter;
-  this->selfType = _type;
+  this->selfType = std::move(_type);
 
   this->parentPage = nullptr;
 
@@ -74,9 +69,8 @@ Page::Page(pageType _type) {
  * @note the title will show in the _parentPage.
  */
 Page::Page(const std::string& _title, Page *_parentPage, pageType _type) {
-  if (_parentPage->selfType == &PagePrinter::list) {
-    printer = new PagePrinter;
-    this->selfType = _type;
+  if (isSame(_parentPage->selfType, render::list)) {
+    this->selfType = std::move(_type);
 
     this->parentPage = _parentPage;
     _parentPage->childPage.push_back(this);   //connect each other.
@@ -101,9 +95,9 @@ Page::Page(const std::string& _title, Page *_parentPage, pageType _type) {
  * @param _parentPage the parent(previous) page of new page.
  */
 Page::Page(const std::string& _title, const std::vector<uint8_t>& _pic, Page *_parentPage, pageType _type) {
-  if (_parentPage->selfType == &PagePrinter::tile) {
-    printer = new PagePrinter;
-    this->selfType = _type;
+  if (isSame(_parentPage->selfType, render::tile)) {
+
+    this->selfType = std::move(_type);
 
     this->parentPage = _parentPage;
     _parentPage->childPage.push_back(this);   //connect each other.
@@ -119,36 +113,5 @@ Page::Page(const std::string& _title, const std::vector<uint8_t>& _pic, Page *_p
     this->childPage = {};
     this->isMainMenu = false;
   }
-}
-
-/**
- * @brief add widget for certain item.
- * @todo waiting to be realized
- *
- * @param _page pointer to the page needs to add widget.
- * @param _text the item needs to add widget.
- * @param _widgetType 1: check box | 2: window | 3: side bar
- * @param _value the value widget will change.
- */
-//Widget Widget::widget() {
-//  //_page->
-//}
-
-
-/**
- * @brief init the framework
- */
-void UIScheduler::init() {
-
-}
-
-/**
- * @brief start astra ui framework.
- *
- * @todo 找之前firmware的各种proc的共同点 转而使用指针等来实现
- * @param _root pointer to root node of page tree.
- */
-void UIScheduler::astraKernelStart(Page *_root) {
-
 }
 }

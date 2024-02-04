@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f1xx_hal_gpio.c
   * @author  MCD Application Team
-  * @brief   GPIO HAL module driver.
+  * @brief   GPIO HAL module hardware.
   *          This file provides firmware functions to manage the following
   *          functionalities of the General Purpose Input/Output (GPIO) peripheral:
   *           + Initialization and de-initialization functions
@@ -57,7 +57,7 @@
   the corresponding trigger event (rising or falling or both). Each line can also masked
   independently. A pending register maintains the status line of the interrupt requests
 
-                     ##### How to use this driver #####
+                     ##### How to use this hardware #####
   ==============================================================================
  [..]
    (#) Enable the GPIO APB2 clock using the following function : __HAL_RCC_GPIOx_CLK_ENABLE().
@@ -109,7 +109,7 @@
   */
 
 /** @defgroup GPIO GPIO
-  * @brief GPIO HAL module driver
+  * @brief GPIO HAL module hardware
   * @{
   */
 

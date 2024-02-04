@@ -30,7 +30,7 @@
 
 /* ########################## Module Selection ############################## */
 /**
-  * @brief This is the list of modules to be used in the HAL driver
+  * @brief This is the list of modules to be used in the HAL hardware
   */
 
 #define HAL_MODULE_ENABLED
@@ -176,7 +176,7 @@
 #define MAC_ADDR4   0U
 #define MAC_ADDR5   0U
 
-/* Definition of the Ethernet driver buffers size and count */
+/* Definition of the Ethernet hardware buffers size and count */
 #define ETH_RX_BUF_SIZE                ETH_MAX_PACKET_SIZE /* buffer size for receive               */
 #define ETH_TX_BUF_SIZE                ETH_MAX_PACKET_SIZE /* buffer size for transmit              */
 #define ETH_RXBUFNB                    8U       /* 4 Rx buffers of size ETH_RX_BUF_SIZE  */
@@ -223,8 +223,8 @@
 /* ################## SPI peripheral configuration ########################## */
 
 /* CRC FEATURE: Use to activate CRC feature inside HAL SPI Driver
-* Activated: CRC code is present inside driver
-* Deactivated: CRC code cleaned from driver
+* Activated: CRC code is present inside hardware
+* Deactivated: CRC code cleaned from hardware
 */
 
 #define USE_SPI_CRC                     0U

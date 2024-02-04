@@ -2,12 +2,13 @@
 // Created by Fir on 2024/1/25.
 //
 
+#pragma once
 #ifndef ASTRA_CORE_SRC_SYSTEM_H_
 #define ASTRA_CORE_SRC_SYSTEM_H_
 
 #include "cstdint"
 
-namespace system {
+namespace sys {
 
 /**
  * @brief global class of all system param.

@@ -606,7 +606,7 @@ uint8_t u8x8_cad_ssd13xx_fast_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, vo
 
 
 
-/* the st75256 i2c driver is a copy of the ssd13xx driver, but with arg=1 */
+/* the st75256 i2c hardware is a copy of the ssd13xx hardware, but with arg=1 */
 /* modified from cad001 (ssd13xx) to cad011 */
 uint8_t u8x8_cad_st75256_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *arg_ptr)
 {
@@ -626,7 +626,7 @@ uint8_t u8x8_cad_st75256_i2c(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, void *a
       u8x8_byte_EndTransfer(u8x8);
       break;
     case U8X8_MSG_CAD_SEND_DATA:
-      /* see ssd13xx driver */
+      /* see ssd13xx hardware */
       p = arg_ptr;
        while( arg_int > 24 )
       {

@@ -8,17 +8,17 @@ ASM_DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
 
 ASM_INCLUDES = -ID:\Projects\astra\Core\Inc -ID:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\Projects\astra\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\Projects\astra\Drivers\CMSIS\Include
 
-ASM_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -Og -g
+ASM_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -lstdc++ -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -Og -g
 
 C_DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
 
 C_INCLUDES = -ID:\Projects\astra\Core\Inc -ID:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\Projects\astra\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\Projects\astra\Drivers\CMSIS\Include
 
-C_FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
+C_FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -lstdc++ -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
 
 CXX_DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
 
 CXX_INCLUDES = -ID:\Projects\astra\Core\Inc -ID:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\Projects\astra\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\Projects\astra\Drivers\CMSIS\Include
 
-CXX_FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
+CXX_FLAGS = -g -std=gnu++20 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -lstdc++ -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
 

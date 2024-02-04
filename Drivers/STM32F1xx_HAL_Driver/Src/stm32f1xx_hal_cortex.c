@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f1xx_hal_cortex.c
   * @author  MCD Application Team
-  * @brief   CORTEX HAL module driver.
+  * @brief   CORTEX HAL module hardware.
   *          This file provides firmware functions to manage the following 
   *          functionalities of the CORTEX:
   *           + Initialization and de-initialization functions
@@ -10,11 +10,11 @@
   *
   @verbatim  
   ==============================================================================
-                        ##### How to use this driver #####
+                        ##### How to use this hardware #####
   ==============================================================================
 
     [..]  
-    *** How to configure Interrupts using CORTEX HAL driver ***
+    *** How to configure Interrupts using CORTEX HAL hardware ***
     ===========================================================
     [..]     
     This section provides functions allowing to configure the NVIC interrupts (IRQ).
@@ -35,7 +35,7 @@
         (+@) Lowest hardware priority (IRQ number)
  
     [..]  
-    *** How to configure Systick using CORTEX HAL driver ***
+    *** How to configure Systick using CORTEX HAL hardware ***
     ========================================================
     [..]
     Setup SysTick Timer for time base.
@@ -86,7 +86,7 @@
   */
 
 /** @defgroup CORTEX CORTEX
-  * @brief CORTEX HAL module driver
+  * @brief CORTEX HAL module hardware
   * @{
   */
 
@@ -112,7 +112,7 @@
               ##### Initialization and de-initialization functions #####
   ==============================================================================
     [..]
-      This section provides the CORTEX HAL driver functions allowing to configure Interrupts
+      This section provides the CORTEX HAL hardware functions allowing to configure Interrupts
       Systick functionalities 
 
 @endverbatim

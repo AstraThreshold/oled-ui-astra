@@ -109,6 +109,10 @@
 				},
 				{
 					"backtrace" : 6,
+					"fragment" : "-lstdc++"
+				},
+				{
+					"backtrace" : 6,
 					"fragment" : "-ffunction-sections"
 				},
 				{
@@ -217,28 +221,28 @@
 				42,
 				43,
 				44,
-				57,
-				59,
-				60,
-				61,
 				62,
 				63,
-				64,
-				67,
-				112,
-				113,
-				114,
-				115,
-				116,
-				117,
-				118,
-				119,
-				120,
-				121,
-				122,
-				123,
-				124,
-				125
+				73,
+				74,
+				75,
+				76,
+				77,
+				80,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138
 			]
 		},
 		{
@@ -258,6 +262,10 @@
 				{
 					"backtrace" : 5,
 					"fragment" : "-mthumb-interwork"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-lstdc++"
 				},
 				{
 					"backtrace" : 6,
@@ -330,9 +338,14 @@
 			"sourceIndexes" : 
 			[
 				51,
-				53,
-				55,
-				65
+				54,
+				56,
+				58,
+				60,
+				64,
+				67,
+				70,
+				78
 			]
 		},
 		{
@@ -352,6 +365,10 @@
 				{
 					"backtrace" : 5,
 					"fragment" : "-mthumb-interwork"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-lstdc++"
 				},
 				{
 					"backtrace" : 6,
@@ -423,7 +440,7 @@
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				126
+				139
 			]
 		}
 	],
@@ -527,31 +544,36 @@
 				43,
 				44,
 				51,
-				53,
-				55,
-				57,
-				59,
+				54,
+				56,
+				58,
 				60,
-				61,
 				62,
 				63,
 				64,
-				65,
 				67,
-				112,
-				113,
-				114,
-				115,
-				116,
-				117,
-				118,
-				119,
-				120,
-				121,
-				122,
-				123,
-				124,
-				125
+				70,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				80,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138
 			]
 		},
 		{
@@ -570,26 +592,21 @@
 				49,
 				50,
 				52,
-				54,
-				56,
-				58,
+				53,
+				55,
+				57,
+				59,
+				61,
+				65,
 				66,
 				68,
 				69,
-				70,
+				71,
 				72,
-				73,
-				74,
-				75,
-				76,
-				77,
-				78,
 				79,
-				80,
 				81,
 				82,
 				83,
-				84,
 				85,
 				86,
 				87,
@@ -598,6 +615,7 @@
 				90,
 				91,
 				92,
+				93,
 				94,
 				95,
 				96,
@@ -610,22 +628,34 @@
 				103,
 				104,
 				105,
-				106,
 				107,
 				108,
 				109,
-				110
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				71,
-				93,
-				111,
-				126,
-				127
+				84,
+				106,
+				124,
+				139,
+				140
 			]
 		}
 	],
@@ -929,34 +959,61 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
-			"path" : "Core/Src/astra_core.cpp",
+			"path" : "Core/Src/astra/app/astra_app.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Core/Src/astra_core.h",
+			"path" : "Core/Src/astra/app/astra_app.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Src/astra/app/astra_app_i.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
-			"path" : "Core/Src/astra_driver.cpp",
+			"path" : "Core/Src/astra/ui/launcher.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Core/Src/astra_driver.h",
+			"path" : "Core/Src/astra/ui/launcher.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
-			"path" : "Core/Src/astra_printer.cpp",
+			"path" : "Core/Src/astra/ui/page.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Core/Src/astra_printer.h",
+			"path" : "Core/Src/astra/ui/page.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/astra/ui/render/render.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Src/astra/ui/render/render.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/astra/ui/widget.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Src/astra/ui/widget.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -967,14 +1024,57 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Core/Src/driver_i.h",
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/gpio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/graph_lib/graph_lib.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Src/graph_lib/graph_lib.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/gpio.c",
+			"path" : "Core/Src/graph_lib/graph_lib_i.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/key/key.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Src/hal/key/key.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Src/hal/key/key_i.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/oled/oled.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Src/hal/oled/oled.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Src/hal/oled/oled_i.h",
+			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
@@ -1009,12 +1109,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
-			"path" : "Core/Src/system.cpp",
+			"path" : "Core/Src/system/system.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Core/Src/system.h",
+			"path" : "Core/Src/system/system.h",
 			"sourceGroupIndex" : 1
 		},
 		{

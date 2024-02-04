@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f1xx_hal_tim.c
   * @author  MCD Application Team
-  * @brief   TIM HAL module driver.
+  * @brief   TIM HAL module hardware.
   *          This file provides firmware functions to manage the following
   *          functionalities of the Timer (TIM) peripheral:
   *           + TIM Time Base Initialization
@@ -57,7 +57,7 @@
             several timers together.
        (#) Supports incremental encoder for positioning purposes
 
-            ##### How to use this driver #####
+            ##### How to use this hardware #####
   ==============================================================================
     [..]
      (#) Initialize the TIM low level resources by implementing the following functions
@@ -82,7 +82,7 @@
          any start function.
 
      (#) Configure the TIM in the desired functioning mode using one of the
-       Initialization function of this driver:
+       Initialization function of this hardware:
        (++) HAL_TIM_Base_Init: to use the Timer to generate a simple time base
        (++) HAL_TIM_OC_Init and HAL_TIM_OC_ConfigChannel: to use the Timer to generate an
             Output Compare signal.
@@ -111,7 +111,7 @@
 
   [..]
   The compilation define  USE_HAL_TIM_REGISTER_CALLBACKS when set to 1
-  allows the user to configure dynamically the driver callbacks.
+  allows the user to configure dynamically the hardware callbacks.
 
   [..]
   Use Function HAL_TIM_RegisterCallback() to register a callback.
@@ -190,7 +190,7 @@ all interrupt callbacks are set to the corresponding weak functions:
   */
 
 /** @defgroup TIM TIM
-  * @brief TIM HAL module driver
+  * @brief TIM HAL module hardware
   * @{
   */
 

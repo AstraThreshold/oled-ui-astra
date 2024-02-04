@@ -247,31 +247,70 @@
 		<Unit filename="D:/Projects/astra/Core/Inc/stm32f1xx_it.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra_core.cpp">
+		<Unit filename="D:/Projects/astra/Core/Src/astra/app/astra_app.cpp">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra_core.h">
+		<Unit filename="D:/Projects/astra/Core/Src/astra/app/astra_app.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra_driver.cpp">
+		<Unit filename="D:/Projects/astra/Core/Src/astra/app/astra_app_i.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra_driver.h">
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/launcher.cpp">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra_printer.cpp">
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/launcher.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra_printer.h">
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/page.cpp">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/page.h">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/render/render.cpp">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/render/render.h">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/widget.cpp">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/widget.h">
 			<Option target="astra.elf"/>
 		</Unit>
 		<Unit filename="D:/Projects/astra/Core/Src/dma.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/driver_i.h">
+		<Unit filename="D:/Projects/astra/Core/Src/gpio.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/gpio.c">
+		<Unit filename="D:/Projects/astra/Core/Src/graph_lib/graph_lib.cpp">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/graph_lib/graph_lib.h">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/graph_lib/graph_lib_i.h">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/hal/key/key.cpp">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/hal/key/key.h">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/hal/key/key_i.h">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/hal/oled/oled.cpp">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/hal/oled/oled.h">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/hal/oled/oled_i.h">
 			<Option target="astra.elf"/>
 		</Unit>
 		<Unit filename="D:/Projects/astra/Core/Src/main.c">
@@ -289,10 +328,10 @@
 		<Unit filename="D:/Projects/astra/Core/Src/syscalls.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/system.cpp">
+		<Unit filename="D:/Projects/astra/Core/Src/system/system.cpp">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/system.h">
+		<Unit filename="D:/Projects/astra/Core/Src/system/system.h">
 			<Option target="astra.elf"/>
 		</Unit>
 		<Unit filename="D:/Projects/astra/Core/Src/system_stm32f1xx.c">

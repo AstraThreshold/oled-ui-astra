@@ -628,52 +628,80 @@ CMakeFiles/astra.elf.dir/3rdParty/u8g2/u8x8_u8toa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/astra.elf.dir/3rdParty/u8g2/u8x8_u8toa.c.s"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Projects\astra\3rdParty\u8g2\u8x8_u8toa.c -o CMakeFiles\astra.elf.dir\3rdParty\u8g2\u8x8_u8toa.c.s
 
-CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
-CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj: D:/Projects/astra/Core/Src/astra_core.cpp
-CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\astra_core.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\astra_core.cpp.obj -c D:\Projects\astra\Core\Src\astra_core.cpp
+CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
+CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj: D:/Projects/astra/Core/Src/astra/app/astra_app.cpp
+CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\astra\app\astra_app.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\astra\app\astra_app.cpp.obj -c D:\Projects\astra\Core\Src\astra\app\astra_app.cpp
 
-CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.i"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\astra_core.cpp > CMakeFiles\astra.elf.dir\Core\Src\astra_core.cpp.i
+CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.i"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\astra\app\astra_app.cpp > CMakeFiles\astra.elf.dir\Core\Src\astra\app\astra_app.cpp.i
 
-CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.s"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\astra_core.cpp -o CMakeFiles\astra.elf.dir\Core\Src\astra_core.cpp.s
+CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.s"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\astra\app\astra_app.cpp -o CMakeFiles\astra.elf.dir\Core\Src\astra\app\astra_app.cpp.s
 
-CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
-CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj: D:/Projects/astra/Core/Src/astra_driver.cpp
-CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\astra_driver.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\astra_driver.cpp.obj -c D:\Projects\astra\Core\Src\astra_driver.cpp
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/launcher.cpp
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\astra\ui\launcher.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\astra\ui\launcher.cpp.obj -c D:\Projects\astra\Core\Src\astra\ui\launcher.cpp
 
-CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.i"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\astra_driver.cpp > CMakeFiles\astra.elf.dir\Core\Src\astra_driver.cpp.i
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.i"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\astra\ui\launcher.cpp > CMakeFiles\astra.elf.dir\Core\Src\astra\ui\launcher.cpp.i
 
-CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.s"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\astra_driver.cpp -o CMakeFiles\astra.elf.dir\Core\Src\astra_driver.cpp.s
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.s"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\astra\ui\launcher.cpp -o CMakeFiles\astra.elf.dir\Core\Src\astra\ui\launcher.cpp.s
 
-CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
-CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj: D:/Projects/astra/Core/Src/astra_printer.cpp
-CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\astra_printer.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\astra_printer.cpp.obj -c D:\Projects\astra\Core\Src\astra_printer.cpp
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/page.cpp
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.obj"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\astra\ui\page.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\astra\ui\page.cpp.obj -c D:\Projects\astra\Core\Src\astra\ui\page.cpp
 
-CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.i"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\astra_printer.cpp > CMakeFiles\astra.elf.dir\Core\Src\astra_printer.cpp.i
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.i"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\astra\ui\page.cpp > CMakeFiles\astra.elf.dir\Core\Src\astra\ui\page.cpp.i
 
-CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.s"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\astra_printer.cpp -o CMakeFiles\astra.elf.dir\Core\Src\astra_printer.cpp.s
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.s"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\astra\ui\page.cpp -o CMakeFiles\astra.elf.dir\Core\Src\astra\ui\page.cpp.s
+
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/render/render.cpp
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.obj"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\astra\ui\render\render.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\astra\ui\render\render.cpp.obj -c D:\Projects\astra\Core\Src\astra\ui\render\render.cpp
+
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.i"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\astra\ui\render\render.cpp > CMakeFiles\astra.elf.dir\Core\Src\astra\ui\render\render.cpp.i
+
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.s"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\astra\ui\render\render.cpp -o CMakeFiles\astra.elf.dir\Core\Src\astra\ui\render\render.cpp.s
+
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/widget.cpp
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.obj"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\astra\ui\widget.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\astra\ui\widget.cpp.obj -c D:\Projects\astra\Core\Src\astra\ui\widget.cpp
+
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.i"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\astra\ui\widget.cpp > CMakeFiles\astra.elf.dir\Core\Src\astra\ui\widget.cpp.i
+
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.s"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\astra\ui\widget.cpp -o CMakeFiles\astra.elf.dir\Core\Src\astra\ui\widget.cpp.s
 
 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj: D:/Projects/astra/Core/Src/dma.c
 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj -MF CMakeFiles\astra.elf.dir\Core\Src\dma.c.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\dma.c.obj -c D:\Projects\astra\Core\Src\dma.c
 
 CMakeFiles/astra.elf.dir/Core/Src/dma.c.i: cmake_force
@@ -687,7 +715,7 @@ CMakeFiles/astra.elf.dir/Core/Src/dma.c.s: cmake_force
 CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj: D:/Projects/astra/Core/Src/gpio.c
 CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj -MF CMakeFiles\astra.elf.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\gpio.c.obj -c D:\Projects\astra\Core\Src\gpio.c
 
 CMakeFiles/astra.elf.dir/Core/Src/gpio.c.i: cmake_force
@@ -698,10 +726,52 @@ CMakeFiles/astra.elf.dir/Core/Src/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/astra.elf.dir/Core/Src/gpio.c.s"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Projects\astra\Core\Src\gpio.c -o CMakeFiles\astra.elf.dir\Core\Src\gpio.c.s
 
+CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
+CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.obj: D:/Projects/astra/Core/Src/graph_lib/graph_lib.cpp
+CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.obj"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\graph_lib\graph_lib.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\graph_lib\graph_lib.cpp.obj -c D:\Projects\astra\Core\Src\graph_lib\graph_lib.cpp
+
+CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.i"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\graph_lib\graph_lib.cpp > CMakeFiles\astra.elf.dir\Core\Src\graph_lib\graph_lib.cpp.i
+
+CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.s"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\graph_lib\graph_lib.cpp -o CMakeFiles\astra.elf.dir\Core\Src\graph_lib\graph_lib.cpp.s
+
+CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
+CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.obj: D:/Projects/astra/Core/Src/hal/key/key.cpp
+CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.obj"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\hal\key\key.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\hal\key\key.cpp.obj -c D:\Projects\astra\Core\Src\hal\key\key.cpp
+
+CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.i"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\hal\key\key.cpp > CMakeFiles\astra.elf.dir\Core\Src\hal\key\key.cpp.i
+
+CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.s"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\hal\key\key.cpp -o CMakeFiles\astra.elf.dir\Core\Src\hal\key\key.cpp.s
+
+CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
+CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.obj: D:/Projects/astra/Core/Src/hal/oled/oled.cpp
+CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.obj"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\hal\oled\oled.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\hal\oled\oled.cpp.obj -c D:\Projects\astra\Core\Src\hal\oled\oled.cpp
+
+CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.i"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\hal\oled\oled.cpp > CMakeFiles\astra.elf.dir\Core\Src\hal\oled\oled.cpp.i
+
+CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.s"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\hal\oled\oled.cpp -o CMakeFiles\astra.elf.dir\Core\Src\hal\oled\oled.cpp.s
+
 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj: D:/Projects/astra/Core/Src/main.c
 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/astra.elf.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/astra.elf.dir/Core/Src/main.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\astra.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\main.c.obj -c D:\Projects\astra\Core\Src\main.c
 
 CMakeFiles/astra.elf.dir/Core/Src/main.c.i: cmake_force
@@ -715,7 +785,7 @@ CMakeFiles/astra.elf.dir/Core/Src/main.c.s: cmake_force
 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj: D:/Projects/astra/Core/Src/spi.c
 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj -MF CMakeFiles\astra.elf.dir\Core\Src\spi.c.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\spi.c.obj -c D:\Projects\astra\Core\Src\spi.c
 
 CMakeFiles/astra.elf.dir/Core/Src/spi.c.i: cmake_force
@@ -729,7 +799,7 @@ CMakeFiles/astra.elf.dir/Core/Src/spi.c.s: cmake_force
 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: D:/Projects/astra/Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\astra.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c D:\Projects\astra\Core\Src\stm32f1xx_hal_msp.c
 
 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.i: cmake_force
@@ -743,7 +813,7 @@ CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.s: cmake_force
 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj: D:/Projects/astra/Core/Src/stm32f1xx_it.c
 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\astra.elf.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\stm32f1xx_it.c.obj -c D:\Projects\astra\Core\Src\stm32f1xx_it.c
 
 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.i: cmake_force
@@ -757,7 +827,7 @@ CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.s: cmake_force
 CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj: D:/Projects/astra/Core/Src/syscalls.c
 CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\astra.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\syscalls.c.obj -c D:\Projects\astra\Core\Src\syscalls.c
 
 CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -768,24 +838,24 @@ CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.s"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Projects\astra\Core\Src\syscalls.c -o CMakeFiles\astra.elf.dir\Core\Src\syscalls.c.s
 
-CMakeFiles/astra.elf.dir/Core/Src/system.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
-CMakeFiles/astra.elf.dir/Core/Src/system.cpp.obj: D:/Projects/astra/Core/Src/system.cpp
-CMakeFiles/astra.elf.dir/Core/Src/system.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/system.cpp.obj"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/system.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\system.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\system.cpp.obj -c D:\Projects\astra\Core\Src\system.cpp
+CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
+CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.obj: D:/Projects/astra/Core/Src/system/system.cpp
+CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.obj"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\system\system.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\system\system.cpp.obj -c D:\Projects\astra\Core\Src\system\system.cpp
 
-CMakeFiles/astra.elf.dir/Core/Src/system.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/system.cpp.i"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\system.cpp > CMakeFiles\astra.elf.dir\Core\Src\system.cpp.i
+CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.i"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\system\system.cpp > CMakeFiles\astra.elf.dir\Core\Src\system\system.cpp.i
 
-CMakeFiles/astra.elf.dir/Core/Src/system.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/system.cpp.s"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\system.cpp -o CMakeFiles\astra.elf.dir\Core\Src\system.cpp.s
+CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.s"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\system\system.cpp -o CMakeFiles\astra.elf.dir\Core\Src\system\system.cpp.s
 
 CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj: D:/Projects/astra/Core/Src/system_stm32f1xx.c
 CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles\astra.elf.dir\Core\Src\system_stm32f1xx.c.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\system_stm32f1xx.c.obj -c D:\Projects\astra\Core\Src\system_stm32f1xx.c
 
 CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.i: cmake_force
@@ -799,7 +869,7 @@ CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.s: cmake_force
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d -o CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj -c D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c
 
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i: cmake_force
@@ -813,7 +883,7 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s: cma
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj -c D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c
 
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i: cmake_force
@@ -827,7 +897,7 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d -o CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj -c D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c
 
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i: cmake_force
@@ -841,7 +911,7 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s:
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d -o CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj -c D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c
 
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i: cmake_force
@@ -855,7 +925,7 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d -o CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj -c D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c
 
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i: cmake_force
@@ -869,7 +939,7 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj -c D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c
 
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i: cmake_force
@@ -883,7 +953,7 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj -c D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c
 
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i: cmake_force
@@ -897,7 +967,7 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj -c D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c
 
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i: cmake_force
@@ -911,7 +981,7 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj -c D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
 
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
@@ -925,7 +995,7 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s:
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj -c D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
 
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
@@ -939,7 +1009,7 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s:
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj -c D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
@@ -953,7 +1023,7 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj -MF CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c.obj.d -o CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c.obj -c D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c
 
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.i: cmake_force
@@ -967,7 +1037,7 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.s:
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d -o CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj -c D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
 
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i: cmake_force
@@ -981,7 +1051,7 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s:
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles\astra.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj -c D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i: cmake_force
@@ -994,7 +1064,7 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj: D:/Projects/astra/startup/startup_stm32f103xb.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building ASM object CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building ASM object CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\astra.elf.dir\startup\startup_stm32f103xb.s.obj -c D:\Projects\astra\startup\startup_stm32f103xb.s
 
 CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.i: cmake_force
@@ -1047,17 +1117,22 @@ astra_elf_OBJECTS = \
 "CMakeFiles/astra.elf.dir/3rdParty/u8g2/u8x8_string.c.obj" \
 "CMakeFiles/astra.elf.dir/3rdParty/u8g2/u8x8_u16toa.c.obj" \
 "CMakeFiles/astra.elf.dir/3rdParty/u8g2/u8x8_u8toa.c.obj" \
-"CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj" \
-"CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj" \
-"CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj" \
+"CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj" \
+"CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj" \
+"CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.obj" \
+"CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.obj" \
+"CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.obj" \
 "CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj" \
 "CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj" \
+"CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.obj" \
+"CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.obj" \
+"CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.obj" \
 "CMakeFiles/astra.elf.dir/Core/Src/main.c.obj" \
 "CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj" \
 "CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj" \
 "CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj" \
 "CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj" \
-"CMakeFiles/astra.elf.dir/Core/Src/system.cpp.obj" \
+"CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.obj" \
 "CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj" \
 "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj" \
 "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj" \
@@ -1118,17 +1193,22 @@ astra.elf: CMakeFiles/astra.elf.dir/3rdParty/u8g2/u8x8_setup.c.obj
 astra.elf: CMakeFiles/astra.elf.dir/3rdParty/u8g2/u8x8_string.c.obj
 astra.elf: CMakeFiles/astra.elf.dir/3rdParty/u8g2/u8x8_u16toa.c.obj
 astra.elf: CMakeFiles/astra.elf.dir/3rdParty/u8g2/u8x8_u8toa.c.obj
-astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra_core.cpp.obj
-astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra_driver.cpp.obj
-astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra_printer.cpp.obj
+astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj
+astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra/ui/page.cpp.obj
+astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra/ui/render/render.cpp.obj
+astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra/ui/widget.cpp.obj
 astra.elf: CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
 astra.elf: CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
+astra.elf: CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.obj
+astra.elf: CMakeFiles/astra.elf.dir/Core/Src/hal/key/key.cpp.obj
+astra.elf: CMakeFiles/astra.elf.dir/Core/Src/hal/oled/oled.cpp.obj
 astra.elf: CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
 astra.elf: CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
 astra.elf: CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
 astra.elf: CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
 astra.elf: CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
-astra.elf: CMakeFiles/astra.elf.dir/Core/Src/system.cpp.obj
+astra.elf: CMakeFiles/astra.elf.dir/Core/Src/system/system.cpp.obj
 astra.elf: CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
 astra.elf: CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
 astra.elf: CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
@@ -1148,7 +1228,7 @@ astra.elf: CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj
 astra.elf: CMakeFiles/astra.elf.dir/build.make
 astra.elf: CMakeFiles/astra.elf.dir/objects1.rsp
 astra.elf: CMakeFiles/astra.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Linking CXX executable astra.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Linking CXX executable astra.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\astra.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building D:/Projects/astra/cmake-build-debug/astra.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building D:/Projects/astra/cmake-build-debug/astra.bin"
