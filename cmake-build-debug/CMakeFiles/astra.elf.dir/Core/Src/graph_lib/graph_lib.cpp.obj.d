@@ -101,8 +101,8 @@ CMakeFiles/astra.elf.dir/Core/Src/graph_lib/graph_lib.cpp.obj: \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\sys\errno.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\charconv.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\basic_string.tcc \
- d:\projects\astra\3rdparty\u8g2\u8g2.h \
- d:\projects\astra\3rdparty\u8g2\u8x8.h \
+ D:\Projects\astra\Core\Src\graph_lib\u8g2/u8g2.h \
+ D:\Projects\astra\Core\Src\graph_lib\u8g2/u8x8.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\lib\gcc\arm-none-eabi\12.2.1\include-fixed\limits.h \
  D:\Projects\astra\Core\Inc/spi.h D:\Projects\astra\Core\Inc/main.h \
  D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal.h \

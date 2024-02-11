@@ -10,5 +10,5 @@ CMake Deprecation Warning:
 
 -- Minimal optimization, debug info included
 -- Configuring done (0.2s)
--- Generating done (0.0s)
+-- Generating done (0.1s)
 -- Build files have been written to: D:/Projects/astra/cmake-build-debug

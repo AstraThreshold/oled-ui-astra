@@ -6,17 +6,22 @@
 
 namespace astra {
 
-AstraLauncher::AstraLauncher(Page *_rootPage) {
-  this->render = new render::Render;
-  this->pageDisplay = _rootPage;
+Launcher::Launcher(Page *_rootPage) {
+  this->node = _rootPage;
 }
 
-void AstraLauncher::launch() {
-
-
-
+void Launcher::launcherStart() {
   hardware::KeyScanner::keyScan();
   hardware::KeyScanner::keyValue;
 }
 
+bool Launcher::addItem(const std::string &_title, Page *_page) {
+  return false;
+}
+
+bool Launcher::addItem(const std::string &_title,
+                       const std::vector<uint8_t> &_pic,
+                       Page *_page) {
+  return false;
+}
 }
