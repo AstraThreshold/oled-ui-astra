@@ -7,7 +7,6 @@
 
 #include <string>
 #include <vector>
-#include "graph_lib.h"
 #include "../astra/config/config.h"
 
 namespace oled {
@@ -15,29 +14,23 @@ namespace oled {
 }
 
 namespace key {
-typedef enum {
-  KEY_CHECK = 0,
-  KEY0_CONFIRM,
-  KEY1_CONFIRM,
-  KEY_RELEASE,
-} KEY_STATE;
+typedef enum keyFilter {
+  CHECKING = 0,
+  KEY_0_CONFIRM,
+  KEY_1_CONFIRM,
+  RELEASED,
+} KEY_FILTER;
 
-typedef enum {
-  KEY_NOT_PRESSED = 0,
-  KEY_PRESSED,
-} KEY_TYPE;
+typedef enum keyAction {
+  RELEASE = 0,
+  CLICK,
+  PRESS,
+} KEY_ACTION;
 
-typedef enum {
-  KEY_NULL = 0,
-  KEY_0_CLICK,  //轻击
-  KEY_0_PRESS,  //长按
-  KEY_1_CLICK,
-  KEY_1_PRESS,
-} KEY_VALUE;
-
-typedef enum {
+typedef enum keyIndex {
   KEY_0 = 0,
   KEY_1,
+  KEY_NUM,
 } KEY_INDEX;
 }
 
@@ -68,12 +61,13 @@ private:
   static HAL* hal;
 
 public:
-  static HAL* get();
-  static bool check();
-  static bool inject(HAL *_hal);
-  static void destroy();
+  static HAL* get();    //get hal instance.
+  static bool check();  //check if there is a hal instance.
 
-  virtual ~HAL() {}
+  static bool inject(HAL *_hal);  //inject HAL instance and run hal_init.
+  static void destroy();  //destroy HAL instance.
+
+  virtual ~HAL() = default;
   virtual std::string type() { return "Base"; }
   virtual void init() {}
 
@@ -96,11 +90,11 @@ public:
   static void setFont(const uint8_t * _font) { get()->_setFont(_font); }
   virtual void _setFont(const uint8_t * _font) {}
 
-  static void getFontWidth(std::string& _text) { get()->_getFontWidth(_text); }
-  virtual void _getFontWidth(std::string& _text) {}
+  static uint8_t getFontWidth(std::string& _text) { get()->_getFontWidth(_text); }
+  virtual uint8_t _getFontWidth(std::string& _text) {}
 
-  static void getFontHeight() { get()->_getFontHeight(); }
-  virtual void _getFontHeight() {}
+  static uint8_t getFontHeight() { get()->_getFontHeight(); }
+  virtual uint8_t _getFontHeight() {}
 
   static void setDrawType(uint8_t _type) { get()->_setDrawType(_type); }
   virtual void _setDrawType(uint8_t _type) {}
@@ -177,10 +171,17 @@ public:
    * @brief key.
    */
 public:
-  static bool getKeyValue(key::KEY_INDEX _keyIndex) { return get()->_getKeyValue(_keyIndex); }
-  virtual bool _getKeyValue(key::KEY_INDEX _keyIndex) { return false; }
+  static bool getKey(key::KEY_INDEX _keyIndex) { return get()->_getKey(_keyIndex); }
+  virtual bool _getKey(key::KEY_INDEX _keyIndex) { return false; }
 
-  static void keyScan() { return get()->_keyScan(); }
+  static bool getAnyKey() { return get()->_getAnyKey(); }
+  virtual bool _getAnyKey();
+
+protected:
+  key::keyAction key[key::KEY_NUM] = {static_cast<key::keyAction>(0)};
+
+public:
+  static void keyScan() { get()->_keyScan(); }
   virtual void _keyScan();
 
   static void keyTest() { return get()->_keyTest(); }

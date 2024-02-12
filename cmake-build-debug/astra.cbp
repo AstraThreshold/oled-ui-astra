@@ -163,184 +163,160 @@
 		<Unit filename="D:/Projects/astra/Core/Src/gpio.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/buzzer/buzzer.cpp">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal.cpp">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/buzzer/buzzer.h">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/hal.cpp">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/hal.h">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_config.cpp">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/key/key.cpp">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_key.cpp">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/key/key.h">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/graph_lib.cpp">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/graph_lib.h">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/graph_lib_i.h">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.h">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.h">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2.h">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_wqy.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_wqy.h">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8.h">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.c">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.c">
-			<Option target="astra.elf"/>
-		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.c">
-			<Option target="astra.elf"/>
-		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.c">
-			<Option target="astra.elf"/>
-		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/oled.cpp">
-			<Option target="astra.elf"/>
-		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/oled.h">
-			<Option target="astra.elf"/>
-		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_api/oled/oled_i.h">
-			<Option target="astra.elf"/>
-		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/buzzer.cpp">
-			<Option target="astra.elf"/>
-		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/key.cpp">
-			<Option target="astra.elf"/>
-		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/oled.cpp">
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp">
 			<Option target="astra.elf"/>
 		</Unit>
 		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/hal_dreamCore.h">

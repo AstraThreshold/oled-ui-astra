@@ -320,1157 +320,1109 @@ Core/Src/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/gpio.c.s
 .PHONY : Core/Src/gpio.c.s
 
-Core/Src/hal/hal_api/buzzer/buzzer.obj: Core/Src/hal/hal_api/buzzer/buzzer.cpp.obj
-.PHONY : Core/Src/hal/hal_api/buzzer/buzzer.obj
+Core/Src/hal/hal.obj: Core/Src/hal/hal.cpp.obj
+.PHONY : Core/Src/hal/hal.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/buzzer/buzzer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/buzzer/buzzer.cpp.obj
-.PHONY : Core/Src/hal/hal_api/buzzer/buzzer.cpp.obj
+Core/Src/hal/hal.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
+.PHONY : Core/Src/hal/hal.cpp.obj
 
-Core/Src/hal/hal_api/buzzer/buzzer.i: Core/Src/hal/hal_api/buzzer/buzzer.cpp.i
-.PHONY : Core/Src/hal/hal_api/buzzer/buzzer.i
+Core/Src/hal/hal.i: Core/Src/hal/hal.cpp.i
+.PHONY : Core/Src/hal/hal.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/buzzer/buzzer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/buzzer/buzzer.cpp.i
-.PHONY : Core/Src/hal/hal_api/buzzer/buzzer.cpp.i
+Core/Src/hal/hal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.i
+.PHONY : Core/Src/hal/hal.cpp.i
 
-Core/Src/hal/hal_api/buzzer/buzzer.s: Core/Src/hal/hal_api/buzzer/buzzer.cpp.s
-.PHONY : Core/Src/hal/hal_api/buzzer/buzzer.s
+Core/Src/hal/hal.s: Core/Src/hal/hal.cpp.s
+.PHONY : Core/Src/hal/hal.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/buzzer/buzzer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/buzzer/buzzer.cpp.s
-.PHONY : Core/Src/hal/hal_api/buzzer/buzzer.cpp.s
+Core/Src/hal/hal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.s
+.PHONY : Core/Src/hal/hal.cpp.s
 
-Core/Src/hal/hal_api/hal.obj: Core/Src/hal/hal_api/hal.cpp.obj
-.PHONY : Core/Src/hal/hal_api/hal.obj
+Core/Src/hal/hal_dreamCore/components/hal_buzzer.obj: Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_buzzer.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/hal.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/hal.cpp.obj
-.PHONY : Core/Src/hal/hal_api/hal.cpp.obj
+Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
 
-Core/Src/hal/hal_api/hal.i: Core/Src/hal/hal_api/hal.cpp.i
-.PHONY : Core/Src/hal/hal_api/hal.i
+Core/Src/hal/hal_dreamCore/components/hal_buzzer.i: Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_buzzer.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/hal.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/hal.cpp.i
-.PHONY : Core/Src/hal/hal_api/hal.cpp.i
+Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.i
 
-Core/Src/hal/hal_api/hal.s: Core/Src/hal/hal_api/hal.cpp.s
-.PHONY : Core/Src/hal/hal_api/hal.s
+Core/Src/hal/hal_dreamCore/components/hal_buzzer.s: Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_buzzer.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/hal.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/hal.cpp.s
-.PHONY : Core/Src/hal/hal_api/hal.cpp.s
+Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.s
 
-Core/Src/hal/hal_api/key/key.obj: Core/Src/hal/hal_api/key/key.cpp.obj
-.PHONY : Core/Src/hal/hal_api/key/key.obj
+Core/Src/hal/hal_dreamCore/components/hal_config.obj: Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_config.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/key/key.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/key/key.cpp.obj
-.PHONY : Core/Src/hal/hal_api/key/key.cpp.obj
+Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
 
-Core/Src/hal/hal_api/key/key.i: Core/Src/hal/hal_api/key/key.cpp.i
-.PHONY : Core/Src/hal/hal_api/key/key.i
+Core/Src/hal/hal_dreamCore/components/hal_config.i: Core/Src/hal/hal_dreamCore/components/hal_config.cpp.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_config.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/key/key.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/key/key.cpp.i
-.PHONY : Core/Src/hal/hal_api/key/key.cpp.i
+Core/Src/hal/hal_dreamCore/components/hal_config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_config.cpp.i
 
-Core/Src/hal/hal_api/key/key.s: Core/Src/hal/hal_api/key/key.cpp.s
-.PHONY : Core/Src/hal/hal_api/key/key.s
+Core/Src/hal/hal_dreamCore/components/hal_config.s: Core/Src/hal/hal_dreamCore/components/hal_config.cpp.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_config.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/key/key.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/key/key.cpp.s
-.PHONY : Core/Src/hal/hal_api/key/key.cpp.s
+Core/Src/hal/hal_dreamCore/components/hal_config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_config.cpp.s
 
-Core/Src/hal/hal_api/oled/graph_lib/graph_lib.obj: Core/Src/hal/hal_api/oled/graph_lib/graph_lib.cpp.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/graph_lib.obj
+Core/Src/hal/hal_dreamCore/components/hal_key.obj: Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_key.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/graph_lib.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/graph_lib.cpp.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/graph_lib.cpp.obj
+Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/graph_lib.i: Core/Src/hal/hal_api/oled/graph_lib/graph_lib.cpp.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/graph_lib.i
+Core/Src/hal/hal_dreamCore/components/hal_key.i: Core/Src/hal/hal_dreamCore/components/hal_key.cpp.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_key.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/graph_lib.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/graph_lib.cpp.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/graph_lib.cpp.i
+Core/Src/hal/hal_dreamCore/components/hal_key.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_key.cpp.i
 
-Core/Src/hal/hal_api/oled/graph_lib/graph_lib.s: Core/Src/hal/hal_api/oled/graph_lib/graph_lib.cpp.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/graph_lib.s
+Core/Src/hal/hal_dreamCore/components/hal_key.s: Core/Src/hal/hal_dreamCore/components/hal_key.cpp.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_key.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/graph_lib.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/graph_lib.cpp.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/graph_lib.cpp.s
+Core/Src/hal/hal_dreamCore/components/hal_key.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_key.cpp.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.obj
+Core/Src/hal/hal_dreamCore/components/hal_stm32.obj: Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_stm32.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.c.obj
+Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.i
+Core/Src/hal/hal_dreamCore/components/hal_stm32.i: Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_stm32.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.c.i
+Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.s
+Core/Src/hal/hal_dreamCore/components/hal_stm32.s: Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_stm32.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.c.s
+Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.c.s
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.obj: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.c.obj
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.c.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.c.obj
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.i: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.c.i
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.c.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.c.i
 
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.s: Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.c.s
-.PHONY : Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.c.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.c.s
 
-Core/Src/hal/hal_api/oled/oled.obj: Core/Src/hal/hal_api/oled/oled.cpp.obj
-.PHONY : Core/Src/hal/hal_api/oled/oled.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.obj
 
 # target to build an object file
-Core/Src/hal/hal_api/oled/oled.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/oled.cpp.obj
-.PHONY : Core/Src/hal/hal_api/oled/oled.cpp.obj
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c.obj
 
-Core/Src/hal/hal_api/oled/oled.i: Core/Src/hal/hal_api/oled/oled.cpp.i
-.PHONY : Core/Src/hal/hal_api/oled/oled.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_api/oled/oled.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/oled.cpp.i
-.PHONY : Core/Src/hal/hal_api/oled/oled.cpp.i
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c.i
 
-Core/Src/hal/hal_api/oled/oled.s: Core/Src/hal/hal_api/oled/oled.cpp.s
-.PHONY : Core/Src/hal/hal_api/oled/oled.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_api/oled/oled.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_api/oled/oled.cpp.s
-.PHONY : Core/Src/hal/hal_api/oled/oled.cpp.s
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c.s
 
-Core/Src/hal/hal_dreamCore/components/buzzer.obj: Core/Src/hal/hal_dreamCore/components/buzzer.cpp.obj
-.PHONY : Core/Src/hal/hal_dreamCore/components/buzzer.obj
+Core/Src/hal/hal_dreamCore/components/oled/hal_oled.obj: Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/hal_oled.obj
 
 # target to build an object file
-Core/Src/hal/hal_dreamCore/components/buzzer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/buzzer.cpp.obj
-.PHONY : Core/Src/hal/hal_dreamCore/components/buzzer.cpp.obj
+Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
 
-Core/Src/hal/hal_dreamCore/components/buzzer.i: Core/Src/hal/hal_dreamCore/components/buzzer.cpp.i
-.PHONY : Core/Src/hal/hal_dreamCore/components/buzzer.i
-
-# target to preprocess a source file
-Core/Src/hal/hal_dreamCore/components/buzzer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/buzzer.cpp.i
-.PHONY : Core/Src/hal/hal_dreamCore/components/buzzer.cpp.i
-
-Core/Src/hal/hal_dreamCore/components/buzzer.s: Core/Src/hal/hal_dreamCore/components/buzzer.cpp.s
-.PHONY : Core/Src/hal/hal_dreamCore/components/buzzer.s
-
-# target to generate assembly for a file
-Core/Src/hal/hal_dreamCore/components/buzzer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/buzzer.cpp.s
-.PHONY : Core/Src/hal/hal_dreamCore/components/buzzer.cpp.s
-
-Core/Src/hal/hal_dreamCore/components/key.obj: Core/Src/hal/hal_dreamCore/components/key.cpp.obj
-.PHONY : Core/Src/hal/hal_dreamCore/components/key.obj
-
-# target to build an object file
-Core/Src/hal/hal_dreamCore/components/key.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/key.cpp.obj
-.PHONY : Core/Src/hal/hal_dreamCore/components/key.cpp.obj
-
-Core/Src/hal/hal_dreamCore/components/key.i: Core/Src/hal/hal_dreamCore/components/key.cpp.i
-.PHONY : Core/Src/hal/hal_dreamCore/components/key.i
+Core/Src/hal/hal_dreamCore/components/oled/hal_oled.i: Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/hal_oled.i
 
 # target to preprocess a source file
-Core/Src/hal/hal_dreamCore/components/key.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/key.cpp.i
-.PHONY : Core/Src/hal/hal_dreamCore/components/key.cpp.i
+Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.i
 
-Core/Src/hal/hal_dreamCore/components/key.s: Core/Src/hal/hal_dreamCore/components/key.cpp.s
-.PHONY : Core/Src/hal/hal_dreamCore/components/key.s
-
-# target to generate assembly for a file
-Core/Src/hal/hal_dreamCore/components/key.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/key.cpp.s
-.PHONY : Core/Src/hal/hal_dreamCore/components/key.cpp.s
-
-Core/Src/hal/hal_dreamCore/components/oled/oled.obj: Core/Src/hal/hal_dreamCore/components/oled/oled.cpp.obj
-.PHONY : Core/Src/hal/hal_dreamCore/components/oled/oled.obj
-
-# target to build an object file
-Core/Src/hal/hal_dreamCore/components/oled/oled.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/oled.cpp.obj
-.PHONY : Core/Src/hal/hal_dreamCore/components/oled/oled.cpp.obj
-
-Core/Src/hal/hal_dreamCore/components/oled/oled.i: Core/Src/hal/hal_dreamCore/components/oled/oled.cpp.i
-.PHONY : Core/Src/hal/hal_dreamCore/components/oled/oled.i
-
-# target to preprocess a source file
-Core/Src/hal/hal_dreamCore/components/oled/oled.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/oled.cpp.i
-.PHONY : Core/Src/hal/hal_dreamCore/components/oled/oled.cpp.i
-
-Core/Src/hal/hal_dreamCore/components/oled/oled.s: Core/Src/hal/hal_dreamCore/components/oled/oled.cpp.s
-.PHONY : Core/Src/hal/hal_dreamCore/components/oled/oled.s
+Core/Src/hal/hal_dreamCore/components/oled/hal_oled.s: Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/hal_oled.s
 
 # target to generate assembly for a file
-Core/Src/hal/hal_dreamCore/components/oled/oled.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/oled.cpp.s
-.PHONY : Core/Src/hal/hal_dreamCore/components/oled/oled.cpp.s
+Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.s
 
 Core/Src/main.obj: Core/Src/main.c.obj
 .PHONY : Core/Src/main.obj
@@ -1993,150 +1945,144 @@ help:
 	@echo ... Core/Src/gpio.obj
 	@echo ... Core/Src/gpio.i
 	@echo ... Core/Src/gpio.s
-	@echo ... Core/Src/hal/hal_api/buzzer/buzzer.obj
-	@echo ... Core/Src/hal/hal_api/buzzer/buzzer.i
-	@echo ... Core/Src/hal/hal_api/buzzer/buzzer.s
-	@echo ... Core/Src/hal/hal_api/hal.obj
-	@echo ... Core/Src/hal/hal_api/hal.i
-	@echo ... Core/Src/hal/hal_api/hal.s
-	@echo ... Core/Src/hal/hal_api/key/key.obj
-	@echo ... Core/Src/hal/hal_api/key/key.i
-	@echo ... Core/Src/hal/hal_api/key/key.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/graph_lib.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/graph_lib.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/graph_lib.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.s
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.obj
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.i
-	@echo ... Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.s
-	@echo ... Core/Src/hal/hal_api/oled/oled.obj
-	@echo ... Core/Src/hal/hal_api/oled/oled.i
-	@echo ... Core/Src/hal/hal_api/oled/oled.s
-	@echo ... Core/Src/hal/hal_dreamCore/components/buzzer.obj
-	@echo ... Core/Src/hal/hal_dreamCore/components/buzzer.i
-	@echo ... Core/Src/hal/hal_dreamCore/components/buzzer.s
-	@echo ... Core/Src/hal/hal_dreamCore/components/key.obj
-	@echo ... Core/Src/hal/hal_dreamCore/components/key.i
-	@echo ... Core/Src/hal/hal_dreamCore/components/key.s
-	@echo ... Core/Src/hal/hal_dreamCore/components/oled/oled.obj
-	@echo ... Core/Src/hal/hal_dreamCore/components/oled/oled.i
-	@echo ... Core/Src/hal/hal_dreamCore/components/oled/oled.s
+	@echo ... Core/Src/hal/hal.obj
+	@echo ... Core/Src/hal/hal.i
+	@echo ... Core/Src/hal/hal.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/hal_buzzer.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/hal_buzzer.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/hal_buzzer.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/hal_config.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/hal_config.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/hal_config.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/hal_key.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/hal_key.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/hal_key.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/hal_stm32.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/hal_stm32.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/hal_stm32.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/hal_oled.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/hal_oled.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/hal_oled.s
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s

@@ -189,12 +189,10 @@
 				19,
 				23,
 				25,
+				26,
 				27,
-				29,
-				77,
-				80,
-				81,
-				82
+				28,
+				74
 			]
 		},
 		{
@@ -291,8 +289,11 @@
 			[
 				21,
 				22,
-				32,
+				29,
+				31,
 				34,
+				35,
+				36,
 				37,
 				38,
 				39,
@@ -309,12 +310,12 @@
 				50,
 				51,
 				52,
-				53,
 				54,
 				55,
-				57,
+				56,
 				58,
 				59,
+				60,
 				61,
 				62,
 				63,
@@ -328,29 +329,26 @@
 				71,
 				72,
 				73,
-				74,
-				75,
 				76,
-				84,
-				85,
-				86,
-				87,
-				88,
-				89,
+				77,
+				78,
+				79,
+				80,
+				81,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
 				134,
 				135,
 				136,
 				137,
 				138,
-				139,
-				140,
-				141,
-				142,
-				143,
-				144,
-				145,
-				146,
-				147
+				139
 			]
 		},
 		{
@@ -445,7 +443,7 @@
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				148
+				140
 			]
 		}
 	],
@@ -524,21 +522,23 @@
 				18,
 				20,
 				24,
-				26,
-				28,
 				30,
-				31,
+				32,
 				33,
-				35,
-				36,
-				56,
-				60,
-				78,
-				79,
+				53,
+				57,
+				75,
+				82,
 				83,
+				84,
+				86,
+				87,
+				88,
+				89,
 				90,
 				91,
 				92,
+				93,
 				94,
 				95,
 				96,
@@ -552,7 +552,6 @@
 				104,
 				105,
 				106,
-				107,
 				108,
 				109,
 				110,
@@ -560,6 +559,7 @@
 				112,
 				113,
 				114,
+				115,
 				116,
 				117,
 				118,
@@ -568,15 +568,7 @@
 				121,
 				122,
 				123,
-				124,
-				125,
-				126,
-				127,
-				128,
-				129,
-				130,
-				131,
-				132
+				124
 			]
 		},
 		{
@@ -593,10 +585,14 @@
 				22,
 				23,
 				25,
+				26,
 				27,
+				28,
 				29,
-				32,
+				31,
 				34,
+				35,
+				36,
 				37,
 				38,
 				39,
@@ -613,12 +609,12 @@
 				50,
 				51,
 				52,
-				53,
 				54,
 				55,
-				57,
+				56,
 				58,
 				59,
+				60,
 				61,
 				62,
 				63,
@@ -633,43 +629,37 @@
 				72,
 				73,
 				74,
-				75,
 				76,
 				77,
+				78,
+				79,
 				80,
 				81,
-				82,
-				84,
-				85,
-				86,
-				87,
-				88,
-				89,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
 				134,
 				135,
 				136,
 				137,
 				138,
-				139,
-				140,
-				141,
-				142,
-				143,
-				144,
-				145,
-				146,
-				147
+				139
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				93,
-				115,
-				133,
-				148,
-				149
+				85,
+				107,
+				125,
+				140,
+				141
 			]
 		}
 	],
@@ -801,349 +791,307 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Core/Src/hal/hal_api/buzzer/buzzer.cpp",
+			"path" : "Core/Src/hal/hal.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Core/Src/hal/hal_api/buzzer/buzzer.h",
+			"path" : "Core/Src/hal/hal.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Core/Src/hal/hal_api/hal.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Core/Src/hal/hal_api/hal.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/hal/hal_api/key/key.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Core/Src/hal/hal_api/key/key.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/graph_lib.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/graph_lib.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/graph_lib_i.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/mui_u8g2.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_bitmap.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_box.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_buffer.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_button.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_circle.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_cleardisplay.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_memory.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_d_setup.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_font.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_hvline.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_input_value.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_intersection.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_kerning.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_line.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_ll_hvline.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_message.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_polygon.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_selection_list.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_setup.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8g2_wqy.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8g2.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8log_u8x8.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8.h",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_8x8.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_byte.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_cad.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_capture.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_debounce.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_display.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_fonts.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_gpio.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_input_value.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_message.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_selection_list.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_setup.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_string.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u16toa.c",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/graph_lib/u8g2/u8x8_u8toa.c",
+			"path" : "Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Core/Src/hal/hal_api/oled/oled.cpp",
+			"path" : "Core/Src/hal/hal_dreamCore/components/hal_config.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/oled.h",
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/hal/hal_dreamCore/components/hal_key.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Core/Src/hal/hal_api/oled/oled_i.h",
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/hal/hal_dreamCore/components/buzzer.cpp",
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_cleardisplay.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_kerning.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_line.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_message.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_polygon.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_selection_list.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_wqy.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8g2.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log_u8x8.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_capture.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_debounce.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_fonts.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_input_value.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_message.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_selection_list.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_string.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u16toa.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Core/Src/hal/hal_dreamCore/components/key.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/hal/hal_dreamCore/components/oled/oled.cpp",
+			"path" : "Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
