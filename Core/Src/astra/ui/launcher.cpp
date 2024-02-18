@@ -10,9 +10,8 @@ Launcher::Launcher(Page *_rootPage) {
   this->node = _rootPage;
 }
 
-void Launcher::launcherStart() {
-  hardware::KeyScanner::keyScan();
-  hardware::KeyScanner::keyValue;
+void Launcher::start() {
+
 }
 
 bool Launcher::addItem(const std::string &_title, Page *_page) {

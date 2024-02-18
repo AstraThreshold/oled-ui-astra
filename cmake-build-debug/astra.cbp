@@ -133,10 +133,10 @@
 		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/element_i.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/page/page.cpp">
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/page/item.cpp">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/page/page.h">
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/page/item.h">
 			<Option target="astra.elf"/>
 		</Unit>
 		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/selector/selector.cpp">

@@ -4,7 +4,7 @@
 
 #pragma once
 #ifndef ASTRA_CORE_SRC_ASTRA_UI_WIDGET_H_
-#include "../page/page.h"
+#include "../page/item.h"
 #define ASTRA_CORE_SRC_ASTRA_UI_WIDGET_H_
 
 

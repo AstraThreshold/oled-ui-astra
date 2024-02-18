@@ -66,10 +66,10 @@ public:
   void _drawPixel(uint8_t _x, uint8_t _y) override;
   void _drawEnglish(uint8_t _x, uint8_t _y, const std::string& _text) override;
   void _drawChinese(uint8_t _x, uint8_t _y, const std::string& _text) override;
-  void _drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) override;
-  void _drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) override;
-  void _drawVLine(uint8_t _x, uint8_t _y, uint8_t _l) override;
-  void _drawHLine(uint8_t _x, uint8_t _y, uint8_t _h) override;
+  void _drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) override;
+  void _drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) override;
+  void _drawVLine(uint8_t _x, uint8_t _y, uint8_t _h) override;
+  void _drawHLine(uint8_t _x, uint8_t _y, uint8_t _l) override;
   void _drawBMP(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, const uint8_t* _bitMap) override;
   void _drawBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) override;
   void _drawRBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) override;

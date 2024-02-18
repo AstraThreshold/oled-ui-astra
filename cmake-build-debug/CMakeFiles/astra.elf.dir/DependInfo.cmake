@@ -93,7 +93,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj.d"
   "D:/Projects/astra/Core/Src/astra/app/astra_app.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj.d"
   "D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.obj.d"
-  "D:/Projects/astra/Core/Src/astra/ui/element/page/page.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.obj.d"
+  "D:/Projects/astra/Core/Src/astra/ui/element/page/item.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj.d"
   "D:/Projects/astra/Core/Src/astra/ui/element/selector/selector.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/selector/selector.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/selector/selector.cpp.obj.d"
   "D:/Projects/astra/Core/Src/astra/ui/element/widget/widget.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/widget/widget.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/widget/widget.cpp.obj.d"
   "D:/Projects/astra/Core/Src/astra/ui/launcher.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj.d"

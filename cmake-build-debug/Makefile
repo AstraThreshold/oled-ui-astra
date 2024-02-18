@@ -176,29 +176,29 @@ Core/Src/astra/ui/element/bar/bar.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.s
 .PHONY : Core/Src/astra/ui/element/bar/bar.cpp.s
 
-Core/Src/astra/ui/element/page/page.obj: Core/Src/astra/ui/element/page/page.cpp.obj
-.PHONY : Core/Src/astra/ui/element/page/page.obj
+Core/Src/astra/ui/element/page/item.obj: Core/Src/astra/ui/element/page/item.cpp.obj
+.PHONY : Core/Src/astra/ui/element/page/item.obj
 
 # target to build an object file
-Core/Src/astra/ui/element/page/page.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.obj
-.PHONY : Core/Src/astra/ui/element/page/page.cpp.obj
+Core/Src/astra/ui/element/page/item.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+.PHONY : Core/Src/astra/ui/element/page/item.cpp.obj
 
-Core/Src/astra/ui/element/page/page.i: Core/Src/astra/ui/element/page/page.cpp.i
-.PHONY : Core/Src/astra/ui/element/page/page.i
+Core/Src/astra/ui/element/page/item.i: Core/Src/astra/ui/element/page/item.cpp.i
+.PHONY : Core/Src/astra/ui/element/page/item.i
 
 # target to preprocess a source file
-Core/Src/astra/ui/element/page/page.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.i
-.PHONY : Core/Src/astra/ui/element/page/page.cpp.i
+Core/Src/astra/ui/element/page/item.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.i
+.PHONY : Core/Src/astra/ui/element/page/item.cpp.i
 
-Core/Src/astra/ui/element/page/page.s: Core/Src/astra/ui/element/page/page.cpp.s
-.PHONY : Core/Src/astra/ui/element/page/page.s
+Core/Src/astra/ui/element/page/item.s: Core/Src/astra/ui/element/page/item.cpp.s
+.PHONY : Core/Src/astra/ui/element/page/item.s
 
 # target to generate assembly for a file
-Core/Src/astra/ui/element/page/page.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.s
-.PHONY : Core/Src/astra/ui/element/page/page.cpp.s
+Core/Src/astra/ui/element/page/item.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.s
+.PHONY : Core/Src/astra/ui/element/page/item.cpp.s
 
 Core/Src/astra/ui/element/selector/selector.obj: Core/Src/astra/ui/element/selector/selector.cpp.obj
 .PHONY : Core/Src/astra/ui/element/selector/selector.obj
@@ -1927,9 +1927,9 @@ help:
 	@echo ... Core/Src/astra/ui/element/bar/bar.obj
 	@echo ... Core/Src/astra/ui/element/bar/bar.i
 	@echo ... Core/Src/astra/ui/element/bar/bar.s
-	@echo ... Core/Src/astra/ui/element/page/page.obj
-	@echo ... Core/Src/astra/ui/element/page/page.i
-	@echo ... Core/Src/astra/ui/element/page/page.s
+	@echo ... Core/Src/astra/ui/element/page/item.obj
+	@echo ... Core/Src/astra/ui/element/page/item.i
+	@echo ... Core/Src/astra/ui/element/page/item.s
 	@echo ... Core/Src/astra/ui/element/selector/selector.obj
 	@echo ... Core/Src/astra/ui/element/selector/selector.i
 	@echo ... Core/Src/astra/ui/element/selector/selector.s

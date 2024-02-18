@@ -135,6 +135,8 @@ uint8_t HALDreamCore::_u8x8_gpio_and_delay_callback([[maybe_unused]]u8x8_t *_u8x
 }
 
 void HALDreamCore::_u8g2_init() {
+  u8g2_t u8g2Buffer;
+  canvasBuffer = u8g2Buffer;
   u8g2_Setup_ssd1306_128x64_noname_f(&canvasBuffer,
                                      U8G2_R0,
                                      _u8x8_byte_hw_spi_callback,
@@ -189,26 +191,26 @@ void HALDreamCore::_drawChinese(uint8_t _x, uint8_t _y, const std::string &_text
   u8g2_DrawUTF8(&canvasBuffer, _x, _y, _text.c_str());
 }
 
-void HALDreamCore::_drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) {
-  for (uint8_t i = 0; i < _l; i++) {
+void HALDreamCore::_drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) {
+  for (uint8_t i = 0; i < _h; i++) {
     if (i % 8 == 0 | (i - 1) % 8 == 0 | (i - 2) % 8 == 0) continue;
     u8g2_DrawPixel(&canvasBuffer, _x, _y + i);
   }
 }
 
-void HALDreamCore::_drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) {
-  for (uint8_t i = 0; i < _h; i++) {
+void HALDreamCore::_drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) {
+  for (uint8_t i = 0; i < _l; i++) {
     if (i % 8 == 0 | (i - 1) % 8 == 0 | (i - 2) % 8 == 0) continue;
     u8g2_DrawPixel(&canvasBuffer, _x + i, _y);
   }
 }
 
-void HALDreamCore::_drawVLine(uint8_t _x, uint8_t _y, uint8_t _l) {
-  u8g2_DrawVLine(&canvasBuffer, _x, _y, _l);
+void HALDreamCore::_drawVLine(uint8_t _x, uint8_t _y, uint8_t _h) {
+  u8g2_DrawVLine(&canvasBuffer, _x, _y, _h);
 }
 
-void HALDreamCore::_drawHLine(uint8_t _x, uint8_t _y, uint8_t _h) {
-  u8g2_DrawHLine(&canvasBuffer, _x, _y, _h);
+void HALDreamCore::_drawHLine(uint8_t _x, uint8_t _y, uint8_t _l) {
+  u8g2_DrawHLine(&canvasBuffer, _x, _y, _l);
 }
 
 void HALDreamCore::_drawBMP(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, const uint8_t *_bitMap) {

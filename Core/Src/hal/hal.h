@@ -6,6 +6,7 @@
 #define ASTRA_CORE_SRC_HAL_HAL_H_
 
 #include <string>
+#include <utility>
 #include <vector>
 #include "../astra/config/config.h"
 
@@ -90,11 +91,11 @@ public:
   static void setFont(const uint8_t * _font) { get()->_setFont(_font); }
   virtual void _setFont(const uint8_t * _font) {}
 
-  static uint8_t getFontWidth(std::string& _text) { get()->_getFontWidth(_text); }
-  virtual uint8_t _getFontWidth(std::string& _text) {}
+  static uint8_t getFontWidth(std::string& _text) { return get()->_getFontWidth(_text); }
+  virtual uint8_t _getFontWidth(std::string& _text) { return 0; }
 
-  static uint8_t getFontHeight() { get()->_getFontHeight(); }
-  virtual uint8_t _getFontHeight() {}
+  static uint8_t getFontHeight() { return get()->_getFontHeight(); }
+  virtual uint8_t _getFontHeight() { return 0; }
 
   static void setDrawType(uint8_t _type) { get()->_setDrawType(_type); }
   virtual void _setDrawType(uint8_t _type) {}
@@ -108,17 +109,17 @@ public:
   static void drawChinese(uint8_t _x, uint8_t _y, const std::string& _text) { get()->_drawChinese(_x, _y, _text); }
   virtual void _drawChinese(uint8_t _x, uint8_t _y, const std::string& _text) {}
 
-  static void drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) { get()->_drawVDottedLine(_x, _y, _l); }
-  virtual void _drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) {}
+  static void drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) { get()->_drawVDottedLine(_x, _y, _h); }
+  virtual void _drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) {}
 
-  static void drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) { get()->_drawHDottedLine(_x, _y, _h); }
-  virtual void _drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) {}
+  static void drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) { get()->_drawHDottedLine(_x, _y, _l); }
+  virtual void _drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) {}
 
-  static void drawVLine(uint8_t _x, uint8_t _y, uint8_t _l) { get()->_drawVLine(_x, _y, _l); }
-  virtual void _drawVLine(uint8_t _x, uint8_t _y, uint8_t _l) {}
+  static void drawVLine(uint8_t _x, uint8_t _y, uint8_t _h) { get()->_drawVLine(_x, _y, _h); }
+  virtual void _drawVLine(uint8_t _x, uint8_t _y, uint8_t _h) {}
 
-  static void drawHLine(uint8_t _x, uint8_t _y, uint8_t _h) { get()->_drawHLine(_x, _y, _h); }
-  virtual void _drawHLine(uint8_t _x, uint8_t _y, uint8_t _h) {}
+  static void drawHLine(uint8_t _x, uint8_t _y, uint8_t _l) { get()->_drawHLine(_x, _y, _l); }
+  virtual void _drawHLine(uint8_t _x, uint8_t _y, uint8_t _l) {}
 
   static void drawBMP(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, const uint8_t* _bitMap) { get()->_drawBMP(_x, _y, _w, _h, _bitMap); }
   virtual void _drawBMP(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, const uint8_t* _bitMap) {}
@@ -135,7 +136,7 @@ public:
   static void drawRFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) { get()->_drawRFrame(_x, _y, _w, _h, _r); }
   virtual void _drawRFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {}
 
-  static void printInfo(std::string _msg) { get()->_printInfo(_msg); }
+  static void printInfo(std::string _msg) { get()->_printInfo(std::move(_msg)); }
   virtual void _printInfo(std::string _msg);
 
   /**

@@ -96,19 +96,19 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.s"
 	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\astra\ui\element\bar\bar.cpp -o CMakeFiles\astra.elf.dir\Core\Src\astra\ui\element\bar\bar.cpp.s
 
-CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
-CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/element/page/page.cpp
-CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.obj"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\astra\ui\element\page\page.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\astra\ui\element\page\page.cpp.obj -c D:\Projects\astra\Core\Src\astra\ui\element\page\page.cpp
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/element/page/item.cpp
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj: CMakeFiles/astra.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Projects\astra\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj -MF CMakeFiles\astra.elf.dir\Core\Src\astra\ui\element\page\item.cpp.obj.d -o CMakeFiles\astra.elf.dir\Core\Src\astra\ui\element\page\item.cpp.obj -c D:\Projects\astra\Core\Src\astra\ui\element\page\item.cpp
 
-CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.i"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\astra\ui\element\page\page.cpp > CMakeFiles\astra.elf.dir\Core\Src\astra\ui\element\page\page.cpp.i
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.i"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Projects\astra\Core\Src\astra\ui\element\page\item.cpp > CMakeFiles\astra.elf.dir\Core\Src\astra\ui\element\page\item.cpp.i
 
-CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.s"
-	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\astra\ui\element\page\page.cpp -o CMakeFiles\astra.elf.dir\Core\Src\astra\ui\element\page\page.cpp.s
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.s"
+	D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Projects\astra\Core\Src\astra\ui\element\page\item.cpp -o CMakeFiles\astra.elf.dir\Core\Src\astra\ui\element\page\item.cpp.s
 
 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/selector/selector.cpp.obj: CMakeFiles/astra.elf.dir/flags.make
 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/selector/selector.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/element/selector/selector.cpp
@@ -1121,7 +1121,7 @@ CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.s: cmake_force
 astra_elf_OBJECTS = \
 "CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj" \
 "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.obj" \
-"CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.obj" \
+"CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj" \
 "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/selector/selector.cpp.obj" \
 "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/widget/widget.cpp.obj" \
 "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj" \
@@ -1200,7 +1200,7 @@ astra_elf_EXTERNAL_OBJECTS =
 
 astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj
 astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.obj
-astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/page.cpp.obj
+astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
 astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/selector/selector.cpp.obj
 astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/widget/widget.cpp.obj
 astra.elf: CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
