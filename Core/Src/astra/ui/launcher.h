@@ -16,10 +16,12 @@ private:
   Camera* camera;
 
 public:
-  void init();
-  void run();
+  void init(Menu*_rootPage);
+
   bool open();
   bool close();
+
+  void start();
 };
 }
 #endif //ASTRA_CORE_SRC_ASTRA_UI_SCHEDULER_H_

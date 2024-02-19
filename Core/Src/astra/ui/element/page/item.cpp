@@ -108,7 +108,7 @@ Menu::Menu(std::string _title, std::vector<std::vector<uint8_t>> _pic) {
   this->child.clear();
 }
 
-void Menu::render(Camera* _camera, Selector _selector) {
+void Menu::render(Camera* _camera, Selector* _selector) {
   if (selfType == TILE) {
     //一些前景的坐标
     static float yArrow, yArrowTrg;
@@ -180,7 +180,7 @@ void Menu::render(Camera* _camera, Selector _selector) {
         }
       }
 
-      //todo 上面那一大坨还没加入摄像机 以及所有都没加入选择器
+      //todo 所有都没加入选择器
       HAL::drawChinese(_iter->position.x + _camera->x, _iter->position.y + _camera->y, _iter->title);
       animation(&_iter->position.y, _iter->position.yTrg, astraConfig.menuAnimationSpeed);
     }

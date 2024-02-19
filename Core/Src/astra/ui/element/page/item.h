@@ -31,6 +31,9 @@ public:
 //加入了摄像机 随着摄像机动而动
 //其他的不动的元素 比如虚线和进度条 统称为前景 不受摄像机的控制
 //这样一来元素本身的坐标并不会改变 只是在渲染的时候加入了摄像机的坐标而已
+
+//磁贴类中 前景是虚线 标题 箭头和按钮图标 摄像机横向移动
+//列表类中 前景是进度条 摄像机纵向移动
 class Camera : public Item, public Animation {
 public:
   float x, xTrg;
@@ -95,7 +98,7 @@ public:
   explicit Menu(std::string _title);
   Menu(std::string _title, std::vector<std::vector<uint8_t>> _pic);
 
-  inline void render(Camera* _camera, Selector _selector);  //render all child item.
+  inline void render(Camera* _camera, Selector* _selector);  //render all child item.
   [[nodiscard]] uint8_t getItemNum() const;
   [[nodiscard]] Position getItemPosition(uint8_t _index) const;
   [[nodiscard]] Menu* getNext() const;  //启动器调用该方法来获取下一个页面
