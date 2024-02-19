@@ -19,6 +19,7 @@ struct config {
   uint8_t windowAnimationSpeed;
   uint8_t sideBarAnimationSpeed;
   uint8_t fadeAnimationSpeed;
+  uint8_t cameraAnimationSpeed;
 
   bool tileUnfold = true;
   bool listUnfold = true;
@@ -43,6 +44,7 @@ struct config {
   uint8_t tileArrowMargin = 4; //箭头边距
   uint8_t tileDottedLineMargin = 46; //虚线上边距
   uint8_t tileArrowTopMargin = 46; //箭头上边距
+  uint8_t tileTextTopMargin = ; //标题上边距
 
   uint8_t tileBtnMargin = 16; //按钮边距
 };
