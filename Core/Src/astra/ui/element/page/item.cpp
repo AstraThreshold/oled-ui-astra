@@ -220,9 +220,40 @@ Selector::Selector() {
   this->wTrg = 0;
 }
 
+void Selector::go(uint8_t _index) {
+  Item::updateConfig();
+
+  ////todo 在go的时候改变trg的值
+
+  if (menu->selfType == Menu::TILE) {
+
+    if (menu->selfType != menu->child[_index]->selfType) { /*todo 过渡动画 从大框到选择框*/ }
+
+    xTrg = menu->child[_index]->position.x - (astraConfig.tileSelectBoxWeight - astraConfig.tilePicWidth) / 2;
+    yTrg = menu->child[_index]->position.y - (astraConfig.tileSelectBoxHeight - astraConfig.tilePicHeight) / 2;
+
+    yText = systemConfig.screenHeight; //给磁贴文字归零 从屏幕外滑入
+
+
+  } else if (menu->selfType == Menu::LIST) {
+
+    if (menu->selfType != menu->child[_index]->selfType) { /*todo 过渡动画 从选择框到大框*/ }
+
+    xTrg = menu->child[_index]->position.x - astraConfig.selectorMargin;
+    yTrg = menu->child[_index]->position.y - astraConfig.selectorTopMargin;
+    wTrg = HAL::getFontWidth(menu->child[_index]->title) + astraConfig.listTextMargin * 2;
+  }
+}
+
 bool Selector::inject(Menu *_menu) {
   if (_menu == nullptr) return false;
   if (this->menu != nullptr) return false;
+  this->menu = _menu;
+
+  if (menu->parent->selfType != menu->selfType) { /*todo 如果前后两页类型不同 不能直接go*/ }
+  else go(this->menu->selectIndex);  //注入之后要初始化选择框的位置
+  
+  return true;
 }
 
 bool Selector::destroy() {
@@ -268,31 +299,6 @@ void Selector::render(Camera* _camera) {
     HAL::drawRBox(x + _camera->x, y + _camera->y, w, astraConfig.listLineHeight, astraConfig.selectorRadius);
     //HAL::drawRBox(x + _camera->x, y + _camera->y, w, h, astraConfig.selectorRadius);
     HAL::setDrawType(1);
-  }
-}
-
-void Selector::go(uint8_t _index) {
-  Item::updateConfig();
-
-  ////todo 在go的时候改变trg的值
-
-  if (menu->selfType == Menu::TILE) {
-
-    if (menu->selfType != menu->child[_index]->selfType) { /*todo 过渡动画 从大框到选择框*/ }
-
-    xTrg = menu->child[_index]->position.x - (astraConfig.tileSelectBoxWeight - astraConfig.tilePicWidth) / 2;
-    yTrg = menu->child[_index]->position.y - (astraConfig.tileSelectBoxHeight - astraConfig.tilePicHeight) / 2;
-
-    yText = systemConfig.screenHeight; //给磁贴文字归零 从屏幕外滑入
-
-
-  } else if (menu->selfType == Menu::LIST) {
-
-    if (menu->selfType != menu->child[_index]->selfType) { /*todo 过渡动画 从选择框到大框*/ }
-
-    xTrg = menu->child[_index]->position.x - astraConfig.selectorMargin;
-    yTrg = menu->child[_index]->position.y - astraConfig.selectorTopMargin;
-    wTrg = HAL::getFontWidth(menu->child[_index]->title) + astraConfig.listTextMargin * 2;
   }
 }
 }

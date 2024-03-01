@@ -127,6 +127,8 @@ public:
   ////todo 这样就可以弄磁贴的文字出现动画了
   ////todo 在磁贴中 选择的时候 摄像机和selector都要移动 磁贴的selector是一个空心方框 + 底部的字体
 
+  void go(uint8_t _index);
+
   bool inject(Menu* _menu); //inject menu instance to prepare for render.
   bool destroy(); //destroy menu instance.
 
@@ -135,14 +137,10 @@ public:
   //在启动器中新建selector和camera 然后注入menu render
   //在启动器中执行下述方法即可实现选择
   //todo 当前选择的指针由启动器更改 然后get到对应的坐标给到selector
+  //每次打开新页面 都要把子页面注入给selector
+  //selector只有一个
 
-  ////todo 但是不知道磁贴页的selector是怎么显示的
-  ////todo 想想怎么以更优雅的方式获取到磁贴页的标题
-  ////todo 想想怎么以更优雅的方式获取到各种坐标 看看能不能传个结构体进去
-
-  ////todo 考虑在Menu后面声明这一坨 然后在启动器里单独渲染selector
-  ////todo 而且selector的坐标也是相对于摄像机的坐标的
-  void go(uint8_t _index);
+  //在启动器里单独渲染selector
 };
 }
 #endif //ASTRA_ASTRA__H
