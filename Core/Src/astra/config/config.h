@@ -35,6 +35,8 @@ struct config {
   uint8_t listTextMargin = 4; //文字边距
   uint8_t listLineHeight = 16;
   float selectorRadius = 0.5f;
+  uint8_t selectorMargin = 4; //选择框与文字左边距
+  uint8_t selectorTopMargin = 2; //选择框与文字上边距
 
   uint8_t tilePicWidth = 30;
   uint8_t tilePicHeight = 30;
@@ -44,7 +46,10 @@ struct config {
   uint8_t tileArrowMargin = 4; //箭头边距
   uint8_t tileDottedLineMargin = 46; //虚线上边距
   uint8_t tileArrowTopMargin = 46; //箭头上边距
-  uint8_t tileTextTopMargin = ; //标题上边距
+  uint8_t tileTextTopMargin = 52; //标题上边距
+
+  uint8_t tileSelectBoxHeight = 36;  //磁贴选择框高度
+  uint8_t tileSelectBoxWeight = 36;  //磁贴选择框宽度
 
   uint8_t tileBtnMargin = 16; //按钮边距
 };

@@ -61,6 +61,16 @@ public:
 
   Position position{};
 
+  //前景元素的坐标
+  typedef struct PositionForeground {
+    /*TILE*/
+    float yArrow, yArrowTrg;
+    float yDottedLine, yDottedLineTrg;
+    /*TILE*/
+  } PositionForeground;
+
+  PositionForeground positionForeground{};
+
   std::string title;
   std::vector<std::vector<uint8_t>> pic;
 
@@ -97,9 +107,20 @@ private:
   Menu* menu;
 
 public:
+  //列表页中就是选择框的坐标 磁贴页中就是大框的坐标
   float x, xTrg;
   float y, yTrg;
+
+  /*LIST*/
   float w, wTrg;
+  //float h, hTrg;
+  /*LIST*/
+
+  /*TILE*/
+  float wFrame, wFrameTrg;  //磁贴页大框宽度
+  float hFrame, hFrameTrg;  //磁贴页大框高度
+  float yText, yTextTrg;  //磁贴页标题坐标
+  /*TILE*/
 
   Selector();
   ////todo!!!!!!! 最牛逼的来了 在磁贴中 文字和大框就是selector
@@ -121,7 +142,7 @@ public:
 
   ////todo 考虑在Menu后面声明这一坨 然后在启动器里单独渲染selector
   ////todo 而且selector的坐标也是相对于摄像机的坐标的
-  void go(uint8_t _x, uint8_t _y);
+  void go(uint8_t _index);
 };
 }
 #endif //ASTRA_ASTRA__H

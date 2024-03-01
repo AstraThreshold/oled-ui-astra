@@ -92,15 +92,10 @@ Menu::Menu(std::string _title, std::vector<std::vector<uint8_t>> _pic) {
 
 void Menu::render(Camera* _camera) {
   if (selfType == TILE) {
-    //一些前景的坐标
-    static float yArrow, yArrowTrg;
-    static float yDottedLine, yDottedLineTrg;
-    static float yTitle, yTitleTrg;
-
     Item::updateConfig();
 
-    animation(&yDottedLine, astraConfig.tileDottedLineMargin, astraConfig.tileAnimationSpeed);
-    animation(&yArrow, astraConfig.tileArrowTopMargin, astraConfig.tileAnimationSpeed);
+    animation(&positionForeground.yDottedLine, astraConfig.tileDottedLineMargin, astraConfig.tileAnimationSpeed);
+    animation(&positionForeground.yArrow, astraConfig.tileArrowTopMargin, astraConfig.tileAnimationSpeed);
 
     HAL::setDrawType(1);
 
@@ -118,35 +113,30 @@ void Menu::render(Camera* _camera) {
 
     }
 
-    //draw text.(不受摄像机的影响)
-    //todo 想想怎么实现每次按按钮 字体都从下面冒出来 其实在恰当的地方给yTitle设为屏幕高度就行了
-    HAL::drawChinese((systemConfig.screenWeight - HAL::getFontWidth(child[selectIndex]->title)) / 2, yTitle, child[selectIndex]->title);
-    animation(&yTitle, astraConfig.tileTextTopMargin, astraConfig.tileAnimationSpeed);
-
     //draw left arrow.
-    HAL::drawHLine(astraConfig.tileArrowMargin, yArrow, astraConfig.tileArrowWidth);
-    HAL::drawPixel(astraConfig.tileArrowMargin + 1, yArrow + 1);
-    HAL::drawPixel(astraConfig.tileArrowMargin + 2, yArrow + 2);
-    HAL::drawPixel(astraConfig.tileArrowMargin + 1, yArrow - 1);
-    HAL::drawPixel(astraConfig.tileArrowMargin + 2, yArrow - 2);
+    HAL::drawHLine(astraConfig.tileArrowMargin, positionForeground.yArrow, astraConfig.tileArrowWidth);
+    HAL::drawPixel(astraConfig.tileArrowMargin + 1, positionForeground.yArrow + 1);
+    HAL::drawPixel(astraConfig.tileArrowMargin + 2, positionForeground.yArrow + 2);
+    HAL::drawPixel(astraConfig.tileArrowMargin + 1, positionForeground.yArrow - 1);
+    HAL::drawPixel(astraConfig.tileArrowMargin + 2, positionForeground.yArrow - 2);
 
     //draw right arrow.
-    HAL::drawHLine(systemConfig.screenWeight - astraConfig.tileArrowWidth - astraConfig.tileArrowMargin, yArrow, astraConfig.tileArrowWidth);
-    HAL::drawPixel(systemConfig.screenWeight - astraConfig.tileArrowWidth, yArrow + 1);
-    HAL::drawPixel(systemConfig.screenWeight - astraConfig.tileArrowWidth - 1, yArrow + 2);
-    HAL::drawPixel(systemConfig.screenWeight - astraConfig.tileArrowWidth, yArrow - 1);
-    HAL::drawPixel(systemConfig.screenWeight - astraConfig.tileArrowWidth - 1, yArrow - 2);
+    HAL::drawHLine(systemConfig.screenWeight - astraConfig.tileArrowWidth - astraConfig.tileArrowMargin, positionForeground.yArrow, astraConfig.tileArrowWidth);
+    HAL::drawPixel(systemConfig.screenWeight - astraConfig.tileArrowWidth, positionForeground.yArrow + 1);
+    HAL::drawPixel(systemConfig.screenWeight - astraConfig.tileArrowWidth - 1, positionForeground.yArrow + 2);
+    HAL::drawPixel(systemConfig.screenWeight - astraConfig.tileArrowWidth, positionForeground.yArrow - 1);
+    HAL::drawPixel(systemConfig.screenWeight - astraConfig.tileArrowWidth - 1, positionForeground.yArrow - 2);
 
     //draw left button.
-    HAL::drawHLine(astraConfig.tileBtnMargin, yArrow + 2, 9);
-    HAL::drawBox(astraConfig.tileBtnMargin + 2, yArrow + 2 - 4, 5, 4);
+    HAL::drawHLine(astraConfig.tileBtnMargin, positionForeground.yArrow + 2, 9);
+    HAL::drawBox(astraConfig.tileBtnMargin + 2, positionForeground.yArrow + 2 - 4, 5, 4);
 
     //draw right button.
-    HAL::drawHLine(systemConfig.screenWeight - astraConfig.tileBtnMargin - 9, yArrow + 2, 9);
-    HAL::drawBox(systemConfig.screenWeight - astraConfig.tileBtnMargin - 9 + 2, yArrow + 2 - 4, 5, 4);
+    HAL::drawHLine(systemConfig.screenWeight - astraConfig.tileBtnMargin - 9, positionForeground.yArrow + 2, 9);
+    HAL::drawBox(systemConfig.screenWeight - astraConfig.tileBtnMargin - 9 + 2, positionForeground.yArrow + 2 - 4, 5, 4);
 
     //draw dotted line.
-    HAL::drawHDottedLine(0, (int16_t) yDottedLine, systemConfig.screenWeight);
+    HAL::drawHDottedLine(0, (int16_t) positionForeground.yDottedLine, systemConfig.screenWeight);
 
   } else if (selfType == LIST) {
     Item::updateConfig();
@@ -243,22 +233,66 @@ bool Selector::destroy() {
 }
 
 void Selector::render(Camera* _camera) {
-  ////todo 还没加入摄像机
+  Item::updateConfig();
+
+  ////todo 未来可以做一个从磁贴大框向列表选择框的过渡动画 画的大框逐渐变小 最终变成选择框那么大 全过程都是没有R角 过渡完成后直接画R角的选择框即可
+  ////todo 从列表到磁贴同理
+  ////todo 判断依据 当目前进入的页面类型不等于前级页面类型时 执行过渡动画
+  ////todo 如此这般的话 就需要增加两个坐标变量分别代表大框的长和宽 绘制时就不能直接从config中取了
+  animation(&x, xTrg, astraConfig.selectorAnimationSpeed);
+  animation(&y, yTrg, astraConfig.selectorAnimationSpeed);
+
   if (menu->selfType == Menu::TILE) {
+    animation(&yText, yTextTrg, astraConfig.selectorAnimationSpeed);
+    //animation(&wFrame, wFrameTrg, astraConfig.selectorAnimationSpeed);
+    //animation(&hFrame, hFrameTrg, astraConfig.selectorAnimationSpeed);
+
+    //draw text.
+    //文字不受摄像机的影响
+    HAL::setDrawType(1);
+    HAL::drawChinese((systemConfig.screenWeight - HAL::getFontWidth(menu->child[menu->selectIndex]->title)) / 2, yText, menu->child[menu->selectIndex]->title);
+
+    //draw box.
+    //大框需要受摄像机的影响
+    HAL::setDrawType(2);
+    HAL::drawFrame(x + _camera->x, y + _camera->y, astraConfig.tileSelectBoxWeight, astraConfig.tileSelectBoxHeight);
+    //HAL::drawFrame(x + _camera->x, y + _camera->y, wFrame, hFrame);
 
   } else if (menu->selfType == Menu::LIST) {
+    animation(&w, wTrg, astraConfig.selectorAnimationSpeed);
+    //animation(&h, hTrg, astraConfig.selectorAnimationSpeed);
+
+    //draw select box.
+    //受摄像机的影响
     HAL::setDrawType(2);
-    HAL::drawRBox(x, y, w, astraConfig.listLineHeight, astraConfig.selectorRadius);
+    HAL::drawRBox(x + _camera->x, y + _camera->y, w, astraConfig.listLineHeight, astraConfig.selectorRadius);
+    //HAL::drawRBox(x + _camera->x, y + _camera->y, w, h, astraConfig.selectorRadius);
     HAL::setDrawType(1);
   }
 }
 
-void Selector::go(uint8_t _x, uint8_t _y) {
-  animation(&x, _x, astraConfig.selectorAnimationSpeed);
-  animation(&y, _y, astraConfig.selectorAnimationSpeed);
+void Selector::go(uint8_t _index) {
+  Item::updateConfig();
+
+  ////todo 在go的时候改变trg的值
+
+  if (menu->selfType == Menu::TILE) {
+
+    if (menu->selfType != menu->child[_index]->selfType) { /*todo 过渡动画 从大框到选择框*/ }
+
+    xTrg = menu->child[_index]->position.x - (astraConfig.tileSelectBoxWeight - astraConfig.tilePicWidth) / 2;
+    yTrg = menu->child[_index]->position.y - (astraConfig.tileSelectBoxHeight - astraConfig.tilePicHeight) / 2;
+
+    yText = systemConfig.screenHeight; //给磁贴文字归零 从屏幕外滑入
+
+
+  } else if (menu->selfType == Menu::LIST) {
+
+    if (menu->selfType != menu->child[_index]->selfType) { /*todo 过渡动画 从选择框到大框*/ }
+
+    xTrg = menu->child[_index]->position.x - astraConfig.selectorMargin;
+    yTrg = menu->child[_index]->position.y - astraConfig.selectorTopMargin;
+    wTrg = HAL::getFontWidth(menu->child[_index]->title) + astraConfig.listTextMargin * 2;
+  }
 }
-
-
-
-
 }
