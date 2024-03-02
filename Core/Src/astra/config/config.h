@@ -47,6 +47,7 @@ struct config {
   uint8_t tileDottedLineMargin = 46; //虚线上边距
   uint8_t tileArrowTopMargin = 46; //箭头上边距
   uint8_t tileTextTopMargin = 52; //标题上边距
+  uint8_t tileBarHeight = 2; //磁贴进度条高度
 
   uint8_t tileSelectBoxHeight = 36;  //磁贴选择框高度
   uint8_t tileSelectBoxWeight = 36;  //磁贴选择框宽度

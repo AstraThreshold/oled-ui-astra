@@ -1,7 +1,7 @@
 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: \
  D:\Projects\astra\Core\Src\astra\ui\launcher.cpp \
  D:\Projects\astra\Core\Src\astra\ui\launcher.h \
- D:\Projects\astra\Core\Src\astra\ui\element/page/page.h \
+ D:\Projects\astra\Core\Src\astra\ui\element/page/item.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\cstdint \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\arm-none-eabi\thumb\v7-m\nofp\bits\c++config.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\arm-none-eabi\thumb\v7-m\nofp\bits\os_defines.h \
@@ -127,11 +127,8 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\uniform_int_dist.h \
  d:\projects\astra\core\src\astra\ui\element\element_i.h \
  d:\projects\astra\core\src\hal\hal.h \
- d:\projects\astra\core\src\hal\oled/graph_lib/graph_lib.h \
- d:\projects\astra\core\src\hal\oled/graph_lib/graph_lib_i.h \
- d:\projects\astra\core\src\hal\oled/graph_lib/u8g2/u8g2.h \
- d:\projects\astra\core\src\hal\oled/graph_lib/u8g2/u8x8.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\lib\gcc\arm-none-eabi\12.2.1\include-fixed\limits.h \
+ d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\utility \
+ d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_relops.h \
  d:\projects\astra\core\src\astra\config\config.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\cmath \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\math.h \
@@ -148,31 +145,4 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\tr1\modified_bessel_func.tcc \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\tr1\poly_hermite.tcc \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\tr1\poly_laguerre.tcc \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\tr1\riemann_zeta.tcc \
- D:\Projects\astra\Core\Src\astra\ui\element/widget/widget.h \
- d:\projects\astra\core\src\hal\key\key.h \
- D:\Projects\astra\Core\Inc/main.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal.h \
- D:\Projects\astra\Core\Inc/stm32f1xx_hal_conf.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_rcc.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_def.h \
- D:\Projects\astra\Drivers\CMSIS\Device\ST\STM32F1xx\Include/stm32f1xx.h \
- D:\Projects\astra\Drivers\CMSIS\Device\ST\STM32F1xx\Include/stm32f103xb.h \
- D:\Projects\astra\Drivers\CMSIS\Include/core_cm3.h \
- D:\Projects\astra\Drivers\CMSIS\Include/cmsis_version.h \
- D:\Projects\astra\Drivers\CMSIS\Include/cmsis_compiler.h \
- D:\Projects\astra\Drivers\CMSIS\Include/cmsis_gcc.h \
- D:\Projects\astra\Drivers\CMSIS\Device\ST\STM32F1xx\Include/system_stm32f1xx.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/Legacy/stm32_hal_legacy.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_rcc_ex.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_gpio.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_gpio_ex.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_exti.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_dma.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_dma_ex.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_cortex.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_flash.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_flash_ex.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pwr.h \
- D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_spi.h \
- d:\projects\astra\core\src\hal\key\key_i.h
+ d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\tr1\riemann_zeta.tcc

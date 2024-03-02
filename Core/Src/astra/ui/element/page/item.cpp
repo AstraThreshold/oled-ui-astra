@@ -65,12 +65,13 @@ void Camera::goDirect(uint8_t _x, uint8_t _y) {
 Menu::Menu(std::string _title) {
   this->title = std::move(_title);
   this->selfType = LIST;
+  this->childType = {};
   this->position.x = 0;
   this->position.y = 0;
   this->position.xTrg = 0;
   this->position.yTrg = 0;
   this->selectIndex = 0;
-  this->init = false;
+  this->isInit = false;
   this->parent = nullptr;
   this->child.clear();
   this->pic.clear();
@@ -80,17 +81,44 @@ Menu::Menu(std::string _title, std::vector<std::vector<uint8_t>> _pic) {
   this->title = std::move(_title);
   this->pic = std::move(_pic);
   this->selfType = TILE;
+  this->childType = {};
   this->position.x = 0;
   this->position.y = 0;
   this->position.xTrg = 0;
   this->position.yTrg = 0;
   this->selectIndex = 0;
-  this->init = false;
+  this->isInit = false;
   this->parent = nullptr;
   this->child.clear();
 }
 
+void Menu::init() {
+  if (selfType == TILE) {
+    if (astraConfig.tileUnfold) {
+      for (auto _iter : child) _iter->position.x = 0 - astraConfig.tilePicWidth; //unfold from left.
+
+    } else {
+
+    }
+  } else if (selfType == LIST) {
+    if (astraConfig.listUnfold){
+      for (auto _iter : child) _iter->position.y = 0; //unfold from top.
+
+    } else {
+
+    }
+  }
+
+  isInit = true;
+}
+
+
 void Menu::render(Camera* _camera) {
+  if (!isInit) init();  //todo 用这个取代下面所有的初始化 要记住坐标只初始化一次
+
+  animation(&positionForeground.hBar, positionForeground.hBarTrg, astraConfig.menuAnimationSpeed);
+  animation(&positionForeground.wBar, positionForeground.wBarTrg, astraConfig.menuAnimationSpeed);
+
   if (selfType == TILE) {
     Item::updateConfig();
 
@@ -101,17 +129,15 @@ void Menu::render(Camera* _camera) {
 
     //draw pic.
     for (auto _iter : child) {
-      if (astraConfig.tileUnfold) {
-        if (!init) {
-          _iter->position.x = 0 - astraConfig.tilePicWidth; //unfold from left.
-          init = true;
-        }
-      }
-
       HAL::drawBMP(_iter->position.x + _camera->x, astraConfig.tilePicTopMargin + _camera->y, astraConfig.tilePicWidth, astraConfig.tilePicHeight, _iter->pic[0].data());
+      //这里的xTrg在addItem的时候就已经确定了
       animation(&_iter->position.x, _iter->position.xTrg, astraConfig.tileAnimationSpeed);
-
     }
+
+    //draw bar.
+    //在屏幕最上方 两个像素高
+    positionForeground.wBarTrg = systemConfig.screenWeight * ((selectIndex + 1) / getItemNum());
+    HAL::drawBox(positionForeground.xBar, positionForeground.yBar, positionForeground.wBar, astraConfig.tileBarHeight);
 
     //draw left arrow.
     HAL::drawHLine(astraConfig.tileArrowMargin, positionForeground.yArrow, astraConfig.tileArrowWidth);
@@ -145,27 +171,23 @@ void Menu::render(Camera* _camera) {
 
     //allow x > screen height, y > screen weight.
     for (auto _iter : child) {
-      if (astraConfig.listUnfold) {
-        if (!init) {
-          _iter->position.y = 0; //unfold from top.
-          init = true;
-        }
-      }
-
       HAL::drawChinese(_iter->position.x + _camera->x, _iter->position.y + _camera->y, _iter->title);
+      //这里的xTrg在addItem的时候就已经确定了
       animation(&_iter->position.y, _iter->position.yTrg, astraConfig.menuAnimationSpeed);
     }
 
     //todo draw bar.
+    ////todo 记得在这里计算出trg
     HAL::drawHLine(systemConfig.screenWeight - astraConfig.listBarWeight, 0, astraConfig.listBarWeight);
     HAL::drawHLine(systemConfig.screenWeight - astraConfig.listBarWeight, systemConfig.screenHeight - 1, astraConfig.listBarWeight);
     HAL::drawVLine(systemConfig.screenWeight - ceil((float) astraConfig.listBarWeight / 2.0f), 0, systemConfig.screenHeight);
-    //HAL::drawBox(systemConfig.screenWeight - astraConfig.listBarWeight, 0, astraConfig.listBarWeight, yBar);
+    HAL::drawBox(systemConfig.screenWeight - astraConfig.listBarWeight, 0, astraConfig.listBarWeight, positionForeground.hBar);
 
     //light mode.
     HAL::setDrawType(2);
     if (astraConfig.lightMode) HAL::drawBox(0, 0, systemConfig.screenWeight, systemConfig.screenHeight);
     HAL::setDrawType(1);
+
   }
 }
 
@@ -252,7 +274,7 @@ bool Selector::inject(Menu *_menu) {
 
   if (menu->parent->selfType != menu->selfType) { /*todo 如果前后两页类型不同 不能直接go*/ }
   else go(this->menu->selectIndex);  //注入之后要初始化选择框的位置
-  
+
   return true;
 }
 

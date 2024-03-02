@@ -259,7 +259,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Jetbrains/apps/CLion/ch-0/233.13135.93/bin/cmake/win/x64/bin/cmake.exe"
+			"value" : "E:/Jetbrains/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -271,7 +271,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Jetbrains/apps/CLion/ch-0/233.13135.93/bin/cmake/win/x64/bin/cpack.exe"
+			"value" : "E:/Jetbrains/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -283,7 +283,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Jetbrains/apps/CLion/ch-0/233.13135.93/bin/cmake/win/x64/bin/ctest.exe"
+			"value" : "E:/Jetbrains/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -1019,7 +1019,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Jetbrains/apps/CLion/ch-0/233.13135.93/bin/cmake/win/x64/share/cmake-3.27"
+			"value" : "E:/Jetbrains/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",

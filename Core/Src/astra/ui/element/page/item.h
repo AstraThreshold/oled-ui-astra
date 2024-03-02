@@ -63,6 +63,11 @@ public:
 
   //前景元素的坐标
   typedef struct PositionForeground {
+    float hBar, hBarTrg;  //进度条高度 通用
+    float wBar, wBarTrg;  //进度条宽度 通用
+    float xBar, xBarTrg;  //进度条x坐标 通用
+    float yBar, yBarTrg;  //进度条y坐标 通用
+
     /*TILE*/
     float yArrow, yArrowTrg;
     float yDottedLine, yDottedLineTrg;
@@ -86,10 +91,12 @@ public:
   Menu *parent;
   std::vector<Menu *> child;
   uint8_t selectIndex;
-  bool init;
+  bool isInit;
 
   explicit Menu(std::string _title);
   Menu(std::string _title, std::vector<std::vector<uint8_t>> _pic);
+
+  void init(); //每次打开页面都要调用一次
 
   inline void render(Camera* _camera);  //render all child item.
   [[nodiscard]] uint8_t getItemNum() const;
@@ -123,8 +130,8 @@ public:
   /*TILE*/
 
   Selector();
-  ////todo!!!!!!! 最牛逼的来了 在磁贴中 文字和大框就是selector
-  ////todo 这样就可以弄磁贴的文字出现动画了
+  //最牛逼的来了 在磁贴中 文字和大框就是selector
+  //这样就可以弄磁贴的文字出现动画了
   ////todo 在磁贴中 选择的时候 摄像机和selector都要移动 磁贴的selector是一个空心方框 + 底部的字体
 
   void go(uint8_t _index);

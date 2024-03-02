@@ -1,4 +1,4 @@
-E:\Jetbrains\apps\CLion\ch-0\233.13135.93\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/STM32CubeToolChains/MinGW/bin/mingw32-make.exe -DCMAKE_C_COMPILER=D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-g++.exe -G "CodeBlocks - MinGW Makefiles" -S D:\Projects\astra -B D:\Projects\astra\cmake-build-debug
+E:\Jetbrains\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/STM32CubeToolChains/MinGW/bin/mingw32-make.exe -DCMAKE_C_COMPILER=D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-g++.exe -G "CodeBlocks - MinGW Makefiles" -S D:\Projects\astra -B D:\Projects\astra\cmake-build-debug
 CMake Deprecation Warning:
   Support for "Extra Generators" like
 
@@ -9,6 +9,6 @@ CMake Deprecation Warning:
 
 
 -- Minimal optimization, debug info included
--- Configuring done (3.0s)
+-- Configuring done (0.4s)
 -- Generating done (0.1s)
 -- Build files have been written to: D:/Projects/astra/cmake-build-debug
