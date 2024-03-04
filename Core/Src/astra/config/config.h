@@ -14,7 +14,7 @@ namespace astra {
  */
 struct config {
   uint8_t tileAnimationSpeed = 50.0f;
-  uint8_t menuAnimationSpeed = 50.0f;
+  uint8_t listAnimationSpeed = 50.0f;
   uint8_t selectorAnimationSpeed = 50.0f;
   uint8_t windowAnimationSpeed;
   uint8_t sideBarAnimationSpeed;
@@ -44,9 +44,12 @@ struct config {
   uint8_t tilePicTopMargin = 7; //图标上边距
   uint8_t tileArrowWidth = 6;
   uint8_t tileArrowMargin = 4; //箭头边距
-  uint8_t tileDottedLineMargin = 46; //虚线上边距
-  uint8_t tileArrowTopMargin = 46; //箭头上边距
-  uint8_t tileTextTopMargin = 52; //标题上边距
+
+  //todo 如果有问题 给下面这三个分别+1
+  uint8_t tileDottedLineBottomMargin = 18; //虚线下边距(top: 46)
+  uint8_t tileArrowBottomMargin = 8; //箭头下边距(top: 56)
+  uint8_t tileTextBottomMargin = 12; //标题下边距(top: 52)
+
   uint8_t tileBarHeight = 2; //磁贴进度条高度
 
   uint8_t tileSelectBoxHeight = 36;  //磁贴选择框高度

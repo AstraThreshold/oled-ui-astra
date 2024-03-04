@@ -94,19 +94,37 @@ Menu::Menu(std::string _title, std::vector<std::vector<uint8_t>> _pic) {
 
 void Menu::init() {
   if (selfType == TILE) {
+    //受展开开关影响的坐标初始化
     if (astraConfig.tileUnfold) {
       for (auto _iter : child) _iter->position.x = 0 - astraConfig.tilePicWidth; //unfold from left.
+      positionForeground.wBar = 0;  //bar unfold from left.
 
     } else {
-
+      for (auto _iter : child) _iter->position.x = _iter->position.xTrg;
+      positionForeground.wBar = positionForeground.wBarTrg;
     }
+
+    //始终执行的坐标初始化
+    //底部箭头和虚线的初始化
+    positionForeground.yArrow = systemConfig.screenHeight;
+    positionForeground.yDottedLine = systemConfig.screenHeight;
+
+    //顶部进度条的从上方滑入的初始化
+    positionForeground.yBar = 0 - astraConfig.tileBarHeight; //注意这里是坐标从屏幕外滑入 而不是height从0变大
+
   } else if (selfType == LIST) {
-    if (astraConfig.listUnfold){
-      for (auto _iter : child) _iter->position.y = 0; //unfold from top.
-
+    //受展开开关影响的坐标初始化
+    if (astraConfig.listUnfold) {
+      for (auto _iter : child) _iter->position.y = 0; //text unfold from top.
+      positionForeground.hBar = 0;  //bar unfold from top.
     } else {
-
+      for (auto _iter : child) _iter->position.y = _iter->position.yTrg;
+      positionForeground.hBar = positionForeground.hBarTrg;
     }
+
+    //始终执行的坐标初始化
+    //todo 进度条的从右侧滑入的初始化
+    positionForeground.xBar = systemConfig.screenWeight;
   }
 
   isInit = true;
@@ -114,16 +132,16 @@ void Menu::init() {
 
 
 void Menu::render(Camera* _camera) {
-  if (!isInit) init();  //todo 用这个取代下面所有的初始化 要记住坐标只初始化一次
-
-  animation(&positionForeground.hBar, positionForeground.hBarTrg, astraConfig.menuAnimationSpeed);
-  animation(&positionForeground.wBar, positionForeground.wBarTrg, astraConfig.menuAnimationSpeed);
+  if (!isInit) init();  //todo 用这个取代下面所有的初始化 要记住坐标只初始化一次 在适当的位置重置isInit（比如在open里）
 
   if (selfType == TILE) {
     Item::updateConfig();
 
-    animation(&positionForeground.yDottedLine, astraConfig.tileDottedLineMargin, astraConfig.tileAnimationSpeed);
-    animation(&positionForeground.yArrow, astraConfig.tileArrowTopMargin, astraConfig.tileAnimationSpeed);
+    animation(&positionForeground.yDottedLine, positionForeground.yDottedLineTrg, astraConfig.tileAnimationSpeed);
+    animation(&positionForeground.yArrow, positionForeground.yArrowTrg, astraConfig.tileAnimationSpeed);
+
+    animation(&positionForeground.wBar, positionForeground.wBarTrg, astraConfig.tileAnimationSpeed);
+    animation(&positionForeground.yBar, positionForeground.yBarTrg, astraConfig.tileAnimationSpeed);
 
     HAL::setDrawType(1);
 
@@ -137,7 +155,7 @@ void Menu::render(Camera* _camera) {
     //draw bar.
     //在屏幕最上方 两个像素高
     positionForeground.wBarTrg = systemConfig.screenWeight * ((selectIndex + 1) / getItemNum());
-    HAL::drawBox(positionForeground.xBar, positionForeground.yBar, positionForeground.wBar, astraConfig.tileBarHeight);
+    HAL::drawBox(0, positionForeground.yBar, positionForeground.wBar, astraConfig.tileBarHeight);
 
     //draw left arrow.
     HAL::drawHLine(astraConfig.tileArrowMargin, positionForeground.yArrow, astraConfig.tileArrowWidth);
@@ -167,27 +185,29 @@ void Menu::render(Camera* _camera) {
   } else if (selfType == LIST) {
     Item::updateConfig();
 
+    animation(&positionForeground.hBar, positionForeground.hBarTrg, astraConfig.listAnimationSpeed);
+    animation(&positionForeground.xBar, positionForeground.xBarTrg, astraConfig.listAnimationSpeed);
+
     HAL::setDrawType(1);
 
     //allow x > screen height, y > screen weight.
     for (auto _iter : child) {
       HAL::drawChinese(_iter->position.x + _camera->x, _iter->position.y + _camera->y, _iter->title);
       //这里的xTrg在addItem的时候就已经确定了
-      animation(&_iter->position.y, _iter->position.yTrg, astraConfig.menuAnimationSpeed);
+      animation(&_iter->position.y, _iter->position.yTrg, astraConfig.listAnimationSpeed);
     }
 
-    //todo draw bar.
-    ////todo 记得在这里计算出trg
-    HAL::drawHLine(systemConfig.screenWeight - astraConfig.listBarWeight, 0, astraConfig.listBarWeight);
-    HAL::drawHLine(systemConfig.screenWeight - astraConfig.listBarWeight, systemConfig.screenHeight - 1, astraConfig.listBarWeight);
-    HAL::drawVLine(systemConfig.screenWeight - ceil((float) astraConfig.listBarWeight / 2.0f), 0, systemConfig.screenHeight);
-    HAL::drawBox(systemConfig.screenWeight - astraConfig.listBarWeight, 0, astraConfig.listBarWeight, positionForeground.hBar);
+    //draw bar.
+    positionForeground.hBarTrg = systemConfig.screenHeight * ((selectIndex + 1) / getItemNum());
+    //HAL::drawHLine(systemConfig.screenWeight - astraConfig.listBarWeight, 0, astraConfig.listBarWeight);
+    //HAL::drawHLine(systemConfig.screenWeight - astraConfig.listBarWeight, systemConfig.screenHeight - 1, astraConfig.listBarWeight);
+    //HAL::drawVLine(systemConfig.screenWeight - ceil((float) astraConfig.listBarWeight / 2.0f), 0, systemConfig.screenHeight);
+    HAL::drawBox(positionForeground.xBar, 0, astraConfig.listBarWeight, positionForeground.hBar);
 
     //light mode.
     HAL::setDrawType(2);
     if (astraConfig.lightMode) HAL::drawBox(0, 0, systemConfig.screenWeight, systemConfig.screenHeight);
     HAL::setDrawType(1);
-
   }
 }
 
@@ -217,16 +237,22 @@ bool Menu::addItem(Menu *_page) {
       _page->parent = this;
       this->child.push_back(_page);
       if (_page->selfType == LIST) {
-        _page->position.x = astraConfig.listTextMargin;
+        //_page->position.x = astraConfig.listTextMargin;
         _page->position.xTrg = astraConfig.listTextMargin;
-        _page->position.y = astraConfig.listTextMargin + this->getItemNum() * astraConfig.listLineHeight;
+        //_page->position.y = astraConfig.listTextMargin + this->getItemNum() * astraConfig.listLineHeight;
         _page->position.yTrg = astraConfig.listTextMargin + this->getItemNum() * astraConfig.listLineHeight;
+
+        positionForeground.xBarTrg = systemConfig.screenWeight - astraConfig.listBarWeight;
       }
       if (_page->selfType == TILE) {
-        _page->position.x = astraConfig.tilePicMargin + this->getItemNum() * astraConfig.tilePicWidth;
+        //_page->position.x = astraConfig.tilePicMargin + this->getItemNum() * astraConfig.tilePicWidth;
         _page->position.xTrg = astraConfig.tilePicMargin + this->getItemNum() * astraConfig.tilePicWidth;
-        _page->position.y = astraConfig.tilePicTopMargin;
+        //_page->position.y = astraConfig.tilePicTopMargin;
         _page->position.yTrg = astraConfig.tilePicTopMargin;
+
+        _page->positionForeground.yBarTrg = 0;
+        _page->positionForeground.yArrowTrg = systemConfig.screenHeight - astraConfig.tileArrowBottomMargin;
+        _page->positionForeground.yDottedLineTrg = systemConfig.screenHeight - astraConfig.tileDottedLineBottomMargin;
       }
       return true;
     } else return false;
@@ -255,7 +281,7 @@ void Selector::go(uint8_t _index) {
     yTrg = menu->child[_index]->position.y - (astraConfig.tileSelectBoxHeight - astraConfig.tilePicHeight) / 2;
 
     yText = systemConfig.screenHeight; //给磁贴文字归零 从屏幕外滑入
-
+    yTextTrg = systemConfig.screenHeight - astraConfig.tileTextBottomMargin;
 
   } else if (menu->selfType == Menu::LIST) {
 
@@ -272,8 +298,7 @@ bool Selector::inject(Menu *_menu) {
   if (this->menu != nullptr) return false;
   this->menu = _menu;
 
-  if (menu->parent->selfType != menu->selfType) { /*todo 如果前后两页类型不同 不能直接go*/ }
-  else go(this->menu->selectIndex);  //注入之后要初始化选择框的位置
+  go(this->menu->selectIndex);  //注入之后要初始化选择框的位置
 
   return true;
 }
