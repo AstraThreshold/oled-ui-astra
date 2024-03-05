@@ -11,6 +11,10 @@
 //驱动层 - 界面层（包括各种列表 磁铁 复选框 侧边栏 弹窗等） - 处理层（各种坐标的变换等）
 
 //传进去的有三个东西 第一个是文字（要显示的东西） 第二个是类别（普通列表 跳转列表 复选框） 第三个是特征向量（指向复选框和弹窗对应的参数 要跳转的地方等）
+
+////todo 看dreamView的代码 挨个检查每一部分是否都有对应
+////todo 小组件下个版本更新
+
 #include "item.h"
 
 #include <utility>
@@ -126,12 +130,12 @@ void Menu::init() {
     positionForeground.xBar = systemConfig.screenWeight;
   }
 
-  isInit = true;
+  isInit = true; //todo 考虑什么时候把isInit设为false 或者彻底取缔isInit？ 同时在render中不再执行init 在启动器中执行
 }
 
 
 inline void Menu::render(Camera* _camera) {
-  if (!isInit) init();
+  //if (!isInit) init();
 
   if (selfType == TILE) {
     Item::updateConfig();
@@ -309,7 +313,7 @@ bool Selector::destroy() {
   this->menu = nullptr;
 }
 
-void Selector::render(Camera* _camera) {
+inline void Selector::render(Camera* _camera) {
   Item::updateConfig();
 
   ////todo 未来可以做一个从磁贴大框向列表选择框的过渡动画 画的大框逐渐变小 最终变成选择框那么大 全过程都是没有R角 过渡完成后直接画R角的选择框即可

@@ -35,6 +35,7 @@ public:
 
 //磁贴类中 前景是虚线 标题 箭头和按钮图标 摄像机横向移动
 //列表类中 前景是进度条 摄像机纵向移动
+//todo 想想有没有关于摄像机的初始化内容 并实现
 class Camera : public Item, public Animation {
 public:
   float x, xTrg;
