@@ -66,9 +66,9 @@ Menu::Menu(std::string _title) {
   this->title = std::move(_title);
   this->selfType = LIST;
   this->childType = {};
-  this->position.x = 0;
+  this->position.x = astraConfig.listTextMargin;
   this->position.y = 0;
-  this->position.xTrg = 0;
+  this->position.xTrg = astraConfig.listTextMargin;
   this->position.yTrg = 0;
   this->selectIndex = 0;
   this->isInit = false;
@@ -84,7 +84,7 @@ Menu::Menu(std::string _title, std::vector<std::vector<uint8_t>> _pic) {
   this->childType = {};
   this->position.x = 0;
   this->position.y = 0;
-  this->position.xTrg = 0;
+  this->position.xTrg = 0; //todo 这里的trg需要算
   this->position.yTrg = 0;
   this->selectIndex = 0;
   this->isInit = false;
@@ -123,7 +123,6 @@ void Menu::init() {
     }
 
     //始终执行的坐标初始化
-    //todo 进度条的从右侧滑入的初始化
     positionForeground.xBar = systemConfig.screenWeight;
   }
 
@@ -131,8 +130,8 @@ void Menu::init() {
 }
 
 
-void Menu::render(Camera* _camera) {
-  if (!isInit) init();  //todo 用这个取代下面所有的初始化 要记住坐标只初始化一次 在适当的位置重置isInit（比如在open里）
+inline void Menu::render(Camera* _camera) {
+  if (!isInit) init();
 
   if (selfType == TILE) {
     Item::updateConfig();
@@ -298,7 +297,7 @@ bool Selector::inject(Menu *_menu) {
   if (this->menu != nullptr) return false;
   this->menu = _menu;
 
-  go(this->menu->selectIndex);  //注入之后要初始化选择框的位置
+//  go(this->menu->selectIndex);  //注入之后要初始化选择框的位置
 
   return true;
 }

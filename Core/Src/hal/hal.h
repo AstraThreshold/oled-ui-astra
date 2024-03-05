@@ -50,6 +50,11 @@ struct config {
   uint8_t screenBright = 255;
   //todo place other param of system
 };
+
+static config &getSystemConfig() {
+  static config sysConfig;
+  return sysConfig;
+}
 }
 
 /**
@@ -59,84 +64,124 @@ struct config {
  */
 class HAL {
 private:
-  static HAL* hal;
+  static HAL *hal;
 
 public:
-  static HAL* get();    //get hal instance.
+  static HAL *get();    //get hal instance.
   static bool check();  //check if there is a hal instance.
 
   static bool inject(HAL *_hal);  //inject HAL instance and run hal_init.
   static void destroy();  //destroy HAL instance.
 
   virtual ~HAL() = default;
+
   virtual std::string type() { return "Base"; }
+
   virtual void init() {}
 
 protected:
   sys::config config;
 
   //todo: may-be unused.
-  void* canvasBuffer = nullptr;
+  void *canvasBuffer = nullptr;
 
 public:
-  static void* getCanvasBuffer() { return get()->_getCanvasBuffer(); }
-  virtual void* _getCanvasBuffer() { return nullptr; }
+  static void *getCanvasBuffer() { return get()->_getCanvasBuffer(); }
+
+  virtual void *_getCanvasBuffer() { return nullptr; }
 
   static void canvasUpdate() { get()->_canvasUpdate(); }
+
   virtual void _canvasUpdate() {}
 
   static void canvasClear() { get()->_canvasClear(); }
+
   virtual void _canvasClear() {}
 
-  static void setFont(const uint8_t * _font) { get()->_setFont(_font); }
-  virtual void _setFont(const uint8_t * _font) {}
+  static void setFont(const uint8_t *_font) { get()->_setFont(_font); }
 
-  static uint8_t getFontWidth(std::string& _text) { return get()->_getFontWidth(_text); }
-  virtual uint8_t _getFontWidth(std::string& _text) { return 0; }
+  virtual void _setFont(const uint8_t *_font) {}
+
+  static uint8_t getFontWidth(std::string &_text) { return get()->_getFontWidth(_text); }
+
+  virtual uint8_t _getFontWidth(std::string &_text) { return 0; }
 
   static uint8_t getFontHeight() { return get()->_getFontHeight(); }
+
   virtual uint8_t _getFontHeight() { return 0; }
 
   static void setDrawType(uint8_t _type) { get()->_setDrawType(_type); }
+
   virtual void _setDrawType(uint8_t _type) {}
 
   static void drawPixel(uint8_t _x, uint8_t _y) { get()->_drawPixel(_x, _y); }
+
   virtual void _drawPixel(uint8_t _x, uint8_t _y) {}
 
-  static void drawEnglish(uint8_t _x, uint8_t _y, const std::string& _text) { get()->_drawEnglish(_x, _y, _text); }
-  virtual void _drawEnglish(uint8_t _x, uint8_t _y, const std::string& _text) {}
+  static void drawEnglish(uint8_t _x, uint8_t _y, const std::string &_text) { get()->_drawEnglish(_x, _y, _text); }
 
-  static void drawChinese(uint8_t _x, uint8_t _y, const std::string& _text) { get()->_drawChinese(_x, _y, _text); }
-  virtual void _drawChinese(uint8_t _x, uint8_t _y, const std::string& _text) {}
+  virtual void _drawEnglish(uint8_t _x, uint8_t _y, const std::string &_text) {}
+
+  static void drawChinese(uint8_t _x, uint8_t _y, const std::string &_text) { get()->_drawChinese(_x, _y, _text); }
+
+  virtual void _drawChinese(uint8_t _x, uint8_t _y, const std::string &_text) {}
 
   static void drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) { get()->_drawVDottedLine(_x, _y, _h); }
+
   virtual void _drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) {}
 
   static void drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) { get()->_drawHDottedLine(_x, _y, _l); }
+
   virtual void _drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) {}
 
   static void drawVLine(uint8_t _x, uint8_t _y, uint8_t _h) { get()->_drawVLine(_x, _y, _h); }
+
   virtual void _drawVLine(uint8_t _x, uint8_t _y, uint8_t _h) {}
 
   static void drawHLine(uint8_t _x, uint8_t _y, uint8_t _l) { get()->_drawHLine(_x, _y, _l); }
+
   virtual void _drawHLine(uint8_t _x, uint8_t _y, uint8_t _l) {}
 
-  static void drawBMP(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, const uint8_t* _bitMap) { get()->_drawBMP(_x, _y, _w, _h, _bitMap); }
-  virtual void _drawBMP(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, const uint8_t* _bitMap) {}
+  static void drawBMP(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, const uint8_t *_bitMap) {
+    get()->_drawBMP(_x,
+                    _y,
+                    _w,
+                    _h,
+                    _bitMap);
+  }
+
+  virtual void _drawBMP(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, const uint8_t *_bitMap) {}
 
   static void drawBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) { get()->_drawBox(_x, _y, _w, _h); }
+
   virtual void _drawBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) {}
 
-  static void drawRBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) { get()->_drawRBox(_x, _y, _w, _h, _r); }
+  static void drawRBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {
+    get()->_drawRBox(_x,
+                     _y,
+                     _w,
+                     _h,
+                     _r);
+  }
+
   virtual void _drawRBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {}
 
   static void drawFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) { get()->_drawFrame(_x, _y, _w, _h); }
+
   virtual void _drawFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) {}
 
-  static void drawRFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) { get()->_drawRFrame(_x, _y, _w, _h, _r); }
+  static void drawRFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {
+    get()->_drawRFrame(_x,
+                       _y,
+                       _w,
+                       _h,
+                       _r);
+  }
+
   virtual void _drawRFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {}
 
   static void printInfo(std::string _msg) { get()->_printInfo(std::move(_msg)); }
+
   virtual void _printInfo(std::string _msg);
 
   /**
@@ -144,9 +189,11 @@ public:
    */
 public:
   static void delay(unsigned long _mill) { get()->_delay(_mill); }
+
   virtual void _delay(unsigned long _mill) {}
 
   static unsigned long millis() { return get()->_millis(); }
+
   virtual unsigned long _millis() { return 0; }
 
   /**
@@ -154,18 +201,23 @@ public:
    * */
 public:
   static void beep(float _freq) { get()->_beep(_freq); }
+
   virtual void _beep(float _freq) {}
 
   static void beepStop() { get()->_beepStop(); }
+
   virtual void _beepStop() {}
 
   static void setBeepVol(uint8_t _vol) { get()->_setBeepVol(_vol); }
+
   virtual void _setBeepVol(uint8_t _vol) {}
 
   static void screenOn() { get()->_screenOn(); }
+
   virtual void _screenOn() {}
 
   static void screenOff() { get()->_screenOff(); }
+
   virtual void _screenOff() {}
 
   /**
@@ -173,9 +225,11 @@ public:
    */
 public:
   static bool getKey(key::KEY_INDEX _keyIndex) { return get()->_getKey(_keyIndex); }
+
   virtual bool _getKey(key::KEY_INDEX _keyIndex) { return false; }
 
   static bool getAnyKey() { return get()->_getAnyKey(); }
+
   virtual bool _getAnyKey();
 
 protected:
@@ -183,19 +237,23 @@ protected:
 
 public:
   static void keyScan() { get()->_keyScan(); }
+
   virtual void _keyScan();
 
   static void keyTest() { return get()->_keyTest(); }
+
   virtual void _keyTest();
 
   /**
    * @brief system config.
    */
 public:
-  static sys::config& getSystemConfig() { return get()->config; }
+  static sys::config &getSystemConfig() { return get()->config; }
+
   static void setSystemConfig(sys::config _cfg) { get()->config = _cfg; }
 
   static void updateConfig() { get()->_updateConfig(); }
+
   virtual void _updateConfig() {}
 };
 
