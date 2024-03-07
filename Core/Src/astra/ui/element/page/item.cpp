@@ -37,36 +37,30 @@ void Item::updateConfig() {
   this->astraConfig = getUIConfig();
 }
 
-void Animation::animation(float *_pos, float _posTrg, float _speed) {
-  if (*_pos != _posTrg) {
-    if (std::fabs(*_pos - _posTrg) < 0.15f) *_pos = _posTrg;
-    else *_pos += (_posTrg - *_pos) / (_speed / 10.0f);
-  }
-}
-
 Camera::Camera() {
   this->xInit = 0;
   this->yInit = 0;
 
   this->x = 0;
-  this->xTrg = 0;
   this->y = 0;
-  this->yTrg = 0;
 }
 
-Camera::Camera(float _x, float _y) {
-  this->xInit = _x;
-  this->yInit = _y;
+//这里的坐标应该都是负的 因为最终渲染的时候是加上摄像机的坐标
+//所以说比如想显示下一页 应该是item本身的坐标减去摄像机的坐标 这样才会让item向上移动
+//一个办法是用户传进来正的坐标 但是在摄像机内部 所有坐标都取其相反数 负的
 
-  this->x = _x;
-  this->xTrg = _x;
-  this->y = _y;
-  this->yTrg = _y;
+//todo 如果出现问题 记得检查一下所有的坐标是不是都是有符号类型的 因为坐标全程都会出现负数
+Camera::Camera(float _x, float _y) {
+  this->xInit = 0 - _x;
+  this->yInit = 0 - _y;
+
+  this->x = 0 - _x;
+  this->y = 0 - _y;
 }
 
 void Camera::go(uint8_t _x, uint8_t _y) {
-  animation(&x, _x, astraConfig.cameraAnimationSpeed);
-  animation(&y, _y, astraConfig.cameraAnimationSpeed);
+  animation(&x, 0 - _x, astraConfig.cameraAnimationSpeed);
+  animation(&y, 0 - _y, astraConfig.cameraAnimationSpeed);
 }
 
 void Camera::reset() {
@@ -75,8 +69,24 @@ void Camera::reset() {
 }
 
 void Camera::goDirect(uint8_t _x, uint8_t _y) {
-  x = _x;
-  y = _y;
+  x = 0 - _x;
+  y = 0 - _y;
+}
+
+void Camera::goNextPageItem() {
+  animation(&y, y - systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
+}
+
+void Camera::goPreviewPageItem() {
+  animation(&y, y + systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
+}
+
+void Camera::goNextTileItem() {
+  animation(&x, x - (astraConfig.tilePicMargin + astraConfig.tilePicWidth), astraConfig.cameraAnimationSpeed);
+}
+
+void Camera::goPreviewTileItem() {
+  animation(&x, x + (astraConfig.tilePicMargin + astraConfig.tilePicWidth), astraConfig.cameraAnimationSpeed);
 }
 
 Menu::Menu(std::string _title) {
@@ -147,7 +157,7 @@ void Menu::init() {
 }
 
 
-inline void Menu::render(Camera* _camera) {
+void Menu::render(Camera* _camera) {
   //if (!isInit) init();
 
   if (selfType == TILE) {
@@ -326,7 +336,7 @@ bool Selector::destroy() {
   this->menu = nullptr;
 }
 
-inline void Selector::render(Camera* _camera) {
+void Selector::render(Camera* _camera) {
   Item::updateConfig();
 
   ////todo 未来可以做一个从磁贴大框向列表选择框的过渡动画 画的大框逐渐变小 最终变成选择框那么大 全过程都是没有R角 过渡完成后直接画R角的选择框即可

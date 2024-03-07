@@ -80,8 +80,10 @@ d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
                               CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj (__aeabi_fdiv)
 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpsf2.o)
                               CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj (__aeabi_fcmpeq)
+d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixsfsi.o)
+                              CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj (__aeabi_f2iz)
 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)
-                              CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj (__aeabi_f2uiz)
+                              CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj (__aeabi_f2uiz)
 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(unwind-arm.o)
                               CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj (__aeabi_unwind_cpp_pr0)
 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(libunwind.o)
@@ -299,6 +301,15 @@ Discarded input sections
  .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .group         0x00000000       0x14 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .group         0x00000000       0x14 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
@@ -360,6 +371,60 @@ Discarded input sections
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .ARM.exidx.text._ZN3HAL12getFontWidthERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .text._ZN3HAL11setDrawTypeEh
+                0x00000000       0x12 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.extab.text._ZN3HAL11setDrawTypeEh
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.exidx.text._ZN3HAL11setDrawTypeEh
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .text._ZN3HAL9drawPixelEhh
+                0x00000000       0x16 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.extab.text._ZN3HAL9drawPixelEhh
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.exidx.text._ZN3HAL9drawPixelEhh
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .text._ZN3HAL11drawChineseEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+                0x00000000       0x1a CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.extab.text._ZN3HAL11drawChineseEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.exidx.text._ZN3HAL11drawChineseEhhRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .text._ZN3HAL15drawHDottedLineEhhh
+                0x00000000       0x1a CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.extab.text._ZN3HAL15drawHDottedLineEhhh
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.exidx.text._ZN3HAL15drawHDottedLineEhhh
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .text._ZN3HAL9drawHLineEhhh
+                0x00000000       0x1a CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.extab.text._ZN3HAL9drawHLineEhhh
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.exidx.text._ZN3HAL9drawHLineEhhh
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .text._ZN3HAL7drawBMPEhhhhPKh
+                0x00000000       0x26 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.extab.text._ZN3HAL7drawBMPEhhhhPKh
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.exidx.text._ZN3HAL7drawBMPEhhhhPKh
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .text._ZN3HAL7drawBoxEhhhh
+                0x00000000       0x22 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.extab.text._ZN3HAL7drawBoxEhhhh
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.exidx.text._ZN3HAL7drawBoxEhhhh
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .text._ZN3HAL8drawRBoxEhhhhh
+                0x00000000       0x28 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.extab.text._ZN3HAL8drawRBoxEhhhhh
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.exidx.text._ZN3HAL8drawRBoxEhhhhh
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .text._ZN3HAL9drawFrameEhhhh
+                0x00000000       0x22 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.extab.text._ZN3HAL9drawFrameEhhhh
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.exidx.text._ZN3HAL9drawFrameEhhhh
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .text._ZN5astra4Item12updateConfigEv
                 0x00000000       0x48 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .ARM.extab.text._ZN5astra4Item12updateConfigEv
@@ -372,6 +437,12 @@ Discarded input sections
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .ARM.exidx.text._ZN5astra6CameraC2Ev
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .text._ZN5astra6CameraC2Eff
+                0x00000000       0x38 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.extab.text._ZN5astra6CameraC2Eff
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.exidx.text._ZN5astra6CameraC2Eff
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .text._ZN5astra6Camera2goEhh
                 0x00000000       0x46 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .ARM.extab.text._ZN5astra6Camera2goEhh
@@ -379,7 +450,7 @@ Discarded input sections
  .ARM.exidx.text._ZN5astra6Camera2goEhh
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .text._ZN5astra6Camera5resetEv
-                0x00000000       0x34 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+                0x00000000       0x32 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .ARM.extab.text._ZN5astra6Camera5resetEv
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .ARM.exidx.text._ZN5astra6Camera5resetEv
@@ -401,6 +472,12 @@ Discarded input sections
  .ARM.extab.text._ZNK5astra4Menu10getItemNumEv
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .ARM.exidx.text._ZNK5astra4Menu10getItemNumEv
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .text._ZN5astra4Menu6renderEPNS_6CameraE
+                0x00000000      0x3e0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.extab.text._ZN5astra4Menu6renderEPNS_6CameraE
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.exidx.text._ZN5astra4Menu6renderEPNS_6CameraE
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .text._ZNK5astra4Menu15getItemPositionEh
                 0x00000000       0x16 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
@@ -437,6 +514,12 @@ Discarded input sections
  .ARM.extab.text._ZN5astra8Selector6injectEPNS_4MenuE
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .ARM.exidx.text._ZN5astra8Selector6injectEPNS_4MenuE
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .text._ZN5astra8Selector6renderEPNS_6CameraE
+                0x00000000      0x14e CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.extab.text._ZN5astra8Selector6renderEPNS_6CameraE
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .ARM.exidx.text._ZN5astra8Selector6renderEPNS_6CameraE
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .text._ZNKSt6vectorIPN5astra4MenuESaIS2_EE5emptyEv
                 0x00000000        0xe CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
@@ -567,7 +650,7 @@ Discarded input sections
  .ARM.exidx.text._ZNSt6vectorIS_IhSaIhEESaIS1_EE14_M_move_assignEOS3_St17integral_constantIbLb1EE
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .text._ZN5astra4MenuC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_IhSaIhEESaIS9_EE
-                0x00000000       0xb8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+                0x00000000       0xc0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .ARM.extab.text._ZN5astra4MenuC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_IhSaIhEESaIS9_EE
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .ARM.exidx.text._ZN5astra4MenuC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt6vectorIS7_IhSaIhEESaIS9_EE
@@ -616,18 +699,18 @@ Discarded input sections
                 0x00000000        0x4 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .bss._ZZN5astraL11getUIConfigEvE11astraConfig
                 0x00000000       0x28 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
- .debug_info    0x00000000     0xffde CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
- .debug_abbrev  0x00000000      0xd60 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .debug_info    0x00000000    0x111c4 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .debug_abbrev  0x00000000      0xd8b CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .debug_loclists
-                0x00000000     0x1b1c CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+                0x00000000     0x20ac CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .debug_aranges
-                0x00000000      0x160 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+                0x00000000      0x1c0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .debug_rnglists
-                0x00000000      0x145 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
- .debug_line    0x00000000     0x1afa CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
- .debug_str     0x00000000     0xfe7c CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+                0x00000000      0x18f CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .debug_line    0x00000000     0x20a5 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .debug_str     0x00000000    0x1009a CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .comment       0x00000000       0x46 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
- .debug_frame   0x00000000      0x438 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
+ .debug_frame   0x00000000      0x5d4 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .ARM.attributes
                 0x00000000       0x2d CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/selector/selector.cpp.obj
@@ -647,6 +730,8 @@ Discarded input sections
  .ARM.attributes
                 0x00000000       0x2d CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/widget/widget.cpp.obj
  .group         0x00000000       0x14 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .bss           0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
@@ -662,6 +747,18 @@ Discarded input sections
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .ARM.exidx.text._ZN5astraL11getUIConfigEv
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .text._ZN3HAL12canvasUpdateEv
+                0x00000000        0xe CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .ARM.extab.text._ZN3HAL12canvasUpdateEv
+                0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .ARM.exidx.text._ZN3HAL12canvasUpdateEv
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .text._ZN3HAL11canvasClearEv
+                0x00000000        0xe CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .ARM.extab.text._ZN3HAL11canvasClearEv
+                0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .ARM.exidx.text._ZN3HAL11canvasClearEv
+                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .text._ZN5astra8Launcher4initEPNS_4MenuE
                 0x00000000       0x3c CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .ARM.extab.text._ZN5astra8Launcher4initEPNS_4MenuE
@@ -669,39 +766,39 @@ Discarded input sections
  .ARM.exidx.text._ZN5astra8Launcher4initEPNS_4MenuE
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .text._ZN5astra8Launcher4openEv
-                0x00000000       0xc2 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+                0x00000000       0xc6 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .ARM.extab.text._ZN5astra8Launcher4openEv
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .ARM.exidx.text._ZN5astra8Launcher4openEv
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .text._ZN5astra8Launcher5closeEv
-                0x00000000       0xc2 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+                0x00000000       0xc6 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .ARM.extab.text._ZN5astra8Launcher5closeEv
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .ARM.exidx.text._ZN5astra8Launcher5closeEv
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .text._ZN5astra8Launcher5startEv
-                0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+                0x00000000       0x1e CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .ARM.extab.text._ZN5astra8Launcher5startEv
-                0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .ARM.exidx.text._ZN5astra8Launcher5startEv
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .bss._ZGVZN5astraL11getUIConfigEvE11astraConfig
                 0x00000000        0x4 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .bss._ZZN5astraL11getUIConfigEvE11astraConfig
                 0x00000000       0x28 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
- .debug_info    0x00000000     0x2763 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
- .debug_abbrev  0x00000000      0x524 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .debug_info    0x00000000     0x2833 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .debug_abbrev  0x00000000      0x570 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .debug_loclists
-                0x00000000       0xea CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+                0x00000000       0xe7 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .debug_aranges
-                0x00000000       0x48 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+                0x00000000       0x58 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .debug_rnglists
-                0x00000000       0x33 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
- .debug_line    0x00000000      0x841 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
- .debug_str     0x00000000     0x12d2 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+                0x00000000       0x3f CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .debug_line    0x00000000      0x8a9 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .debug_str     0x00000000     0x1365 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .comment       0x00000000       0x46 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
- .debug_frame   0x00000000       0xbc CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .debug_frame   0x00000000       0xec CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .ARM.attributes
                 0x00000000       0x2d CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
@@ -8590,6 +8687,14 @@ Discarded input sections
  .debug_frame   0x00000000       0xc8 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpsf2.o)
  .ARM.attributes
                 0x00000000       0x1d d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpsf2.o)
+ .text          0x00000000       0x4c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixsfsi.o)
+ .data          0x00000000        0x0 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixsfsi.o)
+ .bss           0x00000000        0x0 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixsfsi.o)
+ .debug_line_str
+                0x00000000       0xca d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixsfsi.o)
+ .debug_frame   0x00000000       0x24 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixsfsi.o)
+ .ARM.attributes
+                0x00000000       0x1d d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixsfsi.o)
  .text          0x00000000       0x40 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)
  .data          0x00000000        0x0 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)
  .bss           0x00000000        0x0 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)

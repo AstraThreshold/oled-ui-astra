@@ -40,7 +40,7 @@ struct config {
 
   uint8_t tilePicWidth = 30;
   uint8_t tilePicHeight = 30;
-  uint8_t tilePicMargin = 38;
+  uint8_t tilePicMargin = 8;
   uint8_t tilePicTopMargin = 7; //图标上边距
   uint8_t tileArrowWidth = 6;
   uint8_t tileArrowMargin = 4; //箭头边距

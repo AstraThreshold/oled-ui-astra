@@ -26,8 +26,15 @@ protected:
 
 class Animation {
 public:
-  virtual inline void animation(float *_pos, float _posTrg, float _speed);
+  virtual void animation(float *_pos, float _posTrg, float _speed);
 };
+
+inline void Animation::animation(float *_pos, float _posTrg, float _speed) {
+  if (*_pos != _posTrg) {
+    if (std::fabs(*_pos - _posTrg) < 0.15f) *_pos = _posTrg;
+    else *_pos += (_posTrg - *_pos) / (_speed / 10.0f);
+  }
+}
 
 //加入了摄像机 随着摄像机动而动
 //其他的不动的元素 比如虚线和进度条 统称为前景 不受摄像机的控制
@@ -41,8 +48,7 @@ private:
   float xInit, yInit;
 
 public:
-  float x, xTrg;
-  float y, yTrg;
+  float x, y;
 
   Camera(); //build a empty camera instance.
   Camera(float _x, float _y); //build a camera instance with position.
@@ -53,9 +59,16 @@ public:
   //所有过程中 渲染好的元素绝对坐标都是不变的 只有摄像机的坐标在变
   void go(uint8_t _x, uint8_t _y);
   void goDirect(uint8_t _x, uint8_t _y);
+
+  void goNextPageItem();
+  void goPreviewPageItem();
+  void goNextTileItem();
+  void goPreviewTileItem();
+
   void reset();
 };
 
+//todo 实现之前提到过的那个进场和退场动画的idea
 class Menu : public Item, public Animation {
 public:
   //存储其在父页面中的位置
@@ -104,7 +117,7 @@ public:
 
   void init(); //每次打开页面都要调用一次
 
-  inline void render(Camera* _camera);  //render all child item.
+  void render(Camera* _camera);  //render all child item.
   [[nodiscard]] uint8_t getItemNum() const;
   [[nodiscard]] Position getItemPosition(uint8_t _index) const;
   [[nodiscard]] Menu* getNext() const;  //启动器调用该方法来获取下一个页面
@@ -145,7 +158,7 @@ public:
   bool inject(Menu* _menu); //inject menu instance to prepare for render.
   bool destroy(); //destroy menu instance.
 
-  inline void render(Camera* _camera);
+  void render(Camera* _camera);
 
   //在启动器中新建selector和camera 然后注入menu render
   //在启动器中执行下述方法即可实现选择
