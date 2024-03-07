@@ -105,25 +105,6 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj: \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_vector.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_bvector.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\vector.tcc \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\functional \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\tuple \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\uses_allocator.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\std_function.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\typeinfo \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\unordered_map \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\ext\aligned_buffer.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\hashtable.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\hashtable_policy.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\enable_special_members.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\node_handle.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\unordered_map.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\erase_if.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\array \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_algo.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\algorithmfwd.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_heap.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_tempbuf.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\uniform_int_dist.h \
  d:\projects\astra\core\src\astra\ui\element\element_i.h \
  d:\projects\astra\core\src\hal\hal.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\utility \

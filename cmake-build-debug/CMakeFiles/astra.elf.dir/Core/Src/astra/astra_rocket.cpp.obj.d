@@ -1,7 +1,8 @@
-CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: \
- D:\Projects\astra\Core\Src\astra\ui\launcher.cpp \
- D:\Projects\astra\Core\Src\astra\ui\launcher.h \
- D:\Projects\astra\Core\Src\astra\ui\element/page/item.h \
+CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj: \
+ D:\Projects\astra\Core\Src\astra\astra_rocket.cpp \
+ D:\Projects\astra\Core\Src\astra\astra_rocket.h \
+ d:\projects\astra\core\src\astra\ui\launcher.h \
+ d:\projects\astra\core\src\astra\ui\element/page/item.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\cstdint \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\arm-none-eabi\thumb\v7-m\nofp\bits\c++config.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\arm-none-eabi\thumb\v7-m\nofp\bits\os_defines.h \

@@ -9,7 +9,6 @@
 #include "cstdint"
 #include "string"
 #include <vector>
-#include "functional"
 #include "../element_i.h"
 #include "../../../../hal/hal.h"
 #include "../../../../astra/config/config.h"
@@ -169,4 +168,5 @@ public:
   //在启动器里单独渲染selector
 };
 }
+
 #endif //ASTRA_ASTRA__H

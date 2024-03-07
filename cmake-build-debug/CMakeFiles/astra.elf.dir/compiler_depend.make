@@ -4,13 +4,12 @@
 CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj: D:/Projects/astra/Core/Src/astra/app/astra_app.cpp \
   D:/Projects/astra/Core/Src/astra/app/astra_app.h
 
-CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.cpp \
-  D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.h
-
-CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/element/page/item.cpp \
-  D:/Projects/astra/Core/Src/astra/ui/element/page/item.h \
+CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj: D:/Projects/astra/Core/Src/astra/astra_rocket.cpp \
+  D:/Projects/astra/Core/Src/astra/astra_rocket.h \
   D:/Projects/astra/Core/Src/astra/config/config.h \
+  D:/Projects/astra/Core/Src/astra/ui/element/page/item.h \
   D:/Projects/astra/Core/Src/astra/ui/element/element_i.h \
+  D:/Projects/astra/Core/Src/astra/ui/launcher.h \
   D:/Projects/astra/Core/Src/hal/hal.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/_ansi.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
@@ -20,9 +19,7 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj: D:/Project
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/c++locale.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/cpu_defines.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/os_defines.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/array \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/backward/binders.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/algorithmfwd.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/alloc_traits.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/allocator.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/basic_string.h \
@@ -32,15 +29,11 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj: D:/Project
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/concept_check.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/cpp_type_traits.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/cxxabi_forced.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/enable_special_members.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/erase_if.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/exception.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/exception_defines.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/functexcept.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/functional_hash.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/hash_bytes.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/hashtable.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/hashtable_policy.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/invoke.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/iterator_concepts.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/localefwd.h \
@@ -48,7 +41,6 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj: D:/Project
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/memoryfwd.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/move.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/new_allocator.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/node_handle.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/ostream_insert.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/postypes.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/predefined_ops.h \
@@ -59,26 +51,19 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj: D:/Project
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/refwrap.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/specfun.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/std_abs.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/std_function.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_algo.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_algobase.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_bvector.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_construct.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_function.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_heap.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_iterator.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_iterator_base_funcs.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_iterator_base_types.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_pair.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_relops.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_tempbuf.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_uninitialized.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_vector.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/string_view.tcc \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stringfwd.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/uniform_int_dist.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/unordered_map.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/uses_allocator.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/utility.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/vector.tcc \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/cctype \
@@ -93,12 +78,10 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj: D:/Project
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/cwchar \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/debug/assertions.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/debug/debug.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/aligned_buffer.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/alloc_traits.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/numeric_traits.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/string_conversions.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/type_traits.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/functional \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/initializer_list \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/iosfwd \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/limits \
@@ -119,10 +102,137 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj: D:/Project
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/poly_laguerre.tcc \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/riemann_zeta.tcc \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/special_function_util.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tuple \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/type_traits \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/typeinfo \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/unordered_map \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/utility \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/vector \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/ctype.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/errno.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/locale.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/math.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/newlib.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/stdio.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/errno.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/wchar.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdarg.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h
+
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.cpp \
+  D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.h
+
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/element/page/item.cpp \
+  D:/Projects/astra/Core/Src/astra/ui/element/page/item.h \
+  D:/Projects/astra/Core/Src/astra/config/config.h \
+  D:/Projects/astra/Core/Src/astra/ui/element/element_i.h \
+  D:/Projects/astra/Core/Src/hal/hal.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/alloca.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/c++allocator.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/c++config.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/c++locale.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/cpu_defines.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/os_defines.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/backward/binders.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/alloc_traits.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/allocator.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/basic_string.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/basic_string.tcc \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/char_traits.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/charconv.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/concept_check.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/cpp_type_traits.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/cxxabi_forced.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/exception.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/exception_defines.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/functexcept.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/functional_hash.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/hash_bytes.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/invoke.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/iterator_concepts.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/localefwd.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/max_size_type.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/memoryfwd.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/move.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/new_allocator.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/ostream_insert.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/postypes.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/predefined_ops.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/ptr_traits.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/range_access.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/ranges_base.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/ranges_cmp.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/refwrap.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/specfun.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/std_abs.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_algobase.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_bvector.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_construct.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_function.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_iterator.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_iterator_base_funcs.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_iterator_base_types.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_pair.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_relops.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_uninitialized.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_vector.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/string_view.tcc \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stringfwd.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/utility.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/vector.tcc \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/cctype \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/cerrno \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/clocale \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/cmath \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/compare \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/concepts \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/cstdint \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/cstdio \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/cstdlib \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/cwchar \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/debug/assertions.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/debug/debug.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/alloc_traits.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/numeric_traits.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/string_conversions.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/type_traits.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/initializer_list \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/iosfwd \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/limits \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/new \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/numbers \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/pstl/pstl_config.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/string \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/string_view \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/bessel_function.tcc \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/beta_function.tcc \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/ell_integral.tcc \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/exp_integral.tcc \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/gamma.tcc \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/hypergeometric.tcc \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/legendre_function.tcc \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/modified_bessel_func.tcc \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/poly_hermite.tcc \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/poly_laguerre.tcc \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/riemann_zeta.tcc \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/special_function_util.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/type_traits \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/utility \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/vector \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/ctype.h \
@@ -172,9 +282,7 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: D:/Projects/astra/C
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/c++locale.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/cpu_defines.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/os_defines.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/array \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/backward/binders.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/algorithmfwd.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/alloc_traits.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/allocator.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/basic_string.h \
@@ -184,15 +292,11 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: D:/Projects/astra/C
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/concept_check.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/cpp_type_traits.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/cxxabi_forced.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/enable_special_members.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/erase_if.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/exception.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/exception_defines.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/functexcept.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/functional_hash.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/hash_bytes.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/hashtable.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/hashtable_policy.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/invoke.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/iterator_concepts.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/localefwd.h \
@@ -200,7 +304,6 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: D:/Projects/astra/C
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/memoryfwd.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/move.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/new_allocator.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/node_handle.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/ostream_insert.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/postypes.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/predefined_ops.h \
@@ -211,26 +314,19 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: D:/Projects/astra/C
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/refwrap.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/specfun.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/std_abs.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/std_function.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_algo.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_algobase.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_bvector.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_construct.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_function.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_heap.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_iterator.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_iterator_base_funcs.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_iterator_base_types.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_pair.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_relops.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_tempbuf.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_uninitialized.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_vector.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/string_view.tcc \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stringfwd.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/uniform_int_dist.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/unordered_map.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/uses_allocator.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/utility.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/vector.tcc \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/cctype \
@@ -245,12 +341,10 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: D:/Projects/astra/C
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/cwchar \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/debug/assertions.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/debug/debug.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/aligned_buffer.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/alloc_traits.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/numeric_traits.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/string_conversions.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/type_traits.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/functional \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/initializer_list \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/iosfwd \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/limits \
@@ -271,10 +365,7 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: D:/Projects/astra/C
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/poly_laguerre.tcc \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/riemann_zeta.tcc \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/special_function_util.h \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tuple \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/type_traits \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/typeinfo \
-  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/unordered_map \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/utility \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/vector \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/ctype.h \
@@ -1753,6 +1844,7 @@ CMakeFiles/astra.elf.dir/Core/Src/main.c.obj: D:/Projects/astra/Core/Src/main.c 
   D:/Projects/astra/Core/Inc/main.h \
   D:/Projects/astra/Core/Inc/spi.h \
   D:/Projects/astra/Core/Inc/stm32f1xx_hal_conf.h \
+  D:/Projects/astra/Core/Src/astra/astra_rocket.h \
   D:/Projects/astra/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
   D:/Projects/astra/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
   D:/Projects/astra/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
@@ -2431,11 +2523,9 @@ CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h
 
 
-D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c:
+D:/Projects/astra/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:
 
-D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h:
-
-D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.cpp:
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_relops.h:
 
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c:
 
@@ -2443,17 +2533,33 @@ D:/Projects/astra/Core/Src/astra/app/astra_app.cpp:
 
 D:/Projects/astra/Core/Src/astra/config/config.h:
 
-D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.h:
-
 D:/Projects/astra/Core/Inc/main.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_function.h:
 
 D:/Projects/astra/Core/Src/astra/app/astra_app.h:
 
-D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c:
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/cpu_defines.h:
 
-D:/Projects/astra/Core/Src/astra/ui/element/page/item.cpp:
+D:/Projects/astra/Core/Src/astra/ui/launcher.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stringfwd.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/compare:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/ranges_base.h:
+
+D:/Projects/astra/Core/Inc/stm32f1xx_hal_conf.h:
+
+D:/Projects/astra/Core/Src/astra/astra_rocket.cpp:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_bvector.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/move.h:
+
+D:/Projects/astra/Core/Src/astra/ui/element/element_i.h:
+
+D:/Projects/astra/Core/Src/astra/astra_rocket.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/new_allocator.h:
 
@@ -2464,12 +2570,6 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/initializer_list:
 
 D:/Projects/astra/Core/Src/astra/ui/element/page/item.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_bvector.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/move.h:
-
-D:/Projects/astra/Core/Src/astra/ui/element/element_i.h:
 
 D:/Projects/astra/Core/Src/hal/hal.h:
 
@@ -2503,31 +2603,7 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/exception_defines.h:
 
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/erase_if.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/cpu_defines.h:
-
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/os_defines.h:
-
-D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/memoryfwd.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/assert.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/char_traits.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/hypergeometric.tcc:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/array:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/string_conversions.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/charconv.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/debug/debug.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/algorithmfwd.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/alloc_traits.h:
 
@@ -2536,6 +2612,14 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/allocator.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/ostream_insert.h:
+
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/utility.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/alloc_traits.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_pair.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/basic_string.h:
 
@@ -2559,19 +2643,25 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/basic_string.tcc:
 
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/concept_check.h:
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c:
 
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_algo.h:
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/memoryfwd.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/assert.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/char_traits.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/string_conversions.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/charconv.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_vector.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/concept_check.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/machine/types.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/cxxabi_forced.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/enable_special_members.h:
-
-D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/hashtable_policy.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/exception.h:
 
@@ -2583,31 +2673,19 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/hash_bytes.h:
 
-D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/errno.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/hashtable.h:
-
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/legendre_function.tcc:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/invoke.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/localefwd.h:
 
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/vector.tcc:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/node_handle.h:
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/string_view.tcc:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/limits:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/postypes.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/predefined_ops.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/compare:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/ranges_base.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/machine/endian.h:
 
@@ -2617,11 +2695,7 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/specfun.h:
 
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/std_function.h:
-
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_construct.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_heap.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_iterator_base_funcs.h:
 
@@ -2629,37 +2703,9 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_iterator_base_types.h:
 
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/alloc_traits.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_pair.h:
-
-D:/Projects/astra/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_relops.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_tempbuf.h:
-
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_uninitialized.h:
 
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_vector.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/string_view.tcc:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stringfwd.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/uniform_int_dist.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/unordered_map.h:
-
-D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include-fixed/limits.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/uses_allocator.h:
-
-D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/utility.h:
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/vector.tcc:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/cctype:
 
@@ -2677,15 +2723,13 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/debug/assertions.h:
 
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/aligned_buffer.h:
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/debug/debug.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/numeric_traits.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/type_traits.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/functional:
 
 D:/Projects/astra/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h:
 
@@ -2719,6 +2763,8 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/gamma.tcc:
 
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/hypergeometric.tcc:
+
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/modified_bessel_func.tcc:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/poly_hermite.tcc:
@@ -2729,25 +2775,17 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/special_function_util.h:
 
-D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tuple:
-
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/type_traits:
-
-D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/stdio.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/typeinfo:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/unordered_map:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/vector:
 
 D:/Projects/astra/Core/Src/astra/ui/element/selector/selector.cpp:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/ctype.h:
+
+D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/errno.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/locale.h:
 
@@ -2762,6 +2800,10 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/newlib.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/stdint.h:
+
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/stdio.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/stdlib.h:
 
@@ -2799,17 +2841,25 @@ D:/Projects/astra/Core/Inc/spi.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h:
 
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c:
+
+D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h:
+
+D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.cpp:
+
+D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.h:
+
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c:
+
+D:/Projects/astra/Core/Src/astra/ui/element/page/item.cpp:
+
 D:/Projects/astra/Core/Src/astra/ui/element/selector/selector.h:
 
 D:/Projects/astra/Core/Src/astra/ui/element/widget/widget.cpp:
 
 D:/Projects/astra/Core/Src/astra/ui/launcher.cpp:
 
-D:/Projects/astra/Core/Src/astra/ui/launcher.h:
-
 D:/Projects/astra/Core/Inc/dma.h:
-
-D:/Projects/astra/Core/Inc/stm32f1xx_hal_conf.h:
 
 D:/Projects/astra/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h:
 
@@ -2863,6 +2913,10 @@ D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2
 
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8.h:
 
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include-fixed/limits.h:
+
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_config.cpp:
 
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_key.cpp:
@@ -2872,6 +2926,10 @@ D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp:
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c:
 
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.h:
+
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui_u8g2.c:
+
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c:
 
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c:
 

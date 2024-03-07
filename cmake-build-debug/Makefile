@@ -152,6 +152,30 @@ Core/Src/astra/app/astra_app.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.s
 .PHONY : Core/Src/astra/app/astra_app.cpp.s
 
+Core/Src/astra/astra_rocket.obj: Core/Src/astra/astra_rocket.cpp.obj
+.PHONY : Core/Src/astra/astra_rocket.obj
+
+# target to build an object file
+Core/Src/astra/astra_rocket.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
+.PHONY : Core/Src/astra/astra_rocket.cpp.obj
+
+Core/Src/astra/astra_rocket.i: Core/Src/astra/astra_rocket.cpp.i
+.PHONY : Core/Src/astra/astra_rocket.i
+
+# target to preprocess a source file
+Core/Src/astra/astra_rocket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.i
+.PHONY : Core/Src/astra/astra_rocket.cpp.i
+
+Core/Src/astra/astra_rocket.s: Core/Src/astra/astra_rocket.cpp.s
+.PHONY : Core/Src/astra/astra_rocket.s
+
+# target to generate assembly for a file
+Core/Src/astra/astra_rocket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.s
+.PHONY : Core/Src/astra/astra_rocket.cpp.s
+
 Core/Src/astra/ui/element/bar/bar.obj: Core/Src/astra/ui/element/bar/bar.cpp.obj
 .PHONY : Core/Src/astra/ui/element/bar/bar.obj
 
@@ -1924,6 +1948,9 @@ help:
 	@echo ... Core/Src/astra/app/astra_app.obj
 	@echo ... Core/Src/astra/app/astra_app.i
 	@echo ... Core/Src/astra/app/astra_app.s
+	@echo ... Core/Src/astra/astra_rocket.obj
+	@echo ... Core/Src/astra/astra_rocket.i
+	@echo ... Core/Src/astra/astra_rocket.s
 	@echo ... Core/Src/astra/ui/element/bar/bar.obj
 	@echo ... Core/Src/astra/ui/element/bar/bar.i
 	@echo ... Core/Src/astra/ui/element/bar/bar.s

@@ -32,4 +32,5 @@ CMakeFiles/astra.elf.dir/Core/Src/main.c.obj: \
  D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pwr.h \
  D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_spi.h \
  D:\Projects\astra\Core\Inc/dma.h D:\Projects\astra\Core\Inc/main.h \
- D:\Projects\astra\Core\Inc/spi.h D:\Projects\astra\Core\Inc/gpio.h
+ D:\Projects\astra\Core\Inc/spi.h D:\Projects\astra\Core\Inc/gpio.h \
+ D:\Projects\astra\Core\Src\astra/astra_rocket.h

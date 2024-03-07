@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj"
   "CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj.d"
+  "CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj"
+  "CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj.d"
   "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.obj"
   "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.obj.d"
   "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj"
