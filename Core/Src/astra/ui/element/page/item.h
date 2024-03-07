@@ -37,11 +37,15 @@ public:
 //列表类中 前景是进度条 摄像机纵向移动
 //todo 想想有没有关于摄像机的初始化内容 并实现
 class Camera : public Item, public Animation {
+private:
+  float xInit, yInit;
+
 public:
   float x, xTrg;
   float y, yTrg;
 
-  Camera();
+  Camera(); //build a empty camera instance.
+  Camera(float _x, float _y); //build a camera instance with position.
 
   //在启动器中新建selector和camera 然后注入menu render
   //在启动器中执行下述方法即可实现视角移动

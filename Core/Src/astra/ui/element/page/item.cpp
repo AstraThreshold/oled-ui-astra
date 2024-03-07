@@ -45,10 +45,23 @@ void Animation::animation(float *_pos, float _posTrg, float _speed) {
 }
 
 Camera::Camera() {
+  this->xInit = 0;
+  this->yInit = 0;
+
   this->x = 0;
   this->xTrg = 0;
   this->y = 0;
   this->yTrg = 0;
+}
+
+Camera::Camera(float _x, float _y) {
+  this->xInit = _x;
+  this->yInit = _y;
+
+  this->x = _x;
+  this->xTrg = _x;
+  this->y = _y;
+  this->yTrg = _y;
 }
 
 void Camera::go(uint8_t _x, uint8_t _y) {
@@ -57,8 +70,8 @@ void Camera::go(uint8_t _x, uint8_t _y) {
 }
 
 void Camera::reset() {
-  animation(&x, 0, astraConfig.cameraAnimationSpeed);
-  animation(&y, 0, astraConfig.cameraAnimationSpeed);
+  animation(&x, xInit, astraConfig.cameraAnimationSpeed);
+  animation(&y, yInit, astraConfig.cameraAnimationSpeed);
 }
 
 void Camera::goDirect(uint8_t _x, uint8_t _y) {
@@ -73,7 +86,7 @@ Menu::Menu(std::string _title) {
   this->position.x = astraConfig.listTextMargin;
   this->position.y = 0;
   this->position.xTrg = astraConfig.listTextMargin;
-  this->position.yTrg = 0;
+  this->position.yTrg = 0;  //这里暂时无法计算trg 需要在addItem的时候计算 因为那时候才能拿到所有元素的数量
   this->selectIndex = 0;
   this->isInit = false;
   this->parent = nullptr;
@@ -88,8 +101,8 @@ Menu::Menu(std::string _title, std::vector<std::vector<uint8_t>> _pic) {
   this->childType = {};
   this->position.x = 0;
   this->position.y = 0;
-  this->position.xTrg = 0; //todo 这里的trg需要算
-  this->position.yTrg = 0;
+  this->position.xTrg = 0;  //这里暂时无法计算trg 需要在addItem的时候计算 因为那时候才能拿到所有元素的数量
+  this->position.yTrg = astraConfig.tilePicTopMargin;
   this->selectIndex = 0;
   this->isInit = false;
   this->parent = nullptr;
