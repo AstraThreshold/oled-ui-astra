@@ -57,6 +57,8 @@ protected:
 
 public:
   void* _getCanvasBuffer() override;
+  uint8_t _getBufferTileHeight() override;
+  uint8_t _getBufferTileWidth() override;
   void _canvasUpdate() override;
   void _canvasClear() override;
   void _setFont(const uint8_t * _font) override;

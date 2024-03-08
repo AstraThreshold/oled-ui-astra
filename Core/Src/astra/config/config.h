@@ -13,13 +13,13 @@ namespace astra {
  * @brief config of astra ui. astra ui的配置结构体
  */
 struct config {
-  uint8_t tileAnimationSpeed = 50.0f;
-  uint8_t listAnimationSpeed = 50.0f;
-  uint8_t selectorAnimationSpeed = 50.0f;
-  uint8_t windowAnimationSpeed;
-  uint8_t sideBarAnimationSpeed;
-  uint8_t fadeAnimationSpeed;
-  uint8_t cameraAnimationSpeed;
+  uint8_t tileAnimationSpeed = 50;
+  uint8_t listAnimationSpeed = 60;
+  uint8_t selectorAnimationSpeed = 50;
+  uint8_t windowAnimationSpeed = 25;
+  uint8_t sideBarAnimationSpeed = 40;
+  uint8_t fadeAnimationSpeed = 40;
+  uint8_t cameraAnimationSpeed = 40;
 
   bool tileUnfold = true;
   bool listUnfold = true;

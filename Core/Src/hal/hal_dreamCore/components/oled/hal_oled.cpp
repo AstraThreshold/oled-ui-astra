@@ -152,7 +152,15 @@ void HALDreamCore::_u8g2_init() {
 }
 
 void *HALDreamCore::_getCanvasBuffer() {
-  return &canvasBuffer;
+  return u8g2_GetBufferPtr(&canvasBuffer);
+}
+
+uint8_t HALDreamCore::_getBufferTileHeight() {
+  return u8g2_GetBufferTileHeight(&canvasBuffer);
+}
+
+uint8_t HALDreamCore::_getBufferTileWidth() {
+  return u8g2_GetBufferTileWidth(&canvasBuffer);
 }
 
 void HALDreamCore::_canvasUpdate() {

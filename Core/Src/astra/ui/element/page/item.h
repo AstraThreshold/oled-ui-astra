@@ -20,13 +20,71 @@ class Item {
 protected:
   sys::config systemConfig;
   config astraConfig;
+
   void updateConfig();
 };
 
 class Animation {
 public:
+  virtual void entryAnimation();
+  virtual void exitAnimation();
+  virtual void blur();
   virtual void animation(float *_pos, float _posTrg, float _speed);
 };
+
+inline void Animation::entryAnimation() {
+  uint8_t fadeFlag = 1;
+  static uint8_t bufferLen = 8 * HAL::getBufferTileHeight() * HAL::getBufferTileWidth();
+  static auto *bufferPointer = (uint8_t *) HAL::getCanvasBuffer();
+
+  HAL::delay(getUIConfig().fadeAnimationSpeed);
+  if (getUIConfig().lightMode)
+    switch (fadeFlag) {
+      case 1:
+        for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 != 0) bufferPointer[i] = bufferPointer[i] & 0xAA;
+        break;
+      case 2:
+        for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 != 0) bufferPointer[i] = bufferPointer[i] & 0x00;
+        break;
+      case 3:
+        for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 == 0) bufferPointer[i] = bufferPointer[i] & 0x55;
+        break;
+      case 4:
+        for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 == 0) bufferPointer[i] = bufferPointer[i] & 0x00;
+        break;
+      default:
+        fadeFlag = 0;
+        break;
+    }
+  else
+    switch (fadeFlag) {
+      case 1:
+          for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 != 0) bufferPointer[i] = bufferPointer[i] | 0xAA;
+          break;
+      case 2:
+          for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 != 0) bufferPointer[i] = bufferPointer[i] | 0x00;
+          break;
+      case 3:
+          for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 == 0) bufferPointer[i] = bufferPointer[i] | 0x55;
+          break;
+      case 4:
+          for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 == 0) bufferPointer[i] = bufferPointer[i] | 0x00;
+          break;
+      default:
+          fadeFlag = 0;
+          break;
+    }
+  fadeFlag++;
+}
+
+inline void Animation::exitAnimation() {}
+
+inline void Animation::blur() {
+  static uint8_t bufferLen = 8 * HAL::getBufferTileHeight() * HAL::getBufferTileWidth();
+  static auto *bufferPointer = (uint8_t *) HAL::getCanvasBuffer();
+
+  for (uint16_t i = 0; i < bufferLen; ++i) bufferPointer[i] = bufferPointer[i] & (i % 2 == 0 ? 0x55 : 0xAA);
+}
 
 inline void Animation::animation(float *_pos, float _posTrg, float _speed) {
   if (*_pos != _posTrg) {
@@ -43,6 +101,7 @@ inline void Animation::animation(float *_pos, float _posTrg, float _speed) {
 //列表类中 前景是进度条 摄像机纵向移动
 //todo 想想有没有关于摄像机的初始化内容 并实现
 class Camera : public Item, public Animation {
+
 private:
   float xInit, yInit;
 

@@ -90,6 +90,14 @@ public:
 
   virtual void *_getCanvasBuffer() { return nullptr; }
 
+  static uint8_t getBufferTileHeight() { return get()->_getBufferTileHeight(); }
+
+  virtual uint8_t _getBufferTileHeight() { return 0; }
+
+  static uint8_t getBufferTileWidth() { return get()->_getBufferTileWidth(); }
+
+  virtual uint8_t _getBufferTileWidth() { return 0; }
+
   static void canvasUpdate() { get()->_canvasUpdate(); }
 
   virtual void _canvasUpdate() {}
