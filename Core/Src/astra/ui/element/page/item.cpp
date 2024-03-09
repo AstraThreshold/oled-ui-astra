@@ -58,7 +58,7 @@ Camera::Camera(float _x, float _y) {
   this->y = 0 - _y;
 }
 
-void Camera::go(uint8_t _x, uint8_t _y) {
+void Camera::go(float _x, float _y) {
   animation(&x, 0 - _x, astraConfig.cameraAnimationSpeed);
   animation(&y, 0 - _y, astraConfig.cameraAnimationSpeed);
 }
@@ -68,7 +68,7 @@ void Camera::reset() {
   animation(&y, yInit, astraConfig.cameraAnimationSpeed);
 }
 
-void Camera::goDirect(uint8_t _x, uint8_t _y) {
+void Camera::goDirect(float _x, float _y) {
   x = 0 - _x;
   y = 0 - _y;
 }
@@ -98,7 +98,6 @@ Menu::Menu(std::string _title) {
   this->position.xTrg = astraConfig.listTextMargin;
   this->position.yTrg = 0;  //这里暂时无法计算trg 需要在addItem的时候计算 因为那时候才能拿到所有元素的数量
   this->selectIndex = 0;
-  this->isInit = false;
   this->parent = nullptr;
   this->child.clear();
   this->pic.clear();
@@ -114,12 +113,13 @@ Menu::Menu(std::string _title, std::vector<std::vector<uint8_t>> _pic) {
   this->position.xTrg = 0;  //这里暂时无法计算trg 需要在addItem的时候计算 因为那时候才能拿到所有元素的数量
   this->position.yTrg = astraConfig.tilePicTopMargin;
   this->selectIndex = 0;
-  this->isInit = false;
   this->parent = nullptr;
   this->child.clear();
 }
 
 void Menu::init() {
+  entryAnimation();
+
   if (selfType == TILE) {
     //受展开开关影响的坐标初始化
     if (astraConfig.tileUnfold) {
@@ -152,10 +152,13 @@ void Menu::init() {
     //始终执行的坐标初始化
     positionForeground.xBar = systemConfig.screenWeight;
   }
-
-  isInit = true; //todo 考虑什么时候把isInit设为false 或者彻底取缔isInit？ 同时在render中不再执行init 在启动器中执行
 }
 
+
+void Menu::deInit() {
+  //todo 未实现完全
+  exitAnimation();
+}
 
 void Menu::render(Camera* _camera) {
   //if (!isInit) init();
@@ -224,7 +227,7 @@ void Menu::render(Camera* _camera) {
     }
 
     //draw bar.
-    positionForeground.hBarTrg = systemConfig.screenHeight * ((selectIndex + 1) / getItemNum());
+    positionForeground.hBarTrg = systemConfig.screenHeight * ((float)(selectIndex + 1) / getItemNum());
     //HAL::drawHLine(systemConfig.screenWeight - astraConfig.listBarWeight, 0, astraConfig.listBarWeight);
     //HAL::drawHLine(systemConfig.screenWeight - astraConfig.listBarWeight, systemConfig.screenHeight - 1, astraConfig.listBarWeight);
     //HAL::drawVLine(systemConfig.screenWeight - ceil((float) astraConfig.listBarWeight / 2.0f), 0, systemConfig.screenHeight);
@@ -315,7 +318,7 @@ void Selector::go(uint8_t _index) {
 
     xTrg = menu->child[_index]->position.x - astraConfig.selectorMargin;
     yTrg = menu->child[_index]->position.y - astraConfig.selectorTopMargin;
-    wTrg = HAL::getFontWidth(menu->child[_index]->title) + astraConfig.listTextMargin * 2;
+    wTrg = (float)HAL::getFontWidth(menu->child[_index]->title) + astraConfig.listTextMargin * 2;
   }
 }
 
@@ -354,7 +357,7 @@ void Selector::render(Camera* _camera) {
     //draw text.
     //文字不受摄像机的影响
     HAL::setDrawType(1);
-    HAL::drawChinese((systemConfig.screenWeight - HAL::getFontWidth(menu->child[menu->selectIndex]->title)) / 2, yText, menu->child[menu->selectIndex]->title);
+    HAL::drawChinese((systemConfig.screenWeight - (float)HAL::getFontWidth(menu->child[menu->selectIndex]->title)) / 2.0, yText, menu->child[menu->selectIndex]->title);
 
     //draw box.
     //大框需要受摄像机的影响

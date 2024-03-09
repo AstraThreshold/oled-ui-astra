@@ -1,6 +1,7 @@
 //
 // Created by Fir on 2024/2/11.
 //
+#include <cmath>
 #include "../../hal_dreamCore.h"
 #include "graph_lib/u8g2/u8g2.h"
 #include "spi.h"
@@ -187,56 +188,56 @@ void HALDreamCore::_setDrawType(uint8_t _type) {
   u8g2_SetDrawColor(&canvasBuffer, _type);
 }
 
-void HALDreamCore::_drawPixel(uint8_t _x, uint8_t _y) {
-  u8g2_DrawPixel(&canvasBuffer, _x, _y);
+void HALDreamCore::_drawPixel(float _x, float _y) {
+  u8g2_DrawPixel(&canvasBuffer, (int16_t)std::round(_x), (int16_t)std::round(_y));
 }
 
-void HALDreamCore::_drawEnglish(uint8_t _x, uint8_t _y, const std::string &_text) {
-  u8g2_DrawStr(&canvasBuffer, _x, _y, _text.c_str());
+void HALDreamCore::_drawEnglish(float _x, float _y, const std::string &_text) {
+  u8g2_DrawStr(&canvasBuffer, (int16_t)std::round(_x), (int16_t)std::round(_y), _text.c_str());
 }
 
-void HALDreamCore::_drawChinese(uint8_t _x, uint8_t _y, const std::string &_text) {
-  u8g2_DrawUTF8(&canvasBuffer, _x, _y, _text.c_str());
+void HALDreamCore::_drawChinese(float _x, float _y, const std::string &_text) {
+  u8g2_DrawUTF8(&canvasBuffer, (int16_t)std::round(_x), (int16_t)std::round(_y), _text.c_str());
 }
 
-void HALDreamCore::_drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) {
-  for (uint8_t i = 0; i < _h; i++) {
+void HALDreamCore::_drawVDottedLine(float _x, float _y, float _h) {
+  for (uint8_t i = 0; i < (uint8_t)std::round(_h); i++) {
     if (i % 8 == 0 | (i - 1) % 8 == 0 | (i - 2) % 8 == 0) continue;
-    u8g2_DrawPixel(&canvasBuffer, _x, _y + i);
+    u8g2_DrawPixel(&canvasBuffer, (int16_t)std::round(_x), (int16_t)std::round(_y) + i);
   }
 }
 
-void HALDreamCore::_drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) {
+void HALDreamCore::_drawHDottedLine(float _x, float _y, float _l) {
   for (uint8_t i = 0; i < _l; i++) {
     if (i % 8 == 0 | (i - 1) % 8 == 0 | (i - 2) % 8 == 0) continue;
-    u8g2_DrawPixel(&canvasBuffer, _x + i, _y);
+    u8g2_DrawPixel(&canvasBuffer, (int16_t)std::round(_x) + i, (int16_t)std::round(_y));
   }
 }
 
-void HALDreamCore::_drawVLine(uint8_t _x, uint8_t _y, uint8_t _h) {
-  u8g2_DrawVLine(&canvasBuffer, _x, _y, _h);
+void HALDreamCore::_drawVLine(float _x, float _y, float _h) {
+  u8g2_DrawVLine(&canvasBuffer, (int16_t)std::round(_x), (int16_t)std::round(_y), (int16_t)std::round(_h));
 }
 
-void HALDreamCore::_drawHLine(uint8_t _x, uint8_t _y, uint8_t _l) {
-  u8g2_DrawHLine(&canvasBuffer, _x, _y, _l);
+void HALDreamCore::_drawHLine(float _x, float _y, float _l) {
+  u8g2_DrawHLine(&canvasBuffer, (int16_t)std::round(_x), (int16_t)std::round(_y), (int16_t)std::round(_l));
 }
 
-void HALDreamCore::_drawBMP(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, const uint8_t *_bitMap) {
-  u8g2_DrawXBMP(&canvasBuffer, _x, _y, _w, _h, _bitMap);
+void HALDreamCore::_drawBMP(float _x, float _y, float _w, float _h, const uint8_t *_bitMap) {
+  u8g2_DrawXBMP(&canvasBuffer, (int16_t)std::round(_x), (int16_t)std::round(_y), (int16_t)std::round(_w), (int16_t)std::round(_h), _bitMap);
 }
 
-void HALDreamCore::_drawBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) {
-  u8g2_DrawBox(&canvasBuffer, _x, _y, _w, _h);
+void HALDreamCore::_drawBox(float _x, float _y, float _w, float _h) {
+  u8g2_DrawBox(&canvasBuffer, (int16_t)std::round(_x), (int16_t)std::round(_y), (int16_t)std::round(_w), (int16_t)std::round(_h));
 }
 
-void HALDreamCore::_drawRBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {
-  u8g2_DrawRBox(&canvasBuffer, _x, _y, _w, _h, _r);
+void HALDreamCore::_drawRBox(float _x, float _y, float _w, float _h, float _r) {
+  u8g2_DrawRBox(&canvasBuffer, (int16_t)std::round(_x), (int16_t)std::round(_y), (int16_t)std::round(_w), (int16_t)std::round(_h), (int16_t)std::round(_r));
 }
 
-void HALDreamCore::_drawFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) {
-  u8g2_DrawFrame(&canvasBuffer, _x, _y, _w, _h);
+void HALDreamCore::_drawFrame(float _x, float _y, float _w, float _h) {
+  u8g2_DrawFrame(&canvasBuffer, (int16_t)std::round(_x), (int16_t)std::round(_y), (int16_t)std::round(_w), (int16_t)std::round(_h));
 }
 
-void HALDreamCore::_drawRFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {
-  u8g2_DrawRFrame(&canvasBuffer, _x, _y, _w, _h, _r);
+void HALDreamCore::_drawRFrame(float _x, float _y, float _w, float _h, float _r) {
+  u8g2_DrawRFrame(&canvasBuffer, (int16_t)std::round(_x), (int16_t)std::round(_y), (int16_t)std::round(_w), (int16_t)std::round(_h), (int16_t)std::round(_r));
 }

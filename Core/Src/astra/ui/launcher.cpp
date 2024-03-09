@@ -15,6 +15,8 @@ void Launcher::init(Menu *_rootPage) {
 bool Launcher::open() {
   //todo 打开和关闭都还没写完 应该还漏掉了一部分内容
   if (currentPage->getNext() == nullptr) return false;
+
+  currentPage->deInit();  //先析构（退场动画）再挪动指针
   currentPage = currentPage->getNext();
 
   currentPage->init();
@@ -34,6 +36,8 @@ bool Launcher::open() {
 
 bool Launcher::close() {
   if (currentPage->getPreview() == nullptr) return false;
+
+  currentPage->deInit();  //先析构（退场动画）再挪动指针
   currentPage = currentPage->getPreview();
 
   currentPage->init();

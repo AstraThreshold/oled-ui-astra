@@ -13,13 +13,13 @@ namespace astra {
  * @brief config of astra ui. astra ui的配置结构体
  */
 struct config {
-  uint8_t tileAnimationSpeed = 50;
-  uint8_t listAnimationSpeed = 60;
-  uint8_t selectorAnimationSpeed = 50;
-  uint8_t windowAnimationSpeed = 25;
-  uint8_t sideBarAnimationSpeed = 40;
-  uint8_t fadeAnimationSpeed = 40;
-  uint8_t cameraAnimationSpeed = 40;
+  float tileAnimationSpeed = 50;
+  float listAnimationSpeed = 60;
+  float selectorAnimationSpeed = 50;
+  float windowAnimationSpeed = 25;
+  float sideBarAnimationSpeed = 40;
+  float fadeAnimationSpeed = 40;
+  float cameraAnimationSpeed = 40;
 
   bool tileUnfold = true;
   bool listUnfold = true;
@@ -27,35 +27,35 @@ struct config {
   bool tileLoop = true;
   bool menuLoop = true;
 
-  uint8_t backgroundBlur;
-  uint8_t lightMode;
+  bool backgroundBlur = true;
+  bool lightMode = false;
 
-  uint8_t listBarWeight = 5;
-  uint8_t listTextHeight = 8;
-  uint8_t listTextMargin = 4; //文字边距
-  uint8_t listLineHeight = 16;
+  float listBarWeight = 5;
+  float listTextHeight = 8;
+  float listTextMargin = 4; //文字边距
+  float listLineHeight = 16;
   float selectorRadius = 0.5f;
-  uint8_t selectorMargin = 4; //选择框与文字左边距
-  uint8_t selectorTopMargin = 2; //选择框与文字上边距
+  float selectorMargin = 4; //选择框与文字左边距
+  float selectorTopMargin = 2; //选择框与文字上边距
 
-  uint8_t tilePicWidth = 30;
-  uint8_t tilePicHeight = 30;
-  uint8_t tilePicMargin = 8;
-  uint8_t tilePicTopMargin = 7; //图标上边距
-  uint8_t tileArrowWidth = 6;
-  uint8_t tileArrowMargin = 4; //箭头边距
+  float tilePicWidth = 30;
+  float tilePicHeight = 30;
+  float tilePicMargin = 8;
+  float tilePicTopMargin = 7; //图标上边距
+  float tileArrowWidth = 6;
+  float tileArrowMargin = 4; //箭头边距
 
   //todo 如果有问题 给下面这三个分别+1
-  uint8_t tileDottedLineBottomMargin = 18; //虚线下边距(top: 46)
-  uint8_t tileArrowBottomMargin = 8; //箭头下边距(top: 56)
-  uint8_t tileTextBottomMargin = 12; //标题下边距(top: 52)
+  float tileDottedLineBottomMargin = 18; //虚线下边距(top: 46)
+  float tileArrowBottomMargin = 8; //箭头下边距(top: 56)
+  float tileTextBottomMargin = 12; //标题下边距(top: 52)
 
-  uint8_t tileBarHeight = 2; //磁贴进度条高度
+  float tileBarHeight = 2; //磁贴进度条高度
 
-  uint8_t tileSelectBoxHeight = 36;  //磁贴选择框高度
-  uint8_t tileSelectBoxWeight = 36;  //磁贴选择框宽度
+  float tileSelectBoxHeight = 36;  //磁贴选择框高度
+  float tileSelectBoxWeight = 36;  //磁贴选择框宽度
 
-  uint8_t tileBtnMargin = 16; //按钮边距
+  float tileBtnMargin = 16; //按钮边距
 };
 
 static config &getUIConfig() {

@@ -47,7 +47,7 @@ namespace sys {
 struct config {
   uint8_t screenWeight = 128;
   uint8_t screenHeight = 64;
-  uint8_t screenBright = 255;
+  float screenBright = 255;
   //todo place other param of system
 };
 
@@ -122,35 +122,35 @@ public:
 
   virtual void _setDrawType(uint8_t _type) {}
 
-  static void drawPixel(uint8_t _x, uint8_t _y) { get()->_drawPixel(_x, _y); }
+  static void drawPixel(float _x, float _y) { get()->_drawPixel(_x, _y); }
 
-  virtual void _drawPixel(uint8_t _x, uint8_t _y) {}
+  virtual void _drawPixel(float _x, float _y) {}
 
-  static void drawEnglish(uint8_t _x, uint8_t _y, const std::string &_text) { get()->_drawEnglish(_x, _y, _text); }
+  static void drawEnglish(float _x, float _y, const std::string &_text) { get()->_drawEnglish(_x, _y, _text); }
 
-  virtual void _drawEnglish(uint8_t _x, uint8_t _y, const std::string &_text) {}
+  virtual void _drawEnglish(float _x, float _y, const std::string &_text) {}
 
-  static void drawChinese(uint8_t _x, uint8_t _y, const std::string &_text) { get()->_drawChinese(_x, _y, _text); }
+  static void drawChinese(float _x, float _y, const std::string &_text) { get()->_drawChinese(_x, _y, _text); }
 
-  virtual void _drawChinese(uint8_t _x, uint8_t _y, const std::string &_text) {}
+  virtual void _drawChinese(float _x, float _y, const std::string &_text) {}
 
-  static void drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) { get()->_drawVDottedLine(_x, _y, _h); }
+  static void drawVDottedLine(float _x, float _y, float _h) { get()->_drawVDottedLine(_x, _y, _h); }
 
-  virtual void _drawVDottedLine(uint8_t _x, uint8_t _y, uint8_t _h) {}
+  virtual void _drawVDottedLine(float _x, float _y, float _h) {}
 
-  static void drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) { get()->_drawHDottedLine(_x, _y, _l); }
+  static void drawHDottedLine(float _x, float _y, float _l) { get()->_drawHDottedLine(_x, _y, _l); }
 
-  virtual void _drawHDottedLine(uint8_t _x, uint8_t _y, uint8_t _l) {}
+  virtual void _drawHDottedLine(float _x, float _y, float _l) {}
 
-  static void drawVLine(uint8_t _x, uint8_t _y, uint8_t _h) { get()->_drawVLine(_x, _y, _h); }
+  static void drawVLine(float _x, float _y, float _h) { get()->_drawVLine(_x, _y, _h); }
 
-  virtual void _drawVLine(uint8_t _x, uint8_t _y, uint8_t _h) {}
+  virtual void _drawVLine(float _x, float _y, float _h) {}
 
-  static void drawHLine(uint8_t _x, uint8_t _y, uint8_t _l) { get()->_drawHLine(_x, _y, _l); }
+  static void drawHLine(float _x, float _y, float _l) { get()->_drawHLine(_x, _y, _l); }
 
-  virtual void _drawHLine(uint8_t _x, uint8_t _y, uint8_t _l) {}
+  virtual void _drawHLine(float _x, float _y, float _l) {}
 
-  static void drawBMP(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, const uint8_t *_bitMap) {
+  static void drawBMP(float _x, float _y, float _w, float _h, const uint8_t *_bitMap) {
     get()->_drawBMP(_x,
                     _y,
                     _w,
@@ -158,13 +158,13 @@ public:
                     _bitMap);
   }
 
-  virtual void _drawBMP(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, const uint8_t *_bitMap) {}
+  virtual void _drawBMP(float _x, float _y, float _w, float _h, const uint8_t *_bitMap) {}
 
-  static void drawBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) { get()->_drawBox(_x, _y, _w, _h); }
+  static void drawBox(float _x, float _y, float _w, float _h) { get()->_drawBox(_x, _y, _w, _h); }
 
-  virtual void _drawBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) {}
+  virtual void _drawBox(float _x, float _y, float _w, float _h) {}
 
-  static void drawRBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {
+  static void drawRBox(float _x, float _y, float _w, float _h, float _r) {
     get()->_drawRBox(_x,
                      _y,
                      _w,
@@ -172,13 +172,13 @@ public:
                      _r);
   }
 
-  virtual void _drawRBox(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {}
+  virtual void _drawRBox(float _x, float _y, float _w, float _h, float _r) {}
 
-  static void drawFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) { get()->_drawFrame(_x, _y, _w, _h); }
+  static void drawFrame(float _x, float _y, float _w, float _h) { get()->_drawFrame(_x, _y, _w, _h); }
 
-  virtual void _drawFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h) {}
+  virtual void _drawFrame(float _x, float _y, float _w, float _h) {}
 
-  static void drawRFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {
+  static void drawRFrame(float _x, float _y, float _w, float _h, float _r) {
     get()->_drawRFrame(_x,
                        _y,
                        _w,
@@ -186,7 +186,7 @@ public:
                        _r);
   }
 
-  virtual void _drawRFrame(uint8_t _x, uint8_t _y, uint8_t _w, uint8_t _h, uint8_t _r) {}
+  virtual void _drawRFrame(float _x, float _y, float _w, float _h, float _r) {}
 
   static void printInfo(std::string _msg) { get()->_printInfo(std::move(_msg)); }
 

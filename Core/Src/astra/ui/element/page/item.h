@@ -32,12 +32,15 @@ public:
   virtual void animation(float *_pos, float _posTrg, float _speed);
 };
 
-inline void Animation::entryAnimation() {
-  uint8_t fadeFlag = 1;
+inline void Animation::entryAnimation() { }
+
+inline void Animation::exitAnimation() {
+  static uint8_t fadeFlag = 1;
   static uint8_t bufferLen = 8 * HAL::getBufferTileHeight() * HAL::getBufferTileWidth();
-  static auto *bufferPointer = (uint8_t *) HAL::getCanvasBuffer();
+  auto *bufferPointer = (uint8_t *) HAL::getCanvasBuffer();
 
   HAL::delay(getUIConfig().fadeAnimationSpeed);
+
   if (getUIConfig().lightMode)
     switch (fadeFlag) {
       case 1:
@@ -53,31 +56,30 @@ inline void Animation::entryAnimation() {
         for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 == 0) bufferPointer[i] = bufferPointer[i] & 0x00;
         break;
       default:
+        //放动画结束退出函数的代码
         fadeFlag = 0;
         break;
     }
   else
     switch (fadeFlag) {
       case 1:
-          for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 != 0) bufferPointer[i] = bufferPointer[i] | 0xAA;
-          break;
+        for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 != 0) bufferPointer[i] = bufferPointer[i] | 0xAA;
+        break;
       case 2:
-          for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 != 0) bufferPointer[i] = bufferPointer[i] | 0x00;
-          break;
+        for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 != 0) bufferPointer[i] = bufferPointer[i] | 0x00;
+        break;
       case 3:
-          for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 == 0) bufferPointer[i] = bufferPointer[i] | 0x55;
-          break;
+        for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 == 0) bufferPointer[i] = bufferPointer[i] | 0x55;
+        break;
       case 4:
-          for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 == 0) bufferPointer[i] = bufferPointer[i] | 0x00;
-          break;
+        for (uint16_t i = 0; i < bufferLen; ++i) if (i % 2 == 0) bufferPointer[i] = bufferPointer[i] | 0x00;
+        break;
       default:
-          fadeFlag = 0;
-          break;
+        fadeFlag = 0;
+        break;
     }
   fadeFlag++;
 }
-
-inline void Animation::exitAnimation() {}
 
 inline void Animation::blur() {
   static uint8_t bufferLen = 8 * HAL::getBufferTileHeight() * HAL::getBufferTileWidth();
@@ -115,8 +117,8 @@ public:
   //在启动器中执行下述方法即可实现视角移动
   //启动器要判断是否超过视角范围 若超过则移动摄像机
   //所有过程中 渲染好的元素绝对坐标都是不变的 只有摄像机的坐标在变
-  void go(uint8_t _x, uint8_t _y);
-  void goDirect(uint8_t _x, uint8_t _y);
+  void go(float _x, float _y);
+  void goDirect(float _x, float _y);
 
   void goNextPageItem();
   void goPreviewPageItem();
@@ -168,12 +170,12 @@ public:
   Menu *parent;
   std::vector<Menu *> child;
   uint8_t selectIndex;
-  bool isInit;
 
   explicit Menu(std::string _title);
   Menu(std::string _title, std::vector<std::vector<uint8_t>> _pic);
 
   void init(); //每次打开页面都要调用一次
+  void deInit(); //每次关闭页面都要调用一次
 
   void render(Camera* _camera);  //render all child item.
   [[nodiscard]] uint8_t getItemNum() const;
