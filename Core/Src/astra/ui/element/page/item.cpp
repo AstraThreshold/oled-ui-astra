@@ -154,7 +154,6 @@ void Menu::init() {
   }
 }
 
-
 void Menu::deInit() {
   //todo 未实现完全
   exitAnimation();

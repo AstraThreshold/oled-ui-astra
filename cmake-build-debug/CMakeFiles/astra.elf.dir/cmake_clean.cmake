@@ -49,6 +49,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj.d"
   "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj"
   "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj.d"
+  "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj"
+  "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj.d"
   "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj"
   "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj.d"
   "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_input_value.c.obj"

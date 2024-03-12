@@ -728,6 +728,30 @@ Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.s
 .PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.s
 
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.obj
+
+# target to build an object file
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj
+
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.i: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.i
+
+# target to preprocess a source file
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.i
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.i
+
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.s: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.s
+
+# target to generate assembly for a file
+Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.s
+.PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.s
+
 Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.obj: Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
 .PHONY : Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.obj
 
@@ -2020,6 +2044,9 @@ help:
 	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.obj
 	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.i
 	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.s
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.obj
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.i
+	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.s
 	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.obj
 	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.i
 	@echo ... Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.s

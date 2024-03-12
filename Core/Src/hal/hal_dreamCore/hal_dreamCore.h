@@ -25,6 +25,16 @@ private:
 public:
   HALDreamCore() = default;
 
+protected:
+  u8g2_t canvasBuffer {};
+  static uint8_t _u8x8_byte_hw_spi_callback(u8x8_t* _u8x8, uint8_t _msg, uint8_t _argInt, void* _argPtr);
+
+  static uint8_t _u8x8_gpio_and_delay_callback(U8X8_UNUSED u8x8_t* _u8x8,
+                                               U8X8_UNUSED uint8_t _msg,
+                                               U8X8_UNUSED uint8_t _argInt,
+                                               U8X8_UNUSED void* _argPtr);
+
+public:
   inline void init() override {
     _stm32_hal_init();
     _sys_clock_init();
@@ -40,20 +50,15 @@ public:
   }
 
 protected:
+  void _ssd1306_transmit_cmd(uint8_t _cmd);
+  void _ssd1306_transmit_data(uint8_t _data, uint8_t _mode);
   void _ssd1306_reset(bool _state);
-  void _ssd1306_transmit(uint8_t _data, bool _isCmd);
+  void _ssd1306_set_cursor(uint8_t _x, uint8_t _y);
+  void _ssd1306_fill(uint8_t _data);
 
 public:
   void _screenOn() override;
   void _screenOff() override;
-
-protected:
-  u8g2_t canvasBuffer;
-  static uint8_t _u8x8_byte_hw_spi_callback(u8x8_t* _u8x8, uint8_t _msg, uint8_t _argInt, void* _argPtr);
-  static uint8_t _u8x8_gpio_and_delay_callback(U8X8_UNUSED u8x8_t* _u8x8,
-                                     U8X8_UNUSED uint8_t _msg,
-                                     U8X8_UNUSED uint8_t _argInt,
-                                     U8X8_UNUSED void* _argPtr);
 
 public:
   void* _getCanvasBuffer() override;

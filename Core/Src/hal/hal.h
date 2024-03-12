@@ -82,9 +82,6 @@ public:
 protected:
   sys::config config;
 
-  //todo: may-be unused.
-  void *canvasBuffer = nullptr;
-
 public:
   static void *getCanvasBuffer() { return get()->_getCanvasBuffer(); }
 

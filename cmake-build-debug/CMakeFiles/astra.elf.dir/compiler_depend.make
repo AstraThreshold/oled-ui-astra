@@ -11,6 +11,9 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj: D:/Projects/astra/
   D:/Projects/astra/Core/Src/astra/ui/element/element_i.h \
   D:/Projects/astra/Core/Src/astra/ui/launcher.h \
   D:/Projects/astra/Core/Src/hal/hal.h \
+  D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2.h \
+  D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8.h \
+  D:/Projects/astra/Core/Src/hal/hal_dreamCore/hal_dreamCore.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/_ansi.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/alloca.h \
@@ -129,6 +132,7 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj: D:/Projects/astra/
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/wchar.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include-fixed/limits.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdarg.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h
@@ -1261,6 +1265,20 @@ CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h
 
 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj: D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c \
+  D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2.h \
+  D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/stdint.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include-fixed/limits.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdarg.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h
+
+CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj: D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c \
   D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2.h \
   D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
@@ -2559,8 +2577,6 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/Projects/astra/Core/Src/astra/ui/launcher.h:
 
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stringfwd.h:
-
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/compare:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/ranges_base.h:
@@ -2588,6 +2604,36 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 D:/Projects/astra/Core/Src/astra/ui/element/page/item.h:
 
 D:/Projects/astra/Core/Src/hal/hal.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/legendre_function.tcc:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/invoke.h:
+
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/machine/endian.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/ranges_cmp.h:
+
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_algobase.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/riemann_zeta.tcc:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/range_access.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/iterator_concepts.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/timespec.h:
+
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/hal_dreamCore.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/functional_hash.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/cpp_type_traits.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/basic_string.tcc:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_iterator.h:
 
@@ -2629,10 +2675,6 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/ostream_insert.h:
 
-D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/utility.h:
-
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/ext/alloc_traits.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_pair.h:
@@ -2640,24 +2682,6 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/basic_string.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/ptr_traits.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_algobase.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/riemann_zeta.tcc:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/range_access.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/iterator_concepts.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/timespec.h:
-
-D:/Projects/astra/Core/Src/hal/hal_dreamCore/hal_dreamCore.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/functional_hash.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/cpp_type_traits.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/basic_string.tcc:
 
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8log.c:
 
@@ -2689,10 +2713,6 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/hash_bytes.h:
 
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/tr1/legendre_function.tcc:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/invoke.h:
-
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/localefwd.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/string_view.tcc:
@@ -2702,10 +2722,6 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/postypes.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/predefined_ops.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/machine/endian.h:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/ranges_cmp.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/refwrap.h:
 
@@ -2720,6 +2736,12 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_iterator_base_types.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stl_uninitialized.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/stringfwd.h:
+
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/utility.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/bits/vector.tcc:
 
@@ -2849,6 +2871,10 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/wchar.h:
 
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include-fixed/limits.h:
+
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h:
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/sys/_timeval.h:
@@ -2925,14 +2951,6 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp:
 
-D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2.h:
-
-D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8.h:
-
-D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_button.c:
-
-D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include-fixed/limits.h:
-
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_config.cpp:
 
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_key.cpp:
@@ -2958,6 +2976,8 @@ D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c:
 
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c:
+
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c:
 
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c:
 

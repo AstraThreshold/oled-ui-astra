@@ -16,9 +16,6 @@ bool HAL::check() {
 }
 
 bool HAL::inject(HAL *_hal) {
-  if (hal != nullptr) {
-    return false;
-  }
   if (_hal == nullptr) {
     return false;
   }

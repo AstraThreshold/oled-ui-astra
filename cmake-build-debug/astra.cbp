@@ -229,6 +229,9 @@
 		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c">
 			<Option target="astra.elf"/>
 		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c">
+			<Option target="astra.elf"/>
+		</Unit>
 		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c">
 			<Option target="astra.elf"/>
 		</Unit>
