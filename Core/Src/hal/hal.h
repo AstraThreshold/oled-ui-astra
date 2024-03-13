@@ -123,6 +123,8 @@ public:
 
   virtual void _drawPixel(float _x, float _y) {}
 
+  //notice: _x和_y是字体左下角的坐标 _x and _y is the coordinate the lower left corner of the font
+  //todo 检查所有的draw函数的坐标是否是左下角的坐标
   static void drawEnglish(float _x, float _y, const std::string &_text) { get()->_drawEnglish(_x, _y, _text); }
 
   virtual void _drawEnglish(float _x, float _y, const std::string &_text) {}
