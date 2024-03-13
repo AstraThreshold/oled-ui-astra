@@ -159,17 +159,12 @@ void Menu::deInit() {
   exitAnimation();
 }
 
+//todo 所有的跟文字有关的 包括selector 记住绘制文字时提供的坐标是文字左下角的坐标 改
 void Menu::render(Camera* _camera) {
   //if (!isInit) init();
 
   if (selfType == TILE) {
     Item::updateConfig();
-
-    animation(&positionForeground.yDottedLine, positionForeground.yDottedLineTrg, astraConfig.tileAnimationSpeed);
-    animation(&positionForeground.yArrow, positionForeground.yArrowTrg, astraConfig.tileAnimationSpeed);
-
-    animation(&positionForeground.wBar, positionForeground.wBarTrg, astraConfig.tileAnimationSpeed);
-    animation(&positionForeground.yBar, positionForeground.yBarTrg, astraConfig.tileAnimationSpeed);
 
     HAL::setDrawType(1);
 
@@ -210,11 +205,13 @@ void Menu::render(Camera* _camera) {
     //draw dotted line.
     HAL::drawHDottedLine(0, (int16_t) positionForeground.yDottedLine, systemConfig.screenWeight);
 
+    animation(&positionForeground.yDottedLine, positionForeground.yDottedLineTrg, astraConfig.tileAnimationSpeed);
+    animation(&positionForeground.yArrow, positionForeground.yArrowTrg, astraConfig.tileAnimationSpeed);
+
+    animation(&positionForeground.wBar, positionForeground.wBarTrg, astraConfig.tileAnimationSpeed);
+    animation(&positionForeground.yBar, positionForeground.yBarTrg, astraConfig.tileAnimationSpeed);
   } else if (selfType == LIST) {
     Item::updateConfig();
-
-    animation(&positionForeground.hBar, positionForeground.hBarTrg, astraConfig.listAnimationSpeed);
-    animation(&positionForeground.xBar, positionForeground.xBarTrg, astraConfig.listAnimationSpeed);
 
     HAL::setDrawType(1);
 
@@ -236,6 +233,9 @@ void Menu::render(Camera* _camera) {
     HAL::setDrawType(2);
     if (astraConfig.lightMode) HAL::drawBox(0, 0, systemConfig.screenWeight, systemConfig.screenHeight);
     HAL::setDrawType(1);
+
+    animation(&positionForeground.hBar, positionForeground.hBarTrg, astraConfig.listAnimationSpeed);
+    animation(&positionForeground.xBar, positionForeground.xBarTrg, astraConfig.listAnimationSpeed);
   }
 }
 

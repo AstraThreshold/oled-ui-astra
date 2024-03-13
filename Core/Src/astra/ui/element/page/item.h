@@ -110,7 +110,7 @@ private:
 public:
   float x, y;
 
-  Camera(); //build a empty camera instance.
+  Camera(); //build an empty camera instance.
   Camera(float _x, float _y); //build a camera instance with position.
 
   //在启动器中新建selector和camera 然后注入menu render

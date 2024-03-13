@@ -2,24 +2,41 @@
 // Created by Fir on 2024/3/7 007.
 //
 
+#include <vector>
 #include "astra_rocket.h"
 
 astra::Launcher* astraLauncher = new astra::Launcher();
+astra::Menu* rootPage = new astra::Menu("root");
+astra::Camera* camera = new astra::Camera();
 
 void astraCoreInit(void) {
   HAL::inject(new HALDreamCore);
-  astraLauncher->init(nullptr);
 
+  HAL::delay(100);
   HAL::printInfo("loading.");
+  HAL::delay(500);
   HAL::printInfo("astra ui by dcfsswindy.");
+  HAL::delay(100);
   HAL::printInfo("welcome.");
+  HAL::delay(100);
   HAL::printInfo("welcome.");
+
+  rootPage->addItem(new astra::Menu("测试1"));
+  rootPage->addItem(new astra::Menu("测试2"));
+  rootPage->addItem(new astra::Menu("测试3"));
+  rootPage->addItem(new astra::Menu("测试4"));
+
+  astraLauncher->init(rootPage);
 }
 
 void astraCoreStart(void) {
   for (;;) {  //NOLINT
-    //astraLauncher->start();
-    astraCoreTest();
+    HAL::setDrawType(1);
+    HAL::canvasClear();
+    rootPage->render(camera); //这样就ok
+    //astraLauncher->start(); //todo camera的问题 如果给camera赋值为00 就可以了
+    HAL::canvasUpdate();
+    //astraCoreTest();
   }
 }
 

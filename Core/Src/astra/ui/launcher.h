@@ -22,6 +22,9 @@ public:
   bool close();
 
   void start();
+
+  Camera* getCamera() { return camera; }
+  Selector* getSelector() { return selector; }
 };
 }
 

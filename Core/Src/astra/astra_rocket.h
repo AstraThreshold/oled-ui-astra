@@ -28,6 +28,7 @@ void astraCoreDestroy(void);
 #include "../hal/hal_dreamCore/hal_dreamCore.h"
 
 extern astra::Launcher* astraLauncher;
+extern astra::Menu* rootPage;
 /*---- Cpp ----*/
 
 #endif

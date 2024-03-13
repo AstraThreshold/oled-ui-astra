@@ -9,7 +9,7 @@ namespace astra {
 void Launcher::init(Menu *_rootPage) {
   currentPage = _rootPage;
   selector = new Selector();
-  camera = new Camera();
+  camera = new Camera(0, 0);
 }
 
 bool Launcher::open() {

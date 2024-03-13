@@ -90,6 +90,7 @@ int main(void)
   MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
   astraCoreInit();
+  astraCoreStart();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -99,7 +100,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    astraCoreStart();
+
   }
   /* USER CODE END 3 */
 }
