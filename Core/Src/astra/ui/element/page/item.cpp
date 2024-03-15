@@ -217,7 +217,7 @@ void Menu::render(Camera* _camera) {
 
     //allow x > screen height, y > screen weight.
     for (auto _iter : child) {
-      HAL::drawChinese(_iter->position.x + _camera->x, _iter->position.y + _camera->y, _iter->title);
+      HAL::drawChinese(_iter->position.x + _camera->x, _iter->position.y - astraConfig.listTextHeight + _camera->y, _iter->title);
       //这里的xTrg在addItem的时候就已经确定了
       animation(&_iter->position.y, _iter->position.yTrg, astraConfig.listAnimationSpeed);
     }
@@ -230,9 +230,11 @@ void Menu::render(Camera* _camera) {
     HAL::drawBox(positionForeground.xBar, 0, astraConfig.listBarWeight, positionForeground.hBar);
 
     //light mode.
-    HAL::setDrawType(2);
-    if (astraConfig.lightMode) HAL::drawBox(0, 0, systemConfig.screenWeight, systemConfig.screenHeight);
-    HAL::setDrawType(1);
+    if (astraConfig.lightMode) {
+      HAL::setDrawType(2);
+      HAL::drawBox(0, 0, systemConfig.screenWeight, systemConfig.screenHeight);
+      HAL::setDrawType(1);
+    }
 
     animation(&positionForeground.hBar, positionForeground.hBarTrg, astraConfig.listAnimationSpeed);
     animation(&positionForeground.xBar, positionForeground.xBarTrg, astraConfig.listAnimationSpeed);
@@ -356,7 +358,7 @@ void Selector::render(Camera* _camera) {
     //draw text.
     //文字不受摄像机的影响
     HAL::setDrawType(1);
-    HAL::drawChinese((systemConfig.screenWeight - (float)HAL::getFontWidth(menu->child[menu->selectIndex]->title)) / 2.0, yText, menu->child[menu->selectIndex]->title);
+    HAL::drawChinese((systemConfig.screenWeight - (float)HAL::getFontWidth(menu->child[menu->selectIndex]->title)) / 2.0, yText - astraConfig.tileTitleHeight, menu->child[menu->selectIndex]->title);
 
     //draw box.
     //大框需要受摄像机的影响
@@ -372,7 +374,6 @@ void Selector::render(Camera* _camera) {
     //受摄像机的影响
     HAL::setDrawType(2);
     HAL::drawRBox(x + _camera->x, y + _camera->y, w, astraConfig.listLineHeight, astraConfig.selectorRadius);
-    //HAL::drawRBox(x + _camera->x, y + _camera->y, w, h, astraConfig.selectorRadius);
     HAL::setDrawType(1);
   }
 }

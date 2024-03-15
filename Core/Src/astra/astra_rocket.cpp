@@ -7,7 +7,6 @@
 
 astra::Launcher* astraLauncher = new astra::Launcher();
 astra::Menu* rootPage = new astra::Menu("root");
-astra::Camera* camera = new astra::Camera();
 
 void astraCoreInit(void) {
   HAL::inject(new HALDreamCore);
@@ -32,10 +31,9 @@ void astraCoreInit(void) {
 void astraCoreStart(void) {
   for (;;) {  //NOLINT
     HAL::setDrawType(1);
-    HAL::canvasClear();
-    rootPage->render(camera); //这样就ok
-    //astraLauncher->start(); //todo camera的问题 如果给camera赋值为00 就可以了
-    HAL::canvasUpdate();
+
+    astraLauncher->start(); //todo selector或者camera的问题 某一句话阻塞了
+
     //astraCoreTest();
   }
 }

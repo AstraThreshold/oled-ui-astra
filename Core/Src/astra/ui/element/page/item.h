@@ -134,6 +134,7 @@ public:
   //存储其在父页面中的位置
   //list中就是每一项对应的坐标 tile中就是每一个图片的坐标
   typedef struct Position {
+    //这里的坐标都是左上角的坐标 但是要记住绘制文字的时候是左下角的坐标 需要再减去字体的高度
     float x, xTrg;
     float y, yTrg;
   } Position;

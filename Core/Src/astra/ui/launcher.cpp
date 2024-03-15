@@ -58,7 +58,7 @@ bool Launcher::close() {
 void Launcher::start() {
   HAL::canvasClear();
   currentPage->render(camera);
-  selector->render(camera);
+  //selector->render(camera);
   HAL::canvasUpdate();
 //todo 看一下Rachel的按键扫描函数是怎么实现的
 
