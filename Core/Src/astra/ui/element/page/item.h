@@ -209,7 +209,7 @@ public:
   float yText, yTextTrg;  //磁贴页标题坐标
   /*TILE*/
 
-  Selector();
+  Selector() = default;
   //最牛逼的来了 在磁贴中 文字和大框就是selector
   //这样就可以弄磁贴的文字出现动画了
   ////todo 在磁贴中 选择的时候 摄像机和selector都要移动 磁贴的selector是一个空心方框 + 底部的字体

@@ -170,7 +170,7 @@ void Menu::render(Camera* _camera) {
 
     //draw pic.
     for (auto _iter : child) {
-      HAL::drawBMP(_iter->position.x + _camera->x, astraConfig.tilePicTopMargin + _camera->y, astraConfig.tilePicWidth, astraConfig.tilePicHeight, _iter->pic[0].data());
+       HAL::drawBMP(_iter->position.x + _camera->x, astraConfig.tilePicTopMargin + _camera->y, astraConfig.tilePicWidth, astraConfig.tilePicHeight, _iter->pic[0].data());
       //这里的xTrg在addItem的时候就已经确定了
       animation(&_iter->position.x, _iter->position.xTrg, astraConfig.tileAnimationSpeed);
     }
@@ -217,8 +217,8 @@ void Menu::render(Camera* _camera) {
 
     //allow x > screen height, y > screen weight.
     for (auto _iter : child) {
-      HAL::drawChinese(_iter->position.x + _camera->x, _iter->position.y - astraConfig.listTextHeight + _camera->y, _iter->title);
-      //这里的xTrg在addItem的时候就已经确定了
+      HAL::drawChinese(_iter->position.x + _camera->x, _iter->position.y + astraConfig.listTextHeight + astraConfig.listTextMargin + _camera->y, _iter->title);
+      //这里的yTrg在addItem的时候就已经确定了
       animation(&_iter->position.y, _iter->position.yTrg, astraConfig.listAnimationSpeed);
     }
 
@@ -270,7 +270,7 @@ bool Menu::addItem(Menu *_page) {
         //_page->position.x = astraConfig.listTextMargin;
         _page->position.xTrg = astraConfig.listTextMargin;
         //_page->position.y = astraConfig.listTextMargin + this->getItemNum() * astraConfig.listLineHeight;
-        _page->position.yTrg = astraConfig.listTextMargin + this->getItemNum() * astraConfig.listLineHeight;
+        _page->position.yTrg = (getItemNum() - 1) * astraConfig.listLineHeight;
 
         positionForeground.xBarTrg = systemConfig.screenWeight - astraConfig.listBarWeight;
       }
@@ -289,15 +289,6 @@ bool Menu::addItem(Menu *_page) {
   }
 }
 
-Selector::Selector() {
-  this->x = 0;
-  this->xTrg = 0;
-  this->y = 0;
-  this->yTrg = 0;
-  this->w = 0;
-  this->wTrg = 0;
-}
-
 void Selector::go(uint8_t _index) {
   Item::updateConfig();
 
@@ -307,8 +298,8 @@ void Selector::go(uint8_t _index) {
 
     if (menu->selfType != menu->child[_index]->selfType) { /*todo 过渡动画 从大框到选择框*/ }
 
-    xTrg = menu->child[_index]->position.x - (astraConfig.tileSelectBoxWeight - astraConfig.tilePicWidth) / 2;
-    yTrg = menu->child[_index]->position.y - (astraConfig.tileSelectBoxHeight - astraConfig.tilePicHeight) / 2;
+    xTrg = menu->child[_index]->position.xTrg - (astraConfig.tileSelectBoxWeight - astraConfig.tilePicWidth) / 2;
+    yTrg = menu->child[_index]->position.yTrg - (astraConfig.tileSelectBoxHeight - astraConfig.tilePicHeight) / 2;
 
     yText = systemConfig.screenHeight; //给磁贴文字归零 从屏幕外滑入
     yTextTrg = systemConfig.screenHeight - astraConfig.tileTextBottomMargin;
@@ -317,8 +308,8 @@ void Selector::go(uint8_t _index) {
 
     if (menu->selfType != menu->child[_index]->selfType) { /*todo 过渡动画 从选择框到大框*/ }
 
-    xTrg = menu->child[_index]->position.x - astraConfig.selectorMargin;
-    yTrg = menu->child[_index]->position.y - astraConfig.selectorTopMargin;
+    xTrg = menu->child[_index]->position.xTrg - astraConfig.selectorMargin;
+    yTrg = menu->child[_index]->position.yTrg ;
     wTrg = (float)HAL::getFontWidth(menu->child[_index]->title) + astraConfig.listTextMargin * 2;
   }
 }
@@ -328,7 +319,7 @@ bool Selector::inject(Menu *_menu) {
   if (this->menu != nullptr) return false;
   this->menu = _menu;
 
-//  go(this->menu->selectIndex);  //注入之后要初始化选择框的位置
+  go(this->menu->selectIndex);  //注入之后要初始化选择框的位置
 
   return true;
 }
@@ -373,7 +364,8 @@ void Selector::render(Camera* _camera) {
     //draw select box.
     //受摄像机的影响
     HAL::setDrawType(2);
-    HAL::drawRBox(x + _camera->x, y + _camera->y, w, astraConfig.listLineHeight, astraConfig.selectorRadius);
+    HAL::drawRBox(x + _camera->x, y + _camera->y, w, astraConfig.listLineHeight - 1, astraConfig.selectorRadius);
+    //HAL::drawRBox(x, y, w, astraConfig.listLineHeight, astraConfig.selectorRadius);
     HAL::setDrawType(1);
   }
 }

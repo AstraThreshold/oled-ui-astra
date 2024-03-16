@@ -190,7 +190,7 @@ void HALDreamCore::_setFont(const uint8_t *_font) {
 }
 
 uint8_t HALDreamCore::_getFontWidth(std::string &_text) {
-  return u8g2_GetStrWidth(&canvasBuffer, _text.c_str());
+  return u8g2_GetUTF8Width(&canvasBuffer, _text.c_str());
 }
 
 uint8_t HALDreamCore::_getFontHeight() {
