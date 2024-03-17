@@ -20,7 +20,7 @@ void Launcher::init(Menu *_rootPage) {
 
   selector = new Selector();
   selector->inject(_rootPage);
-  selector->go(2);
+  selector->go(3);
 }
 
 bool Launcher::open() {

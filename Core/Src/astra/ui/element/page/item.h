@@ -91,7 +91,7 @@ inline void Animation::blur() {
 inline void Animation::animation(float *_pos, float _posTrg, float _speed) {
   if (*_pos != _posTrg) {
     if (std::fabs(*_pos - _posTrg) < 0.15f) *_pos = _posTrg;
-    else *_pos += (_posTrg - *_pos) / (_speed / 10.0f);
+    else *_pos += (_posTrg - *_pos) / ((100 - _speed) / 1.0f);
   }
 }
 
@@ -157,7 +157,7 @@ public:
   PositionForeground positionForeground{};
 
   std::string title;
-  std::vector<std::vector<uint8_t>> pic;
+  std::vector<uint8_t> pic;
 
   typedef enum PageType {
     TILE = 0,
@@ -173,7 +173,7 @@ public:
   uint8_t selectIndex;
 
   explicit Menu(std::string _title);
-  Menu(std::string _title, std::vector<std::vector<uint8_t>> _pic);
+  Menu(std::string _title, std::vector<uint8_t> _pic);
 
   void init(); //每次打开页面都要调用一次
   void deInit(); //每次关闭页面都要调用一次

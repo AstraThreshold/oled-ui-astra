@@ -103,7 +103,7 @@ Menu::Menu(std::string _title) {
   this->pic.clear();
 }
 
-Menu::Menu(std::string _title, std::vector<std::vector<uint8_t>> _pic) {
+Menu::Menu(std::string _title, std::vector<uint8_t> _pic) {
   this->title = std::move(_title);
   this->pic = std::move(_pic);
   this->selfType = TILE;
@@ -358,7 +358,7 @@ void Selector::render(Camera* _camera) {
     //HAL::drawFrame(x + _camera->x, y + _camera->y, wFrame, hFrame);
 
   } else if (menu->selfType == Menu::LIST) {
-    animation(&w, wTrg, astraConfig.selectorAnimationSpeed);
+    animation(&w, wTrg, astraConfig.selectorWidthAnimationSpeed);
     //animation(&h, hTrg, astraConfig.selectorAnimationSpeed);
 
     //draw select box.
