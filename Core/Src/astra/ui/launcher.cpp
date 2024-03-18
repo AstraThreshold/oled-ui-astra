@@ -13,15 +13,18 @@ void Launcher::init(Menu *_rootPage) {
   camera = new Camera(0, 0);
   if (currentPage->selfType == Menu::LIST)
     camera->goDirect(currentPage->getItemPosition(currentPage->selectIndex).xTrg - getUIConfig().listTextMargin,
-               currentPage->getItemPosition(currentPage->selectIndex).yTrg - getUIConfig().listTextMargin);
+               currentPage->getItemPosition(currentPage->selectIndex).yTrg);
   else if (currentPage->selfType == Menu::TILE) //todo 想一想磁贴页的摄像机初始化在哪里
     camera->goDirect(currentPage->getItemPosition(currentPage->selectIndex).xTrg,
                currentPage->getItemPosition(currentPage->selectIndex).yTrg);
+
   selector = new Selector();
   selector->inject(_rootPage);
   selector->go(_rootPage->selectIndex);
 }
 
+//todo 把打开和关闭一定要放在循环里 因为里面有camera的go方法 只能在循环里调用
+//todo 放在循环中 判断返回值 当相机到达目标位置时 返回true 不再调用该函数
 bool Launcher::open() {
   //todo 打开和关闭都还没写完 应该还漏掉了一部分内容
   if (currentPage->getNext() == nullptr) return false;
@@ -40,7 +43,6 @@ bool Launcher::open() {
   else if (currentPage->selfType == Menu::TILE) //todo 想一想磁贴页的摄像机初始化在哪里
     camera->go(currentPage->getItemPosition(currentPage->selectIndex).xTrg,
                currentPage->getItemPosition(currentPage->selectIndex).yTrg);
-
   return true;
 }
 
@@ -68,7 +70,8 @@ bool Launcher::close() {
 void Launcher::start() {
   HAL::canvasClear();
   currentPage->render(camera);
-  selector->render(camera);
+  selector->render(camera); //todo 为了测试tile 暂时注释掉这一行
+
   //camera->go(0, -20);
   HAL::canvasUpdate();
 //todo 看一下Rachel的按键扫描函数是怎么实现的
