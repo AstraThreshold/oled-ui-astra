@@ -49,7 +49,6 @@ Camera::Camera() {
 //所以说比如想显示下一页 应该是item本身的坐标减去摄像机的坐标 这样才会让item向上移动
 //一个办法是用户传进来正的坐标 但是在摄像机内部 所有坐标都取其相反数 负的
 
-//todo 如果出现问题 记得检查一下所有的坐标是不是都是有符号类型的 因为坐标全程都会出现负数
 Camera::Camera(float _x, float _y) {
   this->xInit = 0 - _x;
   this->yInit = 0 - _y;
@@ -58,19 +57,27 @@ Camera::Camera(float _x, float _y) {
   this->y = 0 - _y;
 }
 
+/**
+ * @brief
+ * @param _pos
+ * @param _posTrg
+ * @param _speed
+ *
+ * @note only support in loop. 仅支持在循环内执行
+ */
 void Camera::go(float _x, float _y) {
-  animation(&x, 0 - _x, astraConfig.cameraAnimationSpeed);
-  animation(&y, 0 - _y, astraConfig.cameraAnimationSpeed);
+  animation(&this->x, (0 - _x), astraConfig.cameraAnimationSpeed);
+  animation(&this->y, (0 - _y), astraConfig.cameraAnimationSpeed);
 }
 
 void Camera::reset() {
-  animation(&x, xInit, astraConfig.cameraAnimationSpeed);
-  animation(&y, yInit, astraConfig.cameraAnimationSpeed);
+  animation(&this->x, xInit, astraConfig.cameraAnimationSpeed);
+  animation(&this->y, yInit, astraConfig.cameraAnimationSpeed);
 }
 
 void Camera::goDirect(float _x, float _y) {
-  x = 0 - _x;
-  y = 0 - _y;
+  this->x = 0 - _x;
+  this->y = 0 - _y;
 }
 
 void Camera::goNextPageItem() {
@@ -170,7 +177,7 @@ void Menu::render(Camera* _camera) {
 
     //draw pic.
     for (auto _iter : child) {
-       HAL::drawBMP(_iter->position.x + _camera->x, astraConfig.tilePicTopMargin + _camera->y, astraConfig.tilePicWidth, astraConfig.tilePicHeight, _iter->pic[0].data());
+       HAL::drawBMP(_iter->position.x + _camera->x, astraConfig.tilePicTopMargin + _camera->y, astraConfig.tilePicWidth, astraConfig.tilePicHeight, _iter->pic.data());
       //这里的xTrg在addItem的时候就已经确定了
       animation(&_iter->position.x, _iter->position.xTrg, astraConfig.tileAnimationSpeed);
     }
@@ -217,6 +224,9 @@ void Menu::render(Camera* _camera) {
 
     //allow x > screen height, y > screen weight.
     for (auto _iter : child) {
+//      if (_iter->position.y + astraConfig.listTextHeight + astraConfig.listTextMargin + _camera->y < 0)
+//        //如果文字的底部已经超出屏幕 则不再绘制
+//        continue;
       HAL::drawChinese(_iter->position.x + _camera->x, _iter->position.y + astraConfig.listTextHeight + astraConfig.listTextMargin + _camera->y, _iter->title);
       //这里的yTrg在addItem的时候就已经确定了
       animation(&_iter->position.y, _iter->position.yTrg, astraConfig.listAnimationSpeed);

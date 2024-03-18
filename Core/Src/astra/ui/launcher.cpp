@@ -12,15 +12,14 @@ void Launcher::init(Menu *_rootPage) {
 
   camera = new Camera(0, 0);
   if (currentPage->selfType == Menu::LIST)
-    camera->go(currentPage->getItemPosition(currentPage->selectIndex).xTrg - getUIConfig().listTextMargin,
+    camera->goDirect(currentPage->getItemPosition(currentPage->selectIndex).xTrg - getUIConfig().listTextMargin,
                currentPage->getItemPosition(currentPage->selectIndex).yTrg - getUIConfig().listTextMargin);
   else if (currentPage->selfType == Menu::TILE) //todo 想一想磁贴页的摄像机初始化在哪里
-    camera->go(currentPage->getItemPosition(currentPage->selectIndex).xTrg,
+    camera->goDirect(currentPage->getItemPosition(currentPage->selectIndex).xTrg,
                currentPage->getItemPosition(currentPage->selectIndex).yTrg);
-
   selector = new Selector();
   selector->inject(_rootPage);
-  selector->go(3);
+  selector->go(_rootPage->selectIndex);
 }
 
 bool Launcher::open() {
@@ -69,7 +68,8 @@ bool Launcher::close() {
 void Launcher::start() {
   HAL::canvasClear();
   currentPage->render(camera);
-  selector->render(camera); //todo 这里有问题
+  selector->render(camera);
+  //camera->go(0, -20);
   HAL::canvasUpdate();
 //todo 看一下Rachel的按键扫描函数是怎么实现的
 

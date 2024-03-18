@@ -110,6 +110,16 @@ private:
 public:
   float x, y;
 
+  inline void animation(float *_pos, float _posTrg, float _speed) override {
+    if (*_pos != _posTrg) {
+      if (std::fabs(*_pos - _posTrg) < 0.15f) *_pos = _posTrg;
+      else {
+        if (_posTrg > *_pos) *_pos += (_posTrg - *_pos) / ((100 - _speed) / 1.0f);
+        if (_posTrg < *_pos) *_pos -= (_posTrg - *_pos) / ((100 - _speed) / 1.0f);
+      }
+    }
+  }
+
   Camera(); //build an empty camera instance.
   Camera(float _x, float _y); //build a camera instance with position.
 
