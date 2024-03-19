@@ -11,16 +11,12 @@ void Launcher::init(Menu *_rootPage) {
   _rootPage->init();
 
   camera = new Camera(0, 0);
-  if (currentPage->selfType == Menu::LIST)
-    camera->goDirect(currentPage->getItemPosition(currentPage->selectIndex).xTrg - getUIConfig().listTextMargin,
-               currentPage->getItemPosition(currentPage->selectIndex).yTrg);
-  else if (currentPage->selfType == Menu::TILE) //todo 想一想磁贴页的摄像机初始化在哪里
-    camera->goDirect(currentPage->getItemPosition(currentPage->selectIndex).xTrg,
-               currentPage->getItemPosition(currentPage->selectIndex).yTrg);
 
   selector = new Selector();
   selector->inject(_rootPage);
   selector->go(_rootPage->selectIndex);
+
+  currentPage->init();
 }
 
 //todo 把打开和关闭一定要放在循环里 因为里面有camera的go方法 只能在循环里调用

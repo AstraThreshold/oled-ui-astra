@@ -138,6 +138,8 @@ void Menu::init() {
       positionForeground.wBar = positionForeground.wBarTrg;
     }
 
+    //position.y = -astraConfig.tilePicHeight * 2;
+
     //始终执行的坐标初始化
     //底部箭头和虚线的初始化
     positionForeground.yArrow = systemConfig.screenHeight;
@@ -175,7 +177,7 @@ void Menu::render(Camera* _camera) {
 
     //draw pic.
     for (auto _iter : child) {
-       HAL::drawBMP(_iter->position.x + _camera->x, astraConfig.tilePicTopMargin + _camera->y, astraConfig.tilePicWidth, astraConfig.tilePicHeight, _iter->pic.data());
+      HAL::drawBMP(_iter->position.x + _camera->x, astraConfig.tilePicTopMargin + _camera->y, astraConfig.tilePicWidth, astraConfig.tilePicHeight, _iter->pic.data());
       //这里的xTrg在addItem的时候就已经确定了
       animation(&_iter->position.x, _iter->position.xTrg, astraConfig.tileAnimationSpeed);
     }
@@ -208,7 +210,7 @@ void Menu::render(Camera* _camera) {
     HAL::drawBox(systemConfig.screenWeight - astraConfig.tileBtnMargin - 9 + 2, positionForeground.yArrow + 2 - 4, 5, 4);
 
     //draw dotted line.
-    HAL::drawHDottedLine(0, (int16_t) positionForeground.yDottedLine, systemConfig.screenWeight);
+    HAL::drawHDottedLine(0, positionForeground.yDottedLine, systemConfig.screenWeight);
 
     animation(&positionForeground.yDottedLine, positionForeground.yDottedLineTrg, astraConfig.tileAnimationSpeed);
     animation(&positionForeground.yArrow, positionForeground.yArrowTrg, astraConfig.tileAnimationSpeed);
@@ -228,7 +230,7 @@ void Menu::render(Camera* _camera) {
     }
 
     //draw bar.
-    positionForeground.hBarTrg = systemConfig.screenHeight * ((float)(selectIndex + 1) / getItemNum());
+    positionForeground.hBarTrg = (selectIndex + 1) * ((float)systemConfig.screenHeight / getItemNum());
     //画指示线
     HAL::drawHLine(systemConfig.screenWeight - astraConfig.listBarWeight, 0, astraConfig.listBarWeight);
     HAL::drawHLine(systemConfig.screenWeight - astraConfig.listBarWeight, systemConfig.screenHeight - 1, astraConfig.listBarWeight);
@@ -274,17 +276,13 @@ bool Menu::addItem(Menu *_page) {
       _page->parent = this;
       this->child.push_back(_page);
       if (_page->selfType == LIST) {
-        //_page->position.x = astraConfig.listTextMargin;
         _page->position.xTrg = astraConfig.listTextMargin;
-        //_page->position.y = astraConfig.listTextMargin + this->getItemNum() * astraConfig.listLineHeight;
         _page->position.yTrg = (getItemNum() - 1) * astraConfig.listLineHeight;
 
         positionForeground.xBarTrg = systemConfig.screenWeight - astraConfig.listBarWeight;
       }
       if (_page->selfType == TILE) {
-        //_page->position.x = astraConfig.tilePicMargin + this->getItemNum() * astraConfig.tilePicWidth;
-        _page->position.xTrg = astraConfig.tilePicMargin + this->getItemNum() * astraConfig.tilePicWidth;
-        //_page->position.y = astraConfig.tilePicTopMargin;
+        _page->position.xTrg = systemConfig.screenWeight / 2 - astraConfig.tilePicWidth / 2 + (this->getItemNum() - 1) * (astraConfig.tilePicMargin + astraConfig.tilePicWidth);
         _page->position.yTrg = astraConfig.tilePicTopMargin;
 
         _page->positionForeground.yBarTrg = 0;
@@ -298,6 +296,8 @@ bool Menu::addItem(Menu *_page) {
 
 void Selector::go(uint8_t _index) {
   Item::updateConfig();
+
+  menu->selectIndex = _index;
 
   ////todo 在go的时候改变trg的值
 
@@ -356,7 +356,7 @@ void Selector::render(Camera* _camera) {
     //draw text.
     //文字不受摄像机的影响
     HAL::setDrawType(1);
-    HAL::drawChinese((systemConfig.screenWeight - (float)HAL::getFontWidth(menu->child[menu->selectIndex]->title)) / 2.0, yText - astraConfig.tileTitleHeight, menu->child[menu->selectIndex]->title);
+    HAL::drawChinese((systemConfig.screenWeight - (float)HAL::getFontWidth(menu->child[menu->selectIndex]->title)) / 2.0, yText + astraConfig.tileTitleHeight, menu->child[menu->selectIndex]->title);
 
     //draw box.
     //大框需要受摄像机的影响
