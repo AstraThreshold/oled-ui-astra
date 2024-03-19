@@ -80,6 +80,14 @@ void Camera::goDirect(float _x, float _y) {
   this->y = 0 - _y;
 }
 
+void Camera::goHorizontal(float _x) {
+  animation(&this->x, 0 - _x, astraConfig.cameraAnimationSpeed);
+}
+
+void Camera::goVertical(float _y) {
+  animation(&this->y, 0 - _y, astraConfig.cameraAnimationSpeed);
+}
+
 void Camera::goNextPageItem() {
   animation(&y, y - systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
 }
@@ -88,12 +96,8 @@ void Camera::goPreviewPageItem() {
   animation(&y, y + systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
 }
 
-void Camera::goNextTileItem() {
-  animation(&x, x - (astraConfig.tilePicMargin + astraConfig.tilePicWidth), astraConfig.cameraAnimationSpeed);
-}
-
-void Camera::goPreviewTileItem() {
-  animation(&x, x + (astraConfig.tilePicMargin + astraConfig.tilePicWidth), astraConfig.cameraAnimationSpeed);
+void Camera::goTileItem(uint8_t _index) {
+  goHorizontal(_index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin));
 }
 
 Menu::Menu(std::string _title) {
@@ -184,7 +188,7 @@ void Menu::render(Camera* _camera) {
 
     //draw bar.
     //在屏幕最上方 两个像素高
-    positionForeground.wBarTrg = systemConfig.screenWeight * ((selectIndex + 1) / getItemNum());
+    positionForeground.wBarTrg = (selectIndex + 1) * ((float)systemConfig.screenWeight / getItemNum());
     HAL::drawBox(0, positionForeground.yBar, positionForeground.wBar, astraConfig.tileBarHeight);
 
     //draw left arrow.
@@ -275,38 +279,47 @@ bool Menu::addItem(Menu *_page) {
     if (this->childType == _page->selfType) {
       _page->parent = this;
       this->child.push_back(_page);
-      if (_page->selfType == LIST) {
+      if (this->childType == LIST) {
         _page->position.xTrg = astraConfig.listTextMargin;
         _page->position.yTrg = (getItemNum() - 1) * astraConfig.listLineHeight;
 
         positionForeground.xBarTrg = systemConfig.screenWeight - astraConfig.listBarWeight;
       }
-      if (_page->selfType == TILE) {
+      if (this->childType == TILE) {
         _page->position.xTrg = systemConfig.screenWeight / 2 - astraConfig.tilePicWidth / 2 + (this->getItemNum() - 1) * (astraConfig.tilePicMargin + astraConfig.tilePicWidth);
         _page->position.yTrg = astraConfig.tilePicTopMargin;
 
-        _page->positionForeground.yBarTrg = 0;
-        _page->positionForeground.yArrowTrg = systemConfig.screenHeight - astraConfig.tileArrowBottomMargin;
-        _page->positionForeground.yDottedLineTrg = systemConfig.screenHeight - astraConfig.tileDottedLineBottomMargin;
+        positionForeground.yBarTrg = 0;
+        positionForeground.yArrowTrg = systemConfig.screenHeight - astraConfig.tileArrowBottomMargin;
+        positionForeground.yDottedLineTrg = systemConfig.screenHeight - astraConfig.tileDottedLineBottomMargin;
       }
       return true;
     } else return false;
   }
 }
 
+/**
+ * @brief
+ *
+ * @param _index
+ * @note selector接管了移动选择指针的功能
+ */
 void Selector::go(uint8_t _index) {
   Item::updateConfig();
 
   menu->selectIndex = _index;
 
-  ////todo 在go的时候改变trg的值
+  //在go的时候改变trg的值
 
   if (menu->childType == Menu::TILE) {
 
     if (menu->childType != menu->child[_index]->childType) { /*todo 过渡动画 从大框到选择框*/ }
 
-    xTrg = menu->child[_index]->position.xTrg - (astraConfig.tileSelectBoxWeight - astraConfig.tilePicWidth) / 2;
-    yTrg = menu->child[_index]->position.yTrg - (astraConfig.tileSelectBoxHeight - astraConfig.tilePicHeight) / 2;
+//    xTrg = menu->child[_index]->position.xTrg - (astraConfig.tileSelectBoxWeight - astraConfig.tilePicWidth) / 2;
+//    yTrg = menu->child[_index]->position.yTrg - (astraConfig.tileSelectBoxHeight - astraConfig.tilePicHeight) / 2;
+
+    xTrg = menu->child[_index]->position.xTrg - astraConfig.tileSelectBoxMargin;
+    yTrg = menu->child[_index]->position.yTrg - astraConfig.tileSelectBoxMargin;
 
     yText = systemConfig.screenHeight; //给磁贴文字归零 从屏幕外滑入
     yTextTrg = systemConfig.screenHeight - astraConfig.tileTextBottomMargin;
@@ -361,8 +374,18 @@ void Selector::render(Camera* _camera) {
     //draw box.
     //大框需要受摄像机的影响
     HAL::setDrawType(2);
-    HAL::drawFrame(x + _camera->x, y + _camera->y, astraConfig.tileSelectBoxWeight, astraConfig.tileSelectBoxHeight);
-    //HAL::drawFrame(x + _camera->x, y + _camera->y, wFrame, hFrame);
+    //左上角
+    HAL::drawHLine(x + _camera->x, y + _camera->y, astraConfig.tileSelectBoxLineLength);
+    HAL::drawVLine(x + _camera->x, y + _camera->y, astraConfig.tileSelectBoxLineLength + 1);
+    //左下角
+    HAL::drawHLine(x + _camera->x, y + _camera->y + astraConfig.tileSelectBoxHeight - 1, astraConfig.tileSelectBoxLineLength);
+    HAL::drawVLine(x + _camera->x, y + _camera->y + astraConfig.tileSelectBoxHeight - astraConfig.tileSelectBoxLineLength - 1, astraConfig.tileSelectBoxLineLength);
+    //右上角
+    HAL::drawHLine(x + _camera->x + astraConfig.tileSelectBoxWidth - astraConfig.tileSelectBoxLineLength - 1, y + _camera->y, astraConfig.tileSelectBoxLineLength);
+    HAL::drawVLine(x + _camera->x + astraConfig.tileSelectBoxWidth - 1, y + _camera->y, astraConfig.tileSelectBoxLineLength);
+    //右下角
+    HAL::drawHLine(x + _camera->x + astraConfig.tileSelectBoxWidth - astraConfig.tileSelectBoxLineLength - 1, y + _camera->y + astraConfig.tileSelectBoxHeight - 1, astraConfig.tileSelectBoxLineLength);
+    HAL::drawVLine(x + _camera->x + astraConfig.tileSelectBoxWidth - 1, y + _camera->y + astraConfig.tileSelectBoxHeight - astraConfig.tileSelectBoxLineLength - 1, astraConfig.tileSelectBoxLineLength);
 
   } else if (menu->childType == Menu::LIST) {
     animation(&w, wTrg, astraConfig.selectorWidthAnimationSpeed);

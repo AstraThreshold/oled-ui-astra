@@ -129,11 +129,12 @@ public:
   //所有过程中 渲染好的元素绝对坐标都是不变的 只有摄像机的坐标在变
   void go(float _x, float _y);
   void goDirect(float _x, float _y);
+  void goHorizontal(float _x);
+  void goVertical(float _y);
 
   void goNextPageItem();
   void goPreviewPageItem();
-  void goNextTileItem();
-  void goPreviewTileItem();
+  void goTileItem(uint8_t _index);
 
   void reset();
 };

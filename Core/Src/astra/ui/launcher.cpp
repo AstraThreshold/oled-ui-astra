@@ -65,10 +65,14 @@ bool Launcher::close() {
 
 void Launcher::start() {
   HAL::canvasClear();
+
   currentPage->render(camera);
   selector->render(camera); //todo 为了测试tile 暂时注释掉这一行
 
-  //camera->go(0, -20);
+  selector->go(0);
+  //camera->goTileItem(1);
+
+  //camera->go(35, 0);
   HAL::canvasUpdate();
 //todo 看一下Rachel的按键扫描函数是怎么实现的
 
