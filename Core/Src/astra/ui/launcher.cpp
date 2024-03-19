@@ -16,6 +16,8 @@ void Launcher::init(Menu *_rootPage) {
   selector->inject(_rootPage);
   selector->go(_rootPage->selectIndex);
 
+  selector->go(2);
+
   currentPage->init();
 }
 
@@ -67,9 +69,8 @@ void Launcher::start() {
   HAL::canvasClear();
 
   currentPage->render(camera);
-  selector->render(camera); //todo 为了测试tile 暂时注释掉这一行
+  selector->render(camera);
 
-  selector->go(0);
   //camera->goTileItem(1);
 
   //camera->go(35, 0);

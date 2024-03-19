@@ -215,8 +215,6 @@ public:
   /*LIST*/
 
   /*TILE*/
-  float wFrame, wFrameTrg;  //磁贴页大框宽度
-  float hFrame, hFrameTrg;  //磁贴页大框高度
   float yText, yTextTrg;  //磁贴页标题坐标
   /*TILE*/
 

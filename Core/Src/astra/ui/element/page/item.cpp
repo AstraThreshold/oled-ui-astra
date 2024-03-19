@@ -303,6 +303,7 @@ bool Menu::addItem(Menu *_page) {
  *
  * @param _index
  * @note selector接管了移动选择指针的功能
+ * @warning not support in loop. 不支持在循环内执行
  */
 void Selector::go(uint8_t _index) {
   Item::updateConfig();
@@ -363,8 +364,6 @@ void Selector::render(Camera* _camera) {
 
   if (menu->childType == Menu::TILE) {
     animation(&yText, yTextTrg, astraConfig.selectorAnimationSpeed);
-    //animation(&wFrame, wFrameTrg, astraConfig.selectorAnimationSpeed);
-    //animation(&hFrame, hFrameTrg, astraConfig.selectorAnimationSpeed);
 
     //draw text.
     //文字不受摄像机的影响
