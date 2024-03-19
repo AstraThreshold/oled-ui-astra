@@ -16,7 +16,7 @@ void Launcher::init(Menu *_rootPage) {
   selector->inject(_rootPage);
   selector->go(_rootPage->selectIndex);
 
-  selector->go(2);
+  selector->go(1);
 
   currentPage->init();
 }
@@ -71,9 +71,9 @@ void Launcher::start() {
   currentPage->render(camera);
   selector->render(camera);
 
-  //camera->goTileItem(1);
+  camera->goTileItem(1);
 
-  //camera->go(35, 0);
+//  camera->go(30, 30);
   HAL::canvasUpdate();
 //todo 看一下Rachel的按键扫描函数是怎么实现的
 
