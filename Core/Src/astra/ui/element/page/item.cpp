@@ -434,9 +434,9 @@ void Camera::reset() {
 
 void Camera::update(Menu *_menu) {
   //todo 不完善
-  if (_menu->selfType == Menu::LIST)
+  if (_menu->childType == Menu::LIST)
     goListItemPage(_menu->selectIndex);
-  else if (_menu->selfType == Menu::TILE)
+  else if (_menu->childType == Menu::TILE)
     goTileItem(_menu->selectIndex);
 }
 }

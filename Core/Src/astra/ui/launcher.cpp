@@ -16,8 +16,6 @@ void Launcher::init(Menu *_rootPage) {
   selector->inject(_rootPage);
   selector->go(_rootPage->selectIndex);
 
-  selector->go(1);
-
   currentPage->init();
 }
 

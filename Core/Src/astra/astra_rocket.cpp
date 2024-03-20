@@ -34,17 +34,17 @@ void astraCoreInit(void) {
   HAL::delay(100);
   HAL::printInfo("welcome.");
 
-//  rootPage->addItem(new astra::Menu("test1", pic));
-//  rootPage->addItem(new astra::Menu("测试2", pic));
-//  rootPage->addItem(new astra::Menu("测试测试3", pic));
-//  rootPage->addItem(secondPage);
-
-  rootPage->addItem(new astra::Menu("test1"));
-  rootPage->addItem(new astra::Menu("测试2"));
-  rootPage->addItem(new astra::Menu("测试测试3"));
-  rootPage->addItem(new astra::Menu("测试测试测试4"));
-  rootPage->addItem(new astra::Menu("测试测试测试5"));
+  rootPage->addItem(new astra::Menu("test1", pic));
+  rootPage->addItem(new astra::Menu("测试2", pic));
+  rootPage->addItem(new astra::Menu("测试测试3", pic));
   rootPage->addItem(secondPage);
+
+//  rootPage->addItem(new astra::Menu("test1"));
+//  rootPage->addItem(new astra::Menu("测试2"));
+//  rootPage->addItem(new astra::Menu("测试测试3"));
+//  rootPage->addItem(new astra::Menu("测试测试测试4"));
+//  rootPage->addItem(new astra::Menu("测试测试测试5"));
+//  rootPage->addItem(secondPage);
 
   secondPage->addItem(new astra::Menu("test1"));
   secondPage->addItem(new astra::Menu("测试2"));
