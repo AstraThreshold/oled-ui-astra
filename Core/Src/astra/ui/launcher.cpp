@@ -16,7 +16,7 @@ void Launcher::init(Menu *_rootPage) {
   selector->inject(_rootPage);
   selector->go(_rootPage->selectIndex);
 
-  selector->go(5);
+  selector->go(1);
 
   currentPage->init();
 }
@@ -65,12 +65,7 @@ void Launcher::start() {
 
   currentPage->render(camera->getPosition());
   selector->render(camera->getPosition());
-  //camera->update(currentPage);
-
-  camera->goListItemPage(5);
-
-//  camera->goTileItem(3);
-//  camera->go(30, 30);
+  camera->update(currentPage);
 
   //open();
 

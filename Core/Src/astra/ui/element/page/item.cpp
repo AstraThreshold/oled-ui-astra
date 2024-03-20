@@ -12,7 +12,6 @@
 
 //传进去的有三个东西 第一个是文字（要显示的东西） 第二个是类别（普通列表 跳转列表 复选框） 第三个是特征向量（指向复选框和弹窗对应的参数 要跳转的地方等）
 
-////todo 看dreamView的代码 挨个检查每一部分是否都有对应
 ////todo 小组件下个版本更新
 
 #include "item.h"
@@ -109,7 +108,6 @@ void Menu::deInit() {
   exitAnimation();
 }
 
-//todo 所有的跟文字有关的 包括selector 记住绘制文字时提供的坐标是文字左下角的坐标 改
 void Menu::render(std::vector<float> _camera) {
   if (childType == TILE) {
     Item::updateConfig();
@@ -434,8 +432,6 @@ void Camera::reset() {
   if (this->x == xInit && this->y == yInit) moving = false;
 }
 
-//todo 把此处的update方法放到启动器主循环中去执行 去掉其他所有的camera更新代码 让camera在主循环里动态自动更新位置
-//todo 把camera的声明和定义挪到后面去 让menu的渲染参数改成传入一个vector 在主循环中调用camera->get方法作为参数 由此获取camera坐标
 void Camera::update(Menu *_menu) {
   //todo 不完善
   if (_menu->selfType == Menu::LIST)
