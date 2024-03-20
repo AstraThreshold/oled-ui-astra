@@ -17,6 +17,8 @@ void Launcher::init(Menu *_rootPage) {
   selector->go(_rootPage->selectIndex);
 
   currentPage->init();
+
+  open();
 }
 
 /**
@@ -26,7 +28,10 @@ void Launcher::init(Menu *_rootPage) {
  */
 bool Launcher::open() {
   //todo 打开和关闭都还没写完 应该还漏掉了一部分内容
+
+  //如果当前页面指向的当前item没有后继 那就返回false
   if (currentPage->getNext() == nullptr) return false;
+  if (currentPage->getNext()->getItemNum() == 0) return false;
 
   currentPage->deInit();  //先析构（退场动画）再挪动指针
 
@@ -36,7 +41,7 @@ bool Launcher::open() {
   currentPage->init();
   selector->go(currentPage->selectIndex);
 
-  return false;
+  return true;
 }
 
 /**
@@ -46,6 +51,7 @@ bool Launcher::open() {
  */
 bool Launcher::close() {
   if (currentPage->getPreview() == nullptr) return false;
+  if (currentPage->getPreview()->getItemNum() == 0) return false;
 
   currentPage->deInit();  //先析构（退场动画）再挪动指针
   currentPage = currentPage->getPreview();
@@ -55,7 +61,7 @@ bool Launcher::close() {
   selector->inject(currentPage);
   selector->go(currentPage->selectIndex);
 
-  return false;
+  return true;
 }
 
 void Launcher::start() {

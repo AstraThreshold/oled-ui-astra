@@ -26,13 +26,14 @@ void astraCoreInit(void) {
   HAL::inject(new HALDreamCore);
 
   HAL::delay(100);
-  HAL::printInfo("loading.");
+  HAL::printInfo("loading...");
   HAL::delay(500);
-  HAL::printInfo("astra ui by dcfsswindy.");
+  HAL::printInfo("astra UI by dcfsswindy.");
   HAL::delay(100);
-  HAL::printInfo("welcome.");
+  HAL::printInfo("If stuck on this page,");
   HAL::delay(100);
-  HAL::printInfo("welcome.");
+  HAL::printInfo("check your program!");
+  HAL::delay(100);
 
   rootPage->addItem(new astra::Menu("test1", pic));
   rootPage->addItem(new astra::Menu("测试2", pic));
