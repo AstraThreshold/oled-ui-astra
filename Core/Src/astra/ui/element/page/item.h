@@ -34,6 +34,7 @@ public:
 
 inline void Animation::entryAnimation() { }
 
+//todo 未实现功能
 inline void Animation::exitAnimation() {
   static uint8_t fadeFlag = 1;
   static uint8_t bufferLen = 8 * HAL::getBufferTileHeight() * HAL::getBufferTileWidth();

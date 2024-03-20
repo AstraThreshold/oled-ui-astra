@@ -43,8 +43,8 @@ void HAL::_printInfo(std::string _msg) {
   static const uint8_t _max = getSystemConfig().screenHeight / getFontHeight();
   static const uint8_t _fontHeight = getFontHeight();
 
+  if (_infoCache.size() >= _max) _infoCache.clear();
   _infoCache.push_back(_msg);
-  if (_infoCache.size() > _max) _infoCache.erase(_infoCache.begin());
 
   canvasClear();
   setDrawType(2); //反色显示

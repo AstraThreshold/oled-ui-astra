@@ -19,8 +19,8 @@ std::vector<uint8_t> pic = {
     0xFF, 0xFF, 0xFF, 0x3F, 0xFF, 0xFF, 0xFF, 0x3F
 };
 
-astra::Menu* secondPage = new astra::Menu("secondPage");
-//astra::Menu* secondPage = new astra::Menu("secondPage", pic);
+//astra::Menu* secondPage = new astra::Menu("secondPage");
+astra::Menu* secondPage = new astra::Menu("secondPage", pic);
 
 void astraCoreInit(void) {
   HAL::inject(new HALDreamCore);

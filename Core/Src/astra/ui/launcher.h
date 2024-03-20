@@ -9,13 +9,17 @@
 
 namespace astra {
 
-class Launcher {
+class Launcher : public Animation {
 private:
   Menu* currentPage;
   Selector* selector;
   Camera* camera;
 
+  uint64_t time;
+
 public:
+  void popInfo(std::string _info, uint16_t _time);
+
   void init(Menu* _rootPage);
 
   bool open();

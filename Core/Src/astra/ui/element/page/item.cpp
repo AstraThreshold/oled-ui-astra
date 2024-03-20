@@ -272,7 +272,7 @@ void Selector::go(uint8_t _index) {
 
 bool Selector::inject(Menu *_menu) {
   if (_menu == nullptr) return false;
-  if (this->menu != nullptr) return false;
+  //if (this->menu != nullptr) return false;
   this->menu = _menu;
 
   go(this->menu->selectIndex);  //注入之后要初始化选择框的位置
@@ -404,16 +404,17 @@ void Camera::goListItemPage(uint8_t _index) {
 
   moving = true;
 
-  if (_index % maxItemPerScreen == 0) _page = _index / maxItemPerScreen - 1;
+  if (_index == 0) _page = 0;
+  else if (_index % maxItemPerScreen == 0) _page = _index / maxItemPerScreen - 1;
   else _page = floor(_index / maxItemPerScreen);
-  goVertical(_page * systemConfig.screenHeight);
+  go(0, _page * systemConfig.screenHeight);
 
   if (this->y == _page * systemConfig.screenHeight) moving = false;
 }
 
 void Camera::goTileItem(uint8_t _index) {
   moving = true;
-  goHorizontal(_index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin));
+  go(_index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin), 0);
   if (this->x == 0 - _index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin)) moving = false;
 }
 
