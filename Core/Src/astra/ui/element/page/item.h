@@ -95,40 +95,6 @@ inline void Animation::animation(float *_pos, float _posTrg, float _speed) {
   }
 }
 
-//加入了摄像机 随着摄像机动而动
-//其他的不动的元素 比如虚线和进度条 统称为前景 不受摄像机的控制
-//这样一来元素本身的坐标并不会改变 只是在渲染的时候加入了摄像机的坐标而已
-
-//磁贴类中 前景是虚线 标题 箭头和按钮图标 摄像机横向移动
-//列表类中 前景是进度条 摄像机纵向移动
-//todo 想想有没有关于摄像机的初始化内容 并实现
-class Camera : public Item, public Animation {
-
-private:
-  float xInit, yInit;
-
-public:
-  float x, y;
-
-  Camera(); //build an empty camera instance.
-  Camera(float _x, float _y); //build a camera instance with position.
-
-  //在启动器中新建selector和camera 然后注入menu render
-  //在启动器中执行下述方法即可实现视角移动
-  //启动器要判断是否超过视角范围 若超过则移动摄像机
-  //所有过程中 渲染好的元素绝对坐标都是不变的 只有摄像机的坐标在变
-  void go(float _x, float _y);
-  void goDirect(float _x, float _y);
-  void goHorizontal(float _x);
-  void goVertical(float _y);
-
-  void goNextPageItem();
-  void goPreviewPageItem();
-  void goTileItem(uint8_t _index);
-
-  void reset();
-};
-
 //todo 实现之前提到过的那个进场和退场动画的idea
 class Menu : public Item, public Animation {
 public:
@@ -179,7 +145,7 @@ public:
   void init(); //每次打开页面都要调用一次
   void deInit(); //每次关闭页面都要调用一次
 
-  void render(Camera* _camera);  //render all child item.
+  void render(std::vector<float> _camera);  //render all child item.
   [[nodiscard]] uint8_t getItemNum() const;
   [[nodiscard]] Position getItemPosition(uint8_t _index) const;
   [[nodiscard]] Menu* getNext() const;  //启动器调用该方法来获取下一个页面
@@ -218,7 +184,7 @@ public:
   bool inject(Menu* _menu); //inject menu instance to prepare for render.
   bool destroy(); //destroy menu instance.
 
-  void render(Camera* _camera);
+  void render(std::vector<float> _camera);
 
   //在启动器中新建selector和camera 然后注入menu render
   //在启动器中执行下述方法即可实现选择
@@ -228,6 +194,48 @@ public:
 
   //在启动器里单独渲染selector
 };
+
+//加入了摄像机 随着摄像机动而动
+//其他的不动的元素 比如虚线和进度条 统称为前景 不受摄像机的控制
+//这样一来元素本身的坐标并不会改变 只是在渲染的时候加入了摄像机的坐标而已
+
+//磁贴类中 前景是虚线 标题 箭头和按钮图标 摄像机横向移动
+//列表类中 前景是进度条 摄像机纵向移动
+//todo 想想有没有关于摄像机的初始化内容 并实现
+class Camera : public Item, public Animation {
+private:
+  float xInit, yInit;
+
+public:
+  float x, y;
+
+  bool moving = false;
+
+  Camera(); //build an empty camera instance.
+  Camera(float _x, float _y); //build a camera instance with position.
+
+  //在启动器中新建selector和camera 然后注入menu render
+  //在启动器中执行下述方法即可实现视角移动
+  //启动器要判断是否超过视角范围 若超过则移动摄像机
+  //所有过程中 渲染好的元素绝对坐标都是不变的 只有摄像机的坐标在变
+  void go(float _x, float _y);
+  void goDirect(float _x, float _y);
+  void goHorizontal(float _x);
+  void goVertical(float _y);
+
+  void goNextPageItem();
+  void goPreviewPageItem();
+  void goListItemPage(uint8_t _index);
+  void goTileItem(uint8_t _index);
+
+  std::vector<float> getPosition();
+  bool isMoving();
+
+  void reset();
+
+  void update(Menu *_menu);
+};
+
 }
 
 #endif //ASTRA_ASTRA__H

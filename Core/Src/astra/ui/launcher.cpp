@@ -16,34 +16,36 @@ void Launcher::init(Menu *_rootPage) {
   selector->inject(_rootPage);
   selector->go(_rootPage->selectIndex);
 
-  selector->go(1);
+  selector->go(5);
 
   currentPage->init();
 }
 
-//todo 把打开和关闭一定要放在循环里 因为里面有camera的go方法 只能在循环里调用
-//todo 放在循环中 判断返回值 当相机到达目标位置时 返回true 不再调用该函数
+/**
+ * @brief 打开选中的页面
+ *
+ * @return 是否成功打开
+ */
 bool Launcher::open() {
   //todo 打开和关闭都还没写完 应该还漏掉了一部分内容
   if (currentPage->getNext() == nullptr) return false;
 
   currentPage->deInit();  //先析构（退场动画）再挪动指针
+
   currentPage = currentPage->getNext();
+  selector->inject(currentPage);
 
   currentPage->init();
-
-  selector->inject(currentPage);
   selector->go(currentPage->selectIndex);
 
-  if (currentPage->selfType == Menu::LIST)
-    camera->go(currentPage->getItemPosition(currentPage->selectIndex).xTrg - getUIConfig().listTextMargin,
-               currentPage->getItemPosition(currentPage->selectIndex).yTrg);
-  else if (currentPage->selfType == Menu::TILE) //todo 想一想磁贴页的摄像机初始化在哪里
-    camera->go(currentPage->getItemPosition(currentPage->selectIndex).xTrg,
-               currentPage->getItemPosition(currentPage->selectIndex).yTrg);
-  return true;
+  return false;
 }
 
+/**
+ * @brief 关闭选中的页面
+ *
+ * @return 是否成功关闭
+ */
 bool Launcher::close() {
   if (currentPage->getPreview() == nullptr) return false;
 
@@ -55,25 +57,23 @@ bool Launcher::close() {
   selector->inject(currentPage);
   selector->go(currentPage->selectIndex);
 
-  if (currentPage->selfType == Menu::LIST)
-    camera->go(currentPage->getItemPosition(currentPage->selectIndex).xTrg - getUIConfig().listTextMargin,
-               currentPage->getItemPosition(currentPage->selectIndex).yTrg);
-  else if (currentPage->selfType == Menu::TILE) //todo 想一想磁贴页的摄像机初始化在哪里
-    camera->go(currentPage->getItemPosition(currentPage->selectIndex).xTrg,
-               currentPage->getItemPosition(currentPage->selectIndex).yTrg);
-
-  return true;
+  return false;
 }
 
 void Launcher::start() {
   HAL::canvasClear();
 
-  currentPage->render(camera);
-  selector->render(camera);
+  currentPage->render(camera->getPosition());
+  selector->render(camera->getPosition());
+  //camera->update(currentPage);
 
-  camera->goTileItem(1);
+  camera->goListItemPage(5);
 
+//  camera->goTileItem(3);
 //  camera->go(30, 30);
+
+  //open();
+
   HAL::canvasUpdate();
 //todo 看一下Rachel的按键扫描函数是怎么实现的
 

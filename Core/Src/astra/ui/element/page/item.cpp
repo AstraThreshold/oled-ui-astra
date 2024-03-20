@@ -37,69 +37,6 @@ void Item::updateConfig() {
   this->astraConfig = getUIConfig();
 }
 
-Camera::Camera() {
-  this->xInit = 0;
-  this->yInit = 0;
-
-  this->x = 0;
-  this->y = 0;
-}
-
-//这里的坐标应该都是负的 因为最终渲染的时候是加上摄像机的坐标
-//所以说比如想显示下一页 应该是item本身的坐标减去摄像机的坐标 这样才会让item向上移动
-//一个办法是用户传进来正的坐标 但是在摄像机内部 所有坐标都取其相反数 负的
-
-Camera::Camera(float _x, float _y) {
-  this->xInit = 0 - _x;
-  this->yInit = 0 - _y;
-
-  this->x = 0 - _x;
-  this->y = 0 - _y;
-}
-
-/**
- * @brief
- * @param _pos
- * @param _posTrg
- * @param _speed
- *
- * @note only support in loop. 仅支持在循环内执行
- */
-void Camera::go(float _x, float _y) {
-  animation(&this->x, (0 - _x), astraConfig.cameraAnimationSpeed);
-  animation(&this->y, (0 - _y), astraConfig.cameraAnimationSpeed);
-}
-
-void Camera::reset() {
-  animation(&this->x, xInit, astraConfig.cameraAnimationSpeed);
-  animation(&this->y, yInit, astraConfig.cameraAnimationSpeed);
-}
-
-void Camera::goDirect(float _x, float _y) {
-  this->x = 0 - _x;
-  this->y = 0 - _y;
-}
-
-void Camera::goHorizontal(float _x) {
-  animation(&this->x, 0 - _x, astraConfig.cameraAnimationSpeed);
-}
-
-void Camera::goVertical(float _y) {
-  animation(&this->y, 0 - _y, astraConfig.cameraAnimationSpeed);
-}
-
-void Camera::goNextPageItem() {
-  animation(&y, y - systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
-}
-
-void Camera::goPreviewPageItem() {
-  animation(&y, y + systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
-}
-
-void Camera::goTileItem(uint8_t _index) {
-  goHorizontal(_index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin));
-}
-
 Menu::Menu(std::string _title) {
   this->title = std::move(_title);
   this->selfType = LIST;
@@ -173,7 +110,7 @@ void Menu::deInit() {
 }
 
 //todo 所有的跟文字有关的 包括selector 记住绘制文字时提供的坐标是文字左下角的坐标 改
-void Menu::render(Camera* _camera) {
+void Menu::render(std::vector<float> _camera) {
   if (childType == TILE) {
     Item::updateConfig();
 
@@ -181,7 +118,7 @@ void Menu::render(Camera* _camera) {
 
     //draw pic.
     for (auto _iter : child) {
-      HAL::drawBMP(_iter->position.x + _camera->x, astraConfig.tilePicTopMargin + _camera->y, astraConfig.tilePicWidth, astraConfig.tilePicHeight, _iter->pic.data());
+      HAL::drawBMP(_iter->position.x + _camera[0], astraConfig.tilePicTopMargin + _camera[1], astraConfig.tilePicWidth, astraConfig.tilePicHeight, _iter->pic.data());
       //这里的xTrg在addItem的时候就已经确定了
       animation(&_iter->position.x, _iter->position.xTrg, astraConfig.tileAnimationSpeed);
     }
@@ -228,7 +165,7 @@ void Menu::render(Camera* _camera) {
 
     //allow x > screen height, y > screen weight.
     for (auto _iter : child) {
-      HAL::drawChinese(_iter->position.x + _camera->x, _iter->position.y + astraConfig.listTextHeight + astraConfig.listTextMargin + _camera->y, _iter->title);
+      HAL::drawChinese(_iter->position.x + _camera[0], _iter->position.y + astraConfig.listTextHeight + astraConfig.listTextMargin + _camera[1], _iter->title);
       //这里的yTrg在addItem的时候就已经确定了
       animation(&_iter->position.y, _iter->position.yTrg, astraConfig.listAnimationSpeed);
     }
@@ -352,7 +289,7 @@ bool Selector::destroy() {
   this->menu = nullptr;
 }
 
-void Selector::render(Camera* _camera) {
+void Selector::render(std::vector<float> _camera) {
   Item::updateConfig();
 
   ////todo 未来可以做一个从磁贴大框向列表选择框的过渡动画 画的大框逐渐变小 最终变成选择框那么大 全过程都是没有R角 过渡完成后直接画R角的选择框即可
@@ -374,17 +311,17 @@ void Selector::render(Camera* _camera) {
     //大框需要受摄像机的影响
     HAL::setDrawType(2);
     //左上角
-    HAL::drawHLine(x + _camera->x, y + _camera->y, astraConfig.tileSelectBoxLineLength);
-    HAL::drawVLine(x + _camera->x, y + _camera->y, astraConfig.tileSelectBoxLineLength + 1);
+    HAL::drawHLine(x + _camera[0], y + _camera[1], astraConfig.tileSelectBoxLineLength);
+    HAL::drawVLine(x + _camera[0], y + _camera[1], astraConfig.tileSelectBoxLineLength + 1);
     //左下角
-    HAL::drawHLine(x + _camera->x, y + _camera->y + astraConfig.tileSelectBoxHeight - 1, astraConfig.tileSelectBoxLineLength);
-    HAL::drawVLine(x + _camera->x, y + _camera->y + astraConfig.tileSelectBoxHeight - astraConfig.tileSelectBoxLineLength - 1, astraConfig.tileSelectBoxLineLength);
+    HAL::drawHLine(x + _camera[0], y + _camera[1] + astraConfig.tileSelectBoxHeight - 1, astraConfig.tileSelectBoxLineLength);
+    HAL::drawVLine(x + _camera[0], y + _camera[1] + astraConfig.tileSelectBoxHeight - astraConfig.tileSelectBoxLineLength - 1, astraConfig.tileSelectBoxLineLength);
     //右上角
-    HAL::drawHLine(x + _camera->x + astraConfig.tileSelectBoxWidth - astraConfig.tileSelectBoxLineLength - 1, y + _camera->y, astraConfig.tileSelectBoxLineLength);
-    HAL::drawVLine(x + _camera->x + astraConfig.tileSelectBoxWidth - 1, y + _camera->y, astraConfig.tileSelectBoxLineLength);
+    HAL::drawHLine(x + _camera[0] + astraConfig.tileSelectBoxWidth - astraConfig.tileSelectBoxLineLength - 1, y + _camera[1], astraConfig.tileSelectBoxLineLength);
+    HAL::drawVLine(x + _camera[0] + astraConfig.tileSelectBoxWidth - 1, y + _camera[1], astraConfig.tileSelectBoxLineLength);
     //右下角
-    HAL::drawHLine(x + _camera->x + astraConfig.tileSelectBoxWidth - astraConfig.tileSelectBoxLineLength - 1, y + _camera->y + astraConfig.tileSelectBoxHeight - 1, astraConfig.tileSelectBoxLineLength);
-    HAL::drawVLine(x + _camera->x + astraConfig.tileSelectBoxWidth - 1, y + _camera->y + astraConfig.tileSelectBoxHeight - astraConfig.tileSelectBoxLineLength - 1, astraConfig.tileSelectBoxLineLength);
+    HAL::drawHLine(x + _camera[0] + astraConfig.tileSelectBoxWidth - astraConfig.tileSelectBoxLineLength - 1, y + _camera[1] + astraConfig.tileSelectBoxHeight - 1, astraConfig.tileSelectBoxLineLength);
+    HAL::drawVLine(x + _camera[0] + astraConfig.tileSelectBoxWidth - 1, y + _camera[1] + astraConfig.tileSelectBoxHeight - astraConfig.tileSelectBoxLineLength - 1, astraConfig.tileSelectBoxLineLength);
 
   } else if (menu->childType == Menu::LIST) {
     animation(&w, wTrg, astraConfig.selectorWidthAnimationSpeed);
@@ -393,9 +330,117 @@ void Selector::render(Camera* _camera) {
     //draw select box.
     //受摄像机的影响
     HAL::setDrawType(2);
-    HAL::drawRBox(x + _camera->x, y + _camera->y, w, astraConfig.listLineHeight - 1, astraConfig.selectorRadius);
+    HAL::drawRBox(x + _camera[0], y + _camera[1], w, astraConfig.listLineHeight - 1, astraConfig.selectorRadius);
     //HAL::drawRBox(x, y, w, astraConfig.listLineHeight, astraConfig.selectorRadius);
     HAL::setDrawType(1);
   }
+}
+
+Camera::Camera() {
+  this->xInit = 0;
+  this->yInit = 0;
+
+  this->x = 0;
+  this->y = 0;
+}
+
+//这里的坐标应该都是负的 因为最终渲染的时候是加上摄像机的坐标
+//所以说比如想显示下一页 应该是item本身的坐标减去摄像机的坐标 这样才会让item向上移动
+//一个办法是用户传进来正的坐标 但是在摄像机内部 所有坐标都取其相反数 负的
+
+Camera::Camera(float _x, float _y) {
+  this->xInit = 0 - _x;
+  this->yInit = 0 - _y;
+
+  this->x = 0 - _x;
+  this->y = 0 - _y;
+}
+
+/**
+ * @brief
+ * @param _pos
+ * @param _posTrg
+ * @param _speed
+ *
+ * @note only support in loop. 仅支持在循环内执行
+ */
+void Camera::go(float _x, float _y) {
+  moving = true;
+  animation(&this->x, (0 - _x), astraConfig.cameraAnimationSpeed);
+  animation(&this->y, (0 - _y), astraConfig.cameraAnimationSpeed);
+  if (this->x == 0 - _x && this->y == 0 - _y) moving = false;
+}
+
+void Camera::goDirect(float _x, float _y) {
+  this->x = 0 - _x;
+  this->y = 0 - _y;
+}
+
+void Camera::goHorizontal(float _x) {
+  moving = true;
+  animation(&this->x, 0 - _x, astraConfig.cameraAnimationSpeed);
+  if (this->x == 0 - _x) moving = false;
+}
+
+void Camera::goVertical(float _y) {
+  moving = true;
+  animation(&this->y, 0 - _y, astraConfig.cameraAnimationSpeed);
+  if (this->y == 0 - _y) moving = false;
+}
+
+void Camera::goNextPageItem() {
+  moving = true;
+  animation(&y, y - systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
+  if (this->y == y - systemConfig.screenHeight) moving = false;
+}
+
+void Camera::goPreviewPageItem() {
+  moving = true;
+  animation(&y, y + systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
+  if (this->y == y + systemConfig.screenHeight) moving = false;
+}
+
+void Camera::goListItemPage(uint8_t _index) {
+  static const uint8_t maxItemPerScreen = systemConfig.screenHeight / astraConfig.listLineHeight;
+  uint8_t _page = 0;
+
+  moving = true;
+
+  if (_index % maxItemPerScreen == 0) _page = _index / maxItemPerScreen - 1;
+  else _page = floor(_index / maxItemPerScreen);
+  goVertical(_page * systemConfig.screenHeight);
+
+  if (this->y == _page * systemConfig.screenHeight) moving = false;
+}
+
+void Camera::goTileItem(uint8_t _index) {
+  moving = true;
+  goHorizontal(_index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin));
+  if (this->x == 0 - _index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin)) moving = false;
+}
+
+std::vector<float> Camera::getPosition() {
+  return {x, y};
+}
+
+bool Camera::isMoving() {
+  return moving;
+}
+
+void Camera::reset() {
+  moving = true;
+  animation(&this->x, xInit, astraConfig.cameraAnimationSpeed);
+  animation(&this->y, yInit, astraConfig.cameraAnimationSpeed);
+  if (this->x == xInit && this->y == yInit) moving = false;
+}
+
+//todo 把此处的update方法放到启动器主循环中去执行 去掉其他所有的camera更新代码 让camera在主循环里动态自动更新位置
+//todo 把camera的声明和定义挪到后面去 让menu的渲染参数改成传入一个vector 在主循环中调用camera->get方法作为参数 由此获取camera坐标
+void Camera::update(Menu *_menu) {
+  //todo 不完善
+  if (_menu->selfType == Menu::LIST)
+    goListItemPage(_menu->selectIndex);
+  else if (_menu->selfType == Menu::TILE)
+    goTileItem(_menu->selectIndex);
 }
 }
