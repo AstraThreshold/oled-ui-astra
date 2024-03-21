@@ -125,9 +125,10 @@ CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_bvector.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\vector.tcc \
  d:\projects\astra\core\src\astra\config\config.h \
- d:\projects\astra\core\src\hal\hal_dreamcore\components/oled/graph_lib/u8g2/u8g2.h \
- d:\projects\astra\core\src\hal\hal_dreamcore\components/oled/graph_lib/u8g2/u8x8.h \
+ d:\projects\astra\core\src\hal\hal_dreamcore\components\oled\graph_lib\u8g2\u8g2.h \
+ d:\projects\astra\core\src\hal\hal_dreamcore\components\oled\graph_lib\u8g2\u8x8.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\lib\gcc\arm-none-eabi\12.2.1\include-fixed\limits.h \
+ d:\projects\astra\core\src\hal\hal_dreamcore\components/oled/graph_lib/u8g2/u8g2.h \
  D:\Projects\astra\Core\Src\hal\hal_dreamCore\components\oled\graph_lib/u8g2/u8g2.h \
  D:\Projects\astra\Core\Inc/spi.h D:\Projects\astra\Core\Inc/main.h \
  D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal.h \

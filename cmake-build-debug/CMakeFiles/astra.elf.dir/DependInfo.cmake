@@ -93,6 +93,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj.d"
   "D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj.d"
   "D:/Projects/astra/Core/Src/astra/app/astra_app.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj.d"
+  "D:/Projects/astra/Core/Src/astra/astra_logo.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/astra_logo.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/astra_logo.cpp.obj.d"
   "D:/Projects/astra/Core/Src/astra/astra_rocket.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj.d"
   "D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.obj.d"
   "D:/Projects/astra/Core/Src/astra/ui/element/page/item.cpp" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj.d"

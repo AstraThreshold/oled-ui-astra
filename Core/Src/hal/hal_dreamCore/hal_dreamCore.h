@@ -86,6 +86,7 @@ public:
 public:
   void _delay(unsigned long _mill) override;
   unsigned long _millis() override;
+  unsigned long _getTick() override;
 
 public:
   void _beep(float _freq) override;

@@ -40,15 +40,16 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
 
     animation(&yPop, yPopTrg, getUIConfig().popSpeed);  //动画
 
+    //todo 这里条件可以加上一个如果按键按下 就退出
     if (time - beginTime >= _time && yPop == 0 - hPop - 8) onRender = false;  //退出条件
   }
 }
 
 void Launcher::init(Menu *_rootPage) {
   currentPage = _rootPage;
-  _rootPage->init();
 
   camera = new Camera(0, 0);
+  _rootPage->init(camera->getPosition());
 
   selector = new Selector();
   selector->inject(_rootPage);
@@ -75,7 +76,7 @@ bool Launcher::open() {
   currentPage->deInit();  //先析构（退场动画）再挪动指针
 
   currentPage = currentPage->getNext();
-  currentPage->init();
+  currentPage->init(camera->getPosition());
 
   selector->inject(currentPage);
   selector->go(currentPage->selectIndex);
@@ -96,7 +97,7 @@ bool Launcher::close() {
   currentPage->deInit();  //先析构（退场动画）再挪动指针
 
   currentPage = currentPage->getPreview();
-  currentPage->init();
+  currentPage->init(camera->getPosition());
 
   selector->inject(currentPage);
   selector->go(currentPage->selectIndex);

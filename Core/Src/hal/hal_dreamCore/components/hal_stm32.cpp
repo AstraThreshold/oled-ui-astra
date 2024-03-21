@@ -66,5 +66,9 @@ unsigned long HALDreamCore::_millis() {
   return HAL_GetTick();
 }
 
+unsigned long HALDreamCore::_getTick() {
+  return (uwTick * 1000 + (SysTick->LOAD - SysTick->VAL) / (SystemCoreClock/1000000U));
+}
+
 
 

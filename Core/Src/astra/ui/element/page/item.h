@@ -143,7 +143,7 @@ public:
   explicit Menu(std::string _title);
   Menu(std::string _title, std::vector<uint8_t> _pic);
 
-  void init(); //每次打开页面都要调用一次
+  void init(std::vector<float> _camera); //每次打开页面都要调用一次
   void deInit(); //每次关闭页面都要调用一次
 
   void render(std::vector<float> _camera);  //render all child item.

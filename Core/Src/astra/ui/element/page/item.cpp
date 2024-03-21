@@ -64,13 +64,13 @@ Menu::Menu(std::string _title, std::vector<uint8_t> _pic) {
   this->child.clear();
 }
 
-void Menu::init() {
+void Menu::init(std::vector<float> _camera) {
   entryAnimation();
 
   if (childType == TILE) {
     //受展开开关影响的坐标初始化
     if (astraConfig.tileUnfold) {
-      for (auto _iter : child) _iter->position.x = 0 - astraConfig.tilePicWidth; //unfold from left.
+      for (auto _iter : child) _iter->position.x = _camera[0] - astraConfig.tilePicWidth; //unfold from left.
       positionForeground.wBar = 0;  //bar unfold from left.
 
     } else {
@@ -91,7 +91,7 @@ void Menu::init() {
   } else if (childType == LIST) {
     //受展开开关影响的坐标初始化
     if (astraConfig.listUnfold) {
-      for (auto _iter : child) _iter->position.y = 0; //text unfold from top.
+      for (auto _iter : child) _iter->position.y = _camera[1] - astraConfig.listLineHeight; //text unfold from top.
       positionForeground.hBar = 0;  //bar unfold from top.
     } else {
       for (auto _iter : child) _iter->position.y = _iter->position.yTrg;
@@ -435,9 +435,7 @@ void Camera::reset() {
 
 void Camera::update(Menu *_menu) {
   //todo 不完善
-  if (_menu->childType == Menu::LIST)
-    goListItemPage(_menu->selectIndex);
-  else if (_menu->childType == Menu::TILE)
-    goTileItem(_menu->selectIndex);
+  if (_menu->childType == Menu::LIST) goListItemPage(_menu->selectIndex);
+  else if (_menu->childType == Menu::TILE) goTileItem(_menu->selectIndex);
 }
 }

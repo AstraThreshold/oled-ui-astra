@@ -112,6 +112,9 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj: \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\utility \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_relops.h \
  d:\projects\astra\core\src\astra\config\config.h \
+ d:\projects\astra\core\src\hal\hal_dreamcore\components\oled\graph_lib\u8g2\u8g2.h \
+ d:\projects\astra\core\src\hal\hal_dreamcore\components\oled\graph_lib\u8g2\u8x8.h \
+ d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\lib\gcc\arm-none-eabi\12.2.1\include-fixed\limits.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\cmath \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\math.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\specfun.h \
@@ -130,5 +133,4 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj: \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\tr1\riemann_zeta.tcc \
  d:\projects\astra\core\src\hal\hal_dreamcore\hal_dreamcore.h \
  d:\projects\astra\core\src\hal\hal_dreamcore\components/oled/graph_lib/u8g2/u8g2.h \
- d:\projects\astra\core\src\hal\hal_dreamcore\components/oled/graph_lib/u8g2/u8x8.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\lib\gcc\arm-none-eabi\12.2.1\include-fixed\limits.h
+ D:\Projects\astra\Core\Src\astra\astra_logo.h

@@ -7,6 +7,7 @@
 #define ASTRA_CORE_SRC_SYSTEM_H_
 
 #include "cstdint"
+#include "../../hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2.h"
 
 namespace astra {
 /**
@@ -21,6 +22,7 @@ struct config {
   float sideBarAnimationSpeed = 15;
   float fadeAnimationSpeed = 100;
   float cameraAnimationSpeed = 60;
+  float logoAnimationSpeed = 80;
 
   bool tileUnfold = true;
   bool listUnfold = true;
@@ -64,6 +66,15 @@ struct config {
   float popMargin = 4; //弹窗边距
   float popRadius = 2; //弹窗圆角半径
   float popSpeed = 90; //弹窗动画速度
+
+  float logoStarLength = 2; //logo星星长度
+  float logoStarInitX = 10; //logo星星初始x坐标
+  float logoStarInitY = 10; //logo星星初始y坐标
+  float logoTextHeight = 14; //logo文字高度
+  float logoCopyRightHeight = 8; //logo文字高度
+  uint8_t logoStarNum = 8; //logo星星数量
+  const uint8_t *logoTitleFont = u8g2_font_Cascadia;
+  const uint8_t *logoCopyRightFont = u8g2_font_myfont;
 };
 
 static config &getUIConfig() {

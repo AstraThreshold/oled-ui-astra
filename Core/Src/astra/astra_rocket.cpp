@@ -4,6 +4,7 @@
 
 #include <vector>
 #include "astra_rocket.h"
+#include "astra_logo.h"
 
 astra::Launcher* astraLauncher = new astra::Launcher();
 astra::Menu* rootPage = new astra::Menu("root");
@@ -25,15 +26,16 @@ astra::Menu* secondPage = new astra::Menu("secondPage", pic);
 void astraCoreInit(void) {
   HAL::inject(new HALDreamCore);
 
-  HAL::delay(100);
-  HAL::printInfo("loading...");
-  HAL::delay(500);
-  HAL::printInfo("astra UI by dcfsswindy.");
-  HAL::delay(100);
-  HAL::printInfo("If stuck on this page,");
-  HAL::delay(100);
-  HAL::printInfo("check your program!");
-  HAL::delay(100);
+//  HAL::delay(100);
+//  HAL::printInfo("loading...");
+//  HAL::delay(500);
+//  HAL::printInfo("astra UI by dcfsswindy.");
+//  HAL::delay(100);
+//  HAL::printInfo("If stuck on this page,");
+//  HAL::delay(100);
+//  HAL::printInfo("check your program!");
+//  HAL::delay(100);
+  astra::drawLogo(1000);
 
   rootPage->addItem(new astra::Menu("test1", pic));
   rootPage->addItem(new astra::Menu("测试2", pic));

@@ -203,6 +203,10 @@ public:
 
   virtual unsigned long _millis() { return 0; }
 
+  static unsigned long getTick() { return get()->_getTick(); }
+
+  virtual unsigned long _getTick() { return 0; }
+
   /**
    * @brief buzzer.
    * */

@@ -121,6 +121,12 @@
 		<Unit filename="D:/Projects/astra/Core/Src/astra/app/astra_app_i.h">
 			<Option target="astra.elf"/>
 		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra/astra_logo.cpp">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra/astra_logo.h">
+			<Option target="astra.elf"/>
+		</Unit>
 		<Unit filename="D:/Projects/astra/Core/Src/astra/astra_rocket.cpp">
 			<Option target="astra.elf"/>
 		</Unit>

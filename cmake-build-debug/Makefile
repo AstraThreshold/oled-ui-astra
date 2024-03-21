@@ -152,6 +152,30 @@ Core/Src/astra/app/astra_app.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.s
 .PHONY : Core/Src/astra/app/astra_app.cpp.s
 
+Core/Src/astra/astra_logo.obj: Core/Src/astra/astra_logo.cpp.obj
+.PHONY : Core/Src/astra/astra_logo.obj
+
+# target to build an object file
+Core/Src/astra/astra_logo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/astra_logo.cpp.obj
+.PHONY : Core/Src/astra/astra_logo.cpp.obj
+
+Core/Src/astra/astra_logo.i: Core/Src/astra/astra_logo.cpp.i
+.PHONY : Core/Src/astra/astra_logo.i
+
+# target to preprocess a source file
+Core/Src/astra/astra_logo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/astra_logo.cpp.i
+.PHONY : Core/Src/astra/astra_logo.cpp.i
+
+Core/Src/astra/astra_logo.s: Core/Src/astra/astra_logo.cpp.s
+.PHONY : Core/Src/astra/astra_logo.s
+
+# target to generate assembly for a file
+Core/Src/astra/astra_logo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/astra_logo.cpp.s
+.PHONY : Core/Src/astra/astra_logo.cpp.s
+
 Core/Src/astra/astra_rocket.obj: Core/Src/astra/astra_rocket.cpp.obj
 .PHONY : Core/Src/astra/astra_rocket.obj
 
@@ -1972,6 +1996,9 @@ help:
 	@echo ... Core/Src/astra/app/astra_app.obj
 	@echo ... Core/Src/astra/app/astra_app.i
 	@echo ... Core/Src/astra/app/astra_app.s
+	@echo ... Core/Src/astra/astra_logo.obj
+	@echo ... Core/Src/astra/astra_logo.i
+	@echo ... Core/Src/astra/astra_logo.s
 	@echo ... Core/Src/astra/astra_rocket.obj
 	@echo ... Core/Src/astra/astra_rocket.i
 	@echo ... Core/Src/astra/astra_rocket.s
