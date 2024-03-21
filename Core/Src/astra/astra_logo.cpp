@@ -44,8 +44,12 @@ void drawLogo(uint16_t _time) {
     //todo 记得找个好字体放在此文件里
     static std::string text = "astra UI";
     static std::string copyRight = "powered by";
+
+    HAL::setFont(getUIConfig().logoTitleFont);
     static float xTitle = (HAL::getSystemConfig().screenWeight - HAL::getFontWidth(text)) / 2;
+    HAL::setFont(getUIConfig().logoCopyRightFont);
     static float xCopyRight = (HAL::getSystemConfig().screenWeight - HAL::getFontWidth(copyRight)) / 2;
+    //todo 设回之前的字体
 
     //都是左上角坐标
     static float yTitle = 0 - getUIConfig().logoTextHeight - 1;
