@@ -22,7 +22,7 @@ struct config {
   float sideBarAnimationSpeed = 15;
   float fadeAnimationSpeed = 100;
   float cameraAnimationSpeed = 60;
-  float logoAnimationSpeed = 80;
+  float logoAnimationSpeed = 85;
 
   bool tileUnfold = true;
   bool listUnfold = true;
