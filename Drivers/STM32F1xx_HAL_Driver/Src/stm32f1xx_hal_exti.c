@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f1xx_hal_exti.c
   * @author  MCD Application Team
-  * @brief   EXTI HAL module hardware.
+  * @brief   EXTI HAL module driver.
   *          This file provides firmware functions to manage the following
   *          functionalities of the Extended Interrupts and events controller (EXTI) peripheral:
   *           + Initialization and de-initialization functions
@@ -24,7 +24,7 @@
                     ##### EXTI Peripheral features #####
   ==============================================================================
   [..]
-    (+) Each Exti line can be configured within this hardware.
+    (+) Each Exti line can be configured within this driver.
 
     (+) Exti line can be configured in 3 different modes
         (++) Interrupt
@@ -45,7 +45,7 @@
     (+) Exti lines 0 to 15 are linked to gpio pin number 0 to 15. Gpio port can
         be selected through multiplexer.
 
-                     ##### How to use this hardware #####
+                     ##### How to use this driver #####
   ==============================================================================
   [..]
 

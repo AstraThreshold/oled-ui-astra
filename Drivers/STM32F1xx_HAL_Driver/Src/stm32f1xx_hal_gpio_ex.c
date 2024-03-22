@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f1xx_hal_gpio_ex.c
   * @author  MCD Application Team
-  * @brief   GPIO Extension HAL module hardware.
+  * @brief   GPIO Extension HAL module driver.
   *         This file provides firmware functions to manage the following
   *          functionalities of the General Purpose Input/Output (GPIO) extension peripheral.
   *           + Extended features functions
@@ -25,9 +25,9 @@
   [..] GPIO module on STM32F1 family, manage also the AFIO register:
        (+) Possibility to use the EVENTOUT Cortex feature
 
-                     ##### How to use this hardware #####
+                     ##### How to use this driver #####
   ==============================================================================
-  [..] This hardware provides functions to use EVENTOUT Cortex feature
+  [..] This driver provides functions to use EVENTOUT Cortex feature
     (#) Configure EVENTOUT Cortex feature using the function HAL_GPIOEx_ConfigEventout()
     (#) Activate EVENTOUT Cortex feature using the HAL_GPIOEx_EnableEventout()
     (#) Deactivate EVENTOUT Cortex feature using the HAL_GPIOEx_DisableEventout()
@@ -44,7 +44,7 @@
   */
 
 /** @defgroup GPIOEx GPIOEx
-  * @brief GPIO HAL module hardware
+  * @brief GPIO HAL module driver
   * @{
   */
 

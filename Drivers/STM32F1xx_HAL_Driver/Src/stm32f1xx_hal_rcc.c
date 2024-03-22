@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f1xx_hal_rcc.c
   * @author  MCD Application Team
-  * @brief   RCC HAL module hardware.
+  * @brief   RCC HAL module driver.
   *          This file provides firmware functions to manage the following
   *          functionalities of the Reset and Clock Control (RCC) peripheral:
   *           + Initialization and de-initialization functions
@@ -65,7 +65,7 @@
   */
 
 /** @defgroup RCC RCC
-* @brief RCC HAL module hardware
+* @brief RCC HAL module driver
   * @{
   */
 

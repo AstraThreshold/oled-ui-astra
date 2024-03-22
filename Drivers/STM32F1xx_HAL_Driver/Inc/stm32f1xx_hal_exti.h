@@ -32,7 +32,7 @@ extern "C" {
   */
 
 /** @defgroup EXTI EXTI
-  * @brief EXTI HAL module hardware
+  * @brief EXTI HAL module driver
   * @{
   */
 

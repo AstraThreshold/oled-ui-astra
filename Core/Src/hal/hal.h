@@ -207,6 +207,11 @@ public:
 
   virtual unsigned long _getTick() { return 0; }
 
+  static unsigned long getRandomSeed() { return get()->_getRandomSeed(); }
+
+  /**optional**/
+  virtual unsigned long _getRandomSeed() { return 0; }
+
   /**
    * @brief buzzer.
    * */

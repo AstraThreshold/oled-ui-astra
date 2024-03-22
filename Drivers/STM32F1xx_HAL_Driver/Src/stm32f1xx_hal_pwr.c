@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f1xx_hal_pwr.c
   * @author  MCD Application Team
-  * @brief   PWR HAL module hardware.
+  * @brief   PWR HAL module driver.
   *
   *          This file provides firmware functions to manage the following
   *          functionalities of the Power Controller (PWR) peripheral:
@@ -30,7 +30,7 @@
   */
 
 /** @defgroup PWR PWR
-  * @brief    PWR HAL module hardware
+  * @brief    PWR HAL module driver
   * @{
   */
 

@@ -133,9 +133,12 @@ CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
  D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_dma.h \
  D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_dma_ex.h \
  D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_cortex.h \
+ D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_adc.h \
+ D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_adc_ex.h \
  D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_flash.h \
  D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_flash_ex.h \
  D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_pwr.h \
  D:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc/stm32f1xx_hal_spi.h \
  D:\Projects\astra\Core\Inc/dma.h D:\Projects\astra\Core\Inc/main.h \
- D:\Projects\astra\Core\Inc/spi.h D:\Projects\astra\Core\Inc/gpio.h
+ D:\Projects\astra\Core\Inc/spi.h D:\Projects\astra\Core\Inc/gpio.h \
+ D:\Projects\astra\Core\Inc/adc.h

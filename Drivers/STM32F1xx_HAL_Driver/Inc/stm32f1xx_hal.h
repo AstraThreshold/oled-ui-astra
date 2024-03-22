@@ -3,7 +3,7 @@
   * @file    stm32f1xx_hal.h
   * @author  MCD Application Team
   * @brief   This file contains all the functions prototypes for the HAL
-  *          module hardware.
+  *          module driver.
   ******************************************************************************
   * @attention
   *

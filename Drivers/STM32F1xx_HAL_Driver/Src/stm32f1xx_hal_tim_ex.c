@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f1xx_hal_tim_ex.c
   * @author  MCD Application Team
-  * @brief   TIM HAL module hardware.
+  * @brief   TIM HAL module driver.
   *          This file provides firmware functions to manage the following
   *          functionalities of the Timer Extended peripheral:
   *           + Time Hall Sensor Interface Initialization
@@ -37,7 +37,7 @@
     (#) Supports incremental (quadrature) encoder and hall-sensor circuitry for
         positioning purposes
 
-            ##### How to use this hardware #####
+            ##### How to use this driver #####
   ==============================================================================
     [..]
      (#) Initialize the TIM low level resources by implementing the following functions
@@ -57,7 +57,7 @@
          any start function.
 
      (#) Configure the TIM in the desired functioning mode using one of the
-         initialization function of this hardware:
+         initialization function of this driver:
           (++) HAL_TIMEx_HallSensor_Init() and HAL_TIMEx_ConfigCommutEvent(): to use the
                Timer Hall Sensor Interface and the commutation event with the corresponding
                Interrupt and DMA request if needed (Note that One Timer is used to interface
@@ -85,7 +85,7 @@
   */
 
 /** @defgroup TIMEx TIMEx
-  * @brief TIM Extended HAL module hardware
+  * @brief TIM Extended HAL module driver
   * @{
   */
 

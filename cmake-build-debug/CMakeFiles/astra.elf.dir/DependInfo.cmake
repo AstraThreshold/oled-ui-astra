@@ -29,6 +29,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/Projects/astra/Core/Src/adc.c" "CMakeFiles/astra.elf.dir/Core/Src/adc.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/adc.c.obj.d"
   "D:/Projects/astra/Core/Src/dma.c" "CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj.d"
   "D:/Projects/astra/Core/Src/gpio.c" "CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj.d"
   "D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c" "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/mui.c.obj.d"
@@ -79,6 +80,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Projects/astra/Core/Src/syscalls.c" "CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj.d"
   "D:/Projects/astra/Core/Src/system_stm32f1xx.c" "CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj.d"
   "D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj.d"
+  "D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj.d"
+  "D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj.d"
   "D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj.d"
   "D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj.d"
   "D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj" "gcc" "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj.d"

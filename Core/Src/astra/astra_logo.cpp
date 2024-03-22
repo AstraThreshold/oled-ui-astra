@@ -71,7 +71,7 @@ void drawLogo(uint16_t _time) {
 
         for (uint8_t i = 0; i < getUIConfig().logoStarNum; i++) {
           //设置随机种子
-          srand(_seed * 10);
+          srand(HAL::getRandomSeed());
 
           yStars.push_back(0 - getUIConfig().logoStarLength - 1);
           //产生从1到screenHeight的随机数

@@ -16,6 +16,7 @@ private:
   void _dma_init();
   void _timer_init();
   void _spi_init();
+  void _adc_init();
 
   void _ssd1306_init();
   void _key_init();
@@ -42,6 +43,7 @@ public:
     _dma_init();
     _timer_init();
     _spi_init();
+    _adc_init();
 
     _ssd1306_init();
     _key_init();
@@ -87,6 +89,7 @@ public:
   void _delay(unsigned long _mill) override;
   unsigned long _millis() override;
   unsigned long _getTick() override;
+  unsigned long _getRandomSeed() override;
 
 public:
   void _beep(float _freq) override;

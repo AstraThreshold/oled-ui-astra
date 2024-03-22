@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f1xx_hal_dma.c
   * @author  MCD Application Team
-  * @brief   DMA HAL module hardware.
+  * @brief   DMA HAL module driver.
   *         This file provides firmware functions to manage the following
   *         functionalities of the Direct Memory Access (DMA) peripheral:
   *           + Initialization and de-initialization functions
@@ -10,7 +10,7 @@
   *           + Peripheral State and errors functions
   @verbatim
   ==============================================================================
-                        ##### How to use this hardware #####
+                        ##### How to use this driver #####
   ==============================================================================
   [..]
    (#) Enable and configure the peripheral to be connected to the DMA Channel
@@ -50,10 +50,10 @@
               add his own function by customization of function pointer XferCpltCallback and
               XferErrorCallback (i.e. a member of DMA handle structure).
 
-     *** DMA HAL hardware macros list ***
+     *** DMA HAL driver macros list ***
      ============================================= 
       [..]
-       Below the list of most used macros in DMA HAL hardware.
+       Below the list of most used macros in DMA HAL driver.
 
        (+) __HAL_DMA_ENABLE: Enable the specified DMA Channel.
        (+) __HAL_DMA_DISABLE: Disable the specified DMA Channel.
@@ -64,7 +64,7 @@
        (+) __HAL_DMA_GET_IT_SOURCE: Check whether the specified DMA Channel interrupt has occurred or not. 
 
      [..] 
-      (@) You can refer to the DMA HAL hardware header file for more useful macros
+      (@) You can refer to the DMA HAL driver header file for more useful macros  
 
   @endverbatim
   ******************************************************************************
@@ -88,7 +88,7 @@
   */
 
 /** @defgroup DMA DMA
-  * @brief DMA HAL module hardware
+  * @brief DMA HAL module driver
   * @{
   */
 

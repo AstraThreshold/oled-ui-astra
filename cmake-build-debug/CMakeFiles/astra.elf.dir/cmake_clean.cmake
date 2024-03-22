@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/astra.elf.dir/Core/Src/adc.c.obj"
+  "CMakeFiles/astra.elf.dir/Core/Src/adc.c.obj.d"
   "CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj"
   "CMakeFiles/astra.elf.dir/Core/Src/astra/app/astra_app.cpp.obj.d"
   "CMakeFiles/astra.elf.dir/Core/Src/astra/astra_logo.cpp.obj"
@@ -127,6 +129,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj.d"
   "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
   "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj.d"
+  "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"
+  "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj.d"
+  "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj"
+  "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj.d"
   "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
   "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj.d"
   "CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"

@@ -6,6 +6,7 @@
 #include "dma.h"
 #include "spi.h"
 #include "gpio.h"
+#include "adc.h"
 
 void HALDreamCore::_stm32_hal_init() { //NOLINT
   HAL_Init();
@@ -58,6 +59,10 @@ void HALDreamCore::_dma_init() { //NOLINT
   MX_DMA_Init();
 }
 
+void HALDreamCore::_adc_init() { //NOLINT
+  MX_ADC1_Init();
+}
+
 void HALDreamCore::_delay(unsigned long _mill) {
   HAL_Delay(_mill);
 }
@@ -68,6 +73,17 @@ unsigned long HALDreamCore::_millis() {
 
 unsigned long HALDreamCore::_getTick() {
   return (uwTick * 1000 + (SysTick->LOAD - SysTick->VAL) / (SystemCoreClock/1000000U));
+}
+
+unsigned long HALDreamCore::_getRandomSeed() {
+  static uint32_t seed = 0;
+  HAL_ADC_Start(&hadc1);//开启ADC1
+  HAL_ADC_PollForConversion(&hadc1, 50);//表示等待转换完成
+  if(HAL_IS_BIT_SET(HAL_ADC_GetState(&hadc1), HAL_ADC_STATE_REG_EOC)) {
+    seed = HAL_ADC_GetValue(&hadc1);//读取ADC转换数据
+  }
+
+  return seed;
 }
 
 

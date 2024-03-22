@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    stm32f1xx_hal.c
   * @author  MCD Application Team
-  * @brief   HAL module hardware.
+  * @brief   HAL module driver.
   *          This is the common part of the HAL initialization
   *
   ******************************************************************************
@@ -18,10 +18,10 @@
   ******************************************************************************
   @verbatim
   ==============================================================================
-                     ##### How to use this hardware #####
+                     ##### How to use this driver #####
   ==============================================================================
     [..]
-    The common HAL hardware contains a set of generic and common APIs that can be
+    The common HAL driver contains a set of generic and common APIs that can be
     used by the PPP peripheral drivers and the user to start using the HAL.
     [..]
     The HAL contains two APIs' categories:
@@ -40,7 +40,7 @@
   */
 
 /** @defgroup HAL HAL
-  * @brief HAL module hardware.
+  * @brief HAL module driver.
   * @{
   */
 
@@ -270,7 +270,7 @@ __weak HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
       (+) Provide a blocking delay in millisecond
       (+) Suspend the time base source interrupt
       (+) Resume the time base source interrupt
-      (+) Get the HAL API hardware version
+      (+) Get the HAL API driver version
       (+) Get the device identifier
       (+) Get the device revision identifier
       (+) Enable/Disable Debug module during SLEEP mode
