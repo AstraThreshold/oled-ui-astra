@@ -1133,6 +1133,7 @@ CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj: 
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h
 
 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj: D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp \
+  D:/Projects/astra/Core/Inc/adc.h \
   D:/Projects/astra/Core/Inc/dma.h \
   D:/Projects/astra/Core/Inc/gpio.h \
   D:/Projects/astra/Core/Inc/main.h \

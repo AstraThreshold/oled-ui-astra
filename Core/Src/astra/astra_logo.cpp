@@ -22,11 +22,6 @@ void drawLogo(uint16_t _time) {
     }
   };
 
-  auto renderNumber = [] (uint32_t &_seed, uint16_t _min, uint16_t _max) {
-    _seed = ((_seed * 214013u + 2531011u) >> 16) & 0x7FFF;
-    return _min + (_seed % (_max - _min + 1));
-  };
-
   static bool onRender = true;
   static bool isInit = false;
 
@@ -59,8 +54,6 @@ void drawLogo(uint16_t _time) {
 
     static float yBackGroundTrg = 0;
 
-    uint32_t _seed;
-
     if (time < _time) {
       yBackGroundTrg = 0;
       //星星坐标初始化 注意星星的坐标代表其中心点的位置 注意仅初始化一次
@@ -71,10 +64,11 @@ void drawLogo(uint16_t _time) {
 
         for (uint8_t i = 0; i < getUIConfig().logoStarNum; i++) {
           //设置随机种子
-          srand(HAL::getRandomSeed());
+          srand(HAL::getRandomSeed() * 2);
 
           yStars.push_back(0 - getUIConfig().logoStarLength - 1);
-          //产生从1到screenHeight的随机数
+
+          //产生从1到screenHeight的随机数, 从中挖掉区间[yCopyRightTrg, screenHeight - logoStarLength]
           yStarsTrg.push_back(1 + rand() % (uint16_t)(HAL::getSystemConfig().screenHeight - 2 * getUIConfig().logoStarLength - 2 + 1));
           //产生从1到screenWeight的随机数
           xStars.push_back(1 + rand() % (uint16_t)(HAL::getSystemConfig().screenWeight - 2 * getUIConfig().logoStarLength - 2 + 1));

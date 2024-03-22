@@ -1149,6 +1149,7 @@ CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
 
 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
  D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp
+ D:/Projects/astra/Core/Inc/adc.h
  D:/Projects/astra/Core/Inc/dma.h
  D:/Projects/astra/Core/Inc/gpio.h
  D:/Projects/astra/Core/Inc/main.h
