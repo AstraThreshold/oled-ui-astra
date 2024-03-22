@@ -27,8 +27,6 @@ void drawLogo(uint16_t _time) {
     return _min + (_seed % (_max - _min + 1));
   };
 
-  static uint32_t _seed = 0;
-
   static bool onRender = true;
   static bool isInit = false;
 
@@ -41,7 +39,6 @@ void drawLogo(uint16_t _time) {
     static std::vector<float> yStarsTrg;
     static std::vector<float> xStars;
 
-    //todo 记得找个好字体放在此文件里
     static std::string text = "astra UI";
     static std::string copyRight = "powered by";
 
@@ -62,6 +59,8 @@ void drawLogo(uint16_t _time) {
 
     static float yBackGroundTrg = 0;
 
+    uint32_t _seed;
+
     if (time < _time) {
       yBackGroundTrg = 0;
       //星星坐标初始化 注意星星的坐标代表其中心点的位置 注意仅初始化一次
@@ -72,12 +71,7 @@ void drawLogo(uint16_t _time) {
 
         for (uint8_t i = 0; i < getUIConfig().logoStarNum; i++) {
           //设置随机种子
-          _seed += HAL::getTick() / 10;
-          _seed += HAL::getTick() / 11;
-          _seed += HAL::getTick() / 11;
-          _seed += time * 110;
-
-          srand(_seed);
+          srand(_seed * 10);
 
           yStars.push_back(0 - getUIConfig().logoStarLength - 1);
           //产生从1到screenHeight的随机数
@@ -106,6 +100,7 @@ void drawLogo(uint16_t _time) {
     HAL::drawBox(xBackGround, yBackGround, HAL::getSystemConfig().screenWeight, HAL::getSystemConfig().screenHeight);
     animation(yBackGround, yBackGroundTrg, getUIConfig().logoAnimationSpeed);
     HAL::setDrawType(1);
+    HAL::drawHLine(0, yBackGround + HAL::getSystemConfig().screenHeight - 1, HAL::getSystemConfig().screenWeight);
 
     //画星星
     for (uint8_t i = 0; i < getUIConfig().logoStarNum; i++) {
