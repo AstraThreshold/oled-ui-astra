@@ -112,11 +112,13 @@ void Launcher::start() {
   selector->render(camera->getPosition());
   camera->update(currentPage);
 
-  if (time == 500) open();  //test
-  if (time == 1000) close();  //test
-  if (time == 1500) selector->go(2);  //test
-  if (time == 2000) open();  //test
-  if (time == 2500) close();  //test
+  static uint8_t testIndex = 2;  //test
+
+  if (time == 500) { testIndex++; if (testIndex + 1 > currentPage->getItemNum()) testIndex = 0;}
+  if (time == 550) selector->go(testIndex);   //test
+  if (time == 1050) open();  //test
+  if (time == 1550) close();  //test
+  if (time >= 1550) time = 0;  //test
 
   HAL::canvasUpdate();
 

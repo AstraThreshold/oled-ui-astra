@@ -68,13 +68,13 @@ struct config {
   float popSpeed = 90; //弹窗动画速度
 
   float logoStarLength = 2; //logo星星长度
-  float logoStarInitX = 10; //logo星星初始x坐标
-  float logoStarInitY = 10; //logo星星初始y坐标
   float logoTextHeight = 14; //logo文字高度
   float logoCopyRightHeight = 8; //logo文字高度
-  uint8_t logoStarNum = 14; //logo星星数量
+  uint8_t logoStarNum = 18; //logo星星数量
   const uint8_t *logoTitleFont = u8g2_font_Cascadia;
   const uint8_t *logoCopyRightFont = u8g2_font_myfont;
+
+  const uint8_t *mainFont = u8g2_font_myfont;
 };
 
 static config &getUIConfig() {

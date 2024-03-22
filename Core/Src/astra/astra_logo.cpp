@@ -41,7 +41,7 @@ void drawLogo(uint16_t _time) {
     static float xTitle = (HAL::getSystemConfig().screenWeight - HAL::getFontWidth(text)) / 2;
     HAL::setFont(getUIConfig().logoCopyRightFont);
     static float xCopyRight = (HAL::getSystemConfig().screenWeight - HAL::getFontWidth(copyRight)) / 2;
-    //todo 设回之前的字体
+    HAL::setFont(getUIConfig().mainFont);
 
     //都是左上角坐标
     static float yTitle = 0 - getUIConfig().logoTextHeight - 1;
@@ -94,14 +94,14 @@ void drawLogo(uint16_t _time) {
     HAL::drawBox(xBackGround, yBackGround, HAL::getSystemConfig().screenWeight, HAL::getSystemConfig().screenHeight);
     animation(yBackGround, yBackGroundTrg, getUIConfig().logoAnimationSpeed);
     HAL::setDrawType(1);
-    HAL::drawHLine(0, yBackGround + HAL::getSystemConfig().screenHeight - 1, HAL::getSystemConfig().screenWeight);
+    HAL::drawHLine(0, yBackGround + HAL::getSystemConfig().screenHeight, HAL::getSystemConfig().screenWeight);
 
     //画星星
     for (uint8_t i = 0; i < getUIConfig().logoStarNum; i++) {
       HAL::drawHLine(xStars[i] - getUIConfig().logoStarLength - 1, yStars[i], getUIConfig().logoStarLength);
-      HAL::drawHLine(xStars[i] + 1, yStars[i], getUIConfig().logoStarLength);
+      HAL::drawHLine(xStars[i] + 2, yStars[i], getUIConfig().logoStarLength);
       HAL::drawVLine(xStars[i], yStars[i] - getUIConfig().logoStarLength - 1, getUIConfig().logoStarLength);
-      HAL::drawVLine(xStars[i], yStars[i] + 1, getUIConfig().logoStarLength + 1);
+      HAL::drawVLine(xStars[i], yStars[i] + 2, getUIConfig().logoStarLength);
 
       animation(yStars[i], yStarsTrg[i], getUIConfig().logoAnimationSpeed);
     }
@@ -118,5 +118,4 @@ void drawLogo(uint16_t _time) {
     if (time >= _time && yBackGround == 0 - HAL::getSystemConfig().screenHeight - 1) onRender = false;
   }
 }
-
 }

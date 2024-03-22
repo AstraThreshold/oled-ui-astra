@@ -308,19 +308,21 @@ void Selector::render(std::vector<float> _camera) {
     //draw box.
     //大框需要受摄像机的影响
     HAL::setDrawType(2);
+    HAL::drawPixel(x + _camera[0], y + _camera[1]);
     //左上角
-    HAL::drawHLine(x + _camera[0], y + _camera[1], astraConfig.tileSelectBoxLineLength);
+    HAL::drawHLine(x + _camera[0], y + _camera[1], astraConfig.tileSelectBoxLineLength + 1);
     HAL::drawVLine(x + _camera[0], y + _camera[1], astraConfig.tileSelectBoxLineLength + 1);
     //左下角
-    HAL::drawHLine(x + _camera[0], y + _camera[1] + astraConfig.tileSelectBoxHeight - 1, astraConfig.tileSelectBoxLineLength);
+    HAL::drawHLine(x + _camera[0], y + _camera[1] + astraConfig.tileSelectBoxHeight - 1, astraConfig.tileSelectBoxLineLength + 1);
     HAL::drawVLine(x + _camera[0], y + _camera[1] + astraConfig.tileSelectBoxHeight - astraConfig.tileSelectBoxLineLength - 1, astraConfig.tileSelectBoxLineLength);
     //右上角
     HAL::drawHLine(x + _camera[0] + astraConfig.tileSelectBoxWidth - astraConfig.tileSelectBoxLineLength - 1, y + _camera[1], astraConfig.tileSelectBoxLineLength);
-    HAL::drawVLine(x + _camera[0] + astraConfig.tileSelectBoxWidth - 1, y + _camera[1], astraConfig.tileSelectBoxLineLength);
+    HAL::drawVLine(x + _camera[0] + astraConfig.tileSelectBoxWidth - 1, y + _camera[1], astraConfig.tileSelectBoxLineLength + 1);
     //右下角
     HAL::drawHLine(x + _camera[0] + astraConfig.tileSelectBoxWidth - astraConfig.tileSelectBoxLineLength - 1, y + _camera[1] + astraConfig.tileSelectBoxHeight - 1, astraConfig.tileSelectBoxLineLength);
     HAL::drawVLine(x + _camera[0] + astraConfig.tileSelectBoxWidth - 1, y + _camera[1] + astraConfig.tileSelectBoxHeight - astraConfig.tileSelectBoxLineLength - 1, astraConfig.tileSelectBoxLineLength);
 
+    HAL::drawPixel(x + _camera[0] + astraConfig.tileSelectBoxWidth - 1, y + _camera[1] + astraConfig.tileSelectBoxHeight - 1);
   } else if (menu->childType == Menu::LIST) {
     animation(&w, wTrg, astraConfig.selectorWidthAnimationSpeed);
     //animation(&h, hTrg, astraConfig.selectorAnimationSpeed);

@@ -35,8 +35,8 @@ void astraCoreInit(void) {
 //  HAL::delay(100);
 //  HAL::printInfo("check your program!");
 //  HAL::delay(100);
-  HAL::delay(300);
-  astra::drawLogo(800);
+  HAL::delay(400);
+  astra::drawLogo(5000);
 
   rootPage->addItem(new astra::Menu("test1", pic));
   rootPage->addItem(new astra::Menu("测试2", pic));
