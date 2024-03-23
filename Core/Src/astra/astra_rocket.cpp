@@ -95,10 +95,7 @@ void astraCoreInit(void) {
 
 void astraCoreStart(void) {
   for (;;) {  //NOLINT
-    HAL::setDrawType(1);
-
-    astraLauncher->start();
-
+    astraLauncher->update();
     //astraCoreTest();
   }
 }

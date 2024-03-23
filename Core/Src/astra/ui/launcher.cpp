@@ -105,7 +105,7 @@ bool Launcher::close() {
   return true;
 }
 
-void Launcher::start() {
+void Launcher::update() {
   HAL::canvasClear();
 
   currentPage->render(camera->getPosition());

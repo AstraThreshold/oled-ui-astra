@@ -25,7 +25,7 @@ public:
   bool open();
   bool close();
 
-  void start();
+  void update();
 
   Camera* getCamera() { return camera; }
   Selector* getSelector() { return selector; }

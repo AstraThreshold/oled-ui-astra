@@ -68,7 +68,7 @@ void drawLogo(uint16_t _time) {
 
           yStars.push_back(0 - getUIConfig().logoStarLength - 1);
 
-          //产生从1到screenHeight的随机数, 从中挖掉区间[yCopyRightTrg, screenHeight - logoStarLength]
+          //产生从1到screenHeight的随机数
           yStarsTrg.push_back(1 + rand() % (uint16_t)(HAL::getSystemConfig().screenHeight - 2 * getUIConfig().logoStarLength - 2 + 1));
           //产生从1到screenWeight的随机数
           xStars.push_back(1 + rand() % (uint16_t)(HAL::getSystemConfig().screenWeight - 2 * getUIConfig().logoStarLength - 2 + 1));
