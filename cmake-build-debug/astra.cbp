@@ -142,25 +142,10 @@
 		<Unit filename="D:/Projects/astra/Core/Src/astra/config/config.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.cpp">
-			<Option target="astra.elf"/>
-		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.h">
-			<Option target="astra.elf"/>
-		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/element_i.h">
-			<Option target="astra.elf"/>
-		</Unit>
 		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/page/item.cpp">
 			<Option target="astra.elf"/>
 		</Unit>
 		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/page/item.h">
-			<Option target="astra.elf"/>
-		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/selector/selector.cpp">
-			<Option target="astra.elf"/>
-		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/selector/selector.h">
 			<Option target="astra.elf"/>
 		</Unit>
 		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/widget/widget.cpp">

@@ -1,8 +1,0 @@
-//
-// Created by Fir on 2024/2/7.
-//
-
-#ifndef ASTRA_CORE_SRC_ASTRA_UI_ELEMENT_BAR_H_
-#define ASTRA_CORE_SRC_ASTRA_UI_ELEMENT_BAR_H_
-
-#endif //ASTRA_CORE_SRC_ASTRA_UI_ELEMENT_BAR_H_

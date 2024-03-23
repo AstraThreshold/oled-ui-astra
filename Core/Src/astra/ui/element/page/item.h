@@ -9,7 +9,6 @@
 #include "cstdint"
 #include "string"
 #include <vector>
-#include "../element_i.h"
 #include "../../../../hal/hal.h"
 #include "../../../../astra/config/config.h"
 #include <cmath>

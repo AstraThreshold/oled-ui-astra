@@ -175,7 +175,6 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj: D:/Projects/astra/
   D:/Projects/astra/Core/Src/astra/astra_rocket.h \
   D:/Projects/astra/Core/Src/astra/config/config.h \
   D:/Projects/astra/Core/Src/astra/ui/element/page/item.h \
-  D:/Projects/astra/Core/Src/astra/ui/element/element_i.h \
   D:/Projects/astra/Core/Src/astra/ui/launcher.h \
   D:/Projects/astra/Core/Src/hal/hal.h \
   D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2.h \
@@ -305,13 +304,9 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj: D:/Projects/astra/
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h
 
-CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.cpp \
-  D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.h
-
 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/element/page/item.cpp \
   D:/Projects/astra/Core/Src/astra/ui/element/page/item.h \
   D:/Projects/astra/Core/Src/astra/config/config.h \
-  D:/Projects/astra/Core/Src/astra/ui/element/element_i.h \
   D:/Projects/astra/Core/Src/hal/hal.h \
   D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2.h \
   D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8.h \
@@ -438,16 +433,12 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj: D:/Project
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h
 
-CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/selector/selector.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/element/selector/selector.cpp \
-  D:/Projects/astra/Core/Src/astra/ui/element/selector/selector.h
-
 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/widget/widget.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/element/widget/widget.cpp
 
 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/launcher.cpp \
   D:/Projects/astra/Core/Src/astra/ui/element/page/item.h \
   D:/Projects/astra/Core/Src/astra/ui/launcher.h \
   D:/Projects/astra/Core/Src/astra/config/config.h \
-  D:/Projects/astra/Core/Src/astra/ui/element/element_i.h \
   D:/Projects/astra/Core/Src/hal/hal.h \
   D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2.h \
   D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8.h \
@@ -2925,8 +2916,6 @@ D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h:
 
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c:
 
-D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.cpp:
-
 D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h:
 
 D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h:
@@ -3191,8 +3180,6 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/vector:
 
-D:/Projects/astra/Core/Src/astra/ui/element/selector/selector.cpp:
-
 D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/ctype.h:
 
 D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c:
@@ -3239,17 +3226,11 @@ D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/
 
 D:/Projects/astra/Core/Src/astra/astra_rocket.h:
 
-D:/Projects/astra/Core/Src/astra/ui/element/element_i.h:
-
 D:/Projects/astra/Core/Src/astra/ui/launcher.h:
-
-D:/Projects/astra/Core/Src/astra/ui/element/bar/bar.h:
 
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c:
 
 D:/Projects/astra/Core/Src/astra/ui/element/page/item.cpp:
-
-D:/Projects/astra/Core/Src/astra/ui/element/selector/selector.h:
 
 D:/Projects/astra/Core/Src/astra/ui/element/widget/widget.cpp:
 

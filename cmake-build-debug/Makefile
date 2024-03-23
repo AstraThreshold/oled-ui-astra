@@ -224,30 +224,6 @@ Core/Src/astra/astra_rocket.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.s
 .PHONY : Core/Src/astra/astra_rocket.cpp.s
 
-Core/Src/astra/ui/element/bar/bar.obj: Core/Src/astra/ui/element/bar/bar.cpp.obj
-.PHONY : Core/Src/astra/ui/element/bar/bar.obj
-
-# target to build an object file
-Core/Src/astra/ui/element/bar/bar.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.obj
-.PHONY : Core/Src/astra/ui/element/bar/bar.cpp.obj
-
-Core/Src/astra/ui/element/bar/bar.i: Core/Src/astra/ui/element/bar/bar.cpp.i
-.PHONY : Core/Src/astra/ui/element/bar/bar.i
-
-# target to preprocess a source file
-Core/Src/astra/ui/element/bar/bar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.i
-.PHONY : Core/Src/astra/ui/element/bar/bar.cpp.i
-
-Core/Src/astra/ui/element/bar/bar.s: Core/Src/astra/ui/element/bar/bar.cpp.s
-.PHONY : Core/Src/astra/ui/element/bar/bar.s
-
-# target to generate assembly for a file
-Core/Src/astra/ui/element/bar/bar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/bar/bar.cpp.s
-.PHONY : Core/Src/astra/ui/element/bar/bar.cpp.s
-
 Core/Src/astra/ui/element/page/item.obj: Core/Src/astra/ui/element/page/item.cpp.obj
 .PHONY : Core/Src/astra/ui/element/page/item.obj
 
@@ -271,30 +247,6 @@ Core/Src/astra/ui/element/page/item.s: Core/Src/astra/ui/element/page/item.cpp.s
 Core/Src/astra/ui/element/page/item.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.s
 .PHONY : Core/Src/astra/ui/element/page/item.cpp.s
-
-Core/Src/astra/ui/element/selector/selector.obj: Core/Src/astra/ui/element/selector/selector.cpp.obj
-.PHONY : Core/Src/astra/ui/element/selector/selector.obj
-
-# target to build an object file
-Core/Src/astra/ui/element/selector/selector.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/selector/selector.cpp.obj
-.PHONY : Core/Src/astra/ui/element/selector/selector.cpp.obj
-
-Core/Src/astra/ui/element/selector/selector.i: Core/Src/astra/ui/element/selector/selector.cpp.i
-.PHONY : Core/Src/astra/ui/element/selector/selector.i
-
-# target to preprocess a source file
-Core/Src/astra/ui/element/selector/selector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/selector/selector.cpp.i
-.PHONY : Core/Src/astra/ui/element/selector/selector.cpp.i
-
-Core/Src/astra/ui/element/selector/selector.s: Core/Src/astra/ui/element/selector/selector.cpp.s
-.PHONY : Core/Src/astra/ui/element/selector/selector.s
-
-# target to generate assembly for a file
-Core/Src/astra/ui/element/selector/selector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/selector/selector.cpp.s
-.PHONY : Core/Src/astra/ui/element/selector/selector.cpp.s
 
 Core/Src/astra/ui/element/widget/widget.obj: Core/Src/astra/ui/element/widget/widget.cpp.obj
 .PHONY : Core/Src/astra/ui/element/widget/widget.obj
@@ -2077,15 +2029,9 @@ help:
 	@echo ... Core/Src/astra/astra_rocket.obj
 	@echo ... Core/Src/astra/astra_rocket.i
 	@echo ... Core/Src/astra/astra_rocket.s
-	@echo ... Core/Src/astra/ui/element/bar/bar.obj
-	@echo ... Core/Src/astra/ui/element/bar/bar.i
-	@echo ... Core/Src/astra/ui/element/bar/bar.s
 	@echo ... Core/Src/astra/ui/element/page/item.obj
 	@echo ... Core/Src/astra/ui/element/page/item.i
 	@echo ... Core/Src/astra/ui/element/page/item.s
-	@echo ... Core/Src/astra/ui/element/selector/selector.obj
-	@echo ... Core/Src/astra/ui/element/selector/selector.i
-	@echo ... Core/Src/astra/ui/element/selector/selector.s
 	@echo ... Core/Src/astra/ui/element/widget/widget.obj
 	@echo ... Core/Src/astra/ui/element/widget/widget.i
 	@echo ... Core/Src/astra/ui/element/widget/widget.s
