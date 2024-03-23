@@ -70,7 +70,7 @@ struct config {
   float logoStarLength = 2; //logo星星长度
   float logoTextHeight = 14; //logo文字高度
   float logoCopyRightHeight = 8; //logo文字高度
-  uint8_t logoStarNum = 18; //logo星星数量
+  uint8_t logoStarNum = 16; //logo星星数量
   const uint8_t *logoTitleFont = u8g2_font_Cascadia;
   const uint8_t *logoCopyRightFont = u8g2_font_myfont;
 

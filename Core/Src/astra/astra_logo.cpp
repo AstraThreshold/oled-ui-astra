@@ -64,7 +64,7 @@ void drawLogo(uint16_t _time) {
 
         for (uint8_t i = 0; i < getUIConfig().logoStarNum; i++) {
           //设置随机种子
-          srand(HAL::getRandomSeed() * 2);
+          srand(HAL::getRandomSeed() * 7);
 
           yStars.push_back(0 - getUIConfig().logoStarLength - 1);
 

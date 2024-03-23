@@ -388,19 +388,19 @@ void Camera::goVertical(float _y) {
   if (this->y == 0 - _y) moving = false;
 }
 
-void Camera::goNextPageItem() {
+void Camera::goToNextPageItem() {
   moving = true;
   animation(&y, y - systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
   if (this->y == y - systemConfig.screenHeight) moving = false;
 }
 
-void Camera::goPreviewPageItem() {
+void Camera::goToPreviewPageItem() {
   moving = true;
   animation(&y, y + systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
   if (this->y == y + systemConfig.screenHeight) moving = false;
 }
 
-void Camera::goListItemPage(uint8_t _index) {
+void Camera::goToListItemPage(uint8_t _index) {
   static const uint8_t maxItemPerScreen = systemConfig.screenHeight / astraConfig.listLineHeight;
   uint8_t _page = 0;
 
@@ -414,7 +414,7 @@ void Camera::goListItemPage(uint8_t _index) {
   if (this->y == _page * systemConfig.screenHeight) moving = false;
 }
 
-void Camera::goTileItem(uint8_t _index) {
+void Camera::goToTileItem(uint8_t _index) {
   moving = true;
   go(_index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin), 0);
   if (this->x == 0 - _index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin)) moving = false;
@@ -437,7 +437,7 @@ void Camera::reset() {
 
 void Camera::update(Menu *_menu) {
   //todo 不完善
-  if (_menu->childType == Menu::LIST) goListItemPage(_menu->selectIndex);
-  else if (_menu->childType == Menu::TILE) goTileItem(_menu->selectIndex);
+  if (_menu->childType == Menu::LIST) goToListItemPage(_menu->selectIndex);
+  else if (_menu->childType == Menu::TILE) goToTileItem(_menu->selectIndex);
 }
 }

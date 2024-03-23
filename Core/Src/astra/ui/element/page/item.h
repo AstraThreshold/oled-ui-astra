@@ -223,10 +223,10 @@ public:
   void goHorizontal(float _x);
   void goVertical(float _y);
 
-  void goNextPageItem();
-  void goPreviewPageItem();
-  void goListItemPage(uint8_t _index);
-  void goTileItem(uint8_t _index);
+  void goToNextPageItem();
+  void goToPreviewPageItem();
+  void goToListItemPage(uint8_t _index);
+  void goToTileItem(uint8_t _index);
 
   std::vector<float> getPosition();
   bool isMoving();
