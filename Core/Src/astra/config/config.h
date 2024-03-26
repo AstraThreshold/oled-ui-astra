@@ -19,7 +19,7 @@ struct config {
   float selectorYAnimationSpeed = 55;
   float selectorXAnimationSpeed = 68;
   float selectorWidthAnimationSpeed = 80;
-  float selectorHeightAnimationSpeed = 65;
+  float selectorHeightAnimationSpeed = 55;
   float windowAnimationSpeed = 25;
   float sideBarAnimationSpeed = 15;
   float fadeAnimationSpeed = 100;
