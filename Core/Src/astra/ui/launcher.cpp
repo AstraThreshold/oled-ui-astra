@@ -27,7 +27,7 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
     /*渲染一帧*/
     currentPage->render(camera->getPosition());
     selector->render(camera->getPosition());
-    camera->update(currentPage);
+    camera->update(currentPage, selector);
     /*渲染一帧*/
 
     HAL::setDrawType(0);
@@ -53,7 +53,7 @@ void Launcher::init(Menu *_rootPage) {
 
   selector = new Selector();
   selector->inject(_rootPage);
-  selector->go(_rootPage->selectIndex);
+  //selector->go(_rootPage->selectIndex);
 
   selector->go(3);
 
@@ -79,7 +79,7 @@ bool Launcher::open() {
   currentPage->init(camera->getPosition());
 
   selector->inject(currentPage);
-  selector->go(currentPage->selectIndex);
+  //selector->go(currentPage->selectIndex);
 
   return true;
 }
@@ -100,7 +100,7 @@ bool Launcher::close() {
   currentPage->init(camera->getPosition());
 
   selector->inject(currentPage);
-  selector->go(currentPage->selectIndex);
+  //selector->go(currentPage->selectIndex);
 
   return true;
 }
@@ -110,15 +110,19 @@ void Launcher::update() {
 
   currentPage->render(camera->getPosition());
   selector->render(camera->getPosition());
-  camera->update(currentPage);
+  camera->update(currentPage, selector);
 
-  static uint8_t testIndex = 2;  //test
-
-  if (time == 500) { testIndex++; if (testIndex + 1 > currentPage->getItemNum()) testIndex = 0;}
-  if (time == 550) selector->go(testIndex);   //test
-  if (time == 1050) open();  //test
-  if (time == 1550) close();  //test
-  if (time >= 1550) time = 0;  //test
+  if (time == 500) selector->go(3);  //test
+  if (time == 800) open();  //test
+  if (time == 1200) selector->go(1);  //test
+  if (time == 1500) selector->go(3);  //test
+  if (time == 1800) selector->go(4);  //test
+  if (time == 2100) selector->go(1);  //test
+  if (time == 2300) selector->go(0);  //test
+  if (time == 2500) open();  //test
+  if (time == 2900) close();
+  if (time == 3200) selector->go(0);  //test
+  if (time >= 3250) time = 0;  //test
 
   HAL::canvasUpdate();
 

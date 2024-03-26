@@ -167,7 +167,7 @@ public:
 
   /*LIST*/
   float w, wTrg;
-  //float h, hTrg;
+  float h, hTrg;
   /*LIST*/
 
   /*TILE*/
@@ -179,20 +179,14 @@ public:
   //这样就可以弄磁贴的文字出现动画了
   ////todo 在磁贴中 选择的时候 摄像机和selector都要移动 磁贴的selector是一个空心方框 + 底部的字体
 
+  std::vector<float> getPosition();
+
   void go(uint8_t _index);
 
   bool inject(Menu* _menu); //inject menu instance to prepare for render.
   bool destroy(); //destroy menu instance.
 
   void render(std::vector<float> _camera);
-
-  //在启动器中新建selector和camera 然后注入menu render
-  //在启动器中执行下述方法即可实现选择
-  //todo 当前选择的指针由启动器更改 然后get到对应的坐标给到selector
-  //每次打开新页面 都要把子页面注入给selector
-  //selector只有一个
-
-  //在启动器里单独渲染selector
 };
 
 //加入了摄像机 随着摄像机动而动
@@ -201,7 +195,6 @@ public:
 
 //磁贴类中 前景是虚线 标题 箭头和按钮图标 摄像机横向移动
 //列表类中 前景是进度条 摄像机纵向移动
-//todo 想想有没有关于摄像机的初始化内容 并实现
 class Camera : public Item, public Animation {
 private:
   float xInit, yInit;
@@ -213,6 +206,9 @@ public:
 
   Camera(); //build an empty camera instance.
   Camera(float _x, float _y); //build a camera instance with position.
+
+  uint8_t outOfView(float _x, float _y);
+  std::vector<float> getPosition();
 
   //在启动器中新建selector和camera 然后注入menu render
   //在启动器中执行下述方法即可实现视角移动
@@ -226,14 +222,14 @@ public:
   void goToNextPageItem();
   void goToPreviewPageItem();
   void goToListItemPage(uint8_t _index);
+  void goToListItemRolling(std::vector<float> _posSelector);
   void goToTileItem(uint8_t _index);
 
-  std::vector<float> getPosition();
   bool isMoving();
 
   void reset();
 
-  void update(Menu *_menu);
+  void update(Menu *_menu, Selector *_selector);
 };
 
 }

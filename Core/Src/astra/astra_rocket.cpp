@@ -83,7 +83,7 @@ void astraCoreInit(void) {
 //  rootPage->addItem(new astra::Menu("测试测试测试5"));
 //  rootPage->addItem(secondPage);
 
-  secondPage->addItem(new astra::Menu("-test1"));
+  secondPage->addItem(new astra::Menu("-测试1"));
   secondPage->addItem(new astra::Menu("-测试2"));
   secondPage->addItem(new astra::Menu("-测试测试3"));
   secondPage->addItem(new astra::Menu("-测试测试测试4"));
