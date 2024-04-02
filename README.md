@@ -1,6 +1,7 @@
 ## powered by astra UI.
-![pic](IMG/logo.jpg)
+
+# [Releases](https://github.com/dcfsswindy/oled-ui-astra/releases)
 
 # [Wiki](https://github.com/dcfsswindy/oled-ui-astra/wiki)
 
-# [video](https://www.bilibili.com/video/BV16x421S7qc)
+# [Video](https://www.bilibili.com/video/BV16x421S7qc)
