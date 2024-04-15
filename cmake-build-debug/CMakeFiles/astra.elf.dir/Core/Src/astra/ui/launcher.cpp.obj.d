@@ -1,7 +1,7 @@
 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: \
  D:\Projects\astra\Core\Src\astra\ui\launcher.cpp \
  D:\Projects\astra\Core\Src\astra\ui\launcher.h \
- D:\Projects\astra\Core\Src\astra\ui\element/page/item.h \
+ D:\Projects\astra\Core\Src\astra\ui\item/menu/menu.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\cstdint \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\arm-none-eabi\thumb\v7-m\nofp\bits\c++config.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\arm-none-eabi\thumb\v7-m\nofp\bits\os_defines.h \
@@ -106,13 +106,7 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_vector.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_bvector.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\vector.tcc \
- d:\projects\astra\core\src\hal\hal.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\utility \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_relops.h \
- d:\projects\astra\core\src\astra\config\config.h \
- d:\projects\astra\core\src\hal\hal_dreamcore\components\oled\graph_lib\u8g2\u8g2.h \
- d:\projects\astra\core\src\hal\hal_dreamcore\components\oled\graph_lib\u8g2\u8x8.h \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\lib\gcc\arm-none-eabi\12.2.1\include-fixed\limits.h \
+ d:\projects\astra\core\src\astra\ui\item\item.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\cmath \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\math.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\specfun.h \
@@ -128,4 +122,13 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj: \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\tr1\modified_bessel_func.tcc \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\tr1\poly_hermite.tcc \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\tr1\poly_laguerre.tcc \
- d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\tr1\riemann_zeta.tcc
+ d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\tr1\riemann_zeta.tcc \
+ d:\projects\astra\core\src\hal\hal.h \
+ d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\utility \
+ d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_relops.h \
+ d:\projects\astra\core\src\astra\config\config.h \
+ d:\projects\astra\core\src\hal\hal_dreamcore\components\oled\graph_lib\u8g2\u8g2.h \
+ d:\projects\astra\core\src\hal\hal_dreamcore\components\oled\graph_lib\u8g2\u8x8.h \
+ d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\lib\gcc\arm-none-eabi\12.2.1\include-fixed\limits.h \
+ D:\Projects\astra\Core\Src\astra\ui\item/selector/selector.h \
+ D:\Projects\astra\Core\Src\astra\ui\item/camera/camera.h

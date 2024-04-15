@@ -40,15 +40,15 @@ void HAL::destroy() {
  */
 void HAL::_printInfo(std::string _msg) {
   static std::vector<std::string> _infoCache = {};
-  static const uint8_t _max = getSystemConfig().screenHeight / getFontHeight();
-  static const uint8_t _fontHeight = getFontHeight();
+  static const unsigned char _max = getSystemConfig().screenHeight / getFontHeight();
+  static const unsigned char _fontHeight = getFontHeight();
 
   if (_infoCache.size() >= _max) _infoCache.clear();
   _infoCache.push_back(_msg);
 
   canvasClear();
   setDrawType(2); //反色显示
-  for (uint8_t i = 0; i < _infoCache.size(); i++) {
+  for (unsigned char i = 0; i < _infoCache.size(); i++) {
     drawEnglish(0, _fontHeight + i * (1 + _fontHeight), _infoCache[i]);
   }
   canvasUpdate();
@@ -70,7 +70,7 @@ bool HAL::_getAnyKey() {
  * @todo test this fucking function.
  */
 void HAL::_keyScan() {
-  static uint8_t _timeCnt = 0;
+  static unsigned char _timeCnt = 0;
   static bool _lock = false;
   static key::KEY_FILTER _keyFilter = key::CHECKING;
   switch (_keyFilter) {
@@ -132,7 +132,7 @@ void HAL::_keyScan() {
  */
 void HAL::_keyTest() {
   if (getAnyKey()) {
-    for (uint8_t i = 0; i < key::KEY_NUM; i++) {
+    for (unsigned char i = 0; i < key::KEY_NUM; i++) {
       if (key[i] == key::CLICK) {
         //do something when key clicked
         if (i == 0) break;

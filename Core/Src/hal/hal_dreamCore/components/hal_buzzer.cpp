@@ -15,6 +15,6 @@ void HALDreamCore::_beepStop() {
 
 }
 
-void HALDreamCore::_setBeepVol(uint8_t _vol) {
+void HALDreamCore::_setBeepVol(unsigned char _vol) {
 
 }

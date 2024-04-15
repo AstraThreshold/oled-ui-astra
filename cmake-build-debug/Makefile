@@ -224,53 +224,125 @@ Core/Src/astra/astra_rocket.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.s
 .PHONY : Core/Src/astra/astra_rocket.cpp.s
 
-Core/Src/astra/ui/element/page/item.obj: Core/Src/astra/ui/element/page/item.cpp.obj
-.PHONY : Core/Src/astra/ui/element/page/item.obj
+Core/Src/astra/ui/item/camera/camera.obj: Core/Src/astra/ui/item/camera/camera.cpp.obj
+.PHONY : Core/Src/astra/ui/item/camera/camera.obj
 
 # target to build an object file
-Core/Src/astra/ui/element/page/item.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.obj
-.PHONY : Core/Src/astra/ui/element/page/item.cpp.obj
+Core/Src/astra/ui/item/camera/camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
+.PHONY : Core/Src/astra/ui/item/camera/camera.cpp.obj
 
-Core/Src/astra/ui/element/page/item.i: Core/Src/astra/ui/element/page/item.cpp.i
-.PHONY : Core/Src/astra/ui/element/page/item.i
+Core/Src/astra/ui/item/camera/camera.i: Core/Src/astra/ui/item/camera/camera.cpp.i
+.PHONY : Core/Src/astra/ui/item/camera/camera.i
 
 # target to preprocess a source file
-Core/Src/astra/ui/element/page/item.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.i
-.PHONY : Core/Src/astra/ui/element/page/item.cpp.i
+Core/Src/astra/ui/item/camera/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.i
+.PHONY : Core/Src/astra/ui/item/camera/camera.cpp.i
 
-Core/Src/astra/ui/element/page/item.s: Core/Src/astra/ui/element/page/item.cpp.s
-.PHONY : Core/Src/astra/ui/element/page/item.s
+Core/Src/astra/ui/item/camera/camera.s: Core/Src/astra/ui/item/camera/camera.cpp.s
+.PHONY : Core/Src/astra/ui/item/camera/camera.s
 
 # target to generate assembly for a file
-Core/Src/astra/ui/element/page/item.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/page/item.cpp.s
-.PHONY : Core/Src/astra/ui/element/page/item.cpp.s
+Core/Src/astra/ui/item/camera/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.s
+.PHONY : Core/Src/astra/ui/item/camera/camera.cpp.s
 
-Core/Src/astra/ui/element/widget/widget.obj: Core/Src/astra/ui/element/widget/widget.cpp.obj
-.PHONY : Core/Src/astra/ui/element/widget/widget.obj
+Core/Src/astra/ui/item/menu/menu.obj: Core/Src/astra/ui/item/menu/menu.cpp.obj
+.PHONY : Core/Src/astra/ui/item/menu/menu.obj
 
 # target to build an object file
-Core/Src/astra/ui/element/widget/widget.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/widget/widget.cpp.obj
-.PHONY : Core/Src/astra/ui/element/widget/widget.cpp.obj
+Core/Src/astra/ui/item/menu/menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
+.PHONY : Core/Src/astra/ui/item/menu/menu.cpp.obj
 
-Core/Src/astra/ui/element/widget/widget.i: Core/Src/astra/ui/element/widget/widget.cpp.i
-.PHONY : Core/Src/astra/ui/element/widget/widget.i
+Core/Src/astra/ui/item/menu/menu.i: Core/Src/astra/ui/item/menu/menu.cpp.i
+.PHONY : Core/Src/astra/ui/item/menu/menu.i
 
 # target to preprocess a source file
-Core/Src/astra/ui/element/widget/widget.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/widget/widget.cpp.i
-.PHONY : Core/Src/astra/ui/element/widget/widget.cpp.i
+Core/Src/astra/ui/item/menu/menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.i
+.PHONY : Core/Src/astra/ui/item/menu/menu.cpp.i
 
-Core/Src/astra/ui/element/widget/widget.s: Core/Src/astra/ui/element/widget/widget.cpp.s
-.PHONY : Core/Src/astra/ui/element/widget/widget.s
+Core/Src/astra/ui/item/menu/menu.s: Core/Src/astra/ui/item/menu/menu.cpp.s
+.PHONY : Core/Src/astra/ui/item/menu/menu.s
 
 # target to generate assembly for a file
-Core/Src/astra/ui/element/widget/widget.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/element/widget/widget.cpp.s
-.PHONY : Core/Src/astra/ui/element/widget/widget.cpp.s
+Core/Src/astra/ui/item/menu/menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.s
+.PHONY : Core/Src/astra/ui/item/menu/menu.cpp.s
+
+Core/Src/astra/ui/item/plugin/plugin.obj: Core/Src/astra/ui/item/plugin/plugin.cpp.obj
+.PHONY : Core/Src/astra/ui/item/plugin/plugin.obj
+
+# target to build an object file
+Core/Src/astra/ui/item/plugin/plugin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/plugin/plugin.cpp.obj
+.PHONY : Core/Src/astra/ui/item/plugin/plugin.cpp.obj
+
+Core/Src/astra/ui/item/plugin/plugin.i: Core/Src/astra/ui/item/plugin/plugin.cpp.i
+.PHONY : Core/Src/astra/ui/item/plugin/plugin.i
+
+# target to preprocess a source file
+Core/Src/astra/ui/item/plugin/plugin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/plugin/plugin.cpp.i
+.PHONY : Core/Src/astra/ui/item/plugin/plugin.cpp.i
+
+Core/Src/astra/ui/item/plugin/plugin.s: Core/Src/astra/ui/item/plugin/plugin.cpp.s
+.PHONY : Core/Src/astra/ui/item/plugin/plugin.s
+
+# target to generate assembly for a file
+Core/Src/astra/ui/item/plugin/plugin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/plugin/plugin.cpp.s
+.PHONY : Core/Src/astra/ui/item/plugin/plugin.cpp.s
+
+Core/Src/astra/ui/item/selector/selector.obj: Core/Src/astra/ui/item/selector/selector.cpp.obj
+.PHONY : Core/Src/astra/ui/item/selector/selector.obj
+
+# target to build an object file
+Core/Src/astra/ui/item/selector/selector.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
+.PHONY : Core/Src/astra/ui/item/selector/selector.cpp.obj
+
+Core/Src/astra/ui/item/selector/selector.i: Core/Src/astra/ui/item/selector/selector.cpp.i
+.PHONY : Core/Src/astra/ui/item/selector/selector.i
+
+# target to preprocess a source file
+Core/Src/astra/ui/item/selector/selector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.i
+.PHONY : Core/Src/astra/ui/item/selector/selector.cpp.i
+
+Core/Src/astra/ui/item/selector/selector.s: Core/Src/astra/ui/item/selector/selector.cpp.s
+.PHONY : Core/Src/astra/ui/item/selector/selector.s
+
+# target to generate assembly for a file
+Core/Src/astra/ui/item/selector/selector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.s
+.PHONY : Core/Src/astra/ui/item/selector/selector.cpp.s
+
+Core/Src/astra/ui/item/widget/widget.obj: Core/Src/astra/ui/item/widget/widget.cpp.obj
+.PHONY : Core/Src/astra/ui/item/widget/widget.obj
+
+# target to build an object file
+Core/Src/astra/ui/item/widget/widget.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
+.PHONY : Core/Src/astra/ui/item/widget/widget.cpp.obj
+
+Core/Src/astra/ui/item/widget/widget.i: Core/Src/astra/ui/item/widget/widget.cpp.i
+.PHONY : Core/Src/astra/ui/item/widget/widget.i
+
+# target to preprocess a source file
+Core/Src/astra/ui/item/widget/widget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.i
+.PHONY : Core/Src/astra/ui/item/widget/widget.cpp.i
+
+Core/Src/astra/ui/item/widget/widget.s: Core/Src/astra/ui/item/widget/widget.cpp.s
+.PHONY : Core/Src/astra/ui/item/widget/widget.s
+
+# target to generate assembly for a file
+Core/Src/astra/ui/item/widget/widget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.s
+.PHONY : Core/Src/astra/ui/item/widget/widget.cpp.s
 
 Core/Src/astra/ui/launcher.obj: Core/Src/astra/ui/launcher.cpp.obj
 .PHONY : Core/Src/astra/ui/launcher.obj
@@ -2029,12 +2101,21 @@ help:
 	@echo ... Core/Src/astra/astra_rocket.obj
 	@echo ... Core/Src/astra/astra_rocket.i
 	@echo ... Core/Src/astra/astra_rocket.s
-	@echo ... Core/Src/astra/ui/element/page/item.obj
-	@echo ... Core/Src/astra/ui/element/page/item.i
-	@echo ... Core/Src/astra/ui/element/page/item.s
-	@echo ... Core/Src/astra/ui/element/widget/widget.obj
-	@echo ... Core/Src/astra/ui/element/widget/widget.i
-	@echo ... Core/Src/astra/ui/element/widget/widget.s
+	@echo ... Core/Src/astra/ui/item/camera/camera.obj
+	@echo ... Core/Src/astra/ui/item/camera/camera.i
+	@echo ... Core/Src/astra/ui/item/camera/camera.s
+	@echo ... Core/Src/astra/ui/item/menu/menu.obj
+	@echo ... Core/Src/astra/ui/item/menu/menu.i
+	@echo ... Core/Src/astra/ui/item/menu/menu.s
+	@echo ... Core/Src/astra/ui/item/plugin/plugin.obj
+	@echo ... Core/Src/astra/ui/item/plugin/plugin.i
+	@echo ... Core/Src/astra/ui/item/plugin/plugin.s
+	@echo ... Core/Src/astra/ui/item/selector/selector.obj
+	@echo ... Core/Src/astra/ui/item/selector/selector.i
+	@echo ... Core/Src/astra/ui/item/selector/selector.s
+	@echo ... Core/Src/astra/ui/item/widget/widget.obj
+	@echo ... Core/Src/astra/ui/item/widget/widget.i
+	@echo ... Core/Src/astra/ui/item/widget/widget.s
 	@echo ... Core/Src/astra/ui/launcher.obj
 	@echo ... Core/Src/astra/ui/launcher.i
 	@echo ... Core/Src/astra/ui/launcher.s

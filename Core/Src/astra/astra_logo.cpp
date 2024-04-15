@@ -7,7 +7,7 @@
 
 namespace astra {
 
-/***
+/**
  *   *     *      *         *
  *    *     powered by *    *
  *       * Astra UI *
@@ -62,7 +62,7 @@ void drawLogo(uint16_t _time) {
         yStarsTrg.clear();
         xStars.clear();
 
-        for (uint8_t i = 0; i < getUIConfig().logoStarNum; i++) {
+        for (unsigned char i = 0; i < getUIConfig().logoStarNum; i++) {
           //设置随机种子
           srand(HAL::getRandomSeed() * 7);
 
@@ -97,7 +97,7 @@ void drawLogo(uint16_t _time) {
     HAL::drawHLine(0, yBackGround + HAL::getSystemConfig().screenHeight, HAL::getSystemConfig().screenWeight);
 
     //画星星
-    for (uint8_t i = 0; i < getUIConfig().logoStarNum; i++) {
+    for (unsigned char i = 0; i < getUIConfig().logoStarNum; i++) {
       HAL::drawHLine(xStars[i] - getUIConfig().logoStarLength - 1, yStars[i], getUIConfig().logoStarLength);
       HAL::drawHLine(xStars[i] + 2, yStars[i], getUIConfig().logoStarLength);
       HAL::drawVLine(xStars[i], yStars[i] - getUIConfig().logoStarLength - 1, getUIConfig().logoStarLength);

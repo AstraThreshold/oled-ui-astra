@@ -142,16 +142,37 @@
 		<Unit filename="D:/Projects/astra/Core/Src/astra/config/config.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/page/item.cpp">
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/item/camera/camera.cpp">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/page/item.h">
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/item/camera/camera.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/widget/widget.cpp">
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/item/item.h">
 			<Option target="astra.elf"/>
 		</Unit>
-		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/element/widget/widget.h">
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/item/menu/menu.cpp">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/item/menu/menu.h">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/item/plugin/plugin.cpp">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/item/plugin/plugin.h">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/item/selector/selector.cpp">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/item/selector/selector.h">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/item/widget/widget.cpp">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/item/widget/widget.h">
 			<Option target="astra.elf"/>
 		</Unit>
 		<Unit filename="D:/Projects/astra/Core/Src/astra/ui/launcher.cpp">

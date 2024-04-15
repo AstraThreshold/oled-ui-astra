@@ -43,7 +43,7 @@ struct config {
   float selectorMargin = 4; //选择框与文字左边距
   float selectorTopMargin = 2; //选择框与文字上边距
 
-  uint8_t listPageTurningMode = 1; //0: 翻页模式 1: 滚动模式
+  unsigned char listPageTurningMode = 1; //0: 翻页模式 1: 滚动模式
 
   float tilePicWidth = 30;
   float tilePicHeight = 30;
@@ -74,11 +74,11 @@ struct config {
   float logoStarLength = 2; //logo星星长度
   float logoTextHeight = 14; //logo文字高度
   float logoCopyRightHeight = 8; //logo文字高度
-  uint8_t logoStarNum = 16; //logo星星数量
-  const uint8_t *logoTitleFont = u8g2_font_Cascadia;
-  const uint8_t *logoCopyRightFont = u8g2_font_myfont;
+  unsigned char logoStarNum = 16; //logo星星数量
+  const unsigned char *logoTitleFont = u8g2_font_Cascadia;
+  const unsigned char *logoCopyRightFont = u8g2_font_myfont;
 
-  const uint8_t *mainFont = u8g2_font_myfont;
+  const unsigned char *mainFont = u8g2_font_myfont;
 };
 
 static config &getUIConfig() {

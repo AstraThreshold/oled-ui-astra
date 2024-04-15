@@ -28,11 +28,11 @@ public:
 
 protected:
   u8g2_t canvasBuffer {};
-  static uint8_t _u8x8_byte_hw_spi_callback(u8x8_t* _u8x8, uint8_t _msg, uint8_t _argInt, void* _argPtr);
+  static unsigned char _u8x8_byte_hw_spi_callback(u8x8_t* _u8x8, unsigned char _msg, unsigned char _argInt, void* _argPtr);
 
-  static uint8_t _u8x8_gpio_and_delay_callback(U8X8_UNUSED u8x8_t* _u8x8,
-                                               U8X8_UNUSED uint8_t _msg,
-                                               U8X8_UNUSED uint8_t _argInt,
+  static unsigned char _u8x8_gpio_and_delay_callback(U8X8_UNUSED u8x8_t* _u8x8,
+                                               U8X8_UNUSED unsigned char _msg,
+                                               U8X8_UNUSED unsigned char _argInt,
                                                U8X8_UNUSED void* _argPtr);
 
 public:
@@ -52,11 +52,11 @@ public:
   }
 
 protected:
-  void _ssd1306_transmit_cmd(uint8_t _cmd);
-  void _ssd1306_transmit_data(uint8_t _data, uint8_t _mode);
+  void _ssd1306_transmit_cmd(unsigned char _cmd);
+  void _ssd1306_transmit_data(unsigned char _data, unsigned char _mode);
   void _ssd1306_reset(bool _state);
-  void _ssd1306_set_cursor(uint8_t _x, uint8_t _y);
-  void _ssd1306_fill(uint8_t _data);
+  void _ssd1306_set_cursor(unsigned char _x, unsigned char _y);
+  void _ssd1306_fill(unsigned char _data);
 
 public:
   void _screenOn() override;
@@ -64,14 +64,14 @@ public:
 
 public:
   void* _getCanvasBuffer() override;
-  uint8_t _getBufferTileHeight() override;
-  uint8_t _getBufferTileWidth() override;
+  unsigned char _getBufferTileHeight() override;
+  unsigned char _getBufferTileWidth() override;
   void _canvasUpdate() override;
   void _canvasClear() override;
-  void _setFont(const uint8_t * _font) override;
-  uint8_t _getFontWidth(std::string& _text) override;
-  uint8_t _getFontHeight() override;
-  void _setDrawType(uint8_t _type) override;
+  void _setFont(const unsigned char * _font) override;
+  unsigned char _getFontWidth(std::string& _text) override;
+  unsigned char _getFontHeight() override;
+  void _setDrawType(unsigned char _type) override;
   void _drawPixel(float _x, float _y) override;
   void _drawEnglish(float _x, float _y, const std::string& _text) override;
   void _drawChinese(float _x, float _y, const std::string& _text) override;
@@ -79,7 +79,7 @@ public:
   void _drawHDottedLine(float _x, float _y, float _l) override;
   void _drawVLine(float _x, float _y, float _h) override;
   void _drawHLine(float _x, float _y, float _l) override;
-  void _drawBMP(float _x, float _y, float _w, float _h, const uint8_t* _bitMap) override;
+  void _drawBMP(float _x, float _y, float _w, float _h, const unsigned char* _bitMap) override;
   void _drawBox(float _x, float _y, float _w, float _h) override;
   void _drawRBox(float _x, float _y, float _w, float _h, float _r) override;
   void _drawFrame(float _x, float _y, float _w, float _h) override;
@@ -94,7 +94,7 @@ public:
 public:
   void _beep(float _freq) override;
   void _beepStop() override;
-  void _setBeepVol(uint8_t _vol) override;
+  void _setBeepVol(unsigned char _vol) override;
 
 public:
   bool _getKey(key::KEY_INDEX _keyIndex) override;

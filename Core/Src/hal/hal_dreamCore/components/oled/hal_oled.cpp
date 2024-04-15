@@ -7,17 +7,17 @@
 #include "spi.h"
 #include "main.h"
 
-void HALDreamCore::_ssd1306_transmit_cmd(uint8_t _cmd) { //NOLINT
-  uint8_t rxData = 0;
+void HALDreamCore::_ssd1306_transmit_cmd(unsigned char _cmd) { //NOLINT
+  unsigned char rxData = 0;
   HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_RESET);
   HAL_GPIO_WritePin(OLED_DC_GPIO_Port, OLED_DC_Pin, GPIO_PIN_RESET);
   HAL_SPI_TransmitReceive(&hspi2, &_cmd, &rxData, 1, 1000);
   HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_SET);
 }
 
-void HALDreamCore::_ssd1306_transmit_data(uint8_t _data, uint8_t _mode) { //NOLINT
+void HALDreamCore::_ssd1306_transmit_data(unsigned char _data, unsigned char _mode) { //NOLINT
   if (!_mode) _data = ~_data;
-  uint8_t rxData = 0;
+  unsigned char rxData = 0;
   HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_RESET);
   HAL_GPIO_WritePin(OLED_DC_GPIO_Port, OLED_DC_Pin, GPIO_PIN_SET);
   HAL_SPI_TransmitReceive(&hspi2, &_data, &rxData, 1, 1000);
@@ -29,14 +29,14 @@ void HALDreamCore::_ssd1306_reset(bool _state) { //NOLINT
   else HAL_GPIO_WritePin(OLED_RST_GPIO_Port, OLED_RST_Pin, GPIO_PIN_RESET);
 }
 
-void HALDreamCore::_ssd1306_set_cursor(uint8_t _x, uint8_t _y) {
+void HALDreamCore::_ssd1306_set_cursor(unsigned char _x, unsigned char _y) {
   _ssd1306_transmit_cmd(0xB0 | _y);
   _ssd1306_transmit_cmd(0x10 | ((_x & 0xF0) >> 4));
   _ssd1306_transmit_cmd(0x00 | (_x & 0x0F));
 }
 
-void HALDreamCore::_ssd1306_fill(uint8_t _data) {
-  uint8_t i, j;
+void HALDreamCore::_ssd1306_fill(unsigned char _data) {
+  unsigned char i, j;
   for (j = 0; j < 8; j++) {
     _ssd1306_set_cursor(j, 0);
     for(i = 0; i < 128; i++) {
@@ -100,10 +100,10 @@ void HALDreamCore::_ssd1306_init() {
   //_ssd1306_fill(0x00);
 }
 
-uint8_t HALDreamCore::_u8x8_byte_hw_spi_callback(u8x8_t *_u8x8, uint8_t _msg, uint8_t _argInt, void *_argPtr) { //NOLINT
+unsigned char HALDreamCore::_u8x8_byte_hw_spi_callback(u8x8_t *_u8x8, unsigned char _msg, unsigned char _argInt, void *_argPtr) { //NOLINT
   switch (_msg) {
     case U8X8_MSG_BYTE_SEND: /*通过SPI发送arg_int个字节数据*/
-      HAL_SPI_Transmit_DMA(&hspi2, (uint8_t *) _argPtr, _argInt);
+      HAL_SPI_Transmit_DMA(&hspi2, (unsigned char *) _argPtr, _argInt);
       while (hspi2.TxXferCount);//DMA
       break;
     case U8X8_MSG_BYTE_INIT: /*初始化函数*/
@@ -127,9 +127,9 @@ uint8_t HALDreamCore::_u8x8_byte_hw_spi_callback(u8x8_t *_u8x8, uint8_t _msg, ui
   return 1;
 }
 
-uint8_t HALDreamCore::_u8x8_gpio_and_delay_callback(__attribute__((unused)) u8x8_t *_u8x8,
-                                                    __attribute__((unused)) uint8_t _msg,
-                                                    __attribute__((unused)) uint8_t _argInt,
+unsigned char HALDreamCore::_u8x8_gpio_and_delay_callback(__attribute__((unused)) u8x8_t *_u8x8,
+                                                    __attribute__((unused)) unsigned char _msg,
+                                                    __attribute__((unused)) unsigned char _argInt,
                                                     __attribute__((unused)) void *_argPtr) { //NOLINT
   switch (_msg) {
     case U8X8_MSG_GPIO_AND_DELAY_INIT: /*delay和GPIO的初始化，在main中已经初始化完成了*/
@@ -167,11 +167,11 @@ void *HALDreamCore::_getCanvasBuffer() {
   return u8g2_GetBufferPtr(&canvasBuffer);
 }
 
-uint8_t HALDreamCore::_getBufferTileHeight() {
+unsigned char HALDreamCore::_getBufferTileHeight() {
   return u8g2_GetBufferTileHeight(&canvasBuffer);
 }
 
-uint8_t HALDreamCore::_getBufferTileWidth() {
+unsigned char HALDreamCore::_getBufferTileWidth() {
   return u8g2_GetBufferTileWidth(&canvasBuffer);
 }
 
@@ -183,21 +183,21 @@ void HALDreamCore::_canvasClear() {
   u8g2_ClearBuffer(&canvasBuffer);
 }
 
-void HALDreamCore::_setFont(const uint8_t *_font) {
+void HALDreamCore::_setFont(const unsigned char *_font) {
   u8g2_SetFontMode(&canvasBuffer, 1); /*字体模式选择*/
   u8g2_SetFontDirection(&canvasBuffer, 0); /*字体方向选择*/
   u8g2_SetFont(&canvasBuffer, _font);
 }
 
-uint8_t HALDreamCore::_getFontWidth(std::string &_text) {
+unsigned char HALDreamCore::_getFontWidth(std::string &_text) {
   return u8g2_GetUTF8Width(&canvasBuffer, _text.c_str());
 }
 
-uint8_t HALDreamCore::_getFontHeight() {
+unsigned char HALDreamCore::_getFontHeight() {
   return u8g2_GetMaxCharHeight(&canvasBuffer);
 }
 
-void HALDreamCore::_setDrawType(uint8_t _type) {
+void HALDreamCore::_setDrawType(unsigned char _type) {
   u8g2_SetDrawColor(&canvasBuffer, _type);
 }
 
@@ -214,14 +214,14 @@ void HALDreamCore::_drawChinese(float _x, float _y, const std::string &_text) {
 }
 
 void HALDreamCore::_drawVDottedLine(float _x, float _y, float _h) {
-  for (uint8_t i = 0; i < (uint8_t)std::round(_h); i++) {
+  for (unsigned char i = 0; i < (unsigned char)std::round(_h); i++) {
     if (i % 8 == 0 | (i - 1) % 8 == 0 | (i - 2) % 8 == 0) continue;
     u8g2_DrawPixel(&canvasBuffer, (int16_t)std::round(_x), (int16_t)std::round(_y) + i);
   }
 }
 
 void HALDreamCore::_drawHDottedLine(float _x, float _y, float _l) {
-  for (uint8_t i = 0; i < _l; i++) {
+  for (unsigned char i = 0; i < _l; i++) {
     if (i % 8 == 0 | (i - 1) % 8 == 0 | (i - 2) % 8 == 0) continue;
     u8g2_DrawPixel(&canvasBuffer, (int16_t)std::round(_x) + i, (int16_t)std::round(_y));
   }
@@ -235,7 +235,7 @@ void HALDreamCore::_drawHLine(float _x, float _y, float _l) {
   u8g2_DrawHLine(&canvasBuffer, (int16_t)std::round(_x), (int16_t)std::round(_y), (int16_t)std::round(_l));
 }
 
-void HALDreamCore::_drawBMP(float _x, float _y, float _w, float _h, const uint8_t *_bitMap) {
+void HALDreamCore::_drawBMP(float _x, float _y, float _w, float _h, const unsigned char *_bitMap) {
   u8g2_DrawXBMP(&canvasBuffer, (int16_t)std::round(_x), (int16_t)std::round(_y), (int16_t)std::round(_w), (int16_t)std::round(_h), _bitMap);
 }
 

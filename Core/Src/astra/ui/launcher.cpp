@@ -130,7 +130,7 @@ void Launcher::update() {
 //todo 看一下Rachel的按键扫描函数是怎么实现的
 
 //  if (HAL::getAnyKey()) {
-//    for (uint8_t i = 0; i < key::KEY_NUM; i++) {
+//    for (unsigned char i = 0; i < key::KEY_NUM; i++) {
 //      if (key[i] == key::CLICK) {
 //        if (i == 0) {}//selector去到上一个项目
 //        if (i == 1) {}//selector去到下一个项目

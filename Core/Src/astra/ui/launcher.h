@@ -5,7 +5,9 @@
 #ifndef ASTRA_CORE_SRC_ASTRA_UI_SCHEDULER_H_
 #define ASTRA_CORE_SRC_ASTRA_UI_SCHEDULER_H_
 
-#include "element/page/item.h"
+#include "item/menu/menu.h"
+#include "item/selector/selector.h"
+#include "item/camera/camera.h"
 
 namespace astra {
 
