@@ -569,6 +569,9 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj: D:/Projects/a
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h
 
+CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/plugin/plugin.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/item/plugin/plugin.cpp \
+  D:/Projects/astra/Core/Src/astra/ui/item/plugin/plugin.h
+
 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj: D:/Projects/astra/Core/Src/astra/ui/item/selector/selector.cpp \
   D:/Projects/astra/Core/Src/astra/ui/item/selector/selector.h \
   D:/Projects/astra/Core/Src/astra/config/config.h \
@@ -3515,6 +3518,10 @@ D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp:
 D:/Projects/astra/Core/Src/astra/ui/item/camera/camera.cpp:
 
 D:/Projects/astra/Core/Src/astra/ui/item/menu/menu.cpp:
+
+D:/Projects/astra/Core/Src/astra/ui/item/plugin/plugin.cpp:
+
+D:/Projects/astra/Core/Src/astra/ui/item/plugin/plugin.h:
 
 D:/Projects/astra/Core/Src/astra/ui/launcher.cpp:
 

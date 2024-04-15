@@ -131,6 +131,7 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj: \
  d:\projects\astra\core\src\hal\hal_dreamcore\components\oled\graph_lib\u8g2\u8g2.h \
  d:\projects\astra\core\src\hal\hal_dreamcore\components\oled\graph_lib\u8g2\u8x8.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\lib\gcc\arm-none-eabi\12.2.1\include-fixed\limits.h \
+ d:\projects\astra\core\src\astra\ui\item\widget\widget.h \
  d:\projects\astra\core\src\astra\ui\item/selector/selector.h \
  d:\projects\astra\core\src\astra\ui\item/camera/camera.h \
  d:\projects\astra\core\src\hal\hal_dreamcore\hal_dreamcore.h \

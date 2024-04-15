@@ -22,8 +22,8 @@ void Selector::go(unsigned char _index) {
   if (menu->childType == Menu::TILE) {
 //    xTrg = menu->child[_index]->position.xTrg - (astraConfig.tileSelectBoxWeight - astraConfig.tilePicWidth) / 2;
 //    yTrg = menu->child[_index]->position.yTrg - (astraConfig.tileSelectBoxHeight - astraConfig.tilePicHeight) / 2;
-    xTrg = menu->child[_index]->position.xTrg - astraConfig.tileSelectBoxMargin;
-    yTrg = menu->child[_index]->position.yTrg - astraConfig.tileSelectBoxMargin;
+    xTrg = static_cast<Menu *>(menu->child[_index])->position.xTrg - astraConfig.tileSelectBoxMargin;
+    yTrg = static_cast<Menu *>(menu->child[_index])->position.yTrg - astraConfig.tileSelectBoxMargin;
 
     yText = systemConfig.screenHeight; //给磁贴文字归零 从屏幕外滑入
     yTextTrg = systemConfig.screenHeight - astraConfig.tileTextBottomMargin;
@@ -31,10 +31,10 @@ void Selector::go(unsigned char _index) {
     wTrg = astraConfig.tileSelectBoxWidth;
     hTrg = astraConfig.tileSelectBoxHeight;
   } else if (menu->childType == Menu::LIST) {
-    xTrg = menu->child[_index]->position.xTrg - astraConfig.selectorMargin;
-    yTrg = menu->child[_index]->position.yTrg;
+    xTrg = static_cast<Menu *>(menu->child[_index])->position.xTrg - astraConfig.selectorMargin;
+    yTrg = static_cast<Menu *>(menu->child[_index])->position.yTrg;
 
-    wTrg = (float)HAL::getFontWidth(menu->child[_index]->title) + astraConfig.listTextMargin * 2;
+    wTrg = (float) HAL::getFontWidth(static_cast<Menu *>(menu->child[_index])->title) + astraConfig.listTextMargin * 2;
     hTrg = astraConfig.listLineHeight;
   }
 }
@@ -72,7 +72,10 @@ void Selector::render(std::vector<float> _camera) {
     //draw text.
     //文字不受摄像机的影响
     HAL::setDrawType(1);
-    HAL::drawChinese((systemConfig.screenWeight - (float)HAL::getFontWidth(menu->child[menu->selectIndex]->title)) / 2.0, yText + astraConfig.tileTitleHeight, menu->child[menu->selectIndex]->title);
+    HAL::drawChinese((systemConfig.screenWeight -
+                      (float) HAL::getFontWidth(static_cast<Menu *>(menu->child[menu->selectIndex])->title)) / 2.0,
+                     yText + astraConfig.tileTitleHeight,
+                     static_cast<Menu *>(menu->child[menu->selectIndex])->title);
 
     //draw box.
     //大框需要受摄像机的影响
@@ -83,13 +86,21 @@ void Selector::render(std::vector<float> _camera) {
     HAL::drawVLine(x + _camera[0], y + _camera[1], astraConfig.tileSelectBoxLineLength + 1);
     //左下角
     HAL::drawHLine(x + _camera[0], y + _camera[1] + h - 1, astraConfig.tileSelectBoxLineLength + 1);
-    HAL::drawVLine(x + _camera[0], y + _camera[1] + h - astraConfig.tileSelectBoxLineLength - 1, astraConfig.tileSelectBoxLineLength);
+    HAL::drawVLine(x + _camera[0],
+                   y + _camera[1] + h - astraConfig.tileSelectBoxLineLength - 1,
+                   astraConfig.tileSelectBoxLineLength);
     //右上角
-    HAL::drawHLine(x + _camera[0] + w - astraConfig.tileSelectBoxLineLength - 1, y + _camera[1], astraConfig.tileSelectBoxLineLength);
+    HAL::drawHLine(x + _camera[0] + w - astraConfig.tileSelectBoxLineLength - 1,
+                   y + _camera[1],
+                   astraConfig.tileSelectBoxLineLength);
     HAL::drawVLine(x + _camera[0] + w - 1, y + _camera[1], astraConfig.tileSelectBoxLineLength + 1);
     //右下角
-    HAL::drawHLine(x + _camera[0] + w - astraConfig.tileSelectBoxLineLength - 1, y + _camera[1] + h - 1, astraConfig.tileSelectBoxLineLength);
-    HAL::drawVLine(x + _camera[0] + w - 1, y + _camera[1] + h - astraConfig.tileSelectBoxLineLength - 1, astraConfig.tileSelectBoxLineLength);
+    HAL::drawHLine(x + _camera[0] + w - astraConfig.tileSelectBoxLineLength - 1,
+                   y + _camera[1] + h - 1,
+                   astraConfig.tileSelectBoxLineLength);
+    HAL::drawVLine(x + _camera[0] + w - 1,
+                   y + _camera[1] + h - astraConfig.tileSelectBoxLineLength - 1,
+                   astraConfig.tileSelectBoxLineLength);
 
     HAL::drawPixel(x + _camera[0] + w - 1, y + _camera[1] + h - 1);
   } else if (menu->childType == Menu::LIST) {

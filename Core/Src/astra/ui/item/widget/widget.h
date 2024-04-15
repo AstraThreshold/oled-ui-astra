@@ -2,26 +2,38 @@
 #ifndef ASTRA_WIDGET__H
 #define ASTRA_WIDGET__H
 
+#include "../item.h"
+
 namespace astra {
 
-class Widget {
+class Widget : public Item {
 public:
-  void (*callback)(unsigned char);
 
   typedef enum WidgetType {
     CHECKBOX = 0,
     POPUP,
     SLIDER,
-    SIDEBAR,
   } WidgetType;
 
   WidgetType type;
 
 public:
+  void render(); //控件都是前景 所以无需摄像机
+
+public:
   Widget() = default;
 
-  void inject(void (*_callback)(unsigned char)) { this->callback = _callback; }
-
+  Widget(unsigned char _value);  //check box.
+  //0: left 1: top 2: right 3: bottom
+  Widget(unsigned char _direction,
+         std::string _title,
+         std::vector<std::string> _options,
+         unsigned char _value);  //pop up.
+  Widget(std::string _title,
+         unsigned char _min,
+         unsigned char _max,
+         unsigned char _step,
+         unsigned char _value);  //slider.
 };
 
 }

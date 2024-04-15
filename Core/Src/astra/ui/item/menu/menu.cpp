@@ -65,11 +65,11 @@ void Menu::init(std::vector<float> _camera) {
   if (childType == TILE) {
     //受展开开关影响的坐标初始化
     if (astraConfig.tileUnfold) {
-      for (auto _iter : child) _iter->position.x = _camera[0] - astraConfig.tilePicWidth; //unfold from left.
+      for (auto _iter : child) static_cast<Menu*>(_iter)->position.x = _camera[0] - astraConfig.tilePicWidth; //unfold from left.
       positionForeground.wBar = 0;  //bar unfold from left.
 
     } else {
-      for (auto _iter : child) _iter->position.x = _iter->position.xTrg;
+      for (auto _iter : child) static_cast<Menu*>(_iter)->position.x = static_cast<Menu*>(_iter)->position.xTrg;
       positionForeground.wBar = positionForeground.wBarTrg;
     }
 
@@ -86,10 +86,10 @@ void Menu::init(std::vector<float> _camera) {
   } else if (childType == LIST) {
     //受展开开关影响的坐标初始化
     if (astraConfig.listUnfold) {
-      for (auto _iter : child) _iter->position.y = _camera[1] - astraConfig.listLineHeight; //text unfold from top.
+      for (auto _iter : child) static_cast<Menu*>(_iter)->position.y = _camera[1] - astraConfig.listLineHeight; //text unfold from top.
       positionForeground.hBar = 0;  //bar unfold from top.
     } else {
-      for (auto _iter : child) _iter->position.y = _iter->position.yTrg;
+      for (auto _iter : child) static_cast<Menu*>(_iter)->position.y = static_cast<Menu*>(_iter)->position.yTrg;
       positionForeground.hBar = positionForeground.hBarTrg;
     }
 
@@ -111,9 +111,9 @@ void Menu::render(std::vector<float> _camera) {
 
     //draw pic.
     for (auto _iter : child) {
-      HAL::drawBMP(_iter->position.x + _camera[0], astraConfig.tilePicTopMargin + _camera[1], astraConfig.tilePicWidth, astraConfig.tilePicHeight, _iter->pic.data());
+      HAL::drawBMP(static_cast<Menu*>(_iter)->position.x + _camera[0], astraConfig.tilePicTopMargin + _camera[1], astraConfig.tilePicWidth, astraConfig.tilePicHeight, static_cast<Menu*>(_iter)->pic.data());
       //这里的xTrg在addItem的时候就已经确定了
-      animation(&_iter->position.x, _iter->position.xTrg, astraConfig.tileAnimationSpeed);
+      animation(&static_cast<Menu*>(_iter)->position.x, static_cast<Menu*>(_iter)->position.xTrg, astraConfig.tileAnimationSpeed);
     }
 
     //draw bar.
@@ -158,9 +158,9 @@ void Menu::render(std::vector<float> _camera) {
 
     //allow x > screen height, y > screen weight.
     for (auto _iter : child) {
-      HAL::drawChinese(_iter->position.x + _camera[0], _iter->position.y + astraConfig.listTextHeight + astraConfig.listTextMargin + _camera[1], _iter->title);
+      HAL::drawChinese(static_cast<Menu*>(_iter)->position.x + _camera[0], static_cast<Menu*>(_iter)->position.y + astraConfig.listTextHeight + astraConfig.listTextMargin + _camera[1], static_cast<Menu*>(_iter)->title);
       //这里的yTrg在addItem的时候就已经确定了
-      animation(&_iter->position.y, _iter->position.yTrg, astraConfig.listAnimationSpeed);
+      animation(&static_cast<Menu*>(_iter)->position.y, static_cast<Menu*>(_iter)->position.yTrg, astraConfig.listAnimationSpeed);
     }
 
     //draw bar.
@@ -189,11 +189,11 @@ unsigned char Menu::getItemNum() const {
 }
 
 Menu::Position Menu::getItemPosition(unsigned char _index) const {
-  return child[_index]->position;
+  return static_cast<Menu*>(child[_index])->position;
 }
 
 Menu *Menu::getNext() const {
-  return child[selectIndex];
+  return static_cast<Menu*>(child[selectIndex]);
 }
 
 Menu *Menu::getPreview() const {
@@ -226,6 +226,17 @@ bool Menu::addItem(Menu *_page) {
       return true;
     } else return false;
   }
+}
+
+bool Menu::addItem(Widget *_widget) {
+  //todo
+  if (_widget == nullptr) return false;
+  else {
+    //封锁 不能有其他的子元素
+    //设置类型为widget
+    //
+  }
+  return false;
 }
 
 }

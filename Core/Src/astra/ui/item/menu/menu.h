@@ -10,6 +10,7 @@
 #include "string"
 #include <vector>
 #include "../item.h"
+#include "../widget/widget.h"
 
 namespace astra {
 
@@ -46,6 +47,7 @@ public:
   typedef enum PageType {
     TILE = 0,
     LIST,
+    WIDGET,
   } PageType;
 
   PageType selfType;
@@ -53,10 +55,11 @@ public:
 
 public:
   Menu *parent;
-  std::vector<Menu *> child;
+  std::vector<void *> child; //allow widget and menu.
   unsigned char selectIndex;
 
   explicit Menu(std::string _title);
+
   Menu(std::string _title, std::vector<unsigned char> _pic);
 
   void init(std::vector<float> _camera); //每次打开页面都要调用一次
@@ -64,13 +67,16 @@ public:
 
   void render(std::vector<float> _camera);  //render all child item.
   [[nodiscard]] unsigned char getItemNum() const;
+
   [[nodiscard]] Position getItemPosition(unsigned char _index) const;
-  [[nodiscard]] Menu* getNext() const;  //启动器调用该方法来获取下一个页面
-  [[nodiscard]] Menu* getPreview() const;
+
+  [[nodiscard]] Menu *getNext() const;  //启动器调用该方法来获取下一个页面
+  [[nodiscard]] Menu *getPreview() const;
 
   //selector是启动器中修改的
 
-  bool addItem(Menu* _page);
+  bool addItem(Menu *_page);
+  bool addItem(Widget* _widget);
 };
 
 }
