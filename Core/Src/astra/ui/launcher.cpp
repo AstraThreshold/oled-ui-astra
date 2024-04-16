@@ -67,7 +67,6 @@ void Launcher::init(Menu *_rootPage) {
  * @warning 仅可调用一次
  */
 bool Launcher::open() {
-  //todo 打开和关闭都还没写完 应该还漏掉了一部分内容
 
   //如果当前页面指向的当前item没有后继 那就返回false
   if (currentItem->getNext() == nullptr) { popInfo("unreferenced page!", 600); return false; }

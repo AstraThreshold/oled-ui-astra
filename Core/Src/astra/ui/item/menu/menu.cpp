@@ -240,8 +240,6 @@ bool Menu::addItem(Widget *_widget) {
       _widget->parent = this;
       this->child.push_back(_widget);
     } else return false;
-
-
   }
   return false;
 }

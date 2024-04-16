@@ -38,6 +38,23 @@ public:
          unsigned char _max,
          unsigned char _step,
          unsigned char _value);  //slider.
+
+public:
+  bool open(); //pop up and slider
+  bool close(); //pop up and slider
+
+public:
+  bool selectNext(); //pop up
+  bool selectPreview(); //pop up
+  bool select(unsigned char _index); //pop up
+
+public:
+  unsigned char add(); //slider
+  unsigned char sub(); //slider
+
+public:
+  bool check(); //check box
+  bool uncheck(); //check box
 };
 
 }
