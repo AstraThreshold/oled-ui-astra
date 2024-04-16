@@ -228,17 +228,49 @@ bool Menu::addItem(Menu *_page) {
   }
 }
 
-bool Menu::addItem(Widget *_widget) {
+bool Menu::addItem(CheckBox *_checkBox) {
   //todo
   if (this->childType != LIST) return false; //only support list type.
-  if (_widget == nullptr) return false;
+  if (_checkBox == nullptr) return false;
   else {
     if (this->child.empty()) {
       //封锁 不能有其他的子元素
       //设置类型为widget
-      this->childType = WIDGET;
-      _widget->parent = this;
-      this->child.push_back(_widget);
+      this->childType = CHECKBOX;
+      _checkBox->parent = this;
+      this->child.push_back(_checkBox);
+    } else return false;
+  }
+  return false;
+}
+
+bool Menu::addItem(PopUp *_popUp) {
+  //todo
+  if (this->childType != LIST) return false; //only support list type.
+  if (_popUp == nullptr) return false;
+  else {
+    if (this->child.empty()) {
+      //封锁 不能有其他的子元素
+      //设置类型为widget
+      this->childType = POPUP;
+      _popUp->parent = this;
+      this->child.push_back(_popUp);
+    } else return false;
+  }
+  return false;
+}
+
+bool Menu::addItem(Slider *_slider) {
+  //todo
+  if (this->childType != LIST) return false; //only support list type.
+  if (_slider == nullptr) return false;
+  else {
+    if (this->child.empty()) {
+      //封锁 不能有其他的子元素
+      //设置类型为widget
+      this->childType = SLIDER;
+      _slider->parent = this;
+      this->child.push_back(_slider);
     } else return false;
   }
   return false;

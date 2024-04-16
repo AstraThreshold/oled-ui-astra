@@ -47,7 +47,9 @@ public:
   typedef enum PageType {
     TILE = 0,
     LIST,
-    WIDGET,
+    CHECKBOX,
+    POPUP,
+    SLIDER,
   } PageType;
 
   PageType selfType;
@@ -76,7 +78,9 @@ public:
   //selector是启动器中修改的
 
   bool addItem(Menu *_page);
-  bool addItem(Widget* _widget);
+  bool addItem(CheckBox* _checkBox);
+  bool addItem(PopUp* _popUp);
+  bool addItem(Slider* _slider);
 };
 
 }

@@ -11,7 +11,6 @@ public:
   void* parent;
 
 public:
-
   typedef enum WidgetType {
     CHECKBOX = 0,
     POPUP,
@@ -19,42 +18,92 @@ public:
   } WidgetType;
 
   WidgetType type;
+};
+
+class CheckBox : public Widget {
+private:
+  unsigned char &value;
 
 public:
+  explicit CheckBox(unsigned char &_value);  //check box.
   void init(); //初始化控件
-  void render(); //控件都是前景 所以无需摄像机
 
 public:
-  Widget() = default;
+  bool check();
+  bool uncheck();
+  bool toggle();
 
-  explicit Widget(unsigned char _value);  //check box.
+public:
+  void render(); //控件都是前景 所以无需摄像机
+};
+
+class PopUp : public Widget {
+public:
+  typedef struct Position {
+    float x, xTrg;
+    float y, yTrg;
+  } Position;
+
+  Position position{};
+
+private:
+  unsigned char &value;
+  std::string title;
+  std::vector<std::string> options;
+  unsigned char direction;
+
+public:
   // 0: left 1: top 2: right 3: bottom
-  Widget(unsigned char _direction,
+  PopUp(unsigned char _direction,
          std::string _title,
          std::vector<std::string> _options,
-         unsigned char _value);  //pop up.
-  Widget(std::string _title,
+         unsigned char &_value);  //pop up.
+  void init(); //初始化控件
+
+public:
+  bool open();
+  bool close();
+  bool selectNext();
+  bool selectPreview();
+  bool select(unsigned char _index);
+
+public:
+  void render(); //控件都是前景 所以无需摄像机
+};
+
+class Slider : public Widget {
+public:
+  typedef struct Position {
+    float x, xTrg;
+    float y, yTrg;
+
+    float l, lTrg; //slider
+  } Position;
+
+  Position position{};
+
+private:
+  unsigned char &value;
+  unsigned char min;
+  unsigned char max;
+  unsigned char step;
+
+public:
+  Slider(std::string _title,
          unsigned char _min,
          unsigned char _max,
          unsigned char _step,
-         unsigned char _value);  //slider.
+         unsigned char &_value);  //slider.
+  void init(); //初始化控件
 
 public:
-  bool open(); //pop up and slider
-  bool close(); //pop up and slider
+  bool open();
+  bool close();
+  unsigned char add();
+  unsigned char sub();
 
 public:
-  bool selectNext(); //pop up
-  bool selectPreview(); //pop up
-  bool select(unsigned char _index); //pop up
-
-public:
-  unsigned char add(); //slider
-  unsigned char sub(); //slider
-
-public:
-  bool check(); //check box
-  bool uncheck(); //check box
+  void render(); //控件都是前景 所以无需摄像机
 };
 
 }
