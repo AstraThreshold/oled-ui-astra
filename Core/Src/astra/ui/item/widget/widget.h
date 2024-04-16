@@ -8,6 +8,9 @@ namespace astra {
 
 class Widget : public Item {
 public:
+  void* parent;
+
+public:
 
   typedef enum WidgetType {
     CHECKBOX = 0,
@@ -18,13 +21,14 @@ public:
   WidgetType type;
 
 public:
+  void init(); //初始化控件
   void render(); //控件都是前景 所以无需摄像机
 
 public:
   Widget() = default;
 
-  Widget(unsigned char _value);  //check box.
-  //0: left 1: top 2: right 3: bottom
+  explicit Widget(unsigned char _value);  //check box.
+  // 0: left 1: top 2: right 3: bottom
   Widget(unsigned char _direction,
          std::string _title,
          std::vector<std::string> _options,

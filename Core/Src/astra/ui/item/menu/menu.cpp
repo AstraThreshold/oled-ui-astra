@@ -230,11 +230,18 @@ bool Menu::addItem(Menu *_page) {
 
 bool Menu::addItem(Widget *_widget) {
   //todo
+  if (this->childType != LIST) return false; //only support list type.
   if (_widget == nullptr) return false;
   else {
-    //封锁 不能有其他的子元素
-    //设置类型为widget
-    //
+    if (this->child.empty()) {
+      //封锁 不能有其他的子元素
+      //设置类型为widget
+      this->childType = WIDGET;
+      _widget->parent = this;
+      this->child.push_back(_widget);
+    } else return false;
+
+
   }
   return false;
 }

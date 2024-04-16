@@ -25,9 +25,9 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
 
     HAL::canvasClear();
     /*渲染一帧*/
-    currentPage->render(camera->getPosition());
+    currentItem->render(camera->getPosition());
     selector->render(camera->getPosition());
-    camera->update(currentPage, selector);
+    camera->update(currentItem, selector);
     /*渲染一帧*/
 
     HAL::setDrawType(0);
@@ -46,7 +46,7 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
 }
 
 void Launcher::init(Menu *_rootPage) {
-  currentPage = _rootPage;
+  currentItem = _rootPage;
 
   camera = new Camera(0, 0);
   _rootPage->init(camera->getPosition());
@@ -70,15 +70,15 @@ bool Launcher::open() {
   //todo 打开和关闭都还没写完 应该还漏掉了一部分内容
 
   //如果当前页面指向的当前item没有后继 那就返回false
-  if (currentPage->getNext() == nullptr) { popInfo("unreferenced page!", 600); return false; }
-  if (currentPage->getNext()->getItemNum() == 0) { popInfo("empty page!", 600); return false; }
+  if (currentItem->getNext() == nullptr) { popInfo("unreferenced page!", 600); return false; }
+  if (currentItem->getNext()->getItemNum() == 0) { popInfo("empty page!", 600); return false; }
 
-  currentPage->deInit();  //先析构（退场动画）再挪动指针
+  currentItem->deInit();  //先析构（退场动画）再挪动指针
 
-  currentPage = currentPage->getNext();
-  currentPage->init(camera->getPosition());
+  currentItem = currentItem->getNext();
+  currentItem->init(camera->getPosition());
 
-  selector->inject(currentPage);
+  selector->inject(currentItem);
   //selector->go(currentPage->selectIndex);
 
   return true;
@@ -91,15 +91,15 @@ bool Launcher::open() {
  * @warning 仅可调用一次
  */
 bool Launcher::close() {
-  if (currentPage->getPreview() == nullptr) { popInfo("unreferenced page!", 600); return false; }
-  if (currentPage->getPreview()->getItemNum() == 0) { popInfo("empty page!", 600); return false; }
+  if (currentItem->getPreview() == nullptr) { popInfo("unreferenced page!", 600); return false; }
+  if (currentItem->getPreview()->getItemNum() == 0) { popInfo("empty page!", 600); return false; }
 
-  currentPage->deInit();  //先析构（退场动画）再挪动指针
+  currentItem->deInit();  //先析构（退场动画）再挪动指针
 
-  currentPage = currentPage->getPreview();
-  currentPage->init(camera->getPosition());
+  currentItem = currentItem->getPreview();
+  currentItem->init(camera->getPosition());
 
-  selector->inject(currentPage);
+  selector->inject(currentItem);
   //selector->go(currentPage->selectIndex);
 
   return true;
@@ -108,9 +108,9 @@ bool Launcher::close() {
 void Launcher::update() {
   HAL::canvasClear();
 
-  currentPage->render(camera->getPosition());
+  currentItem->render(camera->getPosition());
   selector->render(camera->getPosition());
-  camera->update(currentPage, selector);
+  camera->update(currentItem, selector);
 
   if (time == 500) selector->go(3);  //test
   if (time == 800) open();  //test
