@@ -69,12 +69,20 @@ void Launcher::init(Menu *_rootPage) {
 bool Launcher::open() {
 
   //如果当前页面指向的当前item没有后继 那就返回false
-  if (currentItem->getNext() == nullptr) { popInfo("unreferenced page!", 600); return false; }
-  if (currentItem->getNext()->getItemNum() == 0) { popInfo("empty page!", 600); return false; }
+  if (currentItem->getNextMenu() == nullptr) { popInfo("unreferenced page!", 600); return false; }
+  if (currentItem->getNextMenu()->getItemNum() == 0) { popInfo("empty page!", 600); return false; }
 
+  if (currentItem->getNextMenu()->childType == Menu::POPUP) {
+    static_cast<PopUp *>(currentItem->getNext())->open();
+    return true;
+  }
+  if (currentItem->getNextMenu()->childType == Menu::SLIDER) {
+    static_cast<Slider *>(currentItem->getNext())->open();
+    return true;
+  }
   currentItem->deInit();  //先析构（退场动画）再挪动指针
 
-  currentItem = currentItem->getNext();
+  currentItem = currentItem->getNextMenu();
   currentItem->init(camera->getPosition());
 
   selector->inject(currentItem);
@@ -92,6 +100,15 @@ bool Launcher::open() {
 bool Launcher::close() {
   if (currentItem->getPreview() == nullptr) { popInfo("unreferenced page!", 600); return false; }
   if (currentItem->getPreview()->getItemNum() == 0) { popInfo("empty page!", 600); return false; }
+
+  if (currentItem->getNextMenu()->childType == Menu::POPUP && static_cast<PopUp *>(currentItem->getNext())->isOpen) {
+    static_cast<PopUp *>(currentItem->getNext())->close();
+    return true;
+  }
+  if (currentItem->getNextMenu()->childType == Menu::SLIDER && static_cast<Slider *>(currentItem->getNext())->isOpen) {
+    static_cast<Slider *>(currentItem->getNext())->close();
+    return true;
+  }
 
   currentItem->deInit();  //先析构（退场动画）再挪动指针
 

@@ -79,6 +79,12 @@ struct config {
   const unsigned char *logoCopyRightFont = u8g2_font_myfont;
 
   const unsigned char *mainFont = u8g2_font_myfont;
+
+  float checkBoxWidth = 8;
+  float checkBoxHeight = 8;
+  float checkBoxTopMargin = 4; //与选项上边缘的距离
+  float checkBoxRightMargin = 10; //与屏幕右边缘的距离
+  float checkBoxRadius = 1;
 };
 
 static config &getUIConfig() {

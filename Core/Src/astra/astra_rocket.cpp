@@ -9,6 +9,8 @@
 astra::Launcher* astraLauncher = new astra::Launcher();
 astra::Menu* rootPage = new astra::Menu("root");
 
+bool test = true;
+
 std::vector<unsigned char> pic_0 = {
     0xFF, 0xFF, 0xFF, 0x3F, 0xFF, 0xFF, 0xFF, 0x3F, 0xFF, 0xFF, 0xFF, 0x3F, 0xFF, 0xFF, 0xF1, 0x3F,
     0xFF, 0xFF, 0xC3, 0x3F, 0xFF, 0xFF, 0x87, 0x3F, 0xFF, 0xFF, 0x07, 0x3F, 0xFF, 0xFF, 0x0F, 0x3E,
@@ -84,11 +86,12 @@ void astraCoreInit(void) {
 //  rootPage->addItem(secondPage);
 
   secondPage->addItem(new astra::Menu("-测试1"));
-  secondPage->addItem(new astra::Menu("-测试2"));
+  secondPage->addItem(new astra::Menu("-测试2"), new astra::CheckBox(test));
   secondPage->addItem(new astra::Menu("-测试测试3"));
   secondPage->addItem(new astra::Menu("-测试测试测试4"));
   secondPage->addItem(new astra::Menu("-测试测试测试5"));
   secondPage->addItem(new astra::Menu("-测试测试测试6"));
+
 
   astraLauncher->init(rootPage);
 }

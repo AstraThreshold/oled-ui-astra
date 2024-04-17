@@ -22,10 +22,10 @@ public:
 
 class CheckBox : public Widget {
 private:
-  unsigned char &value;
+  bool value;
 
 public:
-  explicit CheckBox(unsigned char &_value);  //check box.
+  explicit CheckBox(bool &_value);  //check box.
   void init(); //初始化控件
 
 public:
@@ -34,7 +34,7 @@ public:
   bool toggle();
 
 public:
-  void render(); //控件都是前景 所以无需摄像机
+  void render(float _x, float _y, std::vector<float> _camera);
 };
 
 class PopUp : public Widget {
@@ -46,6 +46,7 @@ public:
 
   Position position{};
 
+  bool isOpen = false;
 private:
   unsigned char &value;
   std::string title;
@@ -61,8 +62,8 @@ public:
   void init(); //初始化控件
 
 public:
-  bool open();
-  bool close();
+  void open();
+  void close();
   bool selectNext();
   bool selectPreview();
   bool select(unsigned char _index);
@@ -82,6 +83,8 @@ public:
 
   Position position{};
 
+  bool isOpen = false;
+
 private:
   unsigned char &value;
   unsigned char min;
@@ -97,8 +100,8 @@ public:
   void init(); //初始化控件
 
 public:
-  bool open();
-  bool close();
+  void open();
+  void close();
   unsigned char add();
   unsigned char sub();
 

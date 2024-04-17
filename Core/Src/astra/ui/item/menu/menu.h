@@ -72,15 +72,18 @@ public:
 
   [[nodiscard]] Position getItemPosition(unsigned char _index) const;
 
-  [[nodiscard]] Menu *getNext() const;  //启动器调用该方法来获取下一个页面
+  [[nodiscard]] void *getNext() const;  //启动器调用该方法来获取下一个页面
+  [[nodiscard]] Menu *getNextMenu() const;  //启动器调用该方法来获取下一个页面
   [[nodiscard]] Menu *getPreview() const;
 
   //selector是启动器中修改的
 
   bool addItem(Menu *_page);
-  bool addItem(CheckBox* _checkBox);
-  bool addItem(PopUp* _popUp);
-  bool addItem(Slider* _slider);
+
+  //新建一个带有控件的列表项
+  bool addItem(Menu *_page, CheckBox* _checkBox);
+  bool addItem(Menu *_page, PopUp* _popUp);
+  bool addItem(Menu *_page, Slider* _slider);
 };
 
 }

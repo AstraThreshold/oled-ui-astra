@@ -65,11 +65,12 @@ void Menu::init(std::vector<float> _camera) {
   if (childType == TILE) {
     //受展开开关影响的坐标初始化
     if (astraConfig.tileUnfold) {
-      for (auto _iter : child) static_cast<Menu*>(_iter)->position.x = _camera[0] - astraConfig.tilePicWidth; //unfold from left.
+      for (auto _iter : child)
+        static_cast<Menu *>(_iter)->position.x = _camera[0] - astraConfig.tilePicWidth; //unfold from left.
       positionForeground.wBar = 0;  //bar unfold from left.
 
     } else {
-      for (auto _iter : child) static_cast<Menu*>(_iter)->position.x = static_cast<Menu*>(_iter)->position.xTrg;
+      for (auto _iter : child) static_cast<Menu *>(_iter)->position.x = static_cast<Menu *>(_iter)->position.xTrg;
       positionForeground.wBar = positionForeground.wBarTrg;
     }
 
@@ -86,10 +87,11 @@ void Menu::init(std::vector<float> _camera) {
   } else if (childType == LIST) {
     //受展开开关影响的坐标初始化
     if (astraConfig.listUnfold) {
-      for (auto _iter : child) static_cast<Menu*>(_iter)->position.y = _camera[1] - astraConfig.listLineHeight; //text unfold from top.
+      for (auto _iter : child)
+        static_cast<Menu *>(_iter)->position.y = _camera[1] - astraConfig.listLineHeight; //text unfold from top.
       positionForeground.hBar = 0;  //bar unfold from top.
     } else {
-      for (auto _iter : child) static_cast<Menu*>(_iter)->position.y = static_cast<Menu*>(_iter)->position.yTrg;
+      for (auto _iter : child) static_cast<Menu *>(_iter)->position.y = static_cast<Menu *>(_iter)->position.yTrg;
       positionForeground.hBar = positionForeground.hBarTrg;
     }
 
@@ -111,14 +113,20 @@ void Menu::render(std::vector<float> _camera) {
 
     //draw pic.
     for (auto _iter : child) {
-      HAL::drawBMP(static_cast<Menu*>(_iter)->position.x + _camera[0], astraConfig.tilePicTopMargin + _camera[1], astraConfig.tilePicWidth, astraConfig.tilePicHeight, static_cast<Menu*>(_iter)->pic.data());
+      HAL::drawBMP(static_cast<Menu *>(_iter)->position.x + _camera[0],
+                   astraConfig.tilePicTopMargin + _camera[1],
+                   astraConfig.tilePicWidth,
+                   astraConfig.tilePicHeight,
+                   static_cast<Menu *>(_iter)->pic.data());
       //这里的xTrg在addItem的时候就已经确定了
-      animation(&static_cast<Menu*>(_iter)->position.x, static_cast<Menu*>(_iter)->position.xTrg, astraConfig.tileAnimationSpeed);
+      animation(&static_cast<Menu *>(_iter)->position.x,
+                static_cast<Menu *>(_iter)->position.xTrg,
+                astraConfig.tileAnimationSpeed);
     }
 
     //draw bar.
     //在屏幕最上方 两个像素高
-    positionForeground.wBarTrg = (selectIndex + 1) * ((float)systemConfig.screenWeight / getItemNum());
+    positionForeground.wBarTrg = (selectIndex + 1) * ((float) systemConfig.screenWeight / getItemNum());
     HAL::drawBox(0, positionForeground.yBar, positionForeground.wBar, astraConfig.tileBarHeight);
 
     //draw left arrow.
@@ -129,7 +137,9 @@ void Menu::render(std::vector<float> _camera) {
     HAL::drawPixel(astraConfig.tileArrowMargin + 2, positionForeground.yArrow - 2);
 
     //draw right arrow.
-    HAL::drawHLine(systemConfig.screenWeight - astraConfig.tileArrowWidth - astraConfig.tileArrowMargin, positionForeground.yArrow, astraConfig.tileArrowWidth);
+    HAL::drawHLine(systemConfig.screenWeight - astraConfig.tileArrowWidth - astraConfig.tileArrowMargin,
+                   positionForeground.yArrow,
+                   astraConfig.tileArrowWidth);
     HAL::drawPixel(systemConfig.screenWeight - astraConfig.tileArrowWidth, positionForeground.yArrow + 1);
     HAL::drawPixel(systemConfig.screenWeight - astraConfig.tileArrowWidth - 1, positionForeground.yArrow + 2);
     HAL::drawPixel(systemConfig.screenWeight - astraConfig.tileArrowWidth, positionForeground.yArrow - 1);
@@ -141,7 +151,10 @@ void Menu::render(std::vector<float> _camera) {
 
     //draw right button.
     HAL::drawHLine(systemConfig.screenWeight - astraConfig.tileBtnMargin - 9, positionForeground.yArrow + 2, 9);
-    HAL::drawBox(systemConfig.screenWeight - astraConfig.tileBtnMargin - 9 + 2, positionForeground.yArrow + 2 - 4, 5, 4);
+    HAL::drawBox(systemConfig.screenWeight - astraConfig.tileBtnMargin - 9 + 2,
+                 positionForeground.yArrow + 2 - 4,
+                 5,
+                 4);
 
     //draw dotted line.
     HAL::drawHDottedLine(0, positionForeground.yDottedLine, systemConfig.screenWeight);
@@ -157,18 +170,55 @@ void Menu::render(std::vector<float> _camera) {
     HAL::setDrawType(1);
 
     //allow x > screen height, y > screen weight.
+    //scan all child, draw text and widget on list.
     for (auto _iter : child) {
-      HAL::drawChinese(static_cast<Menu*>(_iter)->position.x + _camera[0], static_cast<Menu*>(_iter)->position.y + astraConfig.listTextHeight + astraConfig.listTextMargin + _camera[1], static_cast<Menu*>(_iter)->title);
+      HAL::drawChinese(static_cast<Menu *>(_iter)->position.x + _camera[0],
+                       static_cast<Menu *>(_iter)->position.y + astraConfig.listTextHeight +
+                       astraConfig.listTextMargin + _camera[1],
+                       static_cast<Menu *>(_iter)->title);
       //这里的yTrg在addItem的时候就已经确定了
-      animation(&static_cast<Menu*>(_iter)->position.y, static_cast<Menu*>(_iter)->position.yTrg, astraConfig.listAnimationSpeed);
+      animation(&static_cast<Menu *>(_iter)->position.y,
+                static_cast<Menu *>(_iter)->position.yTrg,
+                astraConfig.listAnimationSpeed);
+
+      //渲染控件 所有控件都在此处进行渲染 current指针永远不会指向widget
+      if (static_cast<Menu *>(_iter)->childType == CHECKBOX) {
+        static_cast<CheckBox *>(static_cast<Menu *>(_iter)->getNext())->render(
+            systemConfig.screenWeight - astraConfig.checkBoxWidth - astraConfig.checkBoxRightMargin,
+            static_cast<Menu *>(_iter)->position.y + astraConfig.checkBoxTopMargin,
+            _camera);
+      }
+
+      //todo 下面这两种控件 要考虑过渡动画 现在这样写的话没有过渡动画 控件关闭之后直接就消失了
+      if (static_cast<Menu *>(_iter)->childType == POPUP) {
+        //todo 弹窗列表绘制
+
+        //如果弹窗是打开的
+        if (static_cast<PopUp *>(static_cast<Menu *>(_iter)->getNext())->isOpen) {
+          static_cast<PopUp *>(static_cast<Menu *>(_iter)->getNext())->render();
+        }
+      }
+      if (static_cast<Menu *>(_iter)->childType == SLIDER) {
+        //todo 滑动条列表绘制
+
+        //如果滑动条是打开的
+        if (static_cast<Slider *>(static_cast<Menu *>(_iter)->getNext())->isOpen) {
+          static_cast<Slider *>(static_cast<Menu *>(_iter)->getNext())->render();
+        }
+      }
+
     }
 
     //draw bar.
-    positionForeground.hBarTrg = (selectIndex + 1) * ((float)systemConfig.screenHeight / getItemNum());
+    positionForeground.hBarTrg = (selectIndex + 1) * ((float) systemConfig.screenHeight / getItemNum());
     //画指示线
     HAL::drawHLine(systemConfig.screenWeight - astraConfig.listBarWeight, 0, astraConfig.listBarWeight);
-    HAL::drawHLine(systemConfig.screenWeight - astraConfig.listBarWeight, systemConfig.screenHeight - 1, astraConfig.listBarWeight);
-    HAL::drawVLine(systemConfig.screenWeight - ceil((float) astraConfig.listBarWeight / 2.0f), 0, systemConfig.screenHeight);
+    HAL::drawHLine(systemConfig.screenWeight - astraConfig.listBarWeight,
+                   systemConfig.screenHeight - 1,
+                   astraConfig.listBarWeight);
+    HAL::drawVLine(systemConfig.screenWeight - ceil((float) astraConfig.listBarWeight / 2.0f),
+                   0,
+                   systemConfig.screenHeight);
     //draw bar.
     HAL::drawBox(positionForeground.xBar, 0, astraConfig.listBarWeight, positionForeground.hBar);
 
@@ -189,10 +239,14 @@ unsigned char Menu::getItemNum() const {
 }
 
 Menu::Position Menu::getItemPosition(unsigned char _index) const {
-  return static_cast<Menu*>(child[_index])->position;
+  return static_cast<Menu *>(child[_index])->position;
 }
 
-Menu *Menu::getNext() const {
+void *Menu::getNext() const {
+  return child[selectIndex];
+}
+
+Menu *Menu::getNextMenu() const {
   return static_cast<Menu*>(child[selectIndex]);
 }
 
@@ -216,7 +270,8 @@ bool Menu::addItem(Menu *_page) {
         positionForeground.xBarTrg = systemConfig.screenWeight - astraConfig.listBarWeight;
       }
       if (this->childType == TILE) {
-        _page->position.xTrg = systemConfig.screenWeight / 2 - astraConfig.tilePicWidth / 2 + (this->getItemNum() - 1) * (astraConfig.tilePicMargin + astraConfig.tilePicWidth);
+        _page->position.xTrg = systemConfig.screenWeight / 2 - astraConfig.tilePicWidth / 2 +
+                               (this->getItemNum() - 1) * (astraConfig.tilePicMargin + astraConfig.tilePicWidth);
         _page->position.yTrg = astraConfig.tilePicTopMargin;
 
         positionForeground.yBarTrg = 0;
@@ -228,49 +283,68 @@ bool Menu::addItem(Menu *_page) {
   }
 }
 
-bool Menu::addItem(CheckBox *_checkBox) {
+bool Menu::addItem(Menu *_page, CheckBox *_checkBox) {
   //todo
+  this->addItem(_page);
+  if (_checkBox == nullptr || _page == nullptr) return false;
   if (this->childType != LIST) return false; //only support list type.
-  if (_checkBox == nullptr) return false;
+
+  //链接checkBox与page
+  //封锁 不能有其他的子元素
+  //设置类型为widget
+  _page->childType = CHECKBOX;
+  _checkBox->parent = _page;
+  _page->child.push_back(_checkBox);
+  return true;
+}
+
+bool Menu::addItem(Menu *_page, PopUp *_popUp) {
+  //todo
+  if (_page->childType != LIST) return false; //only support list type.
+  if (_popUp == nullptr || _page == nullptr) return false;
   else {
-    if (this->child.empty()) {
+    if (_page->child.empty()) {
+      //链接page与this
+      this->childType = LIST;
+      _page->parent = this;
+      this->child.push_back(_page);
+      _page->position.xTrg = astraConfig.listTextMargin;
+      _page->position.yTrg = (getItemNum() - 1) * astraConfig.listLineHeight;
+
+      positionForeground.xBarTrg = systemConfig.screenWeight - astraConfig.listBarWeight;
+
+      //链接popUp与page
       //封锁 不能有其他的子元素
       //设置类型为widget
-      this->childType = CHECKBOX;
-      _checkBox->parent = this;
-      this->child.push_back(_checkBox);
+      _page->childType = POPUP;
+      _popUp->parent = _page;
+      _page->child.push_back(_popUp);
     } else return false;
   }
   return false;
 }
 
-bool Menu::addItem(PopUp *_popUp) {
+bool Menu::addItem(Menu *_page, Slider *_slider) {
   //todo
-  if (this->childType != LIST) return false; //only support list type.
-  if (_popUp == nullptr) return false;
+  if (_page->childType != LIST) return false; //only support list type.
+  if (_slider == nullptr || _page == nullptr) return false;
   else {
-    if (this->child.empty()) {
-      //封锁 不能有其他的子元素
-      //设置类型为widget
-      this->childType = POPUP;
-      _popUp->parent = this;
-      this->child.push_back(_popUp);
-    } else return false;
-  }
-  return false;
-}
+    if (_page->child.empty()) {
+      //链接page与this
+      this->childType = LIST;
+      _page->parent = this;
+      this->child.push_back(_page);
+      _page->position.xTrg = astraConfig.listTextMargin;
+      _page->position.yTrg = (getItemNum() - 1) * astraConfig.listLineHeight;
 
-bool Menu::addItem(Slider *_slider) {
-  //todo
-  if (this->childType != LIST) return false; //only support list type.
-  if (_slider == nullptr) return false;
-  else {
-    if (this->child.empty()) {
+      positionForeground.xBarTrg = systemConfig.screenWeight - astraConfig.listBarWeight;
+
+      //链接slider与page
       //封锁 不能有其他的子元素
       //设置类型为widget
-      this->childType = SLIDER;
-      _slider->parent = this;
-      this->child.push_back(_slider);
+      _page->childType = SLIDER;
+      _slider->parent = _page;
+      _page->child.push_back(_slider);
     } else return false;
   }
   return false;
