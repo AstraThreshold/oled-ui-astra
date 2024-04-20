@@ -175,7 +175,9 @@ void Menu::render(std::vector<float> _camera) {
       //绘制控件在列表中的指示器
       if (_iter->childType == WIDGET) {
         for (auto _widget : _iter->childWidget) {
-          _widget->renderIndicator(_iter->position.x, _iter->position.y, _camera);
+          _widget->renderIndicator(systemConfig.screenWeight - astraConfig.checkBoxRightMargin - astraConfig.checkBoxWidth,
+                                   _iter->position.y + astraConfig.checkBoxTopMargin,
+                                   _camera);
         }
       }
       //绘制文字
