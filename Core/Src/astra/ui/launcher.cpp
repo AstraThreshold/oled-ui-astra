@@ -25,9 +25,9 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
 
     HAL::canvasClear();
     /*渲染一帧*/
-    currentItem->render(camera->getPosition());
+    currentMenu->render(camera->getPosition());
     selector->render(camera->getPosition());
-    camera->update(currentItem, selector);
+    camera->update(currentMenu, selector);
     /*渲染一帧*/
 
     HAL::setDrawType(0);
@@ -46,7 +46,7 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
 }
 
 void Launcher::init(Menu *_rootPage) {
-  currentItem = _rootPage;
+  currentMenu = _rootPage;
 
   camera = new Camera(0, 0);
   _rootPage->init(camera->getPosition());
@@ -60,6 +60,13 @@ void Launcher::init(Menu *_rootPage) {
   //open();
 }
 
+//todo 从第一性原理出发 控件应该是外挂在menu节点上的
+//todo 控件的渲染应该是在launcher中进行的
+//todo 设立一个指针 指向可能要渲染的控件
+//todo 指针为null时 不渲染控件
+//todo open函数会改变指针指向 当判断打开了控件时 移动指针到需要被渲染的控件
+//todo 至于在列表中显示的控件 照现在这样写即可
+
 /**
  * @brief 打开选中的页面
  *
@@ -69,23 +76,15 @@ void Launcher::init(Menu *_rootPage) {
 bool Launcher::open() {
 
   //如果当前页面指向的当前item没有后继 那就返回false
-  if (currentItem->getNextMenu() == nullptr) { popInfo("unreferenced page!", 600); return false; }
-  if (currentItem->getNextMenu()->getItemNum() == 0) { popInfo("empty page!", 600); return false; }
+  if (currentMenu->getNextMenu() == nullptr) { popInfo("unreferenced page!", 600); return false; }
+  if (currentMenu->getNextMenu()->getItemNum() == 0) { popInfo("empty page!", 600); return false; }
 
-  if (currentItem->getNextMenu()->childType == Menu::POPUP) {
-    static_cast<PopUp *>(currentItem->getNext())->open();
-    return true;
-  }
-  if (currentItem->getNextMenu()->childType == Menu::SLIDER) {
-    static_cast<Slider *>(currentItem->getNext())->open();
-    return true;
-  }
-  currentItem->deInit();  //先析构（退场动画）再挪动指针
+  currentMenu->deInit();  //先析构（退场动画）再挪动指针
 
-  currentItem = currentItem->getNextMenu();
-  currentItem->init(camera->getPosition());
+  currentMenu = currentMenu->getNextMenu();
+  currentMenu->init(camera->getPosition());
 
-  selector->inject(currentItem);
+  selector->inject(currentMenu);
   //selector->go(currentPage->selectIndex);
 
   return true;
@@ -98,24 +97,15 @@ bool Launcher::open() {
  * @warning 仅可调用一次
  */
 bool Launcher::close() {
-  if (currentItem->getPreview() == nullptr) { popInfo("unreferenced page!", 600); return false; }
-  if (currentItem->getPreview()->getItemNum() == 0) { popInfo("empty page!", 600); return false; }
+  if (currentMenu->getPreview() == nullptr) { popInfo("unreferenced page!", 600); return false; }
+  if (currentMenu->getPreview()->getItemNum() == 0) { popInfo("empty page!", 600); return false; }
 
-  if (currentItem->getNextMenu()->childType == Menu::POPUP && static_cast<PopUp *>(currentItem->getNext())->isOpen) {
-    static_cast<PopUp *>(currentItem->getNext())->close();
-    return true;
-  }
-  if (currentItem->getNextMenu()->childType == Menu::SLIDER && static_cast<Slider *>(currentItem->getNext())->isOpen) {
-    static_cast<Slider *>(currentItem->getNext())->close();
-    return true;
-  }
+  currentMenu->deInit();  //先析构（退场动画）再挪动指针
 
-  currentItem->deInit();  //先析构（退场动画）再挪动指针
+  currentMenu = currentMenu->getPreview();
+  currentMenu->init(camera->getPosition());
 
-  currentItem = currentItem->getPreview();
-  currentItem->init(camera->getPosition());
-
-  selector->inject(currentItem);
+  selector->inject(currentMenu);
   //selector->go(currentPage->selectIndex);
 
   return true;
@@ -124,9 +114,10 @@ bool Launcher::close() {
 void Launcher::update() {
   HAL::canvasClear();
 
-  currentItem->render(camera->getPosition());
+  currentMenu->render(camera->getPosition());
+  if (currentWidget != nullptr) currentWidget->render(camera->getPosition());
   selector->render(camera->getPosition());
-  camera->update(currentItem, selector);
+  camera->update(currentMenu, selector);
 
   if (time == 500) selector->go(3);  //test
   if (time == 800) open();  //test

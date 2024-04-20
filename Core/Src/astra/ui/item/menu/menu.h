@@ -47,9 +47,7 @@ public:
   typedef enum PageType {
     TILE = 0,
     LIST,
-    CHECKBOX,
-    POPUP,
-    SLIDER,
+    WIDGET,
   } PageType;
 
   PageType selfType;
@@ -57,7 +55,8 @@ public:
 
 public:
   Menu *parent;
-  std::vector<void *> child; //allow widget and menu.
+  std::vector<Menu *> childMenu; //allow widget and menu.
+  std::vector<Widget *> childWidget;
   unsigned char selectIndex;
 
   explicit Menu(std::string _title);
@@ -72,7 +71,6 @@ public:
 
   [[nodiscard]] Position getItemPosition(unsigned char _index) const;
 
-  [[nodiscard]] void *getNext() const;  //启动器调用该方法来获取下一个页面
   [[nodiscard]] Menu *getNextMenu() const;  //启动器调用该方法来获取下一个页面
   [[nodiscard]] Menu *getPreview() const;
 
@@ -81,9 +79,7 @@ public:
   bool addItem(Menu *_page);
 
   //新建一个带有控件的列表项
-  bool addItem(Menu *_page, CheckBox* _checkBox);
-  bool addItem(Menu *_page, PopUp* _popUp);
-  bool addItem(Menu *_page, Slider* _slider);
+  bool addItem(Menu *_page, Widget* _anyWidget);
 };
 
 }

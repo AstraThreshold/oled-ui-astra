@@ -13,7 +13,8 @@ namespace astra {
 
 class Launcher : public Animation {
 private:
-  Menu* currentItem;
+  Menu* currentMenu;
+  Widget* currentWidget = nullptr;
   Selector* selector;
   Camera* camera;
 

@@ -22,8 +22,8 @@ void Selector::go(unsigned char _index) {
   if (menu->childType == Menu::TILE) {
 //    xTrg = menu->child[_index]->position.xTrg - (astraConfig.tileSelectBoxWeight - astraConfig.tilePicWidth) / 2;
 //    yTrg = menu->child[_index]->position.yTrg - (astraConfig.tileSelectBoxHeight - astraConfig.tilePicHeight) / 2;
-    xTrg = static_cast<Menu *>(menu->child[_index])->position.xTrg - astraConfig.tileSelectBoxMargin;
-    yTrg = static_cast<Menu *>(menu->child[_index])->position.yTrg - astraConfig.tileSelectBoxMargin;
+    xTrg = menu->childMenu[_index]->position.xTrg - astraConfig.tileSelectBoxMargin;
+    yTrg = menu->childMenu[_index]->position.yTrg - astraConfig.tileSelectBoxMargin;
 
     yText = systemConfig.screenHeight; //给磁贴文字归零 从屏幕外滑入
     yTextTrg = systemConfig.screenHeight - astraConfig.tileTextBottomMargin;
@@ -31,10 +31,10 @@ void Selector::go(unsigned char _index) {
     wTrg = astraConfig.tileSelectBoxWidth;
     hTrg = astraConfig.tileSelectBoxHeight;
   } else if (menu->childType == Menu::LIST) {
-    xTrg = static_cast<Menu *>(menu->child[_index])->position.xTrg - astraConfig.selectorMargin;
-    yTrg = static_cast<Menu *>(menu->child[_index])->position.yTrg;
+    xTrg = menu->childMenu[_index]->position.xTrg - astraConfig.selectorMargin;
+    yTrg = menu->childMenu[_index]->position.yTrg;
 
-    wTrg = (float) HAL::getFontWidth(static_cast<Menu *>(menu->child[_index])->title) + astraConfig.listTextMargin * 2;
+    wTrg = (float) HAL::getFontWidth(menu->childMenu[_index]->title) + astraConfig.listTextMargin * 2;
     hTrg = astraConfig.listLineHeight;
   }
 }
@@ -73,9 +73,9 @@ void Selector::render(std::vector<float> _camera) {
     //文字不受摄像机的影响
     HAL::setDrawType(1);
     HAL::drawChinese((systemConfig.screenWeight -
-                      (float) HAL::getFontWidth(static_cast<Menu *>(menu->child[menu->selectIndex])->title)) / 2.0,
+                      (float) HAL::getFontWidth(menu->childMenu[menu->selectIndex]->title)) / 2.0,
                      yText + astraConfig.tileTitleHeight,
-                     static_cast<Menu *>(menu->child[menu->selectIndex])->title);
+                     menu->childMenu[menu->selectIndex]->title);
 
     //draw box.
     //大框需要受摄像机的影响
