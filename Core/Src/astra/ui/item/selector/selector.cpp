@@ -61,13 +61,13 @@ void Selector::render(std::vector<float> _camera) {
   Item::updateConfig();
 
   //实际上 这里已经实现过渡动画了
-  animation(&x, xTrg, astraConfig.selectorXAnimationSpeed);
-  animation(&y, yTrg, astraConfig.selectorYAnimationSpeed);
-  animation(&h, hTrg, astraConfig.selectorHeightAnimationSpeed);
-  animation(&w, wTrg, astraConfig.selectorWidthAnimationSpeed);
+  Animation::move(&x, xTrg, astraConfig.selectorXAnimationSpeed);
+  Animation::move(&y, yTrg, astraConfig.selectorYAnimationSpeed);
+  Animation::move(&h, hTrg, astraConfig.selectorHeightAnimationSpeed);
+  Animation::move(&w, wTrg, astraConfig.selectorWidthAnimationSpeed);
 
   if (menu->childType == Menu::TILE) {
-    animation(&yText, yTextTrg, astraConfig.selectorYAnimationSpeed);
+    Animation::move(&yText, yTextTrg, astraConfig.selectorYAnimationSpeed);
 
     //draw text.
     //文字不受摄像机的影响

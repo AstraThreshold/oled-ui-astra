@@ -8,7 +8,7 @@
 #include "../menu/menu.h"
 
 namespace astra {
-class Selector : public Item, public Animation {
+class Selector : public Item {
 private:
   Menu *menu;
 

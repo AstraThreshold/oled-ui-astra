@@ -51,8 +51,8 @@ std::vector<float> Camera::getPosition() {
  */
 void Camera::go(float _x, float _y) {
   moving = true;
-  animation(&this->x, (0 - _x), astraConfig.cameraAnimationSpeed);
-  animation(&this->y, (0 - _y), astraConfig.cameraAnimationSpeed);
+  Animation::move(&this->x, (0 - _x), astraConfig.cameraAnimationSpeed);
+  Animation::move(&this->y, (0 - _y), astraConfig.cameraAnimationSpeed);
   if (this->x == 0 - _x && this->y == 0 - _y) moving = false;
 }
 
@@ -63,25 +63,25 @@ void Camera::goDirect(float _x, float _y) {
 
 void Camera::goHorizontal(float _x) {
   moving = true;
-  animation(&this->x, 0 - _x, astraConfig.cameraAnimationSpeed);
+  Animation::move(&this->x, 0 - _x, astraConfig.cameraAnimationSpeed);
   if (this->x == 0 - _x) moving = false;
 }
 
 void Camera::goVertical(float _y) {
   moving = true;
-  animation(&this->y, 0 - _y, astraConfig.cameraAnimationSpeed);
+  Animation::move(&this->y, 0 - _y, astraConfig.cameraAnimationSpeed);
   if (this->y == 0 - _y) moving = false;
 }
 
 void Camera::goToNextPageItem() {
   moving = true;
-  animation(&y, y - systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
+  Animation::move(&y, y - systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
   if (this->y == y - systemConfig.screenHeight) moving = false;
 }
 
 void Camera::goToPreviewPageItem() {
   moving = true;
-  animation(&y, y + systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
+  Animation::move(&y, y + systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
   if (this->y == y + systemConfig.screenHeight) moving = false;
 }
 
@@ -144,8 +144,8 @@ bool Camera::isMoving() {
 
 void Camera::reset() {
   moving = true;
-  animation(&this->x, xInit, astraConfig.cameraAnimationSpeed);
-  animation(&this->y, yInit, astraConfig.cameraAnimationSpeed);
+  Animation::move(&this->x, xInit, astraConfig.cameraAnimationSpeed);
+  Animation::move(&this->y, yInit, astraConfig.cameraAnimationSpeed);
   if (this->x == xInit && this->y == yInit) moving = false;
 }
 

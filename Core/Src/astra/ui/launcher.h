@@ -11,7 +11,7 @@
 
 namespace astra {
 
-class Launcher : public Animation {
+class Launcher {
 private:
   Menu* currentMenu;
   Widget* currentWidget = nullptr;

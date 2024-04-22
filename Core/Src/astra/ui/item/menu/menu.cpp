@@ -60,7 +60,7 @@ Menu::Menu(std::string _title, std::vector<unsigned char> _pic) {
 }
 
 void Menu::init(std::vector<float> _camera) {
-  entryAnimation();
+  Animation::entry();
 
   if (childType == TILE) {
     //受展开开关影响的坐标初始化
@@ -102,7 +102,7 @@ void Menu::init(std::vector<float> _camera) {
 
 void Menu::deInit() {
   //todo 未实现完全
-  exitAnimation();
+  Animation::exit();
 }
 
 void Menu::render(std::vector<float> _camera) {
@@ -119,9 +119,9 @@ void Menu::render(std::vector<float> _camera) {
                    astraConfig.tilePicHeight,
                    _iter->pic.data());
       //这里的xTrg在addItem的时候就已经确定了
-      animation(&_iter->position.x,
-                _iter->position.xTrg,
-                astraConfig.tileAnimationSpeed);
+      Animation::move(&_iter->position.x,
+           _iter->position.xTrg,
+           astraConfig.tileAnimationSpeed);
     }
 
     //draw bar.
@@ -159,11 +159,11 @@ void Menu::render(std::vector<float> _camera) {
     //draw dotted line.
     HAL::drawHDottedLine(0, positionForeground.yDottedLine, systemConfig.screenWeight);
 
-    animation(&positionForeground.yDottedLine, positionForeground.yDottedLineTrg, astraConfig.tileAnimationSpeed);
-    animation(&positionForeground.yArrow, positionForeground.yArrowTrg, astraConfig.tileAnimationSpeed);
+    Animation::move(&positionForeground.yDottedLine, positionForeground.yDottedLineTrg, astraConfig.tileAnimationSpeed);
+    Animation::move(&positionForeground.yArrow, positionForeground.yArrowTrg, astraConfig.tileAnimationSpeed);
 
-    animation(&positionForeground.wBar, positionForeground.wBarTrg, astraConfig.tileAnimationSpeed);
-    animation(&positionForeground.yBar, positionForeground.yBarTrg, astraConfig.tileAnimationSpeed);
+    Animation::move(&positionForeground.wBar, positionForeground.wBarTrg, astraConfig.tileAnimationSpeed);
+    Animation::move(&positionForeground.yBar, positionForeground.yBarTrg, astraConfig.tileAnimationSpeed);
   } else if (childType == LIST) {
     Item::updateConfig();
 
@@ -186,9 +186,9 @@ void Menu::render(std::vector<float> _camera) {
                        astraConfig.listTextMargin + _camera[1],
                        _iter->title);
       //这里的yTrg在addItem的时候就已经确定了
-      animation(&_iter->position.y,
-                _iter->position.yTrg,
-                astraConfig.listAnimationSpeed);
+      Animation::move(&_iter->position.y,
+           _iter->position.yTrg,
+           astraConfig.listAnimationSpeed);
     }
 
     //draw bar.
@@ -211,8 +211,8 @@ void Menu::render(std::vector<float> _camera) {
       HAL::setDrawType(1);
     }
 
-    animation(&positionForeground.hBar, positionForeground.hBarTrg, astraConfig.listAnimationSpeed);
-    animation(&positionForeground.xBar, positionForeground.xBarTrg, astraConfig.listAnimationSpeed);
+    Animation::move(&positionForeground.hBar, positionForeground.hBarTrg, astraConfig.listAnimationSpeed);
+    Animation::move(&positionForeground.xBar, positionForeground.xBarTrg, astraConfig.listAnimationSpeed);
   }
 }
 

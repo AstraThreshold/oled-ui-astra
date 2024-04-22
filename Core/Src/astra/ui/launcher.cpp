@@ -38,7 +38,7 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
 
     HAL::canvasUpdate();
 
-    animation(&yPop, yPopTrg, getUIConfig().popSpeed);  //动画
+    Animation::move(&yPop, yPopTrg, getUIConfig().popSpeed);  //动画
 
     //todo 这里条件可以加上一个如果按键按下 就退出
     if (time - beginTime >= _time && yPop == 0 - hPop - 8) onRender = false;  //退出条件

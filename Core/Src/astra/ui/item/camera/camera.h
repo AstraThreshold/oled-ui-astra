@@ -16,7 +16,7 @@ namespace astra {
 
 //磁贴类中 前景是虚线 标题 箭头和按钮图标 摄像机横向移动
 //列表类中 前景是进度条 摄像机纵向移动
-class Camera : public Item, public Animation {
+class Camera : public Item {
 private:
   float xInit, yInit;
 

@@ -14,7 +14,7 @@
 
 namespace astra {
 
-class Menu : public Item, public Animation {
+class Menu : public Item {
 public:
   //存储其在父页面中的位置
   //list中就是每一项对应的坐标 tile中就是每一个图片的坐标

@@ -24,16 +24,16 @@ protected:
 
 class Animation {
 public:
-  virtual void entryAnimation();
-  virtual void exitAnimation();
-  virtual void blur();
-  virtual void animation(float *_pos, float _posTrg, float _speed);
+  static void entry();
+  static void exit();
+  static void blur();
+  static void move(float *_pos, float _posTrg, float _speed);
 };
 
-inline void Animation::entryAnimation() { }
+inline void Animation::entry() { }
 
 //todo 未实现功能
-inline void Animation::exitAnimation() {
+inline void Animation::exit() {
   static unsigned char fadeFlag = 1;
   static unsigned char bufferLen = 8 * HAL::getBufferTileHeight() * HAL::getBufferTileWidth();
   auto *bufferPointer = (unsigned char *) HAL::getCanvasBuffer();
@@ -87,7 +87,7 @@ inline void Animation::blur() {
   for (uint16_t i = 0; i < bufferLen; ++i) bufferPointer[i] = bufferPointer[i] & (i % 2 == 0 ? 0x55 : 0xAA);
 }
 
-inline void Animation::animation(float *_pos, float _posTrg, float _speed) {
+inline void Animation::move(float *_pos, float _posTrg, float _speed) {
   if (*_pos != _posTrg) {
     if (std::fabs(*_pos - _posTrg) < 0.15f) *_pos = _posTrg;
     else *_pos += (_posTrg - *_pos) / ((100 - _speed) / 1.0f);
