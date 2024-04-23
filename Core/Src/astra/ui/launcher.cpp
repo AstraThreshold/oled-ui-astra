@@ -49,7 +49,7 @@ void Launcher::init(Menu *_rootPage) {
   currentMenu = _rootPage;
 
   camera = new Camera(0, 0);
-  _rootPage->init(camera->getPosition());
+  _rootPage->childPosInit(camera->getPosition());
 
   selector = new Selector();
   selector->inject(_rootPage);
@@ -82,7 +82,7 @@ bool Launcher::open() {
   currentMenu->deInit();  //先析构（退场动画）再挪动指针
 
   currentMenu = currentMenu->getNextMenu();
-  currentMenu->init(camera->getPosition());
+  currentMenu->childPosInit(camera->getPosition());
 
   selector->inject(currentMenu);
   //selector->go(currentPage->selectIndex);
@@ -103,7 +103,7 @@ bool Launcher::close() {
   currentMenu->deInit();  //先析构（退场动画）再挪动指针
 
   currentMenu = currentMenu->getPreview();
-  currentMenu->init(camera->getPosition());
+  currentMenu->childPosInit(camera->getPosition());
 
   selector->inject(currentMenu);
   //selector->go(currentPage->selectIndex);

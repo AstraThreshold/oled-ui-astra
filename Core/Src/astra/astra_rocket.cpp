@@ -7,7 +7,7 @@
 #include "astra_logo.h"
 
 astra::Launcher* astraLauncher = new astra::Launcher();
-astra::Menu* rootPage = new astra::Menu("root");
+astra::Menu* rootPage = new astra::Tile("root");
 
 bool test = true;
 
@@ -56,7 +56,7 @@ std::vector<unsigned char> pic_3 = {
 };
 
 //astra::Menu* secondPage = new astra::Menu("secondPage");
-astra::Menu* secondPage = new astra::Menu("secondPage", pic_3);
+astra::Menu* secondPage = new astra::List("secondPage", pic_3);
 
 void astraCoreInit(void) {
   HAL::inject(new HALDreamCore);
@@ -73,9 +73,9 @@ void astraCoreInit(void) {
   HAL::delay(350);
   astra::drawLogo(1000);
 
-  rootPage->addItem(new astra::Menu("test1", pic_0));
-  rootPage->addItem(new astra::Menu("测试2", pic_1));
-  rootPage->addItem(new astra::Menu("测试测试3", pic_2));
+  rootPage->addItem(new astra::List("test1", pic_0));
+  rootPage->addItem(new astra::List("测试2", pic_1));
+  rootPage->addItem(new astra::List("测试测试3", pic_2));
   rootPage->addItem(secondPage);
 
 //  rootPage->addItem(new astra::Menu("test1"));
@@ -85,12 +85,12 @@ void astraCoreInit(void) {
 //  rootPage->addItem(new astra::Menu("测试测试测试5"));
 //  rootPage->addItem(secondPage);
 
-  secondPage->addItem(new astra::Menu("-测试1"));
-  secondPage->addItem(new astra::Menu("-测试2"), new astra::CheckBox(test));
-  secondPage->addItem(new astra::Menu("-测试测试3"));
-  secondPage->addItem(new astra::Menu("-测试测试测试4"));
-  secondPage->addItem(new astra::Menu("-测试测试测试5"));
-  secondPage->addItem(new astra::Menu("-测试测试测试6"));
+  secondPage->addItem(new astra::List("-测试1"));
+  secondPage->addItem(new astra::List("-测试2"), new astra::CheckBox(test));
+  secondPage->addItem(new astra::List("-测试测试3"));
+  secondPage->addItem(new astra::List("-测试测试测试4"));
+  secondPage->addItem(new astra::List("-测试测试测试5"));
+  secondPage->addItem(new astra::List("-测试测试测试6"));
 
 
   astraLauncher->init(rootPage);

@@ -19,7 +19,7 @@ void Selector::go(unsigned char _index) {
   menu->selectIndex = _index;
 
   //在go的时候改变trg的值
-  if (menu->childType == Menu::TILE) {
+  if (menu->getType() == "Tile") {
 //    xTrg = menu->child[_index]->position.xTrg - (astraConfig.tileSelectBoxWeight - astraConfig.tilePicWidth) / 2;
 //    yTrg = menu->child[_index]->position.yTrg - (astraConfig.tileSelectBoxHeight - astraConfig.tilePicHeight) / 2;
     xTrg = menu->childMenu[_index]->position.xTrg - astraConfig.tileSelectBoxMargin;
@@ -30,7 +30,7 @@ void Selector::go(unsigned char _index) {
 
     wTrg = astraConfig.tileSelectBoxWidth;
     hTrg = astraConfig.tileSelectBoxHeight;
-  } else if (menu->childType == Menu::LIST) {
+  } else if (menu->getType() == "List") {
     xTrg = menu->childMenu[_index]->position.xTrg - astraConfig.selectorMargin;
     yTrg = menu->childMenu[_index]->position.yTrg;
 
@@ -66,7 +66,7 @@ void Selector::render(std::vector<float> _camera) {
   Animation::move(&h, hTrg, astraConfig.selectorHeightAnimationSpeed);
   Animation::move(&w, wTrg, astraConfig.selectorWidthAnimationSpeed);
 
-  if (menu->childType == Menu::TILE) {
+  if (menu->getType() == "Tile") {
     Animation::move(&yText, yTextTrg, astraConfig.selectorYAnimationSpeed);
 
     //draw text.
@@ -103,7 +103,7 @@ void Selector::render(std::vector<float> _camera) {
                    astraConfig.tileSelectBoxLineLength);
 
     HAL::drawPixel(x + _camera[0] + w - 1, y + _camera[1] + h - 1);
-  } else if (menu->childType == Menu::LIST) {
+  } else if (menu->getType() == "List") {
     //animation(&h, hTrg, astraConfig.selectorAnimationSpeed);
 
     //draw select box.

@@ -151,10 +151,10 @@ void Camera::reset() {
 
 void Camera::update(Menu *_menu, Selector *_selector) {
   //todo 不完善
-  if (_menu->childType == Menu::LIST) {
+  if (_menu->getType() == "List") {
     if (astraConfig.listPageTurningMode == 0) goToListItemPage(_menu->selectIndex);
     else if (astraConfig.listPageTurningMode == 1) goToListItemRolling(_selector->getPosition());
   }
-  else if (_menu->childType == Menu::TILE) goToTileItem(_menu->selectIndex);
+  else if (_menu->getType() == "Tile") goToTileItem(_menu->selectIndex);
 }
 }
