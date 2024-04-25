@@ -36,6 +36,10 @@ public:
   std::string title;
   std::vector<unsigned char> pic;
 
+protected:
+  std::vector<unsigned char> picDefault = {};
+  [[nodiscard]] std::vector<unsigned char> generateDefaultPic();
+
 public:
   Menu *parent;
   std::vector<Menu *> childMenu; //allow widget and menu.
@@ -50,7 +54,7 @@ public:
   Menu() = default;
 
 public:
-  void init(std::vector<float> _camera); //每次打开页面都要调用一次
+  void init(const std::vector<float>& _camera); //每次打开页面都要调用一次
   void deInit(); //每次关闭页面都要调用一次
 
 public:

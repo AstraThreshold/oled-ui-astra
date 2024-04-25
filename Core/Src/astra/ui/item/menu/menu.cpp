@@ -26,70 +26,24 @@
  */
 
 namespace astra {
-//void Menu::init(std::vector<float> _camera) {
-//  Animation::entry();
-//
-//  if (childType == TILE) {
-//    //受展开开关影响的坐标初始化
-//    if (astraConfig.tileUnfold) {
-//      for (auto _iter : childMenu)
-//        _iter->position.x = _camera[0] - astraConfig.tilePicWidth; //unfold from left.
-//      positionForeground.wBar = 0;  //bar unfold from left.
-//
-//    } else {
-//      for (auto _iter : childMenu) _iter->position.x = _iter->position.xTrg;
-//      positionForeground.wBar = positionForeground.wBarTrg;
-//    }
-//
-//    //position.y = -astraConfig.tilePicHeight * 2;
-//
-//    //始终执行的坐标初始化
-//    //底部箭头和虚线的初始化
-//    positionForeground.yArrow = systemConfig.screenHeight;
-//    positionForeground.yDottedLine = systemConfig.screenHeight;
-//
-//    //顶部进度条的从上方滑入的初始化
-//    positionForeground.yBar = 0 - astraConfig.tileBarHeight; //注意这里是坐标从屏幕外滑入 而不是height从0变大
-//
-//  } else if (childType == LIST) {
-//    //受展开开关影响的坐标初始化
-//    if (astraConfig.listUnfold) {
-//      for (auto _iter : childMenu)
-//        _iter->position.y = _camera[1] - astraConfig.listLineHeight; //text unfold from top.
-//      positionForeground.hBar = 0;  //bar unfold from top.
-//    } else {
-//      for (auto _iter : childMenu) _iter->position.y = _iter->position.yTrg;
-//      positionForeground.hBar = positionForeground.hBarTrg;
-//    }
-//
-//    //始终执行的坐标初始化
-//    positionForeground.xBar = systemConfig.screenWeight;
-//  }
-//}
+Menu::Position Menu::getItemPosition(unsigned char _index) const { return childMenu[_index]->position; }
 
-void Menu::init(std::vector<float> _camera) {
-
+std::vector<unsigned char> Menu::generateDefaultPic() {
+  this->picDefault.resize(120, 0xFF);
+  return this->picDefault;
 }
+
+unsigned char Menu::getItemNum() const { return childMenu.size(); }
+
+Menu *Menu::getNextMenu() const { return childMenu[selectIndex]; }
+
+Menu *Menu::getPreview() const { return parent; }
+
+void Menu::init(const std::vector<float>& _camera) { }
 
 void Menu::deInit() {
   //todo 未实现完全
   Animation::exit();
-}
-
-unsigned char Menu::getItemNum() const {
-  return childMenu.size();
-}
-
-Menu::Position Menu::getItemPosition(unsigned char _index) const {
-  childMenu[_index]->position;
-}
-
-Menu *Menu::getNextMenu() const {
-  return childMenu[selectIndex];
-}
-
-Menu *Menu::getPreview() const {
-  return parent;
 }
 
 bool Menu::addItem(Menu *_page) {
@@ -140,8 +94,8 @@ void List::forePosInit() {
 }
 
 List::List() {
-  this->title = "unknown";
-  this->pic = {1};
+  this->title = "-unknown";
+  this->pic = generateDefaultPic();
 
   this->selectIndex = 0;
 
@@ -155,7 +109,7 @@ List::List() {
 
 List::List(const std::string &_title) {
   this->title = _title;
-  this->pic = {1};
+  this->pic = generateDefaultPic();
 
   this->selectIndex = 0;
 
@@ -168,7 +122,7 @@ List::List(const std::string &_title) {
 }
 
 List::List(const std::vector<unsigned char> &_pic) {
-  this->title = "unknown";
+  this->title = "-unknown";
   this->pic = _pic;
 
   this->selectIndex = 0;
@@ -280,8 +234,8 @@ void Tile::forePosInit() {
 }
 
 Tile::Tile() {
-  this->title = "unknown";
-  this->pic = {1};
+  this->title = "-unknown";
+  this->pic = generateDefaultPic();
 
   this->selectIndex = 0;
 
@@ -295,7 +249,7 @@ Tile::Tile() {
 
 Tile::Tile(const std::string &_title) {
   this->title = _title;
-  this->pic = {1};
+  this->pic = generateDefaultPic();
 
   this->selectIndex = 0;
 
@@ -308,7 +262,7 @@ Tile::Tile(const std::string &_title) {
 }
 
 Tile::Tile(const std::vector<unsigned char> &_pic) {
-  this->title = "unknown";
+  this->title = "-unknown";
   this->pic = _pic;
 
   this->selectIndex = 0;
