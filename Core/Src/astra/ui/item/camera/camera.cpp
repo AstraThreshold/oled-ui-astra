@@ -134,6 +134,7 @@ void Camera::goToListItemRolling(std::vector<float> _posSelector) {
 
 void Camera::goToTileItem(unsigned char _index) {
   moving = true;
+  //todo 可能是这里出了问题
   go(_index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin), 0);
   if (this->x == 0 - _index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin)) moving = false;
 }

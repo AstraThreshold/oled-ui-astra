@@ -29,8 +29,7 @@ public:
   Position position{};
 
 public:
-  virtual void selfPosInit() {}
-  virtual void childPosInit(const std::vector<float> &_camera) {} //todo 问题可能在这
+  virtual void childPosInit(const std::vector<float> &_camera) {}
   virtual void forePosInit() {}
 
 public:
@@ -96,7 +95,6 @@ public:
   PositionForeground positionForeground{};
 
 public:
-  void selfPosInit() override;
   void childPosInit(const std::vector<float> &_camera) override;
   void forePosInit() override;
 
@@ -125,7 +123,6 @@ public:
   PositionForeground positionForeground{};
 
 public:
-  void selfPosInit() override;
   void childPosInit(const std::vector<float> &_camera) override;
   void forePosInit() override;
 

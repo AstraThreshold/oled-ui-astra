@@ -98,7 +98,6 @@ bool Menu::addItem(Menu *_page) {
   else {
     _page->parent = this;
     this->childMenu.push_back(_page);
-    _page->selfPosInit(); //todo 这里的ytrg没有被正确赋值 初步推断是getItemNum出问题
     this->forePosInit();
     return true;
   }
@@ -114,26 +113,19 @@ bool Menu::addItem(Menu *_page, Widget *_anyWidget) {
   } else return false;
 }
 
-void List::selfPosInit() {
-  this->position.x = astraConfig.listTextMargin;
-  this->position.y = 0;
-  this->position.xTrg = astraConfig.listTextMargin;
-  this->position.yTrg = (this->parent->getItemNum() - 1) * astraConfig.listLineHeight;
-}
-
 void List::childPosInit(const std::vector<float> &_camera) {
-  //受展开开关影响的坐标初始化
-  if (astraConfig.listUnfold) {
-    for (auto _iter : childMenu)
-      _iter->position.y = _camera[1] - astraConfig.listLineHeight; //text unfold from top.
-//    positionForeground.hBar = 0;  //bar unfold from top.
-  } else {
-    for (auto _iter : childMenu) _iter->position.y = _iter->position.yTrg;
-//    positionForeground.hBar = positionForeground.hBarTrg;
-  }
+  unsigned char _index = 0;
 
-  //始终执行的坐标初始化
-//  positionForeground.xBar = systemConfig.screenWeight;
+  for (auto _iter : childMenu) {
+    _iter->position.x = astraConfig.listTextMargin;
+    _iter->position.xTrg = astraConfig.listTextMargin;
+    _iter->position.yTrg = _index * astraConfig.listLineHeight;
+
+    //受展开开关影响的坐标初始化
+    if (astraConfig.listUnfold) _iter->position.y = _camera[1] - astraConfig.listLineHeight; //text unfold from top.
+    else _iter->position.y = _iter->position.yTrg;
+    _index++;
+  }
 }
 
 void List::forePosInit() {
@@ -175,7 +167,7 @@ List::List(const std::string &_title) {
   this->positionForeground = {};
 }
 
-List::List(const std::vector<unsigned char>& _pic) {
+List::List(const std::vector<unsigned char> &_pic) {
   this->title = "unknown";
   this->pic = _pic;
 
@@ -189,7 +181,7 @@ List::List(const std::vector<unsigned char>& _pic) {
   this->positionForeground = {};
 }
 
-List::List(const std::string &_title, const std::vector<unsigned char>& _pic) {
+List::List(const std::string &_title, const std::vector<unsigned char> &_pic) {
   this->title = _title;
   this->pic = _pic;
 
@@ -213,9 +205,10 @@ void List::render(const std::vector<float> &_camera) {
     //绘制控件在列表中的指示器
     if (!_iter->childWidget.empty()) {
       for (auto _widget : _iter->childWidget) {
-        _widget->renderIndicator(systemConfig.screenWeight - astraConfig.checkBoxRightMargin - astraConfig.checkBoxWidth,
-                                 _iter->position.y + astraConfig.checkBoxTopMargin,
-                                 _camera);
+        _widget->renderIndicator(
+            systemConfig.screenWeight - astraConfig.checkBoxRightMargin - astraConfig.checkBoxWidth,
+            _iter->position.y + astraConfig.checkBoxTopMargin,
+            _camera);
       }
     }
     //绘制文字
@@ -251,34 +244,20 @@ void List::render(const std::vector<float> &_camera) {
   Animation::move(&positionForeground.xBar, positionForeground.xBarTrg, astraConfig.listAnimationSpeed);
 }
 
-void Tile::selfPosInit() {
-  this->position.x = astraConfig.listTextMargin;
-  this->position.y = 0;
-  this->position.xTrg = systemConfig.screenWeight / 2 - astraConfig.tilePicWidth / 2 +
-                         (this->parent->getItemNum() - 1) * (astraConfig.tilePicMargin + astraConfig.tilePicWidth);
-  this->position.yTrg = astraConfig.tilePicTopMargin;
-}
-
 void Tile::childPosInit(const std::vector<float> &_camera) {
-  if (astraConfig.tileUnfold) {
-    for (auto _iter : childMenu)
-      _iter->position.x = _camera[0] - astraConfig.tilePicWidth; //unfold from left.
-//    positionForeground.wBar = 0;  //bar unfold from left.
+  unsigned char _index = 0;
 
-  } else {
-    for (auto _iter : childMenu) _iter->position.x = _iter->position.xTrg;
-//    positionForeground.wBar = positionForeground.wBarTrg;
+  for (auto _iter : childMenu) {
+    _iter->position.y = 0;
+    _iter->position.xTrg = systemConfig.screenWeight / 2 - astraConfig.tilePicWidth / 2 +
+                           (_index) * (astraConfig.tilePicMargin + astraConfig.tilePicWidth);
+    _iter->position.yTrg = astraConfig.tilePicTopMargin;
+
+    if (astraConfig.tileUnfold) _iter->position.x = _camera[0] - astraConfig.tilePicWidth; //unfold from left.
+    else _iter->position.x = _iter->position.xTrg;
+
+    _index++;
   }
-
-  //position.y = -astraConfig.tilePicHeight * 2;
-
-  //始终执行的坐标初始化
-  //底部箭头和虚线的初始化
-//  positionForeground.yArrow = systemConfig.screenHeight;
-//  positionForeground.yDottedLine = systemConfig.screenHeight;
-
-  //顶部进度条的从上方滑入的初始化
-//  positionForeground.yBar = 0 - astraConfig.tileBarHeight; //注意这里是坐标从屏幕外滑入 而不是height从0变大
 }
 
 void Tile::forePosInit() {
