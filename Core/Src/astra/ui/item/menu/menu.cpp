@@ -67,6 +67,10 @@ namespace astra {
 //  }
 //}
 
+void Menu::init(std::vector<float> _camera) {
+
+}
+
 void Menu::deInit() {
   //todo 未实现完全
   Animation::exit();
@@ -94,7 +98,7 @@ bool Menu::addItem(Menu *_page) {
   else {
     _page->parent = this;
     this->childMenu.push_back(_page);
-    _page->selfPosInit();
+    _page->selfPosInit(); //todo 这里的ytrg没有被正确赋值 初步推断是getItemNum出问题
     this->forePosInit();
     return true;
   }
@@ -114,7 +118,7 @@ void List::selfPosInit() {
   this->position.x = astraConfig.listTextMargin;
   this->position.y = 0;
   this->position.xTrg = astraConfig.listTextMargin;
-  this->position.yTrg = (getItemNum() - 1) * astraConfig.listLineHeight;
+  this->position.yTrg = (this->parent->getItemNum() - 1) * astraConfig.listLineHeight;
 }
 
 void List::childPosInit(const std::vector<float> &_camera) {
@@ -122,18 +126,25 @@ void List::childPosInit(const std::vector<float> &_camera) {
   if (astraConfig.listUnfold) {
     for (auto _iter : childMenu)
       _iter->position.y = _camera[1] - astraConfig.listLineHeight; //text unfold from top.
-    positionForeground.hBar = 0;  //bar unfold from top.
+//    positionForeground.hBar = 0;  //bar unfold from top.
   } else {
     for (auto _iter : childMenu) _iter->position.y = _iter->position.yTrg;
-    positionForeground.hBar = positionForeground.hBarTrg;
+//    positionForeground.hBar = positionForeground.hBarTrg;
   }
 
   //始终执行的坐标初始化
-  positionForeground.xBar = systemConfig.screenWeight;
+//  positionForeground.xBar = systemConfig.screenWeight;
 }
 
 void List::forePosInit() {
   positionForeground.xBarTrg = systemConfig.screenWeight - astraConfig.listBarWeight;
+
+  //受展开开关影响的坐标初始化
+  if (astraConfig.listUnfold) positionForeground.hBar = 0;  //bar unfold from top.
+  else positionForeground.hBar = positionForeground.hBarTrg;
+
+  //始终执行的坐标初始化
+  positionForeground.xBar = systemConfig.screenWeight;
 }
 
 List::List() {
@@ -244,7 +255,7 @@ void Tile::selfPosInit() {
   this->position.x = astraConfig.listTextMargin;
   this->position.y = 0;
   this->position.xTrg = systemConfig.screenWeight / 2 - astraConfig.tilePicWidth / 2 +
-                         (this->getItemNum() - 1) * (astraConfig.tilePicMargin + astraConfig.tilePicWidth);
+                         (this->parent->getItemNum() - 1) * (astraConfig.tilePicMargin + astraConfig.tilePicWidth);
   this->position.yTrg = astraConfig.tilePicTopMargin;
 }
 
@@ -252,12 +263,31 @@ void Tile::childPosInit(const std::vector<float> &_camera) {
   if (astraConfig.tileUnfold) {
     for (auto _iter : childMenu)
       _iter->position.x = _camera[0] - astraConfig.tilePicWidth; //unfold from left.
-    positionForeground.wBar = 0;  //bar unfold from left.
+//    positionForeground.wBar = 0;  //bar unfold from left.
 
   } else {
     for (auto _iter : childMenu) _iter->position.x = _iter->position.xTrg;
-    positionForeground.wBar = positionForeground.wBarTrg;
+//    positionForeground.wBar = positionForeground.wBarTrg;
   }
+
+  //position.y = -astraConfig.tilePicHeight * 2;
+
+  //始终执行的坐标初始化
+  //底部箭头和虚线的初始化
+//  positionForeground.yArrow = systemConfig.screenHeight;
+//  positionForeground.yDottedLine = systemConfig.screenHeight;
+
+  //顶部进度条的从上方滑入的初始化
+//  positionForeground.yBar = 0 - astraConfig.tileBarHeight; //注意这里是坐标从屏幕外滑入 而不是height从0变大
+}
+
+void Tile::forePosInit() {
+  positionForeground.yBarTrg = 0;
+  positionForeground.yArrowTrg = systemConfig.screenHeight - astraConfig.tileArrowBottomMargin;
+  positionForeground.yDottedLineTrg = systemConfig.screenHeight - astraConfig.tileDottedLineBottomMargin;
+
+  if (astraConfig.tileUnfold) positionForeground.wBar = 0;  //bar unfold from left.
+  else positionForeground.wBar = positionForeground.wBarTrg;
 
   //position.y = -astraConfig.tilePicHeight * 2;
 
@@ -268,12 +298,6 @@ void Tile::childPosInit(const std::vector<float> &_camera) {
 
   //顶部进度条的从上方滑入的初始化
   positionForeground.yBar = 0 - astraConfig.tileBarHeight; //注意这里是坐标从屏幕外滑入 而不是height从0变大
-}
-
-void Tile::forePosInit() {
-  positionForeground.yBarTrg = 0;
-  positionForeground.yArrowTrg = systemConfig.screenHeight - astraConfig.tileArrowBottomMargin;
-  positionForeground.yDottedLineTrg = systemConfig.screenHeight - astraConfig.tileDottedLineBottomMargin;
 }
 
 Tile::Tile() {

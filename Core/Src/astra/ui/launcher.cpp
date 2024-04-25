@@ -50,7 +50,6 @@ void Launcher::init(Menu *_rootPage) {
 
   camera = new Camera(0, 0);
   _rootPage->childPosInit(camera->getPosition());
-
   selector = new Selector();
   selector->inject(_rootPage);
   //selector->go(_rootPage->selectIndex);

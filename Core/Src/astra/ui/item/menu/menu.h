@@ -30,7 +30,7 @@ public:
 
 public:
   virtual void selfPosInit() {}
-  virtual void childPosInit(const std::vector<float> &_camera) {}
+  virtual void childPosInit(const std::vector<float> &_camera) {} //todo 问题可能在这
   virtual void forePosInit() {}
 
 public:
