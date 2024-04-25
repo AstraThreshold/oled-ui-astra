@@ -28,7 +28,7 @@ public:
 
   Position position{};
 
-public:
+  [[nodiscard]] Position getItemPosition(unsigned char _index) const;
   virtual void childPosInit(const std::vector<float> &_camera) {}
   virtual void forePosInit() {}
 
@@ -42,28 +42,26 @@ public:
   std::vector<Widget *> childWidget;
   unsigned char selectIndex;
 
-  Menu() = default;
-
-  void init(std::vector<float> _camera); //每次打开页面都要调用一次
-  void deInit(); //每次关闭页面都要调用一次
-
-  //todo 后续再整理一下这些函数声明的位置 分分组
-
-  virtual void render(const std::vector<float> &_camera) {}  //render all child item.
   [[nodiscard]] unsigned char getItemNum() const;
-
-  [[nodiscard]] Position getItemPosition(unsigned char _index) const;
-
   [[nodiscard]] Menu *getNextMenu() const;  //启动器调用该方法来获取下一个页面
   [[nodiscard]] Menu *getPreview() const;
 
-  bool addItem(Menu *_page);
+public:
+  Menu() = default;
 
-  //新建一个带有控件的列表项
-  bool addItem(Menu *_page, Widget* _anyWidget);
+public:
+  void init(std::vector<float> _camera); //每次打开页面都要调用一次
+  void deInit(); //每次关闭页面都要调用一次
+
+public:
+  virtual void render(const std::vector<float> &_camera) {}  //render all child item.
+
+public:
+  bool addItem(Menu *_page);
+  bool addItem(Menu *_page, Widget* _anyWidget); //新建一个带有控件的列表项
 };
 
-//todo 正确的原理
+//正确的原理
 //rootPage = new List();
 //tilePage = new Tile("test2");
 //tilePage1 = new Tile("test4", pic);
@@ -73,7 +71,7 @@ public:
 //rootPage->addItem(tilePage);
 //rootPage->addItem(new List("test3"));
 //rootPage->addItem(tilePage1);
-//todo 以上123都是list的形式 但是打开test2之后是磁贴页
+//以上123都是list的形式 但是打开test2之后是磁贴页
 //这样的话就不需要判断childType了 也不需要在add的时候改变childType了
 //它本身是什么类型的页面 就会强制将所有子页面显示为它本身的类型
 //这就要求所有子页面都需要具有pic和title 哪怕是空的也行

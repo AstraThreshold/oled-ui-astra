@@ -40,7 +40,7 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
 
     Animation::move(&yPop, yPopTrg, getUIConfig().popSpeed);  //动画
 
-    //todo 这里条件可以加上一个如果按键按下 就退出
+    //这里条件可以加上一个如果按键按下 就退出
     if (time - beginTime >= _time && yPop == 0 - hPop - 8) onRender = false;  //退出条件
   }
 }
@@ -58,13 +58,6 @@ void Launcher::init(Menu *_rootPage) {
 
   //open();
 }
-
-//todo 从第一性原理出发 控件应该是外挂在menu节点上的
-//todo 控件的渲染应该是在launcher中进行的
-//todo 设立一个指针 指向可能要渲染的控件
-//todo 指针为null时 不渲染控件
-//todo open函数会改变指针指向 当判断打开了控件时 移动指针到需要被渲染的控件
-//todo 至于在列表中显示的控件 照现在这样写即可
 
 /**
  * @brief 打开选中的页面
@@ -133,7 +126,6 @@ void Launcher::update() {
   HAL::canvasUpdate();
 
   time++;
-//todo 看一下Rachel的按键扫描函数是怎么实现的
 
 //  if (HAL::getAnyKey()) {
 //    for (unsigned char i = 0; i < key::KEY_NUM; i++) {

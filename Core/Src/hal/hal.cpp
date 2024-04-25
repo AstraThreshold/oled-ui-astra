@@ -67,7 +67,6 @@ bool HAL::_getAnyKey() {
  *
  * @note run per 5 ms.
  * @return key::keyValue
- * @todo test this fucking function.
  */
 void HAL::_keyScan() {
   static unsigned char _timeCnt = 0;

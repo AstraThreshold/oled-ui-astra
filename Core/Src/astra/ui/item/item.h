@@ -94,8 +94,6 @@ inline void Animation::move(float *_pos, float _posTrg, float _speed) {
     else *_pos += (_posTrg - *_pos) / ((100 - _speed) / 1.0f);
   }
 }
-
 }
-
 
 #endif //ASTRA_CORE_SRC_ASTRA_UI_ITEM_ITEM_H_

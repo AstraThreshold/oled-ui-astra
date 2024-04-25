@@ -134,7 +134,6 @@ void Camera::goToListItemRolling(std::vector<float> _posSelector) {
 
 void Camera::goToTileItem(unsigned char _index) {
   moving = true;
-  //todo 可能是这里出了问题
   go(_index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin), 0);
   if (this->x == 0 - _index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin)) moving = false;
 }
@@ -151,7 +150,6 @@ void Camera::reset() {
 }
 
 void Camera::update(Menu *_menu, Selector *_selector) {
-  //todo 不完善
   if (_menu->getType() == "List") {
     if (astraConfig.listPageTurningMode == 0) goToListItemPage(_menu->selectIndex);
     else if (astraConfig.listPageTurningMode == 1) goToListItemRolling(_selector->getPosition());
