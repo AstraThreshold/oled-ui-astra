@@ -52,7 +52,6 @@ struct config {
   float tileArrowWidth = 6;
   float tileArrowMargin = 4; //箭头边距
 
-  //todo 如果有问题 给下面这三个分别+1
   float tileDottedLineBottomMargin = 18; //虚线下边距(top: 46)
   float tileArrowBottomMargin = 8; //箭头下边距(top: 56)
   float tileTextBottomMargin = 12; //标题下边距(top: 52)

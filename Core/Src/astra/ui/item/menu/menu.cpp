@@ -331,7 +331,7 @@ void Tile::render(const std::vector<float> &_camera) {
   HAL::drawHLine(astraConfig.tileBtnMargin, positionForeground.yArrow + 2, 9);
   HAL::drawBox(astraConfig.tileBtnMargin + 2, positionForeground.yArrow + 2 - 4, 5, 4);
 
-  //draw right button.
+  //draw the right button.
   HAL::drawHLine(systemConfig.screenWeight - astraConfig.tileBtnMargin - 9, positionForeground.yArrow + 2, 9);
   HAL::drawBox(systemConfig.screenWeight - astraConfig.tileBtnMargin - 9 + 2,
                positionForeground.yArrow + 2 - 4,
