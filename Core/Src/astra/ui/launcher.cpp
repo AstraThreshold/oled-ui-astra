@@ -6,10 +6,18 @@
 
 namespace astra {
 
+//todo 这里第二次进行就不行了 局部变量的问题
 void Launcher::popInfo(std::string _info, uint16_t _time) {
-  static const uint64_t beginTime = this->time;
-  static bool onRender = true;
+  static bool init = false;
+  static unsigned long long int beginTime = this->time;;
+  static bool onRender = false;
 
+  if (!init) {
+    init = true;
+    beginTime = this->time;
+    onRender = true;
+  }
+  
   while (onRender) {
     time++;
 
@@ -41,7 +49,10 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
     Animation::move(&yPop, yPopTrg, getUIConfig().popSpeed);  //动画
 
     //这里条件可以加上一个如果按键按下 就退出
-    if (time - beginTime >= _time && yPop == 0 - hPop - 8) onRender = false;  //退出条件
+    if (time - beginTime >= _time && yPop == 0 - hPop - 8) {
+      onRender = false;  //退出条件
+      init = false;
+    }
   }
 }
 
@@ -106,10 +117,10 @@ bool Launcher::close() {
 void Launcher::update() {
   HAL::canvasClear();
 
-//  currentMenu->render(camera->getPosition());
-//  if (currentWidget != nullptr) currentWidget->render(camera->getPosition());
-//  selector->render(camera->getPosition());
-//  camera->update(currentMenu, selector);
+  currentMenu->render(camera->getPosition());
+  if (currentWidget != nullptr) currentWidget->render(camera->getPosition());
+  selector->render(camera->getPosition());
+  camera->update(currentMenu, selector);
 //
 //  if (time == 500) selector->go(3);  //test
 //  if (time == 800) open();  //test
@@ -124,25 +135,22 @@ void Launcher::update() {
 //  if (time >= 3250) time = 0;  //test
 
   HAL::keyScan();
-  if (HAL::getAnyKey()) HAL::drawEnglish(30, 30, "any key pressed");  //test
-  else HAL::drawEnglish(30, 30, "no key pressed");  //test
+  if (HAL::getAnyKey()) {
+    for (unsigned char i = 0; i < key::KEY_NUM; i++) {
+      if (HAL::getKeyMap()[i] == key::CLICK) {
+        //todo 这里都没有执行 没进到这个分支里
+        if (i == 0) { selector->goNext(); }//selector去到上一个项目
+        if (i == 1) { selector->goPreview(); }//selector去到下一个项目
+      } else if (HAL::getKeyMap()[i] == key::PRESS) {
+        if (i == 0) { close(); }//退出当前项目
+        if (i == 1) { open(); }//打开当前项目
+      }
+    }
+    std::fill(HAL::getKeyMap(), HAL::getKeyMap() + key::KEY_NUM, key::RELEASE);
+  }
 
   HAL::canvasUpdate();
 
   time++;
-
-//  if (HAL::getAnyKey()) {
-//    for (unsigned char i = 0; i < key::KEY_NUM; i++) {
-//      if (HAL::getKeyMap()[i] == key::CLICK) {
-//        if (i == 0) { selector->go(currentMenu->selectIndex--); }//selector去到上一个项目
-//        if (i == 1) { selector->go(currentMenu->selectIndex++); }//selector去到下一个项目
-//      } else if (HAL::getKeyMap()[i] == key::PRESS) {
-//        if (i == 0) { close(); }//退出当前项目
-//        if (i == 1) { open(); }//打开当前项目
-//      }
-//    }
-//
-//    std::fill(HAL::getKeyMap(), HAL::getKeyMap() + key::KEY_NUM, key::RELEASE);
-//  }
 }
 }
