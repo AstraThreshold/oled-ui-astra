@@ -6,7 +6,6 @@
 
 namespace astra {
 
-//todo 这里第二次进行就不行了 局部变量的问题
 void Launcher::popInfo(std::string _info, uint16_t _time) {
   static bool init = false;
   static unsigned long long int beginTime = this->time;;
@@ -17,19 +16,18 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
     beginTime = this->time;
     onRender = true;
   }
-  
+
+  float wPop = HAL::getFontWidth(_info) + 2 * getUIConfig().popMargin;  //宽度
+  float hPop = HAL::getFontHeight() + 2 * getUIConfig().popMargin;  //高度
+  float yPop = 0 - hPop - 8; //从屏幕上方滑入
+  float yPopTrg = 0.0f;
+  float xPop = (HAL::getSystemConfig().screenWeight - wPop) / 2;  //居中
+
   while (onRender) {
     time++;
 
-    static float wPop = HAL::getFontWidth(_info) + 2 * getUIConfig().popMargin;  //宽度
-    static float hPop = HAL::getFontHeight() + 2 * getUIConfig().popMargin;  //高度
-
-    static float yPop = 0 - hPop - 8; //从屏幕上方滑入
-    static float yPopTrg = 0;
     if (time - beginTime < _time) yPopTrg = (HAL::getSystemConfig().screenHeight - hPop) / 3;  //目标位置 中间偏上
     else yPopTrg = 0 - hPop - 8;  //滑出
-
-    static float xPop = (HAL::getSystemConfig().screenWeight - wPop) / 2;  //居中
 
     HAL::canvasClear();
     /*渲染一帧*/
