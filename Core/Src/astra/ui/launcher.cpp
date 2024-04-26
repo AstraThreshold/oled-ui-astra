@@ -114,8 +114,8 @@ void Launcher::update() {
   if (time == 500) selector->go(3);  //test
   if (time == 800) open();  //test
   if (time == 1200) selector->go(1);  //test
-  if (time == 1500) selector->go(3);  //test
-  if (time == 1800) selector->go(4);  //test
+  if (time == 1500) selector->goNext();  //test
+  if (time == 1800) selector->goPreview();  //test
   if (time == 2100) selector->go(1);  //test
   if (time == 2300) selector->go(0);  //test
   if (time == 2500) open();  //test

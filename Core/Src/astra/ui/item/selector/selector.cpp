@@ -51,12 +51,12 @@ void Selector::go(unsigned char _index) {
 }
 
 void Selector::goNext() {
-
+  go(menu->selectIndex + 1);
   setPosition();
 }
 
 void Selector::goPreview() {
-
+  go(menu->selectIndex - 1);
   setPosition();
 }
 
