@@ -7,6 +7,7 @@
 
 #include <string>
 #include <utility>
+#include <array>
 #include <vector>
 #include "../astra/config/config.h"
 
@@ -237,6 +238,10 @@ public:
   /**
    * @brief key.
    */
+
+public:
+  key::keyAction key[key::KEY_NUM] = {static_cast<key::keyAction>(0)};
+
 public:
   static bool getKey(key::KEY_INDEX _keyIndex) { return get()->_getKey(_keyIndex); }
 
@@ -246,8 +251,7 @@ public:
 
   virtual bool _getAnyKey();
 
-protected:
-  key::keyAction key[key::KEY_NUM] = {static_cast<key::keyAction>(0)};
+  static key::keyAction* getKeyMap() { return get()->key; }
 
 public:
   static void keyScan() { get()->_keyScan(); }

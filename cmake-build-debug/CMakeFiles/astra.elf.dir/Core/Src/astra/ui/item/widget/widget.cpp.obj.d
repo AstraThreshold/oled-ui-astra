@@ -120,6 +120,7 @@ CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj: \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\basic_string.tcc \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\utility \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_relops.h \
+ d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\array \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\vector \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_uninitialized.h \
  d:\stm32cubetoolchains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\arm-none-eabi\include\c++\12.2.1\bits\stl_vector.h \

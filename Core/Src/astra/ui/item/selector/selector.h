@@ -31,8 +31,11 @@ public:
   //这样就可以弄磁贴的文字出现动画了
 
   std::vector<float> getPosition();
+  void setPosition();
 
   void go(unsigned char _index);
+  void goNext();
+  void goPreview();
 
   bool inject(Menu *_menu); //inject menu instance to prepare for render.
   bool destroy(); //destroy menu instance.

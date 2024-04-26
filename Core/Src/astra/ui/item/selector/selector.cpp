@@ -6,6 +6,28 @@
 
 namespace astra {
 
+void Selector::setPosition() {
+  //在go的时候改变trg的值
+  if (menu->getType() == "Tile") {
+//    xTrg = menu->child[_index]->position.xTrg - (astraConfig.tileSelectBoxWeight - astraConfig.tilePicWidth) / 2;
+//    yTrg = menu->child[_index]->position.yTrg - (astraConfig.tileSelectBoxHeight - astraConfig.tilePicHeight) / 2;
+    xTrg = menu->childMenu[menu->selectIndex]->position.xTrg - astraConfig.tileSelectBoxMargin;
+    yTrg = menu->childMenu[menu->selectIndex]->position.yTrg - astraConfig.tileSelectBoxMargin;
+
+    yText = systemConfig.screenHeight; //给磁贴文字归零 从屏幕外滑入
+    yTextTrg = systemConfig.screenHeight - astraConfig.tileTextBottomMargin;
+
+    wTrg = astraConfig.tileSelectBoxWidth;
+    hTrg = astraConfig.tileSelectBoxHeight;
+  } else if (menu->getType() == "List") {
+    xTrg = menu->childMenu[menu->selectIndex]->position.xTrg - astraConfig.selectorMargin;
+    yTrg = menu->childMenu[menu->selectIndex]->position.yTrg;
+
+    wTrg = (float) HAL::getFontWidth(menu->childMenu[menu->selectIndex]->title) + astraConfig.listTextMargin * 2;
+    hTrg = astraConfig.listLineHeight;
+  }
+}
+
 /**
  * @brief
  *
@@ -16,27 +38,26 @@ namespace astra {
 void Selector::go(unsigned char _index) {
   Item::updateConfig();
 
+  if (_index > menu->childMenu.size() - 1) {
+    if (astraConfig.menuLoop) _index = 0;
+    else return;
+  } else if (_index < 0) {
+    if (astraConfig.menuLoop) _index = menu->childMenu.size() - 1;
+    else return;
+  }
   menu->selectIndex = _index;
 
-  //在go的时候改变trg的值
-  if (menu->getType() == "Tile") {
-//    xTrg = menu->child[_index]->position.xTrg - (astraConfig.tileSelectBoxWeight - astraConfig.tilePicWidth) / 2;
-//    yTrg = menu->child[_index]->position.yTrg - (astraConfig.tileSelectBoxHeight - astraConfig.tilePicHeight) / 2;
-    xTrg = menu->childMenu[_index]->position.xTrg - astraConfig.tileSelectBoxMargin;
-    yTrg = menu->childMenu[_index]->position.yTrg - astraConfig.tileSelectBoxMargin;
+  setPosition();
+}
 
-    yText = systemConfig.screenHeight; //给磁贴文字归零 从屏幕外滑入
-    yTextTrg = systemConfig.screenHeight - astraConfig.tileTextBottomMargin;
+void Selector::goNext() {
 
-    wTrg = astraConfig.tileSelectBoxWidth;
-    hTrg = astraConfig.tileSelectBoxHeight;
-  } else if (menu->getType() == "List") {
-    xTrg = menu->childMenu[_index]->position.xTrg - astraConfig.selectorMargin;
-    yTrg = menu->childMenu[_index]->position.yTrg;
+  setPosition();
+}
 
-    wTrg = (float) HAL::getFontWidth(menu->childMenu[_index]->title) + astraConfig.listTextMargin * 2;
-    hTrg = astraConfig.listLineHeight;
-  }
+void Selector::goPreview() {
+
+  setPosition();
 }
 
 bool Selector::inject(Menu *_menu) {
@@ -118,5 +139,6 @@ void Selector::render(std::vector<float> _camera) {
 std::vector<float> Selector::getPosition() {
   return {xTrg, yTrg};
 }
+
 
 }

@@ -129,15 +129,16 @@ void Launcher::update() {
 
 //  if (HAL::getAnyKey()) {
 //    for (unsigned char i = 0; i < key::KEY_NUM; i++) {
-//      if (key[i] == key::CLICK) {
-//        if (i == 0) {}//selector去到上一个项目
-//        if (i == 1) {}//selector去到下一个项目
-//      } else if (key[i] == key::PRESS) {
-//        if (i == 0) {}//退出当前项目
-//        if (i == 1) {}//打开当前项目
+//      if (HAL::getKeyMap()[i] == key::CLICK) {
+//        if (i == 0) { selector->go(currentMenu->selectIndex--); }//selector去到上一个项目
+//        if (i == 1) { selector->go(currentMenu->selectIndex++); }//selector去到下一个项目
+//      } else if (HAL::getKeyMap()[i] == key::PRESS) {
+//        if (i == 0) { close(); }//退出当前项目
+//        if (i == 1) { open(); }//打开当前项目
 //      }
 //    }
-//    memset(key, key::RELEASE, sizeof(key));
+//
+//    std::fill(HAL::getKeyMap(), HAL::getKeyMap() + key::KEY_NUM, key::RELEASE);
 //  }
 }
 }

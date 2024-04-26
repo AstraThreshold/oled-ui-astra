@@ -92,7 +92,6 @@ void astraCoreInit(void) {
   secondPage->addItem(new astra::List("-测试测试测试5"));
   secondPage->addItem(new astra::List("-测试测试测试6"));
 
-
   astraLauncher->init(rootPage);
 }
 
