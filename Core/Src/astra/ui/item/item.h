@@ -88,9 +88,8 @@ inline void Animation::blur() {
 }
 
 inline void Animation::move(float *_pos, float _posTrg, float _speed) {
-  if (std::fabs(_posTrg - *_pos) <= 1.0f) *_pos = _posTrg;
   if (*_pos != _posTrg) {
-    if (std::fabs(*_pos - _posTrg) < 0.15f) *_pos = _posTrg;
+    if (std::fabs(*_pos - _posTrg) <= 1.0f) *_pos = _posTrg;
     else *_pos += (_posTrg - *_pos) / ((100 - _speed) / 1.0f);
   }
 }
