@@ -106,22 +106,26 @@ bool Launcher::close() {
 void Launcher::update() {
   HAL::canvasClear();
 
-  currentMenu->render(camera->getPosition());
-  if (currentWidget != nullptr) currentWidget->render(camera->getPosition());
-  selector->render(camera->getPosition());
-  camera->update(currentMenu, selector);
+//  currentMenu->render(camera->getPosition());
+//  if (currentWidget != nullptr) currentWidget->render(camera->getPosition());
+//  selector->render(camera->getPosition());
+//  camera->update(currentMenu, selector);
+//
+//  if (time == 500) selector->go(3);  //test
+//  if (time == 800) open();  //test
+//  if (time == 1200) selector->go(1);  //test
+//  if (time == 1500) selector->goNext();  //test
+//  if (time == 1800) selector->goPreview();  //test
+//  if (time == 2100) selector->go(1);  //test
+//  if (time == 2300) selector->go(0);  //test
+//  if (time == 2500) open();  //test
+//  if (time == 2900) close();
+//  if (time == 3200) selector->go(0);  //test
+//  if (time >= 3250) time = 0;  //test
 
-  if (time == 500) selector->go(3);  //test
-  if (time == 800) open();  //test
-  if (time == 1200) selector->go(1);  //test
-  if (time == 1500) selector->goNext();  //test
-  if (time == 1800) selector->goPreview();  //test
-  if (time == 2100) selector->go(1);  //test
-  if (time == 2300) selector->go(0);  //test
-  if (time == 2500) open();  //test
-  if (time == 2900) close();
-  if (time == 3200) selector->go(0);  //test
-  if (time >= 3250) time = 0;  //test
+  HAL::keyScan();
+  if (HAL::getAnyKey()) HAL::drawEnglish(30, 30, "any key pressed");  //test
+  else HAL::drawEnglish(30, 30, "no key pressed");  //test
 
   HAL::canvasUpdate();
 

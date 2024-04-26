@@ -98,18 +98,14 @@ void astraCoreInit(void) {
 void astraCoreStart(void) {
   for (;;) {  //NOLINT
     astraLauncher->update();
-    //astraCoreTest();
+//    astraCoreTest();
   }
 }
 
 void astraCoreTest(void) {
   HAL::canvasClear();
   HAL::setDrawType(1);
-  HAL::drawEnglish(0, 0, "ok.");
-  HAL::drawChinese(0, 16, "门");
-  HAL::drawHLine(2, 0, 47);
-  HAL::drawVLine(0, 35, 47);
-  HAL::drawVLine(0, 32, 12);
+  HAL::drawEnglish(50, 20, "Hello, World!");
   HAL::canvasUpdate();
 }
 
