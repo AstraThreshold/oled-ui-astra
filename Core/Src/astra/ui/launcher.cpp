@@ -143,20 +143,6 @@ void Launcher::update() {
     time = 0;
   }
 
-//  if (HAL::getAnyKey()) {
-//    for (unsigned char i = 0; i < key::KEY_NUM; i++) {
-//      if (HAL::getKeyMap()[i] == key::CLICK) {
-//        //todo 这里都没有执行 没进到这个分支里
-//        if (i == 0) { selector->goNext(); }//selector去到上一个项目
-//        else if (i == 1) { selector->goPreview(); }//selector去到下一个项目
-//      } else if (HAL::getKeyMap()[i] == key::PRESS) {
-//        if (i == 0) { close(); }//退出当前项目
-//        else if (i == 1) { open(); }//打开当前项目
-//      }
-//    }
-//    std::fill(HAL::getKeyMap(), HAL::getKeyMap() + key::KEY_NUM, key::INVALID);
-//  }
-
   if (*HAL::getKeyFlag() == key::KEY_PRESSED) {
     *HAL::getKeyFlag() = key::KEY_NOT_PRESSED;
     for (unsigned char i = 0; i < key::KEY_NUM; i++) {

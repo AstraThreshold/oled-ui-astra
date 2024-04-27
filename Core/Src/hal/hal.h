@@ -257,9 +257,9 @@ public:
 
   virtual bool _getAnyKey();
 
-  static key::KEY_ACTION* getKeyMap() { return get()->key; }
+  static key::KEY_ACTION *getKeyMap() { return get()->key; }
 
-  static key::KEY_TYPE* getKeyFlag() { return &get()->keyFlag; }
+  static key::KEY_TYPE *getKeyFlag() { return &get()->keyFlag; }
 
 public:
   static void keyScan() { get()->_keyScan(); }
