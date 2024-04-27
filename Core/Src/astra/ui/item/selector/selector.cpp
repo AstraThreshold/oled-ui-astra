@@ -38,25 +38,31 @@ void Selector::setPosition() {
 void Selector::go(unsigned char _index) {
   Item::updateConfig();
 
-  if (_index > menu->childMenu.size() - 1) {
-    if (astraConfig.menuLoop) _index = 0;
-    else return;
-  } else if (_index < 0) {
-    if (astraConfig.menuLoop) _index = menu->childMenu.size() - 1;
-    else return;
-  }
+//  if (_index > menu->childMenu.size() - 1) {
+//    if (astraConfig.menuLoop) _index = 0;
+//    else return;
+//  } else if (_index < 0) {
+//    if (astraConfig.menuLoop) _index = menu->childMenu.size() - 1;
+//    else return;
+//  }
   menu->selectIndex = _index;
 
   setPosition();
 }
 
 void Selector::goNext() {
-  go(menu->selectIndex + 1);
+  if (this->menu->selectIndex == this->menu->childMenu.size() - 1) {
+    if (astraConfig.menuLoop) go(0);
+    else return;
+  } else go(menu->selectIndex + 1);
   setPosition();
 }
 
 void Selector::goPreview() {
-  go(menu->selectIndex - 1);
+  if (this->menu->selectIndex == 0) {
+    if (astraConfig.menuLoop) go(this->menu->childMenu.size() - 1);
+    else return;
+  } else go(menu->selectIndex - 1);
   setPosition();
 }
 
@@ -139,6 +145,4 @@ void Selector::render(std::vector<float> _camera) {
 std::vector<float> Selector::getPosition() {
   return {xTrg, yTrg};
 }
-
-
 }

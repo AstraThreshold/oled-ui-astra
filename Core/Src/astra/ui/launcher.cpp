@@ -20,14 +20,11 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
   float wPop = HAL::getFontWidth(_info) + 2 * getUIConfig().popMargin;  //宽度
   float hPop = HAL::getFontHeight() + 2 * getUIConfig().popMargin;  //高度
   float yPop = 0 - hPop - 8; //从屏幕上方滑入
-  float yPopTrg = 0.0f;
+  float yPopTrg = (HAL::getSystemConfig().screenHeight - hPop) / 3;  //目标位置 中间偏上
   float xPop = (HAL::getSystemConfig().screenWeight - wPop) / 2;  //居中
 
   while (onRender) {
     time++;
-
-    if (time - beginTime < _time) yPopTrg = (HAL::getSystemConfig().screenHeight - hPop) / 3;  //目标位置 中间偏上
-    else yPopTrg = 0 - hPop - 8;  //滑出
 
     HAL::canvasClear();
     /*渲染一帧*/
@@ -46,8 +43,17 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
 
     Animation::move(&yPop, yPopTrg, getUIConfig().popSpeed);  //动画
 
-    //这里条件可以加上一个如果按键按下 就退出
-    if (time - beginTime >= _time && yPop == 0 - hPop - 8) {
+    //这里条件可以加上一个如果按键按下 就滑出
+    if (time - beginTime >= _time) yPopTrg = 0 - hPop - 8;  //滑出
+
+    HAL::keyScan();
+    if (HAL::getAnyKey()) {
+      for (unsigned char i = 0; i < key::KEY_NUM; i++)
+        if (HAL::getKeyMap()[i] == key::CLICK) yPopTrg = 0 - hPop - 8;  //滑出
+      std::fill(HAL::getKeyMap(), HAL::getKeyMap() + key::KEY_NUM, key::INVALID);
+    }
+
+    if (yPop == 0 - hPop - 8) {
       onRender = false;  //退出条件
       init = false;
     }
@@ -119,12 +125,12 @@ void Launcher::update() {
   if (currentWidget != nullptr) currentWidget->render(camera->getPosition());
   selector->render(camera->getPosition());
   camera->update(currentMenu, selector);
-//
+
 //  if (time == 500) selector->go(3);  //test
 //  if (time == 800) open();  //test
-//  if (time == 1200) selector->go(1);  //test
-//  if (time == 1500) selector->goNext();  //test
-//  if (time == 1800) selector->goPreview();  //test
+//  if (time == 1200) selector->go(0);  //test
+//  if (time == 1500) selector->go(1z);  //test
+//  if (time == 1800) selector->go(6);  //test
 //  if (time == 2100) selector->go(1);  //test
 //  if (time == 2300) selector->go(0);  //test
 //  if (time == 2500) open();  //test
@@ -132,23 +138,43 @@ void Launcher::update() {
 //  if (time == 3200) selector->go(0);  //test
 //  if (time >= 3250) time = 0;  //test
 
-  HAL::keyScan();
-  if (HAL::getAnyKey()) {
+  if (time > 2) {
+    HAL::keyScan();
+    time = 0;
+  }
+
+//  if (HAL::getAnyKey()) {
+//    for (unsigned char i = 0; i < key::KEY_NUM; i++) {
+//      if (HAL::getKeyMap()[i] == key::CLICK) {
+//        //todo 这里都没有执行 没进到这个分支里
+//        if (i == 0) { selector->goNext(); }//selector去到上一个项目
+//        else if (i == 1) { selector->goPreview(); }//selector去到下一个项目
+//      } else if (HAL::getKeyMap()[i] == key::PRESS) {
+//        if (i == 0) { close(); }//退出当前项目
+//        else if (i == 1) { open(); }//打开当前项目
+//      }
+//    }
+//    std::fill(HAL::getKeyMap(), HAL::getKeyMap() + key::KEY_NUM, key::INVALID);
+//  }
+
+  if (*HAL::getKeyFlag() == key::KEY_PRESSED) {
+    *HAL::getKeyFlag() = key::KEY_NOT_PRESSED;
     for (unsigned char i = 0; i < key::KEY_NUM; i++) {
       if (HAL::getKeyMap()[i] == key::CLICK) {
-        //todo 这里都没有执行 没进到这个分支里
-        if (i == 0) { selector->goNext(); }//selector去到上一个项目
-        if (i == 1) { selector->goPreview(); }//selector去到下一个项目
+        if (i == 0) { selector->goPreview(); }//selector去到上一个项目
+        else if (i == 1) { selector->goNext(); }//selector去到下一个项目
       } else if (HAL::getKeyMap()[i] == key::PRESS) {
         if (i == 0) { close(); }//退出当前项目
-        if (i == 1) { open(); }//打开当前项目
+        else if (i == 1) { open(); }//打开当前项目
       }
     }
-    std::fill(HAL::getKeyMap(), HAL::getKeyMap() + key::KEY_NUM, key::RELEASE);
+    std::fill(HAL::getKeyMap(), HAL::getKeyMap() + key::KEY_NUM, key::INVALID);
+    *HAL::getKeyFlag() = key::KEY_NOT_PRESSED;
   }
 
   HAL::canvasUpdate();
 
-  time++;
+  //time++;
+  time = HAL::millis() / 1000;
 }
 }

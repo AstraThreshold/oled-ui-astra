@@ -118,7 +118,7 @@ void Camera::goToListItemRolling(std::vector<float> _posSelector) {
 
   moving = true;
   if (outOfView(_posSelector[0], _posSelector[1]) == 1) direction = 1;
-  if (outOfView(_posSelector[0], _posSelector[1]) == 2) direction = 2;
+  else if (outOfView(_posSelector[0], _posSelector[1]) == 2) direction = 2;
 
   if (direction == 1) {
     go(_posSelector[0], _posSelector[1]);
@@ -126,6 +126,7 @@ void Camera::goToListItemRolling(std::vector<float> _posSelector) {
   }
   if (direction == 2) {
     go(_posSelector[0], _posSelector[1] + astraConfig.listLineHeight - systemConfig.screenHeight);
+    //go到selector的左下角
     if (this->x == 0 - _posSelector[0] && this->y == 0 - (_posSelector[1] + astraConfig.listLineHeight - systemConfig.screenHeight)) direction = 0;
   }
 

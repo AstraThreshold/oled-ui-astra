@@ -81,6 +81,7 @@ void HAL::_keyScan() {
       _timeCnt = 0;
       _lock = false;
       break;
+
     case key::KEY_0_CONFIRM:
     case key::KEY_1_CONFIRM:
       //filter
@@ -90,14 +91,15 @@ void HAL::_keyScan() {
 
         //timer
         if (_timeCnt > 100) {
+          keyFlag = key::KEY_PRESSED;
           //long press 1s
           if (getKey(key::KEY_0)) {
             key[key::KEY_0] = key::PRESS;
-            key[key::KEY_1] = key::RELEASE;
+            key[key::KEY_1] = key::INVALID;
           }
           if (getKey(key::KEY_1)) {
             key[key::KEY_1] = key::PRESS;
-            key[key::KEY_0] = key::RELEASE;
+            key[key::KEY_0] = key::INVALID;
           }
           _timeCnt = 0;
           _lock = false;
@@ -105,23 +107,28 @@ void HAL::_keyScan() {
         }
       } else {
         if (_lock) {
-          _keyFilter = key::RELEASED;
           if (_keyFilter == key::KEY_0_CONFIRM) {
             key[key::KEY_0] = key::CLICK;
-            key[key::KEY_1] = key::RELEASE;
+            key[key::KEY_1] = key::INVALID;
           }
           if (_keyFilter == key::KEY_1_CONFIRM) {
             key[key::KEY_1] = key::CLICK;
-            key[key::KEY_0] = key::RELEASE;
+            key[key::KEY_0] = key::INVALID;
           }
+          keyFlag = key::KEY_PRESSED;
+          _keyFilter = key::RELEASED;
         } else {
           _keyFilter = key::CHECKING;
-          key[key::KEY_0] = key[key::KEY_1] = key::RELEASE;
+          key[key::KEY_0] = key::INVALID;
+          key[key::KEY_1] = key::INVALID;
         }
       }
       break;
-    case key::RELEASED:if (!getAnyKey()) _keyFilter = key::CHECKING;
+
+    case key::RELEASED:
+      if (!getAnyKey()) _keyFilter = key::CHECKING;
       break;
+
     default: break;
   }
 }
@@ -142,6 +149,6 @@ void HAL::_keyTest() {
         if (i == 1) break;
       }
     }
-    memset(key, key::RELEASE, sizeof(key));
+    memset(key, key::INVALID, sizeof(key));
   }
 }

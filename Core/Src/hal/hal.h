@@ -24,10 +24,15 @@ typedef enum keyFilter {
 } KEY_FILTER;
 
 typedef enum keyAction {
-  RELEASE = 0,
+  INVALID = 0,
   CLICK,
   PRESS,
 } KEY_ACTION;
+
+typedef enum KeyType {
+  KEY_NOT_PRESSED = 0,
+  KEY_PRESSED,
+} KEY_TYPE;
 
 typedef enum keyIndex {
   KEY_0 = 0,
@@ -240,7 +245,8 @@ public:
    */
 
 public:
-  key::keyAction key[key::KEY_NUM] = {static_cast<key::keyAction>(0)};
+  key::KEY_ACTION key[key::KEY_NUM] = {static_cast<key::keyAction>(0)};
+  key::KEY_TYPE keyFlag;
 
 public:
   static bool getKey(key::KEY_INDEX _keyIndex) { return get()->_getKey(_keyIndex); }
@@ -251,7 +257,9 @@ public:
 
   virtual bool _getAnyKey();
 
-  static key::keyAction* getKeyMap() { return get()->key; }
+  static key::KEY_ACTION* getKeyMap() { return get()->key; }
+
+  static key::KEY_TYPE* getKeyFlag() { return &get()->keyFlag; }
 
 public:
   static void keyScan() { get()->_keyScan(); }
