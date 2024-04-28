@@ -22,6 +22,7 @@ private:
 
 public:
   float x, y;
+  float xTrg, yTrg;
 
   bool moving = false;
 
@@ -49,8 +50,10 @@ public:
   bool isMoving();
 
   void reset();
+  void resetDirect();
 
   void update(Menu *_menu, Selector *_selector);
+  void render();
 };
 
 }

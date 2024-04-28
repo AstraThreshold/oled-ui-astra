@@ -50,53 +50,41 @@ std::vector<float> Camera::getPosition() {
  * @note only support in loop. 仅支持在循环内执行
  */
 void Camera::go(float _x, float _y) {
-  moving = true;
-  Animation::move(&this->x, (0 - _x), astraConfig.cameraAnimationSpeed);
-  Animation::move(&this->y, (0 - _y), astraConfig.cameraAnimationSpeed);
-  if (this->x == 0 - _x && this->y == 0 - _y) moving = false;
+  this->xTrg = 0 - _x;
+  this->yTrg = 0 - _y;
 }
 
 void Camera::goDirect(float _x, float _y) {
   this->x = 0 - _x;
   this->y = 0 - _y;
+  this->xTrg = 0 - _x;
+  this->yTrg = 0 - _y;
 }
 
 void Camera::goHorizontal(float _x) {
-  moving = true;
-  Animation::move(&this->x, 0 - _x, astraConfig.cameraAnimationSpeed);
-  if (this->x == 0 - _x) moving = false;
+  this->xTrg = 0 - _x;
 }
 
 void Camera::goVertical(float _y) {
-  moving = true;
-  Animation::move(&this->y, 0 - _y, astraConfig.cameraAnimationSpeed);
-  if (this->y == 0 - _y) moving = false;
+  this->yTrg = 0 - _y;
 }
 
 void Camera::goToNextPageItem() {
-  moving = true;
-  Animation::move(&y, y - systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
-  if (this->y == y - systemConfig.screenHeight) moving = false;
+  this->yTrg = y - systemConfig.screenHeight;
 }
 
 void Camera::goToPreviewPageItem() {
-  moving = true;
-  Animation::move(&y, y + systemConfig.screenHeight, astraConfig.cameraAnimationSpeed);
-  if (this->y == y + systemConfig.screenHeight) moving = false;
+  this->yTrg = y + systemConfig.screenHeight;
 }
 
 void Camera::goToListItemPage(unsigned char _index) {
   static const unsigned char maxItemPerScreen = systemConfig.screenHeight / astraConfig.listLineHeight;
   unsigned char _page = 0;
 
-  moving = true;
-
   if (_index == 0) _page = 0;
   else if (_index % maxItemPerScreen == 0) _page = _index / maxItemPerScreen;
   else _page = floor(_index / maxItemPerScreen);
   go(0, _page * systemConfig.screenHeight);
-
-  if (this->y == _page * systemConfig.screenHeight) moving = false;
 }
 
 void Camera::goToListItemRolling(std::vector<float> _posSelector) {
@@ -116,7 +104,6 @@ void Camera::goToListItemRolling(std::vector<float> _posSelector) {
 
   static unsigned char direction = 0; //0: no roll, 1: up, 2: down
 
-  moving = true;
   if (outOfView(_posSelector[0], _posSelector[1]) == 1) direction = 1;
   else if (outOfView(_posSelector[0], _posSelector[1]) == 2) direction = 2;
 
@@ -129,14 +116,10 @@ void Camera::goToListItemRolling(std::vector<float> _posSelector) {
     //go到selector的左下角
     if (this->x == 0 - _posSelector[0] && this->y == 0 - (_posSelector[1] + astraConfig.listLineHeight - systemConfig.screenHeight)) direction = 0;
   }
-
-  if (!outOfView(_posSelector[0], _posSelector[1])) moving = false;
 }
 
 void Camera::goToTileItem(unsigned char _index) {
-  moving = true;
   go(_index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin), 0);
-  if (this->x == 0 - _index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin)) moving = false;
 }
 
 bool Camera::isMoving() {
@@ -144,13 +127,24 @@ bool Camera::isMoving() {
 }
 
 void Camera::reset() {
+  go(this->xInit, this->yInit);
+}
+
+void Camera::resetDirect() {
+  goDirect(this->xInit, this->yInit);
+}
+
+void Camera::render() {
   moving = true;
-  Animation::move(&this->x, xInit, astraConfig.cameraAnimationSpeed);
-  Animation::move(&this->y, yInit, astraConfig.cameraAnimationSpeed);
-  if (this->x == xInit && this->y == yInit) moving = false;
+  Animation::move(&this->x, this->xTrg, astraConfig.cameraAnimationSpeed);
+  Animation::move(&this->y, this->yTrg, astraConfig.cameraAnimationSpeed);
+  if (this->x == this->xTrg && this->y == this->yTrg) moving = false;
 }
 
 void Camera::update(Menu *_menu, Selector *_selector) {
+  //todo 这里还需要处理一下
+  this->render();
+
   if (_menu->getType() == "List") {
     if (astraConfig.listPageTurningMode == 0) goToListItemPage(_menu->selectIndex);
     else if (astraConfig.listPageTurningMode == 1) goToListItemRolling(_selector->getPosition());
