@@ -45,6 +45,9 @@ void Selector::go(unsigned char _index) {
 //    if (astraConfig.menuLoop) _index = menu->childMenu.size() - 1;
 //    else return;
 //  }
+
+  if (_index > menu->childMenu.size() - 1) return;
+  if (_index < 0) return;
   menu->selectIndex = _index;
 
   setPosition();

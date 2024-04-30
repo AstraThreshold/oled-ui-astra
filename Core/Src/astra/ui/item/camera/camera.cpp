@@ -11,6 +11,9 @@ Camera::Camera() {
 
   this->x = 0;
   this->y = 0;
+
+  this->xTrg = 0;
+  this->yTrg = 0;
 }
 
 //这里的坐标应该都是负的 因为最终渲染的时候是加上摄像机的坐标
@@ -23,6 +26,9 @@ Camera::Camera(float _x, float _y) {
 
   this->x = 0 - _x;
   this->y = 0 - _y;
+
+  this->xTrg = 0 - _x;
+  this->yTrg = 0 - _y;
 }
 
 /**
@@ -144,6 +150,7 @@ void Camera::render() {
 void Camera::update(Menu *_menu, Selector *_selector) {
   //todo 这里还需要处理一下
   this->render();
+  //todo 出现开场动画的原理是 trg在构造函数中没有被初始化 在trg不确定的时候 先进行了render 然后再go 然后再render
 
   if (_menu->getType() == "List") {
     if (astraConfig.listPageTurningMode == 0) goToListItemPage(_menu->selectIndex);

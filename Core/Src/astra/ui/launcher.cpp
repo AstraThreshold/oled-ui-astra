@@ -37,7 +37,9 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
     HAL::drawRBox(xPop - 4, yPop - 4, wPop + 8, hPop + 8, getUIConfig().popRadius + 2);
     HAL::setDrawType(1);  //反色显示
     HAL::drawRFrame(xPop - 1, yPop - 1, wPop + 2, hPop + 2, getUIConfig().popRadius);  //绘制一个圆角矩形
-    HAL::drawEnglish(xPop + getUIConfig().popMargin, yPop + getUIConfig().popMargin + HAL::getFontHeight(), _info);  //绘制文字
+    HAL::drawEnglish(xPop + getUIConfig().popMargin,
+                     yPop + getUIConfig().popMargin + HAL::getFontHeight(),
+                     _info);  //绘制文字
 
     HAL::canvasUpdate();
 
@@ -63,15 +65,22 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
 void Launcher::init(Menu *_rootPage) {
   currentMenu = _rootPage;
 
-  camera = new Camera(0, 0);
-  _rootPage->childPosInit(camera->getPosition());
   selector = new Selector();
   selector->inject(_rootPage);
-  //selector->go(_rootPage->selectIndex);
 
-  selector->go(3);
+  camera = new Camera(0, 0);
+  _rootPage->childPosInit(camera->getPosition());
 
-  //open();
+//  selector->go(3);
+
+  if (_rootPage->getType() == "List") {
+    camera->goDirect(0, static_cast<float>((0 - sys::getSystemConfig().screenHeight) * 10));
+    camera->render();
+  }
+  else if (_rootPage->getType() == "Tile") {
+    camera->goDirect(static_cast<float>((0 - sys::getSystemConfig().screenWeight) * 10), 0);
+    camera->render();
+  }
 }
 
 /**
@@ -83,8 +92,14 @@ void Launcher::init(Menu *_rootPage) {
 bool Launcher::open() {
 
   //如果当前页面指向的当前item没有后继 那就返回false
-  if (currentMenu->getNextMenu() == nullptr) { popInfo("unreferenced page!", 600); return false; }
-  if (currentMenu->getNextMenu()->getItemNum() == 0) { popInfo("empty page!", 600); return false; }
+  if (currentMenu->getNextMenu() == nullptr) {
+    popInfo("unreferenced page!", 600);
+    return false;
+  }
+  if (currentMenu->getNextMenu()->getItemNum() == 0) {
+    popInfo("empty page!", 600);
+    return false;
+  }
 
   currentMenu->deInit();  //先析构（退场动画）再挪动指针
 
@@ -104,8 +119,14 @@ bool Launcher::open() {
  * @warning 仅可调用一次
  */
 bool Launcher::close() {
-  if (currentMenu->getPreview() == nullptr) { popInfo("unreferenced page!", 600); return false; }
-  if (currentMenu->getPreview()->getItemNum() == 0) { popInfo("empty page!", 600); return false; }
+  if (currentMenu->getPreview() == nullptr) {
+    popInfo("unreferenced page!", 600);
+    return false;
+  }
+  if (currentMenu->getPreview()->getItemNum() == 0) {
+    popInfo("empty page!", 600);
+    return false;
+  }
 
   currentMenu->deInit();  //先析构（退场动画）再挪动指针
 

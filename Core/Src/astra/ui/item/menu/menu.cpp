@@ -75,10 +75,13 @@ void List::childPosInit(const std::vector<float> &_camera) {
     _iter->position.xTrg = astraConfig.listTextMargin;
     _iter->position.yTrg = _index * astraConfig.listLineHeight;
 
-    //受展开开关影响的坐标初始化
-    if (astraConfig.listUnfold) _iter->position.y = _camera[1] - astraConfig.listLineHeight; //text unfold from top.
-    else _iter->position.y = _iter->position.yTrg;
     _index++;
+
+    //受展开开关影响的坐标初始化
+    //根页面有开场动画 所以不需要从头展开
+    if (_iter->parent->parent == nullptr) { _iter->position.y = _iter->position.yTrg; continue; }
+    if (astraConfig.listUnfold) { _iter->position.y = _camera[1] - astraConfig.listLineHeight;
+      continue; } //text unfold from top.
   }
 }
 
@@ -207,10 +210,10 @@ void Tile::childPosInit(const std::vector<float> &_camera) {
                            (_index) * (astraConfig.tilePicMargin + astraConfig.tilePicWidth);
     _iter->position.yTrg = astraConfig.tilePicTopMargin;
 
-    if (astraConfig.tileUnfold) _iter->position.x = _camera[0] - astraConfig.tilePicWidth; //unfold from left.
-    else _iter->position.x = _iter->position.xTrg;
-
     _index++;
+
+    if (_iter->parent->parent == nullptr) { _iter->position.x = _iter->position.xTrg; continue; }
+    if (astraConfig.tileUnfold) { _iter->position.x = _camera[0] - astraConfig.tilePicWidth; continue; } //unfold from left.
   }
 }
 
