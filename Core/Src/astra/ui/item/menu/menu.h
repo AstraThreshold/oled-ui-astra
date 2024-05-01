@@ -20,8 +20,10 @@ public:
 
 public:
   std::vector<float> cameraPosMemory = {};
-  void rememberCameraPos(const std::vector<float> &_camera) { cameraPosMemory = _camera; }
+  void rememberCameraPos(const std::vector<float> &_camera) { cameraPosMemory = _camera; cameraPosMemoryFlag = true; }
   [[nodiscard]] std::vector<float> getCameraMemoryPos() const { return cameraPosMemory; }
+  //编写一个变量 指示该页面到底有没有记忆
+  bool cameraPosMemoryFlag = false;
 
 public:
   //存储其在父页面中的位置

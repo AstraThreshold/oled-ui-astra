@@ -71,6 +71,11 @@ void Camera::go(float _x, float _y) {
   this->yTrg = 0 - _y;
 }
 
+void Camera::go(const std::vector<float> &_pos) {
+  this->xTrg = 0 - _pos[0];
+  this->yTrg = 0 - _pos[1];
+}
+
 void Camera::goDirect(float _x, float _y) {
   this->x = 0 - _x;
   this->y = 0 - _y;
@@ -160,6 +165,10 @@ void Camera::render() {
 
 void Camera::update(Menu *_menu, Selector *_selector) {
   //todo 这里还需要处理一下
+  if (_menu->cameraPosMemoryFlag) {
+
+  }
+
   this->render();
 
   if (_menu->getType() == "List") {

@@ -39,6 +39,7 @@ public:
   //启动器要判断是否超过视角范围 若超过则移动摄像机
   //所有过程中 渲染好的元素绝对坐标都是不变的 只有摄像机的坐标在变
   void go(float _x, float _y);
+  void go(const std::vector<float> &_pos); //go to a position.
   void goDirect(float _x, float _y);
   void goHorizontal(float _x);
   void goVertical(float _y);
