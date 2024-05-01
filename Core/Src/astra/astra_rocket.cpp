@@ -7,7 +7,7 @@
 #include "astra_logo.h"
 
 astra::Launcher *astraLauncher = new astra::Launcher();
-astra::Menu *rootPage = new astra::List("root");
+astra::Menu *rootPage = new astra::Tile("root");
 
 bool test = true;
 

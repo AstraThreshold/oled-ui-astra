@@ -47,6 +47,17 @@ std::vector<float> Camera::getPosition() {
   return {x, y};
 }
 
+void Camera::init(const std::string &_type) {
+  if (_type == "List") {
+    this->goDirect(0, static_cast<float>((0 - sys::getSystemConfig().screenHeight) * 10));
+    this->render();
+  }
+  else if (_type == "Tile") {
+    this->goDirect(static_cast<float>((0 - sys::getSystemConfig().screenWeight) * 10), 0);
+    this->render();
+  }
+}
+
 /**
  * @brief
  * @param _pos
@@ -150,7 +161,6 @@ void Camera::render() {
 void Camera::update(Menu *_menu, Selector *_selector) {
   //todo 这里还需要处理一下
   this->render();
-  //todo 出现开场动画的原理是 trg在构造函数中没有被初始化 在trg不确定的时候 先进行了render 然后再go 然后再render
 
   if (_menu->getType() == "List") {
     if (astraConfig.listPageTurningMode == 0) goToListItemPage(_menu->selectIndex);

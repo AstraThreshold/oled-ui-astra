@@ -65,22 +65,16 @@ void Launcher::popInfo(std::string _info, uint16_t _time) {
 void Launcher::init(Menu *_rootPage) {
   currentMenu = _rootPage;
 
-  selector = new Selector();
-  selector->inject(_rootPage);
-
   camera = new Camera(0, 0);
   _rootPage->childPosInit(camera->getPosition());
 
-//  selector->go(3);
+  selector = new Selector();
+  selector->inject(_rootPage);
 
-  if (_rootPage->getType() == "List") {
-    camera->goDirect(0, static_cast<float>((0 - sys::getSystemConfig().screenHeight) * 10));
-    camera->render();
-  }
-  else if (_rootPage->getType() == "Tile") {
-    camera->goDirect(static_cast<float>((0 - sys::getSystemConfig().screenWeight) * 10), 0);
-    camera->render();
-  }
+//  selector->go(3);
+//todo 写完记忆函数
+
+  camera->init(_rootPage->getType());
 }
 
 /**
@@ -100,6 +94,8 @@ bool Launcher::open() {
     popInfo("empty page!", 600);
     return false;
   }
+
+  currentMenu->rememberCameraPos(camera->getPosition());
 
   currentMenu->deInit();  //先析构（退场动画）再挪动指针
 
@@ -127,6 +123,8 @@ bool Launcher::close() {
     popInfo("empty page!", 600);
     return false;
   }
+
+  currentMenu->rememberCameraPos(camera->getPosition());
 
   currentMenu->deInit();  //先析构（退场动画）再挪动指针
 

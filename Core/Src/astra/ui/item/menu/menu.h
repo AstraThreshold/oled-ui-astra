@@ -19,6 +19,11 @@ public:
   [[nodiscard]] virtual std::string getType() const { return "Base"; }
 
 public:
+  std::vector<float> cameraPosMemory = {};
+  void rememberCameraPos(const std::vector<float> &_camera) { cameraPosMemory = _camera; }
+  [[nodiscard]] std::vector<float> getCameraMemoryPos() const { return cameraPosMemory; }
+
+public:
   //存储其在父页面中的位置
   //list中就是每一项对应的坐标 tile中就是每一个图片的坐标
   typedef struct Position {

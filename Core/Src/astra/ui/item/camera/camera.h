@@ -32,6 +32,8 @@ public:
   unsigned char outOfView(float _x, float _y);
   std::vector<float> getPosition();
 
+  void init(const std::string &_type);
+
   //在启动器中新建selector和camera 然后注入menu render
   //在启动器中执行下述方法即可实现视角移动
   //启动器要判断是否超过视角范围 若超过则移动摄像机
