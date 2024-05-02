@@ -42,8 +42,6 @@ struct config {
   float selectorMargin = 4; //选择框与文字左边距
   float selectorTopMargin = 2; //选择框与文字上边距
 
-  unsigned char listPageTurningMode = 1; //0: 翻页模式 1: 滚动模式
-
   float tilePicWidth = 30;
   float tilePicHeight = 30;
   float tilePicMargin = 8;

@@ -54,11 +54,11 @@ std::vector<float> Camera::getPositionTrg() {
 void Camera::init(const std::string &_type) {
   if (_type == "List") {
     this->goDirect(0, static_cast<float>((0 - sys::getSystemConfig().screenHeight) * 10));
-    this->render();
+    //this->render();
   }
   else if (_type == "Tile") {
     this->goDirect(static_cast<float>((0 - sys::getSystemConfig().screenWeight) * 10), 0);
-    this->render();
+    //this->render();
   }
 }
 
@@ -123,44 +123,20 @@ void Camera::goToPreviewPageItem() {
   this->yTrg = y + systemConfig.screenHeight;
 }
 
-void Camera::goToListItemPage(unsigned char _index) {
-  static const unsigned char maxItemPerScreen = systemConfig.screenHeight / astraConfig.listLineHeight;
-  unsigned char _page = 0;
+void Camera::goToListItemRolling(const std::vector<float>& _posSelector) {
+  static unsigned char linesNeedToMove = 0;
 
-  if (_index == 0) _page = 0;
-  else if (_index % maxItemPerScreen == 0) _page = _index / maxItemPerScreen;
-  else _page = floor(_index / maxItemPerScreen);
-  go(0, _page * systemConfig.screenHeight);
-}
+  //if (outOfView(_posSelector) == 0) return;
 
-void Camera::goToListItemRolling(std::vector<float> _posSelector) {
-
-  //这是一个让页面在一定情况下向下或向上滚动一行的函数
-  //当index向上超越了一个屏幕可以显示的内容 就要向上滚动一行 滚动到以当前选择项为第一项的页面
-  //当index向下超越了一个屏幕可以显示的内容 就要向下滚动一行 滚动到以当前选择项为最后一项的页面
-  //正常情况下 不移动
-
-  //如果不碰边界 不更新端点
-  //端点惰性赋值
-  //计算出每页第一行的index和最后一行的index
-  //碰到下边界就向下滚动 碰到上边界就向上滚动
-
-  //最开始左端点是0 右端点是max-1
-  //index超过右端点 就向下滚动index-右端点行 同时左右端点都加上index-右端点
-
-  static unsigned char direction = 0; //0: no roll, 1: up, 2: down
-
-  if (outOfView(_posSelector[0], _posSelector[1]) == 1) direction = 1;
-  else if (outOfView(_posSelector[0], _posSelector[1]) == 2) direction = 2;
-
-  if (direction == 1) {
-    go(_posSelector[0], _posSelector[1]);
-    if (this->x == 0 - _posSelector[0] && this->y == 0 - _posSelector[1]) direction = 0;
+  linesNeedToMove = static_cast<unsigned char>((_posSelector[1] + y) / astraConfig.listLineHeight);
+  if (outOfView(_posSelector) == 1) {
+    //todo 需要移动的行数等于selector与camera的距离差对行高取整
+    go(0, 0 - linesNeedToMove * astraConfig.listLineHeight);
+    return;
   }
-  if (direction == 2) {
-    go(_posSelector[0], _posSelector[1] + astraConfig.listLineHeight - systemConfig.screenHeight);
-    //go到selector的左下角
-    if (this->x == 0 - _posSelector[0] && this->y == 0 - (_posSelector[1] + astraConfig.listLineHeight - systemConfig.screenHeight)) direction = 0;
+  else if (outOfView(_posSelector) == 2) {
+    go(0, linesNeedToMove * astraConfig.listLineHeight);
+    return;
   }
 }
 
@@ -168,8 +144,19 @@ void Camera::goToTileItem(unsigned char _index) {
   go(_index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin), 0);
 }
 
-bool Camera::isMoving() {
-  return moving;
+bool Camera::isMoving() const {
+  if ((this->x == this->xTrg) and (this->y == this->yTrg)) return false;
+  else return true;
+}
+
+bool Camera::isReached(float _x, float _y) const {
+  if (this->x == 0 - _x and this->y == 0 - _y) return true;
+  else return false;
+}
+
+bool Camera::isReached(const std::vector<float> &_pos) const {
+  if (this->x == 0 - _pos[0] and this->y == 0 - _pos[1]) return true;
+  else return false;
 }
 
 void Camera::reset() {
@@ -181,27 +168,23 @@ void Camera::resetDirect() {
 }
 
 void Camera::render() {
-  moving = true;
   Animation::move(&this->x, this->xTrg, astraConfig.cameraAnimationSpeed);
   Animation::move(&this->y, this->yTrg, astraConfig.cameraAnimationSpeed);
-  if (this->x == this->xTrg && this->y == this->yTrg) moving = false;
 }
 
 void Camera::update(Menu *_menu, Selector *_selector) {
-  //todo 这里还需要处理一下
-  this->render();
 
-  //todo 第一次不行 第二次进入就可以了
+  if (_menu->getType() == "List") goToListItemRolling(_selector->getPosition());
+  else if (_menu->getType() == "Tile") goToTileItem(_menu->selectIndex);
+
   //todo 考虑是_menu发生了变化导致的
-  if (_menu->cameraPosMemoryFlag) {
-    go(_menu->getCameraMemoryPos());
-    //todo 因为有记忆 所以一直go这一个地方 camera就不会移动了
-  } else {
-    if (_menu->getType() == "List") {
-      if (astraConfig.listPageTurningMode == 0) goToListItemPage(_menu->selectIndex);
-      else if (astraConfig.listPageTurningMode == 1) goToListItemRolling(_selector->getPosition());
-    }
-    else if (_menu->getType() == "Tile") goToTileItem(_menu->selectIndex);
-  }
+//  if (_menu->cameraPosMemoryFlag) {
+//    go(_menu->getCameraMemoryPos());
+//    //if (this->isReached(_menu->getCameraMemoryPos())) _menu->cameraPosMemoryFlag = false;
+//  } else {
+//    //do sth
+//  }
+
+  this->render();
 }
 }

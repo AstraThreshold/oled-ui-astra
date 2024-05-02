@@ -24,12 +24,11 @@ public:
   float x, y;
   float xTrg, yTrg;
 
-  bool moving = false;
-
   Camera(); //build an empty camera instance.
   Camera(float _x, float _y); //build a camera instance with position.
 
   unsigned char outOfView(float _x, float _y);
+  unsigned char outOfView(std::vector<float> _pos) { return outOfView(_pos[0], _pos[1]); }
   [[nodiscard]] std::vector<float> getPosition();
   [[nodiscard]] std::vector<float> getPositionTrg();
 
@@ -55,11 +54,12 @@ public:
 
   void goToNextPageItem();
   void goToPreviewPageItem();
-  void goToListItemPage(unsigned char _index);
-  void goToListItemRolling(std::vector<float> _posSelector);
+  void goToListItemRolling(const std::vector<float>& _posSelector);
   void goToTileItem(unsigned char _index);
 
-  bool isMoving();
+  [[nodiscard]] bool isMoving() const;
+  [[nodiscard]] bool isReached(float _x, float _y) const;
+  [[nodiscard]] bool isReached(const std::vector<float> &_pos) const;
 
   void reset();
   void resetDirect();
