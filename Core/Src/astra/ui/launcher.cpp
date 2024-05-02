@@ -95,7 +95,7 @@ bool Launcher::open() {
     return false;
   }
 
-  currentMenu->rememberCameraPos(camera->getPosition());
+  currentMenu->rememberCameraPos(camera->getPositionTrg());
 
   currentMenu->deInit();  //先析构（退场动画）再挪动指针
 
@@ -124,7 +124,7 @@ bool Launcher::close() {
     return false;
   }
 
-  currentMenu->rememberCameraPos(camera->getPosition());
+  currentMenu->rememberCameraPos(camera->getPositionTrg());
 
   currentMenu->deInit();  //先析构（退场动画）再挪动指针
 

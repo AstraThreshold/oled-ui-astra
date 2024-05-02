@@ -47,6 +47,10 @@ std::vector<float> Camera::getPosition() {
   return {x, y};
 }
 
+std::vector<float> Camera::getPositionTrg() {
+  return {xTrg, yTrg};
+}
+
 void Camera::init(const std::string &_type) {
   if (_type == "List") {
     this->goDirect(0, static_cast<float>((0 - sys::getSystemConfig().screenHeight) * 10));
@@ -89,6 +93,26 @@ void Camera::goHorizontal(float _x) {
 
 void Camera::goVertical(float _y) {
   this->yTrg = 0 - _y;
+}
+
+void Camera::move(float _x, float _y) {
+  this->xTrg -= _x;
+  this->yTrg -= _y;
+}
+
+void Camera::moveDirect(float _x, float _y) {
+  this->x -= _x;
+  this->y -= _y;
+  this->xTrg -= _x;
+  this->yTrg -= _y;
+}
+
+void Camera::moveHorizontal(float _x) {
+  this->xTrg -= _x;
+}
+
+void Camera::moveVertical(float _y) {
+  this->yTrg -= _y;
 }
 
 void Camera::goToNextPageItem() {
@@ -165,16 +189,19 @@ void Camera::render() {
 
 void Camera::update(Menu *_menu, Selector *_selector) {
   //todo 这里还需要处理一下
-  if (_menu->cameraPosMemoryFlag) {
-
-  }
-
   this->render();
 
-  if (_menu->getType() == "List") {
-    if (astraConfig.listPageTurningMode == 0) goToListItemPage(_menu->selectIndex);
-    else if (astraConfig.listPageTurningMode == 1) goToListItemRolling(_selector->getPosition());
+  //todo 第一次不行 第二次进入就可以了
+  //todo 考虑是_menu发生了变化导致的
+  if (_menu->cameraPosMemoryFlag) {
+    go(_menu->getCameraMemoryPos());
+    //todo 因为有记忆 所以一直go这一个地方 camera就不会移动了
+  } else {
+    if (_menu->getType() == "List") {
+      if (astraConfig.listPageTurningMode == 0) goToListItemPage(_menu->selectIndex);
+      else if (astraConfig.listPageTurningMode == 1) goToListItemRolling(_selector->getPosition());
+    }
+    else if (_menu->getType() == "Tile") goToTileItem(_menu->selectIndex);
   }
-  else if (_menu->getType() == "Tile") goToTileItem(_menu->selectIndex);
 }
 }

@@ -30,7 +30,8 @@ public:
   Camera(float _x, float _y); //build a camera instance with position.
 
   unsigned char outOfView(float _x, float _y);
-  std::vector<float> getPosition();
+  [[nodiscard]] std::vector<float> getPosition();
+  [[nodiscard]] std::vector<float> getPositionTrg();
 
   void init(const std::string &_type);
 
@@ -38,11 +39,19 @@ public:
   //在启动器中执行下述方法即可实现视角移动
   //启动器要判断是否超过视角范围 若超过则移动摄像机
   //所有过程中 渲染好的元素绝对坐标都是不变的 只有摄像机的坐标在变
+
+  //go to a position.
   void go(float _x, float _y);
   void go(const std::vector<float> &_pos); //go to a position.
   void goDirect(float _x, float _y);
   void goHorizontal(float _x);
   void goVertical(float _y);
+
+  //move to a position.
+  void move(float _x, float _y);
+  void moveDirect(float _x, float _y);
+  void moveHorizontal(float _x);
+  void moveVertical(float _y);
 
   void goToNextPageItem();
   void goToPreviewPageItem();
