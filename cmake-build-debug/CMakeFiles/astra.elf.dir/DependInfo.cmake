@@ -15,6 +15,7 @@ set(CMAKE_ASM_COMPILER_ID "GNU")
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_ASM
   "STM32F103xB"
+  "STM32_THREAD_SAFE_STRATEGY=2"
   "USE_HAL_DRIVER"
   )
 

@@ -4,6 +4,8 @@
 
 #include "camera.h"
 
+#include <cmath>
+
 namespace astra {
 Camera::Camera() {
   this->xInit = 0;
@@ -123,21 +125,39 @@ void Camera::goToPreviewPageItem() {
   this->yTrg = y + systemConfig.screenHeight;
 }
 
-void Camera::goToListItemRolling(const std::vector<float>& _posSelector) {
-  static unsigned char linesNeedToMove = 0;
+void Camera::goToListItemRolling(unsigned char _index) {
+  //如果当前选择的index大于屏幕能容纳的 那就向下移动index-最大index行
+  //如果当前选择的index小于屏幕能容纳的 那就向上移动index-最小index行
+  //两个端点值最开始是0 : screenHeight/行高
+  //当index越界时 更新端点值 端点值的间距永远是screenHeight/行高
 
-  //if (outOfView(_posSelector) == 0) return;
+  static unsigned char lBoundary = this->yTrg / astraConfig.listLineHeight;
+  static unsigned char rBoundary = (systemConfig.screenHeight / astraConfig.listLineHeight) - 1;
+  static bool init = false;
 
-  linesNeedToMove = static_cast<unsigned char>((_posSelector[1] + y) / astraConfig.listLineHeight);
-  if (outOfView(_posSelector) == 1) {
-    //todo 需要移动的行数等于selector与camera的距离差对行高取整
-    go(0, 0 - linesNeedToMove * astraConfig.listLineHeight);
+  //第一次进入的时候初始化 退出页面记住坐标 再次进入就OK了
+  if (!init) {
+    go(0,0);
+    init = true;
+  }
+
+  //todo 第二次进来的时候 go到了记忆中的位置 继续move也是在记忆中的位置的基础上进行move
+  //todo 所以具体要move多少 还需要改变
+
+  if (_index < lBoundary) {
+    //注意这里是go不是move
+    move(0, (_index - lBoundary) * astraConfig.listLineHeight);
+    lBoundary = _index;
+    rBoundary = lBoundary + systemConfig.screenHeight / astraConfig.listLineHeight - 1;
     return;
   }
-  else if (outOfView(_posSelector) == 2) {
-    go(0, linesNeedToMove * astraConfig.listLineHeight);
+  else if (_index > rBoundary) {
+    move(0, (_index - rBoundary) * astraConfig.listLineHeight);
+    rBoundary = _index;
+    lBoundary = rBoundary - systemConfig.screenHeight / astraConfig.listLineHeight + 1;
     return;
   }
+  else return;
 }
 
 void Camera::goToTileItem(unsigned char _index) {
@@ -174,16 +194,14 @@ void Camera::render() {
 
 void Camera::update(Menu *_menu, Selector *_selector) {
 
-  if (_menu->getType() == "List") goToListItemRolling(_selector->getPosition());
+  if (_menu->cameraPosMemoryFlag) {
+    go(0 - _menu->getCameraMemoryPos()[0], 0 - _menu->getCameraMemoryPos()[1]);
+    _menu->cameraPosMemoryFlag = false;
+    _menu->resetCameraMemoryPos();
+  }
+    //if (this->isReached(_menu->getCameraMemoryPos())) _menu->cameraPosMemoryFlag = false;
+  if (_menu->getType() == "List") goToListItemRolling(_menu->selectIndex);
   else if (_menu->getType() == "Tile") goToTileItem(_menu->selectIndex);
-
-  //todo 考虑是_menu发生了变化导致的
-//  if (_menu->cameraPosMemoryFlag) {
-//    go(_menu->getCameraMemoryPos());
-//    //if (this->isReached(_menu->getCameraMemoryPos())) _menu->cameraPosMemoryFlag = false;
-//  } else {
-//    //do sth
-//  }
 
   this->render();
 }

@@ -4,19 +4,19 @@
 # compile ASM with D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe
 # compile C with D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe
 # compile CXX with D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-g++.exe
-ASM_DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
+ASM_DEFINES = -DSTM32F103xB -DSTM32_THREAD_SAFE_STRATEGY=2 -DUSE_HAL_DRIVER
 
 ASM_INCLUDES = -ID:\Projects\astra\Core\Inc -ID:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\Projects\astra\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\Projects\astra\Drivers\CMSIS\Include
 
 ASM_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -Og -g
 
-C_DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
+C_DEFINES = -DSTM32F103xB -DSTM32_THREAD_SAFE_STRATEGY=2 -DUSE_HAL_DRIVER
 
 C_INCLUDES = -ID:\Projects\astra\Core\Inc -ID:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\Projects\astra\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\Projects\astra\Drivers\CMSIS\Include
 
 C_FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
 
-CXX_DEFINES = -DSTM32F103xB -DUSE_HAL_DRIVER
+CXX_DEFINES = -DSTM32F103xB -DSTM32_THREAD_SAFE_STRATEGY=2 -DUSE_HAL_DRIVER
 
 CXX_INCLUDES = -ID:\Projects\astra\Core\Inc -ID:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\Projects\astra\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\Projects\astra\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\Projects\astra\Drivers\CMSIS\Include
 

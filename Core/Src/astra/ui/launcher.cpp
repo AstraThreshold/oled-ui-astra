@@ -71,9 +71,6 @@ void Launcher::init(Menu *_rootPage) {
   selector = new Selector();
   selector->inject(_rootPage);
 
-//  selector->go(3);
-//todo 写完记忆函数
-
   camera->init(_rootPage->getType());
 }
 

@@ -47,6 +47,7 @@
                 <option id="gnu.c.compiler.option.preprocessor.def.symbols.263379443" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
                   <listOptionValue builtIn="false" value="USE_HAL_DRIVER" />
                   <listOptionValue builtIn="false" value="STM32F103xB" />
+                  <listOptionValue builtIn="false" value="STM32_THREAD_SAFE_STRATEGY=2" />
                 </option>
                 <option id="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other.1390022088" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other" value="-fmessage-length=0" valueType="string" />
                 <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1752414626" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c" />
@@ -65,6 +66,7 @@
                 <option id="gnu.cpp.compiler.option.preprocessor.def.1599325150" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
                   <listOptionValue builtIn="false" value="USE_HAL_DRIVER" />
                   <listOptionValue builtIn="false" value="STM32F103xB" />
+                  <listOptionValue builtIn="false" value="STM32_THREAD_SAFE_STRATEGY=2" />
                 </option>
                 <option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other.1304518953" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other" value="-fmessage-length=0" valueType="string" />
                 <inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.821006388" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp" />
@@ -154,6 +156,7 @@
                 <option id="gnu.c.compiler.option.preprocessor.def.symbols.263379443" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
                   <listOptionValue builtIn="false" value="USE_HAL_DRIVER" />
                   <listOptionValue builtIn="false" value="STM32F103xB" />
+                  <listOptionValue builtIn="false" value="STM32_THREAD_SAFE_STRATEGY=2" />
                 </option>
                 <option id="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other.1390022088" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other" value="-fmessage-length=0" valueType="string" />
                 <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1752414626" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c" />
@@ -172,6 +175,7 @@
                 <option id="gnu.cpp.compiler.option.preprocessor.def.symbols.2032989175" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
                   <listOptionValue builtIn="false" value="USE_HAL_DRIVER" />
                   <listOptionValue builtIn="false" value="STM32F103xB" />
+                  <listOptionValue builtIn="false" value="STM32_THREAD_SAFE_STRATEGY=2" />
                 </option>
                 <option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other.1304518953" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.misc.other" value="-fmessage-length=0" valueType="string" />
                 <inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.821006388" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp" />

@@ -8,14 +8,25 @@
 #include "astra_rocket.h"
 #include "astra_logo.h"
 
-astra::Launcher *astraLauncher = new astra::Launcher();
-astra::Menu *rootPage = new astra::Tile("root");
+void *operator new(size_t size) {
+  void *res;
+  if (size == 0)
+    size = 1;
+  res = malloc(size);
+  while (true) {
+    if (res) break;
+  }
+  return res;
+}
+
+void operator delete(void *p) { free(p); }
+
+auto *astraLauncher = new astra::Launcher();
+auto *rootPage = new astra::Tile("root");
 
 bool test = false;
 
-astra::Menu *secondPage = new astra::Tile("secondPage");
-astra::Menu *thirdPage = new astra::List("thirdPage");
-//astra::Menu *fourthPage = new astra::List("fourthPage");
+auto *secondPage = new astra::List("secondPage");
 
 void astraCoreInit(void) {
   HAL::inject(new HALDreamCore);
@@ -26,21 +37,17 @@ void astraCoreInit(void) {
   rootPage->addItem(new astra::List("test1"));
   rootPage->addItem(new astra::List("测试2"));
   rootPage->addItem(new astra::List("测试测试3"));
-  rootPage->addItem(new astra::List("测试测试测试4"));
   rootPage->addItem(secondPage);
 
   secondPage->addItem(new astra::List());
   secondPage->addItem(new astra::List("-测试2"), new astra::CheckBox(test));
   secondPage->addItem(new astra::Tile("-测试测试3"));
-  secondPage->addItem(thirdPage);
+  secondPage->addItem(new astra::Tile("-测试测试测试4"));
+  secondPage->addItem(new astra::List("-测试测试测试5"));
+  secondPage->addItem(new astra::List("-测试测试测试6"));
+  secondPage->addItem(new astra::List("-测试测试测试6"));
 
-  thirdPage->addItem(new astra::Tile());
-//  thirdPage->addItem(new astra::List("测试1"));
-//  thirdPage->addItem(new astra::List("测试2"));
-
-
-  //todo 考虑是new太多了引发的问题
-//  fourthPage->addItem(new astra::List("测试2"));
+  //todo 考虑是堆栈溢出
 
   astraLauncher->init(rootPage);
 }

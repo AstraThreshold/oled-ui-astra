@@ -54,7 +54,7 @@ public:
 
   void goToNextPageItem();
   void goToPreviewPageItem();
-  void goToListItemRolling(const std::vector<float>& _posSelector);
+  void goToListItemRolling(unsigned char _index);
   void goToTileItem(unsigned char _index);
 
   [[nodiscard]] bool isMoving() const;

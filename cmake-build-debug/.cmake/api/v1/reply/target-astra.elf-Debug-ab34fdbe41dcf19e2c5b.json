@@ -140,6 +140,10 @@
 				},
 				{
 					"backtrace" : 9,
+					"define" : "STM32_THREAD_SAFE_STRATEGY=2"
+				},
+				{
+					"backtrace" : 9,
 					"define" : "USE_HAL_DRIVER"
 				}
 			],
@@ -296,6 +300,10 @@
 				},
 				{
 					"backtrace" : 9,
+					"define" : "STM32_THREAD_SAFE_STRATEGY=2"
+				},
+				{
+					"backtrace" : 9,
 					"define" : "USE_HAL_DRIVER"
 				}
 			],
@@ -406,6 +414,10 @@
 				{
 					"backtrace" : 9,
 					"define" : "STM32F103xB"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "STM32_THREAD_SAFE_STRATEGY=2"
 				},
 				{
 					"backtrace" : 9,

@@ -26,6 +26,7 @@
 				<Compiler>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xB"/>
+					<Add option="-DSTM32_THREAD_SAFE_STRATEGY=2"/>
 					<Add directory="D:/Projects/astra/Core/Inc"/>
 					<Add directory="D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Inc"/>
 					<Add directory="D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
@@ -54,6 +55,7 @@
 				<Compiler>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xB"/>
+					<Add option="-DSTM32_THREAD_SAFE_STRATEGY=2"/>
 					<Add directory="D:/Projects/astra/Core/Inc"/>
 					<Add directory="D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Inc"/>
 					<Add directory="D:/Projects/astra/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>

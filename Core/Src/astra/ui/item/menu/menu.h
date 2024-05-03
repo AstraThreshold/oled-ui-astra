@@ -20,8 +20,12 @@ public:
 
 public:
   std::vector<float> cameraPosMemory = {};
-  void rememberCameraPos(const std::vector<float> &_camera) { cameraPosMemory = _camera; cameraPosMemoryFlag = true; }
+  void rememberCameraPos(const std::vector<float> &_camera) {
+    cameraPosMemory = _camera;
+    cameraPosMemoryFlag = true;
+  }
   [[nodiscard]] std::vector<float> getCameraMemoryPos() const { return cameraPosMemory; }
+  void resetCameraMemoryPos() { cameraPosMemory = {0, 0}; }
   //编写一个变量 指示该页面到底有没有记忆
   bool cameraPosMemoryFlag = false;
 
@@ -59,6 +63,7 @@ public:
 
 public:
   Menu() = default;
+  ~Menu() = default;
 
 public:
   void init(const std::vector<float>& _camera); //每次打开页面都要调用一次
