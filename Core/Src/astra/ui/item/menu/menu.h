@@ -62,6 +62,9 @@ public:
   [[nodiscard]] Menu *getPreview() const;
 
 public:
+  bool initFlag = false;
+
+public:
   Menu() = default;
   ~Menu() = default;
 
@@ -98,6 +101,11 @@ public:
   explicit List(const std::string &_title);
   explicit List(const std::vector<unsigned char>& _pic);
   List(const std::string &_title, const std::vector<unsigned char>& _pic);
+
+public:
+  std::vector<unsigned char> boundary = {0, static_cast<unsigned char>(systemConfig.screenHeight / astraConfig.listLineHeight - 1)};
+  [[nodiscard]] std::vector<unsigned char> getBoundary() const { return boundary; }
+  void refreshBoundary(unsigned char _l, unsigned char _r) { boundary = {_l, _r}; }
 
 public:
   void render(const std::vector<float> &_camera) override;

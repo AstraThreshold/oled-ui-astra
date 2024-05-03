@@ -6,7 +6,6 @@
 #ifndef ASTRA_CORE_SRC_SYSTEM_H_
 #define ASTRA_CORE_SRC_SYSTEM_H_
 
-#include "cstdint"
 #include "../../hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2.h"
 
 namespace astra {

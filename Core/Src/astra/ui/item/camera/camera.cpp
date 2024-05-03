@@ -125,36 +125,25 @@ void Camera::goToPreviewPageItem() {
   this->yTrg = y + systemConfig.screenHeight;
 }
 
-void Camera::goToListItemRolling(unsigned char _index) {
-  //如果当前选择的index大于屏幕能容纳的 那就向下移动index-最大index行
-  //如果当前选择的index小于屏幕能容纳的 那就向上移动index-最小index行
-  //两个端点值最开始是0 : screenHeight/行高
-  //当index越界时 更新端点值 端点值的间距永远是screenHeight/行高
-
-  static unsigned char lBoundary = this->yTrg / astraConfig.listLineHeight;
-  static unsigned char rBoundary = (systemConfig.screenHeight / astraConfig.listLineHeight) - 1;
+void Camera::goToListItemRolling(List *_menu) {
+  static const unsigned char maxItemPerPage = systemConfig.screenHeight / astraConfig.listLineHeight;
   static bool init = false;
 
   //第一次进入的时候初始化 退出页面记住坐标 再次进入就OK了
-  if (!init) {
+  if (!_menu->initFlag) {
     go(0,0);
-    init = true;
+    _menu->initFlag = true;
   }
 
-  //todo 第二次进来的时候 go到了记忆中的位置 继续move也是在记忆中的位置的基础上进行move
-  //todo 所以具体要move多少 还需要改变
-
-  if (_index < lBoundary) {
+  if (_menu->selectIndex < _menu->getBoundary()[0]) {
     //注意这里是go不是move
-    move(0, (_index - lBoundary) * astraConfig.listLineHeight);
-    lBoundary = _index;
-    rBoundary = lBoundary + systemConfig.screenHeight / astraConfig.listLineHeight - 1;
+    move(0, (_menu->selectIndex - _menu->getBoundary()[0]) * astraConfig.listLineHeight);
+    _menu->refreshBoundary(_menu->selectIndex, _menu->selectIndex + maxItemPerPage - 1);
     return;
   }
-  else if (_index > rBoundary) {
-    move(0, (_index - rBoundary) * astraConfig.listLineHeight);
-    rBoundary = _index;
-    lBoundary = rBoundary - systemConfig.screenHeight / astraConfig.listLineHeight + 1;
+  else if (_menu->selectIndex > _menu->getBoundary()[1]) {
+    move(0, (_menu->selectIndex - _menu->getBoundary()[1]) * astraConfig.listLineHeight);
+    _menu->refreshBoundary(_menu->selectIndex - maxItemPerPage + 1, _menu->selectIndex);
     return;
   }
   else return;
@@ -200,7 +189,7 @@ void Camera::update(Menu *_menu, Selector *_selector) {
     _menu->resetCameraMemoryPos();
   }
     //if (this->isReached(_menu->getCameraMemoryPos())) _menu->cameraPosMemoryFlag = false;
-  if (_menu->getType() == "List") goToListItemRolling(_menu->selectIndex);
+  if (_menu->getType() == "List") goToListItemRolling(dynamic_cast<List*>(_menu));
   else if (_menu->getType() == "Tile") goToTileItem(_menu->selectIndex);
 
   this->render();

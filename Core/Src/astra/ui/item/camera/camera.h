@@ -54,7 +54,7 @@ public:
 
   void goToNextPageItem();
   void goToPreviewPageItem();
-  void goToListItemRolling(unsigned char _index);
+  void goToListItemRolling(List *_menu);
   void goToTileItem(unsigned char _index);
 
   [[nodiscard]] bool isMoving() const;

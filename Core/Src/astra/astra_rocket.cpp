@@ -22,7 +22,7 @@ void *operator new(size_t size) {
 void operator delete(void *p) { free(p); }
 
 auto *astraLauncher = new astra::Launcher();
-auto *rootPage = new astra::Tile("root");
+auto *rootPage = new astra::List("root");
 
 bool test = false;
 
@@ -37,6 +37,7 @@ void astraCoreInit(void) {
   rootPage->addItem(new astra::List("test1"));
   rootPage->addItem(new astra::List("测试2"));
   rootPage->addItem(new astra::List("测试测试3"));
+  rootPage->addItem(new astra::List("测试测试3"));
   rootPage->addItem(secondPage);
 
   secondPage->addItem(new astra::List());
@@ -45,7 +46,7 @@ void astraCoreInit(void) {
   secondPage->addItem(new astra::Tile("-测试测试测试4"));
   secondPage->addItem(new astra::List("-测试测试测试5"));
   secondPage->addItem(new astra::List("-测试测试测试6"));
-  secondPage->addItem(new astra::List("-测试测试测试6"));
+//  secondPage->addItem(new astra::List("-测试测试测试6"));
 
   //todo 考虑是堆栈溢出
 
