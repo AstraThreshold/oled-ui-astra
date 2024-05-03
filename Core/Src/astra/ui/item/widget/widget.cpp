@@ -6,7 +6,6 @@ CheckBox::CheckBox(bool &_value) {
   value = _value;
   if (value) isCheck = true;
   else isCheck = false;
-  this->type = WidgetType::CHECKBOX;
   this->parent = nullptr;
 }
 
@@ -54,8 +53,85 @@ void CheckBox::renderIndicator(float _x, float _y, const std::vector<float> &_ca
 }
 
 void CheckBox::render(const std::vector<float> &_camera) {
-  //todo 选中复选框后弹出消息提醒
+  //todo 选中复选框后弹出消息提醒 这玩意现在我倒觉得没啥必要 可以暂时不做
 }
 
+PopUp::PopUp(unsigned char _direction,
+             const std::string &_title,
+             const std::vector<std::string> &_options,
+             unsigned char &_value) {
+  direction = _direction;
+  title = _title;
+  options = _options;
+  boundary = options.size();
+  value = _value;
+  this->parent = nullptr;
+}
+
+void PopUp::selectNext() {
+  if (value == boundary - 1) value = 0;
+  else value++;
+}
+
+void PopUp::selectPreview() {
+  if (value == 0) value = boundary - 1;
+  else value--;
+}
+
+bool PopUp::select(unsigned char _index) {
+  if (_index > boundary - 1) return false;
+  if (_index < 0) return false;
+  value = _index;
+  return true;
+}
+
+void PopUp::init() { }
+
+void PopUp::deInit() {
+  delete this;
+}
+
+void PopUp::renderIndicator(float _x, float _y, const std::vector<float> &_camera) {
+  Item::updateConfig();
+  HAL::setDrawType(1);
+  //把左下角转换为左上角 居中
+  HAL::drawEnglish(_x + _camera[0] + 1, _y + _camera[1] + astraConfig.listTextHeight, std::to_string(value));
+}
+
+void PopUp::render(const std::vector<float> &_camera) {
+  //Widget::render(_camera);
+}
+
+Slider::Slider(const std::string &_title,
+               unsigned char _min,
+               unsigned char _max,
+               unsigned char _step,
+               unsigned char &_value) {
+
+}
+
+unsigned char Slider::add() {
+  return 0;
+}
+
+unsigned char Slider::sub() {
+  return 0;
+}
+
+void Slider::init() {
+  Widget::init();
+}
+
+void Slider::deInit() {
+  Widget::deInit();
+}
+
+void Slider::renderIndicator(float _x, float _y, const std::vector<float> &_camera) {
+  Widget::renderIndicator(_x, _y, _camera);
+}
+
+void Slider::render(const std::vector<float> &_camera) {
+  Widget::render(_camera);
+}
 }
 
