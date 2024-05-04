@@ -1544,6 +1544,30 @@ Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.s
 .PHONY : Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.s
 
+Core/Src/hal/hal_dreamCore/memory_pool.obj: Core/Src/hal/hal_dreamCore/memory_pool.cpp.obj
+.PHONY : Core/Src/hal/hal_dreamCore/memory_pool.obj
+
+# target to build an object file
+Core/Src/hal/hal_dreamCore/memory_pool.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/memory_pool.cpp.obj
+.PHONY : Core/Src/hal/hal_dreamCore/memory_pool.cpp.obj
+
+Core/Src/hal/hal_dreamCore/memory_pool.i: Core/Src/hal/hal_dreamCore/memory_pool.cpp.i
+.PHONY : Core/Src/hal/hal_dreamCore/memory_pool.i
+
+# target to preprocess a source file
+Core/Src/hal/hal_dreamCore/memory_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/memory_pool.cpp.i
+.PHONY : Core/Src/hal/hal_dreamCore/memory_pool.cpp.i
+
+Core/Src/hal/hal_dreamCore/memory_pool.s: Core/Src/hal/hal_dreamCore/memory_pool.cpp.s
+.PHONY : Core/Src/hal/hal_dreamCore/memory_pool.s
+
+# target to generate assembly for a file
+Core/Src/hal/hal_dreamCore/memory_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\astra.elf.dir\build.make CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/memory_pool.cpp.s
+.PHONY : Core/Src/hal/hal_dreamCore/memory_pool.cpp.s
+
 Core/Src/main.obj: Core/Src/main.c.obj
 .PHONY : Core/Src/main.obj
 
@@ -2266,6 +2290,9 @@ help:
 	@echo ... Core/Src/hal/hal_dreamCore/components/oled/hal_oled.obj
 	@echo ... Core/Src/hal/hal_dreamCore/components/oled/hal_oled.i
 	@echo ... Core/Src/hal/hal_dreamCore/components/oled/hal_oled.s
+	@echo ... Core/Src/hal/hal_dreamCore/memory_pool.obj
+	@echo ... Core/Src/hal/hal_dreamCore/memory_pool.i
+	@echo ... Core/Src/hal/hal_dreamCore/memory_pool.s
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s

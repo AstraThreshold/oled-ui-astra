@@ -117,6 +117,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c.obj.d"
   "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj"
   "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj.d"
+  "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/memory_pool.cpp.obj"
+  "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/memory_pool.cpp.obj.d"
   "CMakeFiles/astra.elf.dir/Core/Src/main.c.obj"
   "CMakeFiles/astra.elf.dir/Core/Src/main.c.obj.d"
   "CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj"

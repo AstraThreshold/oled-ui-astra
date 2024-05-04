@@ -111,6 +111,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_key.cpp" "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj.d"
   "D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp" "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj.d"
   "D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp" "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj.d"
+  "D:/Projects/astra/Core/Src/hal/hal_dreamCore/memory_pool.cpp" "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/memory_pool.cpp.obj" "gcc" "CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/memory_pool.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

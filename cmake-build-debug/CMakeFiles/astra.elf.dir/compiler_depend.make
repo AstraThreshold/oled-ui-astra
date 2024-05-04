@@ -2475,6 +2475,15 @@ CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h \
   D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h
 
+CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/memory_pool.cpp.obj: D:/Projects/astra/Core/Src/hal/hal_dreamCore/memory_pool.cpp \
+  D:/Projects/astra/Core/Src/hal/hal_dreamCore/memory_pool.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/c++config.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/cpu_defines.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/arm-none-eabi/thumb/v7-m/nofp/bits/os_defines.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/cstddef \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/pstl/pstl_config.h \
+  D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stddef.h
+
 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj: D:/Projects/astra/Core/Src/main.c \
   D:/Projects/astra/Core/Inc/adc.h \
   D:/Projects/astra/Core/Inc/dma.h \
@@ -3766,6 +3775,12 @@ D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_u8toa.c:
 
 D:/Projects/astra/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp:
+
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/memory_pool.cpp:
+
+D:/Projects/astra/Core/Src/hal/hal_dreamCore/memory_pool.h:
+
+D:/STM32CubeToolChains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/arm-none-eabi/include/c++/12.2.1/cstddef:
 
 D:/Projects/astra/Core/Src/main.c:
 

@@ -47,14 +47,14 @@ void Menu::deInit() {
 }
 
 bool Menu::addItem(Menu *_page) {
-  if (!_page->childWidget.empty()) return false;
   if (_page == nullptr) return false;
-  else {
+  if (!_page->childWidget.empty()) return false;
+
     _page->parent = this;
     this->childMenu.push_back(_page);
     this->forePosInit();
     return true;
-  }
+
 }
 
 bool Menu::addItem(Menu *_page, Widget *_anyWidget) {

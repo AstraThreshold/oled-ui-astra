@@ -351,6 +351,12 @@
 		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/hal_dreamCore.h">
 			<Option target="astra.elf"/>
 		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/memory_pool.cpp">
+			<Option target="astra.elf"/>
+		</Unit>
+		<Unit filename="D:/Projects/astra/Core/Src/hal/hal_dreamCore/memory_pool.h">
+			<Option target="astra.elf"/>
+		</Unit>
 		<Unit filename="D:/Projects/astra/Core/Src/main.c">
 			<Option target="astra.elf"/>
 		</Unit>
