@@ -61,13 +61,6 @@ void astraCoreStart(void) {
   }
 }
 
-void astraCoreTest(void) {
-  HAL::canvasClear();
-  HAL::setDrawType(1);
-  HAL::drawEnglish(50, 20, "Hello, World!");
-  HAL::canvasUpdate();
-}
-
 void astraCoreDestroy(void) {
   HAL::destroy();
   delete astraLauncher;

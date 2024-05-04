@@ -346,40 +346,12 @@ Discarded input sections
  .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .group         0x00000000       0x1c CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .group         0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .group         0x00000000       0x1c CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .bss           0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .text._ZN3HAL12canvasUpdateEv
-                0x00000000        0xe CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .ARM.extab.text._ZN3HAL12canvasUpdateEv
-                0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .ARM.exidx.text._ZN3HAL12canvasUpdateEv
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .text._ZN3HAL11canvasClearEv
-                0x00000000        0xe CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .ARM.extab.text._ZN3HAL11canvasClearEv
-                0x00000000        0xc CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .ARM.exidx.text._ZN3HAL11canvasClearEv
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .text._ZN3HAL11setDrawTypeEh
-                0x00000000       0x12 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .ARM.extab.text._ZN3HAL11setDrawTypeEh
-                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .ARM.exidx.text._ZN3HAL11setDrawTypeEh
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .text._ZN3HAL11drawEnglishEffRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
-                0x00000000       0x1a CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .ARM.extab.text._ZN3HAL11drawEnglishEffRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
-                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .ARM.exidx.text._ZN3HAL11drawEnglishEffRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .ARM.extab.text._Znwj
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .ARM.extab.text._ZdlPv
@@ -401,14 +373,6 @@ Discarded input sections
  .ARM.extab.text._ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .ARM.exidx.text._ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .rodata.astraCoreTest.str1.4
-                0x00000000        0xe CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .text.astraCoreTest
-                0x00000000       0x48 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .ARM.extab.text.astraCoreTest
-                0x00000000       0x18 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .ARM.exidx.text.astraCoreTest
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .ARM.extab.text._GLOBAL__sub_I__Znwj
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
@@ -478,18 +442,6 @@ Discarded input sections
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
  .ARM.extab.text._ZN5astra6Camera8goDirectEff
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .text._ZN5astra6Camera12goHorizontalEf
-                0x00000000       0x10 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.extab.text._ZN5astra6Camera12goHorizontalEf
-                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.exidx.text._ZN5astra6Camera12goHorizontalEf
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .text._ZN5astra6Camera10goVerticalEf
-                0x00000000       0x10 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.extab.text._ZN5astra6Camera10goVerticalEf
-                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.exidx.text._ZN5astra6Camera10goVerticalEf
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
  .ARM.extab.text._ZN5astra6Camera4moveEff
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
  .text._ZN5astra6Camera10moveDirectEff
@@ -498,50 +450,8 @@ Discarded input sections
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
  .ARM.exidx.text._ZN5astra6Camera10moveDirectEff
                 0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .text._ZN5astra6Camera14moveHorizontalEf
-                0x00000000       0x12 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.extab.text._ZN5astra6Camera14moveHorizontalEf
-                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.exidx.text._ZN5astra6Camera14moveHorizontalEf
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .text._ZN5astra6Camera12moveVerticalEf
-                0x00000000       0x12 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.extab.text._ZN5astra6Camera12moveVerticalEf
-                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.exidx.text._ZN5astra6Camera12moveVerticalEf
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .text._ZN5astra6Camera16goToNextPageItemEv
-                0x00000000       0x1c CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.extab.text._ZN5astra6Camera16goToNextPageItemEv
-                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.exidx.text._ZN5astra6Camera16goToNextPageItemEv
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .text._ZN5astra6Camera19goToPreviewPageItemEv
-                0x00000000       0x1a CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.extab.text._ZN5astra6Camera19goToPreviewPageItemEv
-                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.exidx.text._ZN5astra6Camera19goToPreviewPageItemEv
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
  .ARM.extab.text._ZN5astra6Camera12goToTileItemEh
                 0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .text._ZNK5astra6Camera8isMovingEv
-                0x00000000       0x2c CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.extab.text._ZNK5astra6Camera8isMovingEv
-                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.exidx.text._ZNK5astra6Camera8isMovingEv
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .text._ZNK5astra6Camera9isReachedEff
-                0x00000000       0x38 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.extab.text._ZNK5astra6Camera9isReachedEff
-                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.exidx.text._ZNK5astra6Camera9isReachedEff
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .text._ZNK5astra6Camera9isReachedERKSt6vectorIfSaIfEE
-                0x00000000       0x3a CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.extab.text._ZNK5astra6Camera9isReachedERKSt6vectorIfSaIfEE
-                0x00000000        0x0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .ARM.exidx.text._ZNK5astra6Camera9isReachedERKSt6vectorIfSaIfEE
-                0x00000000        0x8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
  .text._ZN5astra6Camera5resetEv
                 0x00000000       0x10 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
  .ARM.extab.text._ZN5astra6Camera5resetEv
@@ -12313,465 +12223,465 @@ LOAD d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-
 LOAD d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libm.a
 LOAD d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000    0xb1dd5
+.debug_info     0x00000000    0xb1448
  .debug_info    0x00000000      0x6c5 CMakeFiles/astra.elf.dir/Core/Src/adc.c.obj
  .debug_info    0x000006c5     0xb8be CMakeFiles/astra.elf.dir/Core/Src/astra/astra_logo.cpp.obj
- .debug_info    0x0000bf83     0xf9a6 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .debug_info    0x0001b929    0x11409 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .debug_info    0x0002cd32    0x1dba0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
- .debug_info    0x0004a8d2    0x1136f CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
- .debug_info    0x0005bc41     0xfd45 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
- .debug_info    0x0006b986     0xe004 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
- .debug_info    0x0007998a      0x2fb CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
- .debug_info    0x00079c85      0x33e CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
- .debug_info    0x00079fc3     0xc1d9 CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
- .debug_info    0x0008619c     0x1f77 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
- .debug_info    0x00088113     0x1e96 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
- .debug_info    0x00089fa9     0x204e CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
- .debug_info    0x0008bff7     0x29d7 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
- .debug_info    0x0008e9ce      0xedc CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
- .debug_info    0x0008f8aa      0xffb CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
- .debug_info    0x000908a5      0xf1c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
- .debug_info    0x000917c1     0x17b9 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
- .debug_info    0x00092f7a       0xe0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
- .debug_info    0x0009305a      0x9cc CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
- .debug_info    0x00093a26     0x29ab CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
- .debug_info    0x000963d1       0xfb CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj
- .debug_info    0x000964cc      0xb60 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
- .debug_info    0x0009702c      0x916 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
- .debug_info    0x00097942      0x9ca CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
- .debug_info    0x0009830c     0x1304 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
- .debug_info    0x00099610     0x1173 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
- .debug_info    0x0009a783     0x1807 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
- .debug_info    0x0009bf8a     0x1a7a CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
- .debug_info    0x0009da04      0xd38 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
- .debug_info    0x0009e73c      0x94f CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
- .debug_info    0x0009f08b      0x3a0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
- .debug_info    0x0009f42b      0x519 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
- .debug_info    0x0009f944     0xa85a CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
- .debug_info    0x000aa19e      0x3f0 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
- .debug_info    0x000aa58e      0xa52 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
- .debug_info    0x000aafe0      0x1f4 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_info    0x000ab1d4      0x658 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_info    0x000ab82c      0x809 CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
- .debug_info    0x000ac035      0x22d CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_info    0x000ac262      0x7a2 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_info    0x000aca04      0xed9 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
- .debug_info    0x000ad8dd      0xcad CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_info    0x000ae58a      0x7da CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_info    0x000aed64      0x604 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_info    0x000af368      0x9c7 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_info    0x000afd2f      0x420 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
- .debug_info    0x000b014f     0x1c58 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_info    0x000b1da7       0x2e CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj
+ .debug_info    0x0000bf83     0xf558 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
+ .debug_info    0x0001b4db    0x10ff6 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
+ .debug_info    0x0002c4d1    0x1dba0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
+ .debug_info    0x0004a071    0x1136f CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
+ .debug_info    0x0005b3e0     0xfd45 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
+ .debug_info    0x0006b125     0xded8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .debug_info    0x00078ffd      0x2fb CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
+ .debug_info    0x000792f8      0x33e CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
+ .debug_info    0x00079636     0xc1d9 CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
+ .debug_info    0x0008580f     0x1f77 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
+ .debug_info    0x00087786     0x1e96 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
+ .debug_info    0x0008961c     0x204e CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
+ .debug_info    0x0008b66a     0x29d7 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
+ .debug_info    0x0008e041      0xedc CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
+ .debug_info    0x0008ef1d      0xffb CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
+ .debug_info    0x0008ff18      0xf1c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
+ .debug_info    0x00090e34     0x17b9 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
+ .debug_info    0x000925ed       0xe0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
+ .debug_info    0x000926cd      0x9cc CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
+ .debug_info    0x00093099     0x29ab CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
+ .debug_info    0x00095a44       0xfb CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj
+ .debug_info    0x00095b3f      0xb60 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
+ .debug_info    0x0009669f      0x916 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
+ .debug_info    0x00096fb5      0x9ca CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
+ .debug_info    0x0009797f     0x1304 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
+ .debug_info    0x00098c83     0x1173 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
+ .debug_info    0x00099df6     0x1807 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
+ .debug_info    0x0009b5fd     0x1a7a CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
+ .debug_info    0x0009d077      0xd38 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
+ .debug_info    0x0009ddaf      0x94f CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
+ .debug_info    0x0009e6fe      0x3a0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
+ .debug_info    0x0009ea9e      0x519 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
+ .debug_info    0x0009efb7     0xa85a CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
+ .debug_info    0x000a9811      0x3f0 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x000a9c01      0xa52 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
+ .debug_info    0x000aa653      0x1f4 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_info    0x000aa847      0x658 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_info    0x000aae9f      0x809 CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
+ .debug_info    0x000ab6a8      0x22d CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_info    0x000ab8d5      0x7a2 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_info    0x000ac077      0xed9 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+ .debug_info    0x000acf50      0xcad CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_info    0x000adbfd      0x7da CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_info    0x000ae3d7      0x604 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_info    0x000ae9db      0x9c7 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_info    0x000af3a2      0x420 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_info    0x000af7c2     0x1c58 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_info    0x000b141a       0x2e CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj
 
-.debug_abbrev   0x00000000     0xcd41
+.debug_abbrev   0x00000000     0xcd2e
  .debug_abbrev  0x00000000      0x1dc CMakeFiles/astra.elf.dir/Core/Src/adc.c.obj
  .debug_abbrev  0x000001dc      0xc37 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_logo.cpp.obj
- .debug_abbrev  0x00000e13      0xeb8 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .debug_abbrev  0x00001ccb      0xc2b CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .debug_abbrev  0x000028f6     0x1023 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
- .debug_abbrev  0x00003919      0xd11 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
- .debug_abbrev  0x0000462a      0xe69 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
- .debug_abbrev  0x00005493      0xd8f CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
- .debug_abbrev  0x00006222      0x119 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
- .debug_abbrev  0x0000633b      0x151 CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
- .debug_abbrev  0x0000648c      0xe09 CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
- .debug_abbrev  0x00007295      0x34b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
- .debug_abbrev  0x000075e0      0x30b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
- .debug_abbrev  0x000078eb      0x3e2 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
- .debug_abbrev  0x00007ccd      0x460 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
- .debug_abbrev  0x0000812d      0x1ba CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
- .debug_abbrev  0x000082e7      0x1b4 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
- .debug_abbrev  0x0000849b      0x20c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
- .debug_abbrev  0x000086a7      0x294 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
- .debug_abbrev  0x0000893b       0x94 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
- .debug_abbrev  0x000089cf      0x173 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
- .debug_abbrev  0x00008b42      0x32b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
- .debug_abbrev  0x00008e6d       0x7b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj
- .debug_abbrev  0x00008ee8      0x1a4 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
- .debug_abbrev  0x0000908c      0x165 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
- .debug_abbrev  0x000091f1      0x16c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
- .debug_abbrev  0x0000935d      0x2dc CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
- .debug_abbrev  0x00009639      0x2c4 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
- .debug_abbrev  0x000098fd      0x268 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
- .debug_abbrev  0x00009b65      0x2ca CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
- .debug_abbrev  0x00009e2f      0x1ec CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
- .debug_abbrev  0x0000a01b      0x1ef CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
- .debug_abbrev  0x0000a20a      0x100 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
- .debug_abbrev  0x0000a30a      0x199 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
- .debug_abbrev  0x0000a4a3      0xbe6 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
- .debug_abbrev  0x0000b089      0x1ae CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
- .debug_abbrev  0x0000b237      0x231 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
- .debug_abbrev  0x0000b468       0xed CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_abbrev  0x0000b555      0x18b CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_abbrev  0x0000b6e0      0x1e6 CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
- .debug_abbrev  0x0000b8c6      0x143 CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_abbrev  0x0000ba09      0x22d CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_abbrev  0x0000bc36      0x252 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
- .debug_abbrev  0x0000be88      0x36d CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_abbrev  0x0000c1f5      0x244 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_abbrev  0x0000c439      0x1f7 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_abbrev  0x0000c630      0x2a0 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_abbrev  0x0000c8d0      0x1d8 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
- .debug_abbrev  0x0000caa8      0x27c CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_abbrev  0x0000cd24       0x1d CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj
+ .debug_abbrev  0x00000e13      0xe95 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
+ .debug_abbrev  0x00001ca8      0xc3b CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
+ .debug_abbrev  0x000028e3     0x1023 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
+ .debug_abbrev  0x00003906      0xd11 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
+ .debug_abbrev  0x00004617      0xe69 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
+ .debug_abbrev  0x00005480      0xd8f CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .debug_abbrev  0x0000620f      0x119 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
+ .debug_abbrev  0x00006328      0x151 CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
+ .debug_abbrev  0x00006479      0xe09 CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
+ .debug_abbrev  0x00007282      0x34b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
+ .debug_abbrev  0x000075cd      0x30b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
+ .debug_abbrev  0x000078d8      0x3e2 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
+ .debug_abbrev  0x00007cba      0x460 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
+ .debug_abbrev  0x0000811a      0x1ba CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
+ .debug_abbrev  0x000082d4      0x1b4 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
+ .debug_abbrev  0x00008488      0x20c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
+ .debug_abbrev  0x00008694      0x294 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
+ .debug_abbrev  0x00008928       0x94 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
+ .debug_abbrev  0x000089bc      0x173 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
+ .debug_abbrev  0x00008b2f      0x32b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
+ .debug_abbrev  0x00008e5a       0x7b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj
+ .debug_abbrev  0x00008ed5      0x1a4 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
+ .debug_abbrev  0x00009079      0x165 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
+ .debug_abbrev  0x000091de      0x16c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
+ .debug_abbrev  0x0000934a      0x2dc CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
+ .debug_abbrev  0x00009626      0x2c4 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
+ .debug_abbrev  0x000098ea      0x268 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
+ .debug_abbrev  0x00009b52      0x2ca CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
+ .debug_abbrev  0x00009e1c      0x1ec CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
+ .debug_abbrev  0x0000a008      0x1ef CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
+ .debug_abbrev  0x0000a1f7      0x100 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
+ .debug_abbrev  0x0000a2f7      0x199 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
+ .debug_abbrev  0x0000a490      0xbe6 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
+ .debug_abbrev  0x0000b076      0x1ae CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x0000b224      0x231 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
+ .debug_abbrev  0x0000b455       0xed CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_abbrev  0x0000b542      0x18b CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_abbrev  0x0000b6cd      0x1e6 CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
+ .debug_abbrev  0x0000b8b3      0x143 CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_abbrev  0x0000b9f6      0x22d CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_abbrev  0x0000bc23      0x252 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+ .debug_abbrev  0x0000be75      0x36d CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_abbrev  0x0000c1e2      0x244 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_abbrev  0x0000c426      0x1f7 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_abbrev  0x0000c61d      0x2a0 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_abbrev  0x0000c8bd      0x1d8 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_abbrev  0x0000ca95      0x27c CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_abbrev  0x0000cd11       0x1d CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj
 
-.debug_aranges  0x00000000     0x21c8
+.debug_aranges  0x00000000     0x2158
  .debug_aranges
                 0x00000000       0x30 CMakeFiles/astra.elf.dir/Core/Src/adc.c.obj
  .debug_aranges
                 0x00000030      0x100 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_logo.cpp.obj
  .debug_aranges
-                0x00000130      0x100 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
+                0x00000130       0xd8 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .debug_aranges
-                0x00000230      0x1f8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
+                0x00000208      0x1b0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
  .debug_aranges
-                0x00000428      0x340 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
+                0x000003b8      0x340 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
  .debug_aranges
-                0x00000768      0x168 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
+                0x000006f8      0x168 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
  .debug_aranges
-                0x000008d0      0x238 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
+                0x00000860      0x238 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
  .debug_aranges
-                0x00000b08      0x140 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+                0x00000a98      0x140 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .debug_aranges
-                0x00000c48       0x20 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
+                0x00000bd8       0x20 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
  .debug_aranges
-                0x00000c68       0x20 CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
+                0x00000bf8       0x20 CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
  .debug_aranges
-                0x00000c88      0x248 CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
+                0x00000c18      0x248 CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
  .debug_aranges
-                0x00000ed0       0x38 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
+                0x00000e60       0x38 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
  .debug_aranges
-                0x00000f08       0x20 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
+                0x00000e98       0x20 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
  .debug_aranges
-                0x00000f28       0x28 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
+                0x00000eb8       0x28 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
  .debug_aranges
-                0x00000f50       0x70 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
+                0x00000ee0       0x70 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
  .debug_aranges
-                0x00000fc0       0x50 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
+                0x00000f50       0x50 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
  .debug_aranges
-                0x00001010       0x38 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
+                0x00000fa0       0x38 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
  .debug_aranges
-                0x00001048       0x80 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
+                0x00000fd8       0x80 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
  .debug_aranges
-                0x000010c8       0x78 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
+                0x00001058       0x78 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
  .debug_aranges
-                0x00001140       0x20 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
+                0x000010d0       0x20 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
  .debug_aranges
-                0x00001160       0x20 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
+                0x000010f0       0x20 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
  .debug_aranges
-                0x00001180      0x1d0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
+                0x00001110      0x1d0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
  .debug_aranges
-                0x00001350       0x18 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj
+                0x000012e0       0x18 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj
  .debug_aranges
-                0x00001368       0x50 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
+                0x000012f8       0x50 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
  .debug_aranges
-                0x000013b8       0x28 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
+                0x00001348       0x28 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
  .debug_aranges
-                0x000013e0       0x28 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
+                0x00001370       0x28 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
  .debug_aranges
-                0x00001408       0xc8 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
+                0x00001398       0xc8 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
  .debug_aranges
-                0x000014d0       0xc8 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
+                0x00001460       0xc8 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
  .debug_aranges
-                0x00001598       0xe0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
+                0x00001528       0xe0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
  .debug_aranges
-                0x00001678       0xd0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
+                0x00001608       0xd0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
  .debug_aranges
-                0x00001748       0x58 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
+                0x000016d8       0x58 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
  .debug_aranges
-                0x000017a0       0x88 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
+                0x00001730       0x88 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
  .debug_aranges
-                0x00001828       0x20 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
+                0x000017b8       0x20 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
  .debug_aranges
-                0x00001848       0x38 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
+                0x000017d8       0x38 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
  .debug_aranges
-                0x00001880      0x160 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
+                0x00001810      0x160 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
  .debug_aranges
-                0x000019e0       0x30 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
+                0x00001970       0x30 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
  .debug_aranges
-                0x00001a10       0x30 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
+                0x000019a0       0x30 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
  .debug_aranges
-                0x00001a40       0x20 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x000019d0       0x20 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  .debug_aranges
-                0x00001a60       0x70 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x000019f0       0x70 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
  .debug_aranges
-                0x00001ad0       0xb0 CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
+                0x00001a60       0xb0 CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
  .debug_aranges
-                0x00001b80       0x28 CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x00001b10       0x28 CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
  .debug_aranges
-                0x00001ba8       0xe0 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x00001b38       0xe0 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_aranges
-                0x00001c88       0xf0 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+                0x00001c18       0xf0 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
  .debug_aranges
-                0x00001d78       0xc0 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x00001d08       0xc0 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_aranges
-                0x00001e38       0x80 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x00001dc8       0x80 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .debug_aranges
-                0x00001eb8       0x58 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x00001e48       0x58 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
  .debug_aranges
-                0x00001f10       0x90 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x00001ea0       0x90 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .debug_aranges
-                0x00001fa0       0x30 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+                0x00001f30       0x30 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .debug_aranges
-                0x00001fd0      0x1d0 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x00001f60      0x1d0 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .debug_aranges
-                0x000021a0       0x28 CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj
+                0x00002130       0x28 CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj
 
 .debug_rnglists
-                0x00000000     0x1e08
+                0x00000000     0x1db4
  .debug_rnglists
                 0x00000000       0x1f CMakeFiles/astra.elf.dir/Core/Src/adc.c.obj
  .debug_rnglists
                 0x0000001f      0x186 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_logo.cpp.obj
  .debug_rnglists
-                0x000001a5      0x157 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
+                0x000001a5      0x139 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .debug_rnglists
-                0x000002fc      0x247 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
+                0x000002de      0x211 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
  .debug_rnglists
-                0x00000543      0x42c CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
+                0x000004ef      0x42c CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
  .debug_rnglists
-                0x0000096f      0x13b CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
+                0x0000091b      0x13b CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
  .debug_rnglists
-                0x00000aaa      0x216 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
+                0x00000a56      0x216 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
  .debug_rnglists
-                0x00000cc0      0x12d CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+                0x00000c6c      0x12d CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .debug_rnglists
-                0x00000ded       0x13 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
+                0x00000d99       0x13 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
  .debug_rnglists
-                0x00000e00       0x14 CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
+                0x00000dac       0x14 CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
  .debug_rnglists
-                0x00000e14      0x1fd CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
+                0x00000dc0      0x1fd CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
  .debug_rnglists
-                0x00001011       0x25 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
+                0x00000fbd       0x25 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
  .debug_rnglists
-                0x00001036       0x13 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
+                0x00000fe2       0x13 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
  .debug_rnglists
-                0x00001049       0x19 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
+                0x00000ff5       0x19 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
  .debug_rnglists
-                0x00001062       0x4f CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
+                0x0000100e       0x4f CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
  .debug_rnglists
-                0x000010b1       0x3a CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
+                0x0000105d       0x3a CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
  .debug_rnglists
-                0x000010eb       0x28 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
+                0x00001097       0x28 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
  .debug_rnglists
-                0x00001113       0x5b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
+                0x000010bf       0x5b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
  .debug_rnglists
-                0x0000116e       0x5c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
+                0x0000111a       0x5c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
  .debug_rnglists
-                0x000011ca       0x13 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
+                0x00001176       0x13 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
  .debug_rnglists
-                0x000011dd       0x13 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
+                0x00001189       0x13 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
  .debug_rnglists
-                0x000011f0      0x16c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
+                0x0000119c      0x16c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
  .debug_rnglists
-                0x0000135c       0x38 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
+                0x00001308       0x38 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
  .debug_rnglists
-                0x00001394       0x19 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
+                0x00001340       0x19 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
  .debug_rnglists
-                0x000013ad       0x1b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
+                0x00001359       0x1b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
  .debug_rnglists
-                0x000013c8       0x91 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
+                0x00001374       0x91 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
  .debug_rnglists
-                0x00001459       0x94 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
+                0x00001405       0x94 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
  .debug_rnglists
-                0x000014ed       0xa9 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
+                0x00001499       0xa9 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
  .debug_rnglists
-                0x00001596       0x9f CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
+                0x00001542       0x9f CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
  .debug_rnglists
-                0x00001635       0x3e CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
+                0x000015e1       0x3e CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
  .debug_rnglists
-                0x00001673       0x61 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
+                0x0000161f       0x61 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
  .debug_rnglists
-                0x000016d4       0x13 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
+                0x00001680       0x13 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
  .debug_rnglists
-                0x000016e7       0x25 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
+                0x00001693       0x25 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
  .debug_rnglists
-                0x0000170c      0x111 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
+                0x000016b8      0x111 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
  .debug_rnglists
-                0x0000181d       0x20 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
+                0x000017c9       0x20 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
  .debug_rnglists
-                0x0000183d       0x20 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
+                0x000017e9       0x20 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
  .debug_rnglists
-                0x0000185d       0x13 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x00001809       0x13 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  .debug_rnglists
-                0x00001870       0x4f CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
+                0x0000181c       0x4f CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
  .debug_rnglists
-                0x000018bf       0x7f CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
+                0x0000186b       0x7f CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
  .debug_rnglists
-                0x0000193e       0x1a CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x000018ea       0x1a CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
  .debug_rnglists
-                0x00001958       0xa3 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x00001904       0xa3 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_rnglists
-                0x000019fb       0xb8 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+                0x000019a7       0xb8 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
  .debug_rnglists
-                0x00001ab3       0x8b CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x00001a5f       0x8b CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_rnglists
-                0x00001b3e       0x5e CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x00001aea       0x5e CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .debug_rnglists
-                0x00001b9c       0x3f CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x00001b48       0x3f CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
  .debug_rnglists
-                0x00001bdb       0x7d CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x00001b87       0x7d CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .debug_rnglists
-                0x00001c58       0x2f CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+                0x00001c04       0x2f CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .debug_rnglists
-                0x00001c87      0x168 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x00001c33      0x168 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .debug_rnglists
-                0x00001def       0x19 CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj
+                0x00001d9b       0x19 CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj
 
-.debug_line     0x00000000    0x217bd
+.debug_line     0x00000000    0x2151a
  .debug_line    0x00000000      0x31f CMakeFiles/astra.elf.dir/Core/Src/adc.c.obj
  .debug_line    0x0000031f     0x1648 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_logo.cpp.obj
- .debug_line    0x00001967     0x1aa1 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .debug_line    0x00003408     0x1ee0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .debug_line    0x000052e8     0x3a19 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
- .debug_line    0x00008d01     0x1887 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
- .debug_line    0x0000a588     0x1edb CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
- .debug_line    0x0000c463     0x1bfa CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
- .debug_line    0x0000e05d      0x1f3 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
- .debug_line    0x0000e250      0x261 CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
- .debug_line    0x0000e4b1     0x19bf CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
- .debug_line    0x0000fe70      0x627 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
- .debug_line    0x00010497      0x5e8 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
- .debug_line    0x00010a7f      0x6dd CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
- .debug_line    0x0001115c      0x984 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
- .debug_line    0x00011ae0      0x45c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
- .debug_line    0x00011f3c      0x3ce CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
- .debug_line    0x0001230a      0x5a4 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
- .debug_line    0x000128ae      0x782 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
- .debug_line    0x00013030      0x197 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
- .debug_line    0x000131c7      0x1b3 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
- .debug_line    0x0001337a     0x1538 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
- .debug_line    0x000148b2      0x182 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj
- .debug_line    0x00014a34      0x3c9 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
- .debug_line    0x00014dfd      0x214 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
- .debug_line    0x00015011      0x3a9 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
- .debug_line    0x000153ba      0x8b3 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
- .debug_line    0x00015c6d      0xa2d CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
- .debug_line    0x0001669a      0x9a2 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
- .debug_line    0x0001703c      0xca6 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
- .debug_line    0x00017ce2      0x492 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
- .debug_line    0x00018174      0x41b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
- .debug_line    0x0001858f      0x19c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
- .debug_line    0x0001872b      0x262 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
- .debug_line    0x0001898d     0x1724 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
- .debug_line    0x0001a0b1      0x3a4 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
- .debug_line    0x0001a455      0x3cb CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
- .debug_line    0x0001a820      0x1be CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x0001a9de      0x358 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_line    0x0001ad36      0x47c CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
- .debug_line    0x0001b1b2      0x288 CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_line    0x0001b43a      0x594 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_line    0x0001b9ce      0xf27 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
- .debug_line    0x0001c8f5      0x725 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_line    0x0001d01a      0xaae CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_line    0x0001dac8      0x5ff CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_line    0x0001e0c7      0xc6a CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_line    0x0001ed31      0x4df CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
- .debug_line    0x0001f210     0x2535 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_line    0x00021745       0x78 CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj
+ .debug_line    0x00001967     0x198c CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
+ .debug_line    0x000032f3     0x1d52 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
+ .debug_line    0x00005045     0x3a19 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
+ .debug_line    0x00008a5e     0x1887 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
+ .debug_line    0x0000a2e5     0x1edb CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
+ .debug_line    0x0000c1c0     0x1bfa CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .debug_line    0x0000ddba      0x1f3 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
+ .debug_line    0x0000dfad      0x261 CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
+ .debug_line    0x0000e20e     0x19bf CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
+ .debug_line    0x0000fbcd      0x627 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
+ .debug_line    0x000101f4      0x5e8 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
+ .debug_line    0x000107dc      0x6dd CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
+ .debug_line    0x00010eb9      0x984 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
+ .debug_line    0x0001183d      0x45c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
+ .debug_line    0x00011c99      0x3ce CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
+ .debug_line    0x00012067      0x5a4 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
+ .debug_line    0x0001260b      0x782 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
+ .debug_line    0x00012d8d      0x197 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
+ .debug_line    0x00012f24      0x1b3 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
+ .debug_line    0x000130d7     0x1538 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
+ .debug_line    0x0001460f      0x182 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj
+ .debug_line    0x00014791      0x3c9 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
+ .debug_line    0x00014b5a      0x214 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
+ .debug_line    0x00014d6e      0x3a9 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
+ .debug_line    0x00015117      0x8b3 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
+ .debug_line    0x000159ca      0xa2d CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
+ .debug_line    0x000163f7      0x9a2 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
+ .debug_line    0x00016d99      0xca6 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
+ .debug_line    0x00017a3f      0x492 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
+ .debug_line    0x00017ed1      0x41b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
+ .debug_line    0x000182ec      0x19c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
+ .debug_line    0x00018488      0x262 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
+ .debug_line    0x000186ea     0x1724 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
+ .debug_line    0x00019e0e      0x3a4 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x0001a1b2      0x3cb CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
+ .debug_line    0x0001a57d      0x1be CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x0001a73b      0x358 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_line    0x0001aa93      0x47c CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
+ .debug_line    0x0001af0f      0x288 CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_line    0x0001b197      0x594 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_line    0x0001b72b      0xf27 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+ .debug_line    0x0001c652      0x725 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_line    0x0001cd77      0xaae CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_line    0x0001d825      0x5ff CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_line    0x0001de24      0xc6a CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_line    0x0001ea8e      0x4df CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_line    0x0001ef6d     0x2535 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_line    0x000214a2       0x78 CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj
 
-.debug_str      0x00000000    0x2933d
+.debug_str      0x00000000    0x29186
  .debug_str     0x00000000      0x4a2 CMakeFiles/astra.elf.dir/Core/Src/adc.c.obj
                                 0x5ce (size before relaxing)
  .debug_str     0x000004a2     0x9ec0 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_logo.cpp.obj
                                0xa4af (size before relaxing)
- .debug_str     0x0000a362     0x7514 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
-                              0x106fb (size before relaxing)
- .debug_str     0x00011876     0x40a5 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
-                               0xe37b (size before relaxing)
- .debug_str     0x0001591b     0xa161 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
+ .debug_str     0x0000a362     0x735d CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
+                              0x1047f (size before relaxing)
+ .debug_str     0x000116bf     0x40a5 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
+                               0xe1d2 (size before relaxing)
+ .debug_str     0x00015764     0xa161 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
                               0x17710 (size before relaxing)
- .debug_str     0x0001fa7c       0x56 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
+ .debug_str     0x0001f8c5       0x56 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
                               0x116c4 (size before relaxing)
- .debug_str     0x0001fad2     0x3708 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
+ .debug_str     0x0001f91b     0x3708 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
                               0x117ed (size before relaxing)
- .debug_str     0x000231da      0xc9f CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
-                               0xc237 (size before relaxing)
- .debug_str     0x00023e79      0x334 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
+ .debug_str     0x00023023      0xc9f CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+                               0xc08e (size before relaxing)
+ .debug_str     0x00023cc2      0x334 CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
                                 0x4fc (size before relaxing)
- .debug_str     0x000241ad       0x9b CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
+ .debug_str     0x00023ff6       0x9b CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
                                 0x29d (size before relaxing)
- .debug_str     0x00024248      0xac4 CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
+ .debug_str     0x00024091      0xac4 CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
                                0xdc40 (size before relaxing)
- .debug_str     0x00024d0c       0x47 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
+ .debug_str     0x00024b55       0x47 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
                                 0xe2a (size before relaxing)
- .debug_str     0x00024d53       0x47 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
+ .debug_str     0x00024b9c       0x47 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
                                 0xdac (size before relaxing)
- .debug_str     0x00024d9a       0x74 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
+ .debug_str     0x00024be3       0x74 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
                                 0xe74 (size before relaxing)
- .debug_str     0x00024e0e      0x2d3 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
+ .debug_str     0x00024c57      0x2d3 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
                                0x15bf (size before relaxing)
- .debug_str     0x000250e1      0x751 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
+ .debug_str     0x00024f2a      0x751 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
                                 0x97d (size before relaxing)
- .debug_str     0x00025832       0xd2 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
+ .debug_str     0x0002567b       0xd2 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
                                 0x962 (size before relaxing)
- .debug_str     0x00025904      0x25f CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
+ .debug_str     0x0002574d      0x25f CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
                                 0xaf6 (size before relaxing)
- .debug_str     0x00025b63      0x193 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
+ .debug_str     0x000259ac      0x193 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
                                 0xa64 (size before relaxing)
- .debug_str     0x00025cf6       0x73 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
+ .debug_str     0x00025b3f       0x73 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
                                 0x1f3 (size before relaxing)
- .debug_str     0x00025d69       0xed CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
+ .debug_str     0x00025bb2       0xed CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
                                 0x967 (size before relaxing)
- .debug_str     0x00025e56      0x642 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
+ .debug_str     0x00025c9f      0x642 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
                                 0xf16 (size before relaxing)
- .debug_str     0x00026498       0x5f CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj
+ .debug_str     0x000262e1       0x5f CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font_myfont.c.obj
                                 0x203 (size before relaxing)
- .debug_str     0x000264f7       0x9b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
+ .debug_str     0x00026340       0x9b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
                                 0x94a (size before relaxing)
- .debug_str     0x00026592       0x83 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
+ .debug_str     0x000263db       0x83 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
                                 0x903 (size before relaxing)
- .debug_str     0x00026615       0x8a CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
+ .debug_str     0x0002645e       0x8a CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
                                 0x932 (size before relaxing)
- .debug_str     0x0002669f      0x2b0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
+ .debug_str     0x000264e8      0x2b0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
                                 0xbdc (size before relaxing)
- .debug_str     0x0002694f      0x1d7 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
+ .debug_str     0x00026798      0x1d7 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
                                 0x67b (size before relaxing)
- .debug_str     0x00026b26      0x24b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
+ .debug_str     0x0002696f      0x24b CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
                                 0x6af (size before relaxing)
- .debug_str     0x00026d71      0x1ea CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
+ .debug_str     0x00026bba      0x1ea CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
                                 0x716 (size before relaxing)
- .debug_str     0x00026f5b      0x3a2 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
+ .debug_str     0x00026da4      0x3a2 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
                                 0x891 (size before relaxing)
- .debug_str     0x000272fd      0x11a CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
+ .debug_str     0x00027146      0x11a CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
                                 0x61c (size before relaxing)
- .debug_str     0x00027417       0x58 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
+ .debug_str     0x00027260       0x58 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
                                 0x4b3 (size before relaxing)
- .debug_str     0x0002746f       0x91 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
+ .debug_str     0x000272b8       0x91 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
                                 0x556 (size before relaxing)
- .debug_str     0x00027500      0x48a CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
+ .debug_str     0x00027349      0x48a CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
                                0x931c (size before relaxing)
- .debug_str     0x0002798a       0xd4 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
+ .debug_str     0x000277d3       0xd4 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
                                 0x443 (size before relaxing)
- .debug_str     0x00027a5e       0xa7 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
+ .debug_str     0x000278a7       0xa7 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
                                 0x9f3 (size before relaxing)
- .debug_str     0x00027b05       0x69 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_str     0x0002794e       0x69 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
                                 0x231 (size before relaxing)
- .debug_str     0x00027b6e      0x115 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_str     0x000279b7      0x115 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
                                 0x67d (size before relaxing)
- .debug_str     0x00027c83      0x224 CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
+ .debug_str     0x00027acc      0x224 CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
                                 0x432 (size before relaxing)
- .debug_str     0x00027ea7       0x7d CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_str     0x00027cf0       0x7d CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
                                 0x266 (size before relaxing)
- .debug_str     0x00027f24      0x2c2 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_str     0x00027d6d      0x2c2 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
                                 0x840 (size before relaxing)
- .debug_str     0x000281e6      0x309 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+ .debug_str     0x0002802f      0x309 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
                                 0x8ec (size before relaxing)
- .debug_str     0x000284ef      0x390 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_str     0x00028338      0x390 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
                                 0x8e5 (size before relaxing)
- .debug_str     0x0002887f      0x200 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_str     0x000286c8      0x200 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
                                 0x60f (size before relaxing)
- .debug_str     0x00028a7f      0x105 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_str     0x000288c8      0x105 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
                                 0x412 (size before relaxing)
- .debug_str     0x00028b84      0x1f4 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_str     0x000289cd      0x1f4 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
                                 0x63d (size before relaxing)
- .debug_str     0x00028d78       0x93 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_str     0x00028bc1       0x93 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
                                 0x3e5 (size before relaxing)
- .debug_str     0x00028e0b      0x4e6 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_str     0x00028c54      0x4e6 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
                                 0xb79 (size before relaxing)
- .debug_str     0x000292f1       0x4c CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj
+ .debug_str     0x0002913a       0x4c CMakeFiles/astra.elf.dir/startup/startup_stm32f103xb.s.obj
                                  0x70 (size before relaxing)
 
 .comment        0x00000000       0x45
@@ -12826,249 +12736,249 @@ LOAD d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-
  .comment       0x00000045       0x46 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .comment       0x00000045       0x46 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
 
-.debug_frame    0x00000000     0xb5f0
+.debug_frame    0x00000000     0xb480
  .debug_frame   0x00000000       0x58 CMakeFiles/astra.elf.dir/Core/Src/adc.c.obj
  .debug_frame   0x00000058      0x328 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_logo.cpp.obj
- .debug_frame   0x00000380      0x32c CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
- .debug_frame   0x000006ac      0x688 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
- .debug_frame   0x00000d34      0xb64 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
- .debug_frame   0x00001898      0x480 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
- .debug_frame   0x00001d18      0x6bc CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
- .debug_frame   0x000023d4      0x428 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
- .debug_frame   0x000027fc       0x2c CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
- .debug_frame   0x00002828       0x34 CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
- .debug_frame   0x0000285c      0x5e4 CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
- .debug_frame   0x00002e40       0x50 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
- .debug_frame   0x00002e90       0x20 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
- .debug_frame   0x00002eb0       0x38 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
- .debug_frame   0x00002ee8      0x110 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
- .debug_frame   0x00002ff8      0x128 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
- .debug_frame   0x00003120       0xc4 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
- .debug_frame   0x000031e4      0x190 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
- .debug_frame   0x00003374      0x1f8 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
- .debug_frame   0x0000356c       0x20 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
- .debug_frame   0x0000358c       0x30 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
- .debug_frame   0x000035bc      0x570 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
- .debug_frame   0x00003b2c       0xd8 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
- .debug_frame   0x00003c04       0x3c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
- .debug_frame   0x00003c40       0x48 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
- .debug_frame   0x00003c88      0x27c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
- .debug_frame   0x00003f04      0x278 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
- .debug_frame   0x0000417c      0x2a8 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
- .debug_frame   0x00004424      0x2cc CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
- .debug_frame   0x000046f0       0xf0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
- .debug_frame   0x000047e0      0x17c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
- .debug_frame   0x0000495c       0x28 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
- .debug_frame   0x00004984       0x68 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
- .debug_frame   0x000049ec      0x47c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
- .debug_frame   0x00004e68       0x58 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
- .debug_frame   0x00004ec0       0x60 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
- .debug_frame   0x00004f20       0x28 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
- .debug_frame   0x00004f48       0xd8 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
- .debug_frame   0x00005020      0x1a8 CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
- .debug_frame   0x000051c8       0x30 CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
- .debug_frame   0x000051f8      0x1cc CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_frame   0x000053c4      0x2c8 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
- .debug_frame   0x0000568c      0x19c CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_frame   0x00005828      0x144 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_frame   0x0000596c       0xe4 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_frame   0x00005a50      0x184 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_frame   0x00005bd4       0x5c CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
- .debug_frame   0x00005c30      0x5ac CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_frame   0x000061dc       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(atexit_arm.o)
- .debug_frame   0x000061fc       0xdc d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(class_type_info.o)
- .debug_frame   0x000062d8       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(del_ops.o)
- .debug_frame   0x000062f8       0x54 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(dyncast.o)
- .debug_frame   0x0000634c       0x6c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_arm.o)
- .debug_frame   0x000063b8       0x94 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_catch.o)
- .debug_frame   0x0000644c       0xf0 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_exception.o)
- .debug_frame   0x0000653c       0x50 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_globals.o)
- .debug_frame   0x0000658c       0xb4 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_personality.o)
- .debug_frame   0x00006640       0xb0 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_terminate.o)
- .debug_frame   0x000066f0       0x7c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_throw.o)
- .debug_frame   0x0000676c       0x48 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(guard.o)
- .debug_frame   0x000067b4       0x50 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(guard_error.o)
- .debug_frame   0x00006804       0xdc d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(si_class_type_info.o)
- .debug_frame   0x000068e0       0x90 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(tinfo.o)
- .debug_frame   0x00006970       0xe8 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(vmi_class_type_info.o)
- .debug_frame   0x00006a58       0x30 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(vterminate.o)
- .debug_frame   0x00006a88      0x18c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(functexcept.o)
- .debug_frame   0x00006c14       0x50 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(bad_alloc.o)
- .debug_frame   0x00006c64       0x50 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(bad_array_new.o)
- .debug_frame   0x00006cb4      0x8f8 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(cp-demangle.o)
- .debug_frame   0x000075ac       0xd8 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_alloc.o)
- .debug_frame   0x00007684       0x60 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_call.o)
- .debug_frame   0x000076e4       0x28 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_type.o)
- .debug_frame   0x0000770c      0x3c8 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(stdexcept.o)
- .debug_frame   0x00007ad4      0x898 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(cow-stdexcept.o)
- .debug_frame   0x0000836c     0x1268 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(cow-string-inst.o)
- .debug_frame   0x000095d4       0x30 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libm.a(libm_a-s_ceil.o)
- .debug_frame   0x00009604       0x28 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libm.a(libm_a-sf_round.o)
- .debug_frame   0x0000962c       0xac d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x000096d8       0xc4 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x0000979c       0x24 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_truncdfsf2.o)
- .debug_frame   0x000097c0       0x4c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
- .debug_frame   0x0000980c       0x38 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivsf3.o)
- .debug_frame   0x00009844       0xc8 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpsf2.o)
- .debug_frame   0x0000990c       0x24 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixsfsi.o)
- .debug_frame   0x00009930       0x24 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)
- .debug_frame   0x00009954      0x2d0 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(unwind-arm.o)
- .debug_frame   0x00009c24       0xf4 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(pr-support.o)
- .debug_frame   0x00009d18       0x28 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-abort.o)
- .debug_frame   0x00009d40       0x30 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-malloc.o)
- .debug_frame   0x00009d70       0x48 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-mallocr.o)
- .debug_frame   0x00009db8       0x30 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-mlock.o)
- .debug_frame   0x00009de8       0x30 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-rand.o)
- .debug_frame   0x00009e18       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-realloc.o)
- .debug_frame   0x00009e38       0x48 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-reallocr.o)
- .debug_frame   0x00009e80       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-cxa_atexit.o)
- .debug_frame   0x00009eac       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-ctype_.o)
- .debug_frame   0x00009ecc      0x13c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-findfp.o)
- .debug_frame   0x0000a008       0x54 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fputc.o)
- .debug_frame   0x0000a05c       0x48 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fputs.o)
- .debug_frame   0x0000a0a4       0x64 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fvwrite.o)
- .debug_frame   0x0000a108       0x34 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fwalk.o)
- .debug_frame   0x0000a13c       0x58 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fwrite.o)
- .debug_frame   0x0000a194       0x48 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-putc.o)
- .debug_frame   0x0000a1dc       0x7c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-sprintf.o)
- .debug_frame   0x0000a258       0x8c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-stdio.o)
- .debug_frame   0x0000a2e4       0x40 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-wbuf.o)
- .debug_frame   0x0000a324       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-wsetup.o)
- .debug_frame   0x0000a350       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-memcmp.o)
- .debug_frame   0x0000a37c       0x40 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-memmove.o)
- .debug_frame   0x0000a3bc       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
- .debug_frame   0x0000a3e8       0x38 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-strncmp.o)
- .debug_frame   0x0000a420      0x118 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-signal.o)
- .debug_frame   0x0000a538       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-closer.o)
- .debug_frame   0x0000a564       0x3c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-reent.o)
- .debug_frame   0x0000a5a0       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-lseekr.o)
- .debug_frame   0x0000a5cc       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-readr.o)
- .debug_frame   0x0000a5f8       0x3c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-signalr.o)
- .debug_frame   0x0000a634       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-sbrkr.o)
- .debug_frame   0x0000a660       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-writer.o)
- .debug_frame   0x0000a68c       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-errno.o)
- .debug_frame   0x0000a6ac       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
- .debug_frame   0x0000a6d8       0xb0 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
- .debug_frame   0x0000a788       0x28 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-sysconf.o)
- .debug_frame   0x0000a7b0       0x34 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-strcmp.o)
- .debug_frame   0x0000a7e4       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-memchr-stub.o)
- .debug_frame   0x0000a810       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
- .debug_frame   0x0000a830       0x34 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
- .debug_frame   0x0000a864       0x5c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
- .debug_frame   0x0000a8c0       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
- .debug_frame   0x0000a8e0       0x78 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-freer.o)
- .debug_frame   0x0000a958       0x44 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-svfprintf.o)
- .debug_frame   0x0000a99c       0x3c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fclose.o)
- .debug_frame   0x0000a9d8       0x70 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fflush.o)
- .debug_frame   0x0000aa48       0x70 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-makebuf.o)
- .debug_frame   0x0000aab8       0x28 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
- .debug_frame   0x0000aae0       0xec d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-locale.o)
- .debug_frame   0x0000abcc       0x40 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-localeconv.o)
- .debug_frame   0x0000ac0c       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fstatr.o)
- .debug_frame   0x0000ac38       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-isattyr.o)
- .debug_frame   0x0000ac64       0x34 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
- .debug_frame   0x0000ac98       0x30 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libm_a-s_frexp.o)
- .debug_frame   0x0000acc8       0x84 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-dtoa.o)
- .debug_frame   0x0000ad4c      0x130 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-mbtowc_r.o)
- .debug_frame   0x0000ae7c      0x26c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-mprec.o)
- .debug_frame   0x0000b0e8       0x9c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-wctomb_r.o)
- .debug_frame   0x0000b184       0x60 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-wcrtomb.o)
- .debug_frame   0x0000b1e4       0x50 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-wcsrtombs.o)
- .debug_frame   0x0000b234       0x74 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-svfiprintf.o)
- .debug_frame   0x0000b2a8       0x40 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-assert.o)
- .debug_frame   0x0000b2e8       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-callocr.o)
- .debug_frame   0x0000b314       0x8c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-wcsnrtombs.o)
- .debug_frame   0x0000b3a0       0x6c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fiprintf.o)
- .debug_frame   0x0000b40c       0xd0 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-vfiprintf.o)
- .debug_frame   0x0000b4dc       0x80 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fputwc.o)
- .debug_frame   0x0000b55c       0x50 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x0000b5ac       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x0000b5cc       0x24 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x00000380      0x2a4 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
+ .debug_frame   0x00000624      0x5a0 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
+ .debug_frame   0x00000bc4      0xb64 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
+ .debug_frame   0x00001728      0x480 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
+ .debug_frame   0x00001ba8      0x6bc CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
+ .debug_frame   0x00002264      0x428 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+ .debug_frame   0x0000268c       0x2c CMakeFiles/astra.elf.dir/Core/Src/dma.c.obj
+ .debug_frame   0x000026b8       0x34 CMakeFiles/astra.elf.dir/Core/Src/gpio.c.obj
+ .debug_frame   0x000026ec      0x5e4 CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
+ .debug_frame   0x00002cd0       0x50 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_buzzer.cpp.obj
+ .debug_frame   0x00002d20       0x20 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_config.cpp.obj
+ .debug_frame   0x00002d40       0x38 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
+ .debug_frame   0x00002d78      0x110 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
+ .debug_frame   0x00002e88      0x128 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
+ .debug_frame   0x00002fb0       0xc4 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
+ .debug_frame   0x00003074      0x190 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
+ .debug_frame   0x00003204      0x1f8 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
+ .debug_frame   0x000033fc       0x20 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
+ .debug_frame   0x0000341c       0x30 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
+ .debug_frame   0x0000344c      0x570 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
+ .debug_frame   0x000039bc       0xd8 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
+ .debug_frame   0x00003a94       0x3c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
+ .debug_frame   0x00003ad0       0x48 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
+ .debug_frame   0x00003b18      0x27c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
+ .debug_frame   0x00003d94      0x278 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
+ .debug_frame   0x0000400c      0x2a8 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
+ .debug_frame   0x000042b4      0x2cc CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
+ .debug_frame   0x00004580       0xf0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
+ .debug_frame   0x00004670      0x17c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
+ .debug_frame   0x000047ec       0x28 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
+ .debug_frame   0x00004814       0x68 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
+ .debug_frame   0x0000487c      0x47c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
+ .debug_frame   0x00004cf8       0x58 CMakeFiles/astra.elf.dir/Core/Src/main.c.obj
+ .debug_frame   0x00004d50       0x60 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
+ .debug_frame   0x00004db0       0x28 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+ .debug_frame   0x00004dd8       0xd8 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_it.c.obj
+ .debug_frame   0x00004eb0      0x1a8 CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
+ .debug_frame   0x00005058       0x30 CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
+ .debug_frame   0x00005088      0x1cc CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_frame   0x00005254      0x2c8 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+ .debug_frame   0x0000551c      0x19c CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_frame   0x000056b8      0x144 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_frame   0x000057fc       0xe4 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_frame   0x000058e0      0x184 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_frame   0x00005a64       0x5c CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_frame   0x00005ac0      0x5ac CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_frame   0x0000606c       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(atexit_arm.o)
+ .debug_frame   0x0000608c       0xdc d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(class_type_info.o)
+ .debug_frame   0x00006168       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(del_ops.o)
+ .debug_frame   0x00006188       0x54 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(dyncast.o)
+ .debug_frame   0x000061dc       0x6c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_arm.o)
+ .debug_frame   0x00006248       0x94 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_catch.o)
+ .debug_frame   0x000062dc       0xf0 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_exception.o)
+ .debug_frame   0x000063cc       0x50 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_globals.o)
+ .debug_frame   0x0000641c       0xb4 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_personality.o)
+ .debug_frame   0x000064d0       0xb0 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_terminate.o)
+ .debug_frame   0x00006580       0x7c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_throw.o)
+ .debug_frame   0x000065fc       0x48 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(guard.o)
+ .debug_frame   0x00006644       0x50 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(guard_error.o)
+ .debug_frame   0x00006694       0xdc d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(si_class_type_info.o)
+ .debug_frame   0x00006770       0x90 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(tinfo.o)
+ .debug_frame   0x00006800       0xe8 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(vmi_class_type_info.o)
+ .debug_frame   0x000068e8       0x30 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(vterminate.o)
+ .debug_frame   0x00006918      0x18c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(functexcept.o)
+ .debug_frame   0x00006aa4       0x50 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(bad_alloc.o)
+ .debug_frame   0x00006af4       0x50 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(bad_array_new.o)
+ .debug_frame   0x00006b44      0x8f8 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(cp-demangle.o)
+ .debug_frame   0x0000743c       0xd8 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_alloc.o)
+ .debug_frame   0x00007514       0x60 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_call.o)
+ .debug_frame   0x00007574       0x28 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(eh_type.o)
+ .debug_frame   0x0000759c      0x3c8 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(stdexcept.o)
+ .debug_frame   0x00007964      0x898 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(cow-stdexcept.o)
+ .debug_frame   0x000081fc     0x1268 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libstdc++.a(cow-string-inst.o)
+ .debug_frame   0x00009464       0x30 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libm.a(libm_a-s_ceil.o)
+ .debug_frame   0x00009494       0x28 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libm.a(libm_a-sf_round.o)
+ .debug_frame   0x000094bc       0xac d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00009568       0xc4 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x0000962c       0x24 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_truncdfsf2.o)
+ .debug_frame   0x00009650       0x4c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+ .debug_frame   0x0000969c       0x38 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivsf3.o)
+ .debug_frame   0x000096d4       0xc8 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpsf2.o)
+ .debug_frame   0x0000979c       0x24 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixsfsi.o)
+ .debug_frame   0x000097c0       0x24 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)
+ .debug_frame   0x000097e4      0x2d0 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(unwind-arm.o)
+ .debug_frame   0x00009ab4       0xf4 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(pr-support.o)
+ .debug_frame   0x00009ba8       0x28 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-abort.o)
+ .debug_frame   0x00009bd0       0x30 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-malloc.o)
+ .debug_frame   0x00009c00       0x48 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-mallocr.o)
+ .debug_frame   0x00009c48       0x30 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-mlock.o)
+ .debug_frame   0x00009c78       0x30 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-rand.o)
+ .debug_frame   0x00009ca8       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-realloc.o)
+ .debug_frame   0x00009cc8       0x48 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-reallocr.o)
+ .debug_frame   0x00009d10       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-cxa_atexit.o)
+ .debug_frame   0x00009d3c       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-ctype_.o)
+ .debug_frame   0x00009d5c      0x13c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-findfp.o)
+ .debug_frame   0x00009e98       0x54 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fputc.o)
+ .debug_frame   0x00009eec       0x48 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fputs.o)
+ .debug_frame   0x00009f34       0x64 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fvwrite.o)
+ .debug_frame   0x00009f98       0x34 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fwalk.o)
+ .debug_frame   0x00009fcc       0x58 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fwrite.o)
+ .debug_frame   0x0000a024       0x48 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-putc.o)
+ .debug_frame   0x0000a06c       0x7c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-sprintf.o)
+ .debug_frame   0x0000a0e8       0x8c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-stdio.o)
+ .debug_frame   0x0000a174       0x40 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-wbuf.o)
+ .debug_frame   0x0000a1b4       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-wsetup.o)
+ .debug_frame   0x0000a1e0       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-memcmp.o)
+ .debug_frame   0x0000a20c       0x40 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-memmove.o)
+ .debug_frame   0x0000a24c       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
+ .debug_frame   0x0000a278       0x38 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-strncmp.o)
+ .debug_frame   0x0000a2b0      0x118 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-signal.o)
+ .debug_frame   0x0000a3c8       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-closer.o)
+ .debug_frame   0x0000a3f4       0x3c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-reent.o)
+ .debug_frame   0x0000a430       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-lseekr.o)
+ .debug_frame   0x0000a45c       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-readr.o)
+ .debug_frame   0x0000a488       0x3c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-signalr.o)
+ .debug_frame   0x0000a4c4       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-sbrkr.o)
+ .debug_frame   0x0000a4f0       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-writer.o)
+ .debug_frame   0x0000a51c       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-errno.o)
+ .debug_frame   0x0000a53c       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
+ .debug_frame   0x0000a568       0xb0 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+ .debug_frame   0x0000a618       0x28 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-sysconf.o)
+ .debug_frame   0x0000a640       0x34 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-strcmp.o)
+ .debug_frame   0x0000a674       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-memchr-stub.o)
+ .debug_frame   0x0000a6a0       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
+ .debug_frame   0x0000a6c0       0x34 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
+ .debug_frame   0x0000a6f4       0x5c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
+ .debug_frame   0x0000a750       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
+ .debug_frame   0x0000a770       0x78 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-freer.o)
+ .debug_frame   0x0000a7e8       0x44 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-svfprintf.o)
+ .debug_frame   0x0000a82c       0x3c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fclose.o)
+ .debug_frame   0x0000a868       0x70 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fflush.o)
+ .debug_frame   0x0000a8d8       0x70 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-makebuf.o)
+ .debug_frame   0x0000a948       0x28 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
+ .debug_frame   0x0000a970       0xec d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-locale.o)
+ .debug_frame   0x0000aa5c       0x40 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-localeconv.o)
+ .debug_frame   0x0000aa9c       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fstatr.o)
+ .debug_frame   0x0000aac8       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-isattyr.o)
+ .debug_frame   0x0000aaf4       0x34 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
+ .debug_frame   0x0000ab28       0x30 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libm_a-s_frexp.o)
+ .debug_frame   0x0000ab58       0x84 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-dtoa.o)
+ .debug_frame   0x0000abdc      0x130 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-mbtowc_r.o)
+ .debug_frame   0x0000ad0c      0x26c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-mprec.o)
+ .debug_frame   0x0000af78       0x9c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-wctomb_r.o)
+ .debug_frame   0x0000b014       0x60 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-wcrtomb.o)
+ .debug_frame   0x0000b074       0x50 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-wcsrtombs.o)
+ .debug_frame   0x0000b0c4       0x74 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-svfiprintf.o)
+ .debug_frame   0x0000b138       0x40 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-assert.o)
+ .debug_frame   0x0000b178       0x2c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-callocr.o)
+ .debug_frame   0x0000b1a4       0x8c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-wcsnrtombs.o)
+ .debug_frame   0x0000b230       0x6c d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fiprintf.o)
+ .debug_frame   0x0000b29c       0xd0 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-vfiprintf.o)
+ .debug_frame   0x0000b36c       0x80 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libg.a(libc_a-fputwc.o)
+ .debug_frame   0x0000b3ec       0x50 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x0000b43c       0x20 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x0000b45c       0x24 d:/stm32cubetoolchains/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
 
 .debug_loclists
-                0x00000000    0x1d873
+                0x00000000    0x1d5de
  .debug_loclists
                 0x00000000     0x1a0c CMakeFiles/astra.elf.dir/Core/Src/astra/astra_logo.cpp.obj
  .debug_loclists
-                0x00001a0c     0x1786 CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
+                0x00001a0c     0x169a CMakeFiles/astra.elf.dir/Core/Src/astra/astra_rocket.cpp.obj
  .debug_loclists
-                0x00003192     0x3007 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
+                0x000030a6     0x2e5e CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/camera/camera.cpp.obj
  .debug_loclists
-                0x00006199     0x5912 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
+                0x00005f04     0x5912 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/menu/menu.cpp.obj
  .debug_loclists
-                0x0000baab     0x17e8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
+                0x0000b816     0x17e8 CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/selector/selector.cpp.obj
  .debug_loclists
-                0x0000d293     0x209b CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
+                0x0000cffe     0x209b CMakeFiles/astra.elf.dir/Core/Src/astra/ui/item/widget/widget.cpp.obj
  .debug_loclists
-                0x0000f32e     0x1c9b CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
+                0x0000f099     0x1c9b CMakeFiles/astra.elf.dir/Core/Src/astra/ui/launcher.cpp.obj
  .debug_loclists
-                0x00010fc9     0x154b CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
+                0x00010d34     0x154b CMakeFiles/astra.elf.dir/Core/Src/hal/hal.cpp.obj
  .debug_loclists
-                0x00012514       0x5c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
+                0x0001227f       0x5c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_key.cpp.obj
  .debug_loclists
-                0x00012570      0x109 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
+                0x000122db      0x109 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/hal_stm32.cpp.obj
  .debug_loclists
-                0x00012679      0x4b3 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
+                0x000123e4      0x4b3 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_bitmap.c.obj
  .debug_loclists
-                0x00012b2c      0x65c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
+                0x00012897      0x65c CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_box.c.obj
  .debug_loclists
-                0x00013188      0x372 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
+                0x00012ef3      0x372 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_buffer.c.obj
  .debug_loclists
-                0x000134fa      0xa76 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
+                0x00013265      0xa76 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_circle.c.obj
  .debug_loclists
-                0x00013f70       0x23 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
+                0x00013cdb       0x23 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_memory.c.obj
  .debug_loclists
-                0x00013f93       0x99 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
+                0x00013cfe       0x99 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_d_setup.c.obj
  .debug_loclists
-                0x0001402c     0x14b0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
+                0x00013d97     0x14b0 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_font.c.obj
  .debug_loclists
-                0x000154dc      0x332 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
+                0x00015247      0x332 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_hvline.c.obj
  .debug_loclists
-                0x0001580e       0xd1 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
+                0x00015579       0xd1 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_intersection.c.obj
  .debug_loclists
-                0x000158df      0x2be CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
+                0x0001564a      0x2be CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_ll_hvline.c.obj
  .debug_loclists
-                0x00015b9d      0x75d CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
+                0x00015908      0x75d CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8g2_setup.c.obj
  .debug_loclists
-                0x000162fa      0xac9 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
+                0x00016065      0xac9 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_8x8.c.obj
  .debug_loclists
-                0x00016dc3      0xbdc CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
+                0x00016b2e      0xbdc CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_byte.c.obj
  .debug_loclists
-                0x0001799f     0x1288 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
+                0x0001770a     0x1288 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_cad.c.obj
  .debug_loclists
-                0x00018c27      0x511 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
+                0x00018992      0x511 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
  .debug_loclists
-                0x00019138      0x21e CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
+                0x00018ea3      0x21e CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_display.c.obj
  .debug_loclists
-                0x00019356       0x51 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
+                0x000190c1       0x51 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_gpio.c.obj
  .debug_loclists
-                0x000193a7      0x157 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
+                0x00019112      0x157 CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/graph_lib/u8g2/u8x8_setup.c.obj
  .debug_loclists
-                0x000194fe     0x116a CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
+                0x00019269     0x116a CMakeFiles/astra.elf.dir/Core/Src/hal/hal_dreamCore/components/oled/hal_oled.cpp.obj
  .debug_loclists
-                0x0001a668       0x50 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
+                0x0001a3d3       0x50 CMakeFiles/astra.elf.dir/Core/Src/spi.c.obj
  .debug_loclists
-                0x0001a6b8       0x17 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
+                0x0001a423       0x17 CMakeFiles/astra.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  .debug_loclists
-                0x0001a6cf      0x29e CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
+                0x0001a43a      0x29e CMakeFiles/astra.elf.dir/Core/Src/syscalls.c.obj
  .debug_loclists
-                0x0001a96d       0xa5 CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
+                0x0001a6d8       0xa5 CMakeFiles/astra.elf.dir/Core/Src/system_stm32f1xx.c.obj
  .debug_loclists
-                0x0001aa12       0xc9 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x0001a77d       0xc9 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_loclists
-                0x0001aadb      0x71f CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
+                0x0001a846      0x71f CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
  .debug_loclists
-                0x0001b1fa      0x422 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x0001af65      0x422 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_loclists
-                0x0001b61c      0x4c7 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x0001b387      0x4c7 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .debug_loclists
-                0x0001bae3      0x2e8 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x0001b84e      0x2e8 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
  .debug_loclists
-                0x0001bdcb      0x3f8 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x0001bb36      0x3f8 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .debug_loclists
-                0x0001c1c3      0x2c5 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+                0x0001bf2e      0x2c5 CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .debug_loclists
-                0x0001c488     0x13eb CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x0001c1f3     0x13eb CMakeFiles/astra.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
 
 .debug_line_str
                 0x00000000      0x226

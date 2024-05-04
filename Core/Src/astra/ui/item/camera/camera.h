@@ -43,23 +43,13 @@ public:
   void go(float _x, float _y);
   void go(const std::vector<float> &_pos); //go to a position.
   void goDirect(float _x, float _y);
-  void goHorizontal(float _x);
-  void goVertical(float _y);
 
   //move to a position.
   void move(float _x, float _y);
   void moveDirect(float _x, float _y);
-  void moveHorizontal(float _x);
-  void moveVertical(float _y);
 
-  void goToNextPageItem();
-  void goToPreviewPageItem();
   void goToListItemRolling(List *_menu);
   void goToTileItem(unsigned char _index);
-
-  [[nodiscard]] bool isMoving() const;
-  [[nodiscard]] bool isReached(float _x, float _y) const;
-  [[nodiscard]] bool isReached(const std::vector<float> &_pos) const;
 
   void reset();
   void resetDirect();

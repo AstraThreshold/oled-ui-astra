@@ -89,14 +89,6 @@ void Camera::goDirect(float _x, float _y) {
   this->yTrg = 0 - _y;
 }
 
-void Camera::goHorizontal(float _x) {
-  this->xTrg = 0 - _x;
-}
-
-void Camera::goVertical(float _y) {
-  this->yTrg = 0 - _y;
-}
-
 void Camera::move(float _x, float _y) {
   this->xTrg -= _x;
   this->yTrg -= _y;
@@ -107,22 +99,6 @@ void Camera::moveDirect(float _x, float _y) {
   this->y -= _y;
   this->xTrg -= _x;
   this->yTrg -= _y;
-}
-
-void Camera::moveHorizontal(float _x) {
-  this->xTrg -= _x;
-}
-
-void Camera::moveVertical(float _y) {
-  this->yTrg -= _y;
-}
-
-void Camera::goToNextPageItem() {
-  this->yTrg = y - systemConfig.screenHeight;
-}
-
-void Camera::goToPreviewPageItem() {
-  this->yTrg = y + systemConfig.screenHeight;
 }
 
 void Camera::goToListItemRolling(List *_menu) {
@@ -151,21 +127,6 @@ void Camera::goToListItemRolling(List *_menu) {
 
 void Camera::goToTileItem(unsigned char _index) {
   go(_index * (astraConfig.tilePicWidth + astraConfig.tilePicMargin), 0);
-}
-
-bool Camera::isMoving() const {
-  if ((this->x == this->xTrg) and (this->y == this->yTrg)) return false;
-  else return true;
-}
-
-bool Camera::isReached(float _x, float _y) const {
-  if (this->x == 0 - _x and this->y == 0 - _y) return true;
-  else return false;
-}
-
-bool Camera::isReached(const std::vector<float> &_pos) const {
-  if (this->x == 0 - _pos[0] and this->y == 0 - _pos[1]) return true;
-  else return false;
 }
 
 void Camera::reset() {
