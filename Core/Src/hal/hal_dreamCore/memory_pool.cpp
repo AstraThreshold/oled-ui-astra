@@ -109,10 +109,10 @@ unsigned char memFree(unsigned long offset) {
   //偏移在内存池内.
   if (offset < memSize) {
     int index = offset / memBlkSize; //偏移所在内存块号码
-    int nmemb = malloc_dev.memMap[index];//内存块数量
+    int nMemB = malloc_dev.memMap[index];//内存块数量
 
     //内存块清零
-    for (i = 0; i < nmemb; i++) malloc_dev.memMap[index + i] = 0;
+    for (i = 0; i < nMemB; i++) malloc_dev.memMap[index + i] = 0;
     return 0;
   } else return 2;//偏移超区了.
 }
