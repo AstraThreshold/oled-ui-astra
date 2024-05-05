@@ -112,9 +112,13 @@ public:
   Position position{};
 
 private:
+  std::string title;
+  unsigned char maxLength;
   unsigned char min;
   unsigned char max;
   unsigned char step;
+
+  unsigned char lengthIndicator;
 
 public:
   Slider(const std::string &_title,

@@ -107,27 +107,41 @@ Slider::Slider(const std::string &_title,
                unsigned char _max,
                unsigned char _step,
                unsigned char &_value) {
-
+  title = _title;
+  maxLength = 0;
+  min = _min;
+  max = _max;
+  step = _step;
+  value = _value;
+  lengthIndicator = 0;
+  this->parent = nullptr;
 }
 
 unsigned char Slider::add() {
-  return 0;
+  value += step;
+  return this->value;
 }
 
 unsigned char Slider::sub() {
-  return 0;
+  value -= step;
+  return this->value;
 }
 
 void Slider::init() {
-  Widget::init();
+  maxLength = std::floor(HAL::getSystemConfig().screenWeight * 0.6);
+  position.lTrg = std::floor(((float)(value - min) / (max - min)) * maxLength); //计算目标长度
+  lengthIndicator = std::round(((float)(value - min) / (max - min)) * 6);  //映射在0-6个像素之间
 }
 
 void Slider::deInit() {
-  Widget::deInit();
+  delete this;
 }
 
 void Slider::renderIndicator(float _x, float _y, const std::vector<float> &_camera) {
-  Widget::renderIndicator(_x, _y, _camera);
+  Item::updateConfig();
+  HAL::setDrawType(1);
+  HAL::drawRFrame(_x + _camera[0] - 1, _y + _camera[1] - 1, 10, 8, 1);
+  HAL::drawBox(_x + _camera[0] + 1, _y + _camera[1] + 1, lengthIndicator, 4);
 }
 
 void Slider::render(const std::vector<float> &_camera) {

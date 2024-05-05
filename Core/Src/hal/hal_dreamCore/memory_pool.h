@@ -17,8 +17,8 @@ extern "C" {
 //内存参数设定. 可以取到4字节-32字节 记得在.cpp文件中同步修改内存池对齐大小
 #define MEM_BLOCK_SIZE 32
 //内存块大小为 32 字节
-#define MEM_MAX_SIZE (14*1023)
-//最大管理内存 14K
+#define MEM_MAX_SIZE (13*1023)
+//最大管理内存 13K
 #define MEM_ALLOC_TABLE_SIZE (MEM_MAX_SIZE/MEM_BLOCK_SIZE) //内存表大小
 //内存管理控制器
 struct _m_malloc_dev {
