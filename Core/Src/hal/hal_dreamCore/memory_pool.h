@@ -16,13 +16,12 @@ extern "C" {
 #endif
 //内存参数设定. 可以取到4字节-32字节 记得在.cpp文件中同步修改内存池对齐大小
 #define MEM_BLOCK_SIZE 32
-//内存块大小为 16 字节
+//内存块大小为 32 字节
 #define MEM_MAX_SIZE (14*1023)
-//最大管理内存 12K
+//最大管理内存 14K
 #define MEM_ALLOC_TABLE_SIZE (MEM_MAX_SIZE/MEM_BLOCK_SIZE) //内存表大小
 //内存管理控制器
-struct _m_malloc_dev
-{
+struct _m_malloc_dev {
   void (*init)();              //初始化
   unsigned char (*perused)();  //内存使用率
   unsigned char *memBase;      //内存池
@@ -41,7 +40,7 @@ unsigned char memFree(unsigned long offset);
 //内存释放(内部调用)
 unsigned char memPerused(void);
 //得内存使用率(外/内部调用)
-////////////////////////////////////////////////////////////////////////////////
+
 //用户调用函数
 void myFree(void *ptr);
 //内存释放(外部调用)
