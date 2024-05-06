@@ -13,7 +13,7 @@ auto *rootPage = new astra::Tile("root");
 
 bool test = false;
 unsigned char testIndex = 0;
-unsigned char testSlider = 40;
+unsigned char testSlider = 60;
 
 auto *secondPage = new astra::List("secondPage");
 
