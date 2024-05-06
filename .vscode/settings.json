@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.m": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "cstdint": "c"
     }
 }
