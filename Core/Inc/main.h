@@ -70,7 +70,7 @@ void Error_Handler(void);
 #define OLED_SCK_Pin GPIO_PIN_13
 #define OLED_SCK_GPIO_Port GPIOB
 #define OLED_MOSI_Pin GPIO_PIN_15
-#define OLED_MOSI_GPIO_Port GPIOA
+#define OLED_MOSI_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

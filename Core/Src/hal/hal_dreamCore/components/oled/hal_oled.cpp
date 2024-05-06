@@ -17,11 +17,11 @@ void HALDreamCore::_ssd1306_transmit_cmd(unsigned char _cmd)
 
   HAL_I2C_Mem_Write(&Hardware_IIC_No, 0x78, 0x00, I2C_MEMADD_SIZE_8BIT, &_cmd, 1, 0xffff);
 #else
-  // unsigned char rxData = 0;
-  // HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_RESET);
-  // HAL_GPIO_WritePin(OLED_DC_GPIO_Port, OLED_DC_Pin, GPIO_PIN_RESET);
-  // HAL_SPI_TransmitReceive(&hspi2, &_cmd, &rxData, 1, 1000);
-  // HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_SET);
+  unsigned char rxData = 0;
+  HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(OLED_DC_GPIO_Port, OLED_DC_Pin, GPIO_PIN_RESET);
+  HAL_SPI_TransmitReceive(&hspi2, &_cmd, &rxData, 1, 1000);
+  HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_SET);
 #endif
 }
 
@@ -33,11 +33,11 @@ void HALDreamCore::_ssd1306_transmit_data(unsigned char _data, unsigned char _mo
 
   HAL_I2C_Mem_Write(&Hardware_IIC_No, 0x78, 0x40, I2C_MEMADD_SIZE_8BIT, &_data, 1, 0xffff);
 #else
-// unsigned char rxData = 0;
-// HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_RESET);
-// HAL_GPIO_WritePin(OLED_DC_GPIO_Port, OLED_DC_Pin, GPIO_PIN_SET);
-// HAL_SPI_TransmitReceive(&hspi2, &_data, &rxData, 1, 1000);
-// HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_SET);
+  unsigned char rxData = 0;
+  HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(OLED_DC_GPIO_Port, OLED_DC_Pin, GPIO_PIN_SET);
+  HAL_SPI_TransmitReceive(&hspi2, &_data, &rxData, 1, 1000);
+  HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_SET);
 #endif
 }
 
@@ -136,29 +136,30 @@ void HALDreamCore::_ssd1306_init()
 
   _ssd1306_transmit_cmd(0x8D);
   _ssd1306_transmit_cmd(0x14);
-
-	_ssd1306_transmit_cmd(0x20); // 设置页面地址增加方式
-	_ssd1306_transmit_cmd(0x00); // 页与连续
-
+#ifdef IIC_MODE
+  _ssd1306_transmit_cmd(0x20); // 设置页面地址增加方式
+  _ssd1306_transmit_cmd(0b00); // 页与连续
+#endif
   _ssd1306_transmit_cmd(0xAF);
-
 
   //_ssd1306_fill(0x00);
 }
 
 unsigned char HALDreamCore::_u8x8_byte_hw_spi_callback(u8x8_t *_u8x8, unsigned char _msg, unsigned char _argInt, void *_argPtr)
 { // NOLINT
+  static bool dirver_mode;
   switch (_msg)
   {
-  case U8X8_MSG_BYTE_SEND: /*通过SPI发送arg_int个字节数据*/
+  case U8X8_MSG_BYTE_SEND:
+  { /*通过SPI发送arg_int个字节数据*/
 #ifdef IIC_MODE
-    if (_argInt!=0) //高电平为数据，低电平为命令
+    if (dirver_mode) // 高电平为数据，低电平为命令
     {
-      HAL_I2C_Mem_Write(&Hardware_IIC_No, 0x78, 0x40, I2C_MEMADD_SIZE_8BIT, (unsigned char *)_argPtr, _argInt, 0xffff); // 写入数据
+      HAL_I2C_Mem_Write(&Hardware_IIC_No, 0x78, 0x40, I2C_MEMADD_SIZE_8BIT, (unsigned char *)_argPtr, _argInt,0xff); // 写入数据
     }
     else
     {
-      HAL_I2C_Mem_Write(&Hardware_IIC_No, 0x78, 0x00, I2C_MEMADD_SIZE_8BIT, (unsigned char *)_argPtr, _argInt, 0xffff); // 写入命令
+      HAL_I2C_Mem_Write(&Hardware_IIC_No, 0x78, 0x00, I2C_MEMADD_SIZE_8BIT, (unsigned char *)_argPtr, _argInt,0xff); // 写入命令
     }
 #else
     HAL_SPI_Transmit_DMA(&hspi2, (unsigned char *)_argPtr, _argInt);
@@ -166,11 +167,18 @@ unsigned char HALDreamCore::_u8x8_byte_hw_spi_callback(u8x8_t *_u8x8, unsigned c
       ; // DMA
 #endif
     break;
+  }
   case U8X8_MSG_BYTE_INIT: /*初始化函数*/
     break;
-  case U8X8_MSG_BYTE_SET_DC: /*设置DC引脚,表明发送的是数据还是命令*/
-    HAL_GPIO_WritePin(OLED_DC_GPIO_Port, OLED_DC_Pin, static_cast<GPIO_PinState>(_argInt));
+  case U8X8_MSG_BYTE_SET_DC:
+  {
+#ifdef IIC_MODE
+    dirver_mode = static_cast<bool>(_argInt); // 设置IIC驱动模式
+#else
+    HAL_GPIO_WritePin(OLED_DC_GPIO_Port, OLED_DC_Pin, static_cast<GPIO_PinState>(_argInt)); /*设置DC引脚,表明发送的是数据还是命令*/
+#endif
     break;
+  }
   case U8X8_MSG_BYTE_START_TRANSFER:
     u8x8_gpio_SetCS(_u8x8, _u8x8->display_info->chip_enable_level);
     _u8x8->gpio_and_delay_cb(_u8x8, U8X8_MSG_DELAY_NANO, _u8x8->display_info->post_chip_enable_wait_ns, nullptr);
