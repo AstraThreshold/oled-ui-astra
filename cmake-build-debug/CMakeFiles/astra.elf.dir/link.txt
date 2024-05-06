@@ -1,1 +1,0 @@
-D:\STM32CubeToolChains\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-g++.exe -g -Wl,-gc-sections,--print-memory-usage,-Map=D:/Projects/astra/cmake-build-debug/astra.map -mcpu=cortex-m3 -mthumb -mthumb-interwork -T D:/Projects/astra/STM32F103CBTx_FLASH.ld @CMakeFiles\astra.elf.dir\objects1.rsp -o astra.elf 
