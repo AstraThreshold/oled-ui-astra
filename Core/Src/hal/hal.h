@@ -246,7 +246,7 @@ public:
 
 public:
   key::KEY_ACTION key[key::KEY_NUM] = {static_cast<key::keyAction>(0)};
-  key::KEY_TYPE keyFlag;
+  key::KEY_TYPE keyFlag { static_cast<key::KEY_TYPE>(0) };
 
 public:
   static bool getKey(key::KEY_INDEX _keyIndex) { return get()->_getKey(_keyIndex); }
