@@ -13,7 +13,7 @@ namespace astra {
  * @brief config of astra ui. astra ui的配置结构体
  */
 struct config {
-  float tileAnimationSpeed = 80;
+  float tileAnimationSpeed = 70;
   float listAnimationSpeed = 70;
   float selectorYAnimationSpeed = 60;
   float selectorXAnimationSpeed = 70;
