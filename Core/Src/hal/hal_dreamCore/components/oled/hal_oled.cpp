@@ -103,7 +103,7 @@ void HALDreamCore::_ssd1306_init() {
 unsigned char HALDreamCore::_u8x8_byte_hw_spi_callback(u8x8_t *_u8x8, unsigned char _msg, unsigned char _argInt, void *_argPtr) { //NOLINT
   switch (_msg) {
     case U8X8_MSG_BYTE_SEND: /*通过SPI发送arg_int个字节数据*/
-      HAL_SPI_Transmit_DMA(&hspi2, (unsigned char *) _argPtr, _argInt);
+      HAL_SPI_Transmit_DMA(&hspi2, (unsigned char *) _argPtr, 1024);
       while (hspi2.TxXferCount);//DMA
       break;
     case U8X8_MSG_BYTE_INIT: /*初始化函数*/
