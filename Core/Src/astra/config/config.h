@@ -14,8 +14,8 @@ namespace astra {
  */
 struct config {
   float tileAnimationSpeed = 80;
-  float listAnimationSpeed = 65;
-  float selectorYAnimationSpeed = 52;
+  float listAnimationSpeed = 70;
+  float selectorYAnimationSpeed = 60;
   float selectorXAnimationSpeed = 70;
   float selectorWidthAnimationSpeed = 70;
   float selectorHeightAnimationSpeed = 55;
