@@ -138,7 +138,6 @@ void Slider::init() {
     position.lTrg = maxLength;
     lengthIndicator = 6;
   }
-
 }
 
 void Slider::deInit() {

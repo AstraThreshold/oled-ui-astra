@@ -156,7 +156,7 @@ void List::render(const std::vector<float> &_camera) {
 
   HAL::setDrawType(1);
   //allow x > screen height, y > screen weight.
-  //scan all child, draw text and widget on list.
+  //scan all children, draw text and widget on the list.
   for (auto _iter : childMenu) {
     //绘制控件在列表中的指示器
     if (!_iter->childWidget.empty()) {
