@@ -70,10 +70,15 @@ struct config {
   float logoTextHeight = 14; //logo文字高度
   float logoCopyRightHeight = 8; //logo文字高度
   unsigned char logoStarNum = 16; //logo星星数量
+
   const unsigned char *logoTitleFont = u8g2_font_Cascadia;
   const unsigned char *logoCopyRightFont = u8g2_font_myfont;
-
   const unsigned char *mainFont = u8g2_font_myfont;
+
+  //如果未使用u8g2库 请自行修改这里
+  //const unsigned char *logoTitleFont = u8g2_font_Cascadia;
+  //const unsigned char *logoCopyRightFont = u8g2_font_myfont;
+  //const unsigned char *mainFont = u8g2_font_myfont;
 
   float checkBoxWidth = 8;
   float checkBoxHeight = 8;
