@@ -115,6 +115,9 @@ Slider::Slider(const std::string &_title,
   value = _value;
   lengthIndicator = 0;
   this->parent = nullptr;
+
+  if (value > max) valueOverflow = true;
+  else valueOverflow = false;
 }
 
 unsigned char Slider::add() {
@@ -131,6 +134,11 @@ void Slider::init() {
   maxLength = std::floor(HAL::getSystemConfig().screenWeight * 0.6);
   position.lTrg = std::floor(((float)(value - min) / (max - min)) * maxLength); //计算目标长度
   lengthIndicator = std::round(((float)(value - min) / (max - min)) * 6);  //映射在0-6个像素之间
+  if (valueOverflow) {
+    position.lTrg = maxLength;
+    lengthIndicator = 6;
+  }
+
 }
 
 void Slider::deInit() {

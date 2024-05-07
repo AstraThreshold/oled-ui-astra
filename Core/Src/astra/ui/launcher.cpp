@@ -97,6 +97,7 @@ bool Launcher::open() {
   currentMenu->deInit();  //先析构（退场动画）再挪动指针
 
   currentMenu = currentMenu->getNextMenu();
+  currentMenu->forePosInit();
   currentMenu->childPosInit(camera->getPosition());
 
   selector->inject(currentMenu);
@@ -126,6 +127,7 @@ bool Launcher::close() {
   currentMenu->deInit();  //先析构（退场动画）再挪动指针
 
   currentMenu = currentMenu->getPreview();
+  currentMenu->forePosInit();
   currentMenu->childPosInit(camera->getPosition());
 
   selector->inject(currentMenu);

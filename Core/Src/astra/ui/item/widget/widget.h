@@ -118,6 +118,8 @@ private:
   unsigned char max;
   unsigned char step;
 
+  bool valueOverflow;
+
   unsigned char lengthIndicator;
 
 public:

@@ -54,7 +54,6 @@ bool Menu::addItem(Menu *_page) {
     this->childMenu.push_back(_page);
     this->forePosInit();
     return true;
-
 }
 
 bool Menu::addItem(Menu *_page, Widget *_anyWidget) {
