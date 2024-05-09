@@ -7,7 +7,8 @@
 #include <vector>
 #include "astra_rocket.h"
 #include "astra_logo.h"
-
+#include "gpio.h"
+#include "main.h"
 auto *astraLauncher = new astra::Launcher();
 auto *rootPage = new astra::Tile("root");
 
@@ -23,7 +24,7 @@ void astraCoreInit(void) {
   HAL::delay(350);
   astra::drawLogo(1000);
 
-  rootPage->addItem(new astra::List("test1"));
+  rootPage->addItem(new astra::List("测试1"));
   rootPage->addItem(new astra::List("测试2"));
   rootPage->addItem(new astra::List("测试测试3"));
   rootPage->addItem(new astra::List("测试测试3"));

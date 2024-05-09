@@ -1,2 +1,4 @@
-build
-cmake-build-debug
+*.o
+*.a
+build/
+cmsis-build-dubug/
